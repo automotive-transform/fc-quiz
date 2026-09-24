@@ -1,0 +1,748 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "aspice-v-model-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "v-model",
+      "questionType": "single_choice",
+      "questionEn": "What does the V-Model represent in software development?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each design phase has a corresponding verification or testing phase."
+        },
+        {
+          "id": "B",
+          "text": "Software is developed without formal testing."
+        },
+        {
+          "id": "C",
+          "text": "All testing is performed before requirements are defined."
+        },
+        {
+          "id": "D",
+          "text": "Only hardware components are verified."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "V-Model liên kết từng giai đoạn thiết kế ở bên trái với giai đoạn kiểm tra tương ứng ở bên phải.",
+      "relatedFlashcardIds": [
+        "aspice-v-model-concept-001"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "V-Model",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "traceability-v-model-quiz-002",
+      "topicId": "traceability",
+      "sectionId": "v-model",
+      "questionType": "single_choice",
+      "questionEn": "What is the main principle of traceability in the V-Model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every requirement and design decision should be linked to corresponding verification or testing."
+        },
+        {
+          "id": "B",
+          "text": "Only source code needs to be documented."
+        },
+        {
+          "id": "C",
+          "text": "Testing is optional when architecture is complete."
+        },
+        {
+          "id": "D",
+          "text": "Requirements are defined only after qualification testing."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Traceability giúp liên kết requirement và design decision với các hoạt động verification/test tương ứng.",
+      "relatedFlashcardIds": [
+        "traceability-v-model-concept-002"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "V-Model",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe1-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "questionType": "single_choice",
+      "questionEn": "What is the primary purpose of SWE.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To transform system-level requirements into testable software-level requirements."
+        },
+        {
+          "id": "B",
+          "text": "To test the complete software on target hardware."
+        },
+        {
+          "id": "C",
+          "text": "To combine software components and test their interfaces."
+        },
+        {
+          "id": "D",
+          "text": "To write only the final source code."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.1 chuyển system requirements thành software requirements có thể kiểm tra được.",
+      "relatedFlashcardIds": [
+        "aspice-swe1-technical-term-003"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1 — Software Requirements Analysis",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe1-input-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "questionType": "single_choice",
+      "questionEn": "Which of the following is an input to SWE.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "System Requirements from SYS.2"
+        },
+        {
+          "id": "B",
+          "text": "Qualification Test Report"
+        },
+        {
+          "id": "C",
+          "text": "Integration Test Report"
+        },
+        {
+          "id": "D",
+          "text": "Release Note"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Input của SWE.1 gồm System Requirements từ SYS.2, System Architecture từ SYS.3 và Interface Control Documents.",
+      "relatedFlashcardIds": [
+        "aspice-swe1-input-output-017"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1 — Software Requirements Analysis",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-srs-quiz-005",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "questionType": "single_choice",
+      "questionEn": "What does SRS stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Software Requirements Specification"
+        },
+        {
+          "id": "B",
+          "text": "Software Release Standard"
+        },
+        {
+          "id": "C",
+          "text": "System Runtime Structure"
+        },
+        {
+          "id": "D",
+          "text": "Software Regression System"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SRS là Software Requirements Specification, một output chính của SWE.1.",
+      "relatedFlashcardIds": [
+        "aspice-srs-abbreviation-004"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1 — Software Requirements Analysis",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe2-quiz-006",
+      "topicId": "aspice",
+      "sectionId": "swe-2",
+      "questionType": "single_choice",
+      "questionEn": "What is the main focus of SWE.2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Designing the overall software architecture, components, and interfaces."
+        },
+        {
+          "id": "B",
+          "text": "Testing individual functions independently."
+        },
+        {
+          "id": "C",
+          "text": "Performing final qualification testing."
+        },
+        {
+          "id": "D",
+          "text": "Writing only the release note."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.2 thiết kế kiến trúc tổng thể, chia SW thành SWC và định nghĩa interface, data flow, control flow.",
+      "relatedFlashcardIds": [
+        "aspice-swe2-technical-term-005"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.2 — Software Architectural Design",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sad-quiz-007",
+      "topicId": "aspice",
+      "sectionId": "swe-2",
+      "questionType": "single_choice",
+      "questionEn": "What does SAD stand for in SWE.2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Software Architecture Document"
+        },
+        {
+          "id": "B",
+          "text": "Software Analysis Definition"
+        },
+        {
+          "id": "C",
+          "text": "System Application Design"
+        },
+        {
+          "id": "D",
+          "text": "Software Algorithm Description"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SAD là Software Architecture Document, output của SWE.2.",
+      "relatedFlashcardIds": [
+        "aspice-sad-abbreviation-006"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.2 — Software Architectural Design",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe3-quiz-008",
+      "topicId": "aspice",
+      "sectionId": "swe-3",
+      "questionType": "single_choice",
+      "questionEn": "Which activity belongs to SWE.3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Designing algorithms, function signatures, and writing source code."
+        },
+        {
+          "id": "B",
+          "text": "Testing the complete software on target hardware."
+        },
+        {
+          "id": "C",
+          "text": "Defining only system-level requirements."
+        },
+        {
+          "id": "D",
+          "text": "Testing interfaces between integrated components."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.3 đi sâu vào module, algorithm, pseudocode, function signature và viết source code.",
+      "relatedFlashcardIds": [
+        "aspice-swe3-concept-007"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.3 — Software Detailed Design and Unit Construction",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sdd-quiz-009",
+      "topicId": "aspice",
+      "sectionId": "swe-3",
+      "questionType": "single_choice",
+      "questionEn": "Which of the following is an output of SWE.3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Software Detailed Design Document (SDD)"
+        },
+        {
+          "id": "B",
+          "text": "Qualification Test Report"
+        },
+        {
+          "id": "C",
+          "text": "System Requirements from SYS.2"
+        },
+        {
+          "id": "D",
+          "text": "Integration Test Report"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Output của SWE.3 gồm SDD, Source Code và Unit Test Specification.",
+      "relatedFlashcardIds": [
+        "aspice-sdd-abbreviation-008",
+        "aspice-swe3-input-output-019"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.3 — Software Detailed Design and Unit Construction",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe4-quiz-010",
+      "topicId": "testing",
+      "sectionId": "swe-4",
+      "questionType": "single_choice",
+      "questionEn": "What is the main purpose of SWE.4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To verify individual software units independently."
+        },
+        {
+          "id": "B",
+          "text": "To define the overall system architecture."
+        },
+        {
+          "id": "C",
+          "text": "To test the complete software qualification on the ECU."
+        },
+        {
+          "id": "D",
+          "text": "To transform system requirements into software requirements."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.4 kiểm tra từng unit, function hoặc module độc lập với phần còn lại của hệ thống.",
+      "relatedFlashcardIds": [
+        "testing-swe4-concept-009"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.4 — Software Unit Verification",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe4-coverage-quiz-011",
+      "topicId": "testing",
+      "sectionId": "swe-4",
+      "questionType": "single_choice",
+      "questionEn": "Which coverage measures are listed in the SWE.4 output?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Statement, branch, and MC/DC coverage"
+        },
+        {
+          "id": "B",
+          "text": "Only network bandwidth coverage"
+        },
+        {
+          "id": "C",
+          "text": "Only hardware temperature coverage"
+        },
+        {
+          "id": "D",
+          "text": "Only system architecture coverage"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Code Coverage Report của SWE.4 bao gồm statement coverage, branch coverage và MC/DC.",
+      "relatedFlashcardIds": [
+        "testing-code-coverage-technical-term-010"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.4 — Software Unit Verification",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe5-quiz-012",
+      "topicId": "testing",
+      "sectionId": "swe-5",
+      "questionType": "single_choice",
+      "questionEn": "What does SWE.5 primarily test?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Interfaces and interactions between integrated software components."
+        },
+        {
+          "id": "B",
+          "text": "Only individual functions in isolation."
+        },
+        {
+          "id": "C",
+          "text": "Only system-level requirements."
+        },
+        {
+          "id": "D",
+          "text": "Only the software source code style."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.5 ghép các component đã pass unit test và kiểm tra interface, signal và timing giữa chúng.",
+      "relatedFlashcardIds": [
+        "testing-swe5-concept-011"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.5 — Software Integration and Integration Test",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-unit-integration-quiz-013",
+      "topicId": "testing",
+      "sectionId": "swe-4-swe-5",
+      "questionType": "single_choice",
+      "questionEn": "What is the key difference between SWE.4 and SWE.5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.4 verifies individual units, while SWE.5 tests interactions between integrated components."
+        },
+        {
+          "id": "B",
+          "text": "SWE.4 tests the full ECU, while SWE.5 defines system requirements."
+        },
+        {
+          "id": "C",
+          "text": "Both processes perform exactly the same testing activity."
+        },
+        {
+          "id": "D",
+          "text": "SWE.5 is performed before any software unit is developed."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.4 tập trung vào từng unit riêng lẻ; SWE.5 tập trung vào tương tác và interface khi các component được ghép lại.",
+      "relatedFlashcardIds": [
+        "testing-unit-integration-comparison-012"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.4 and SWE.5",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe6-quiz-014",
+      "topicId": "testing",
+      "sectionId": "swe-6",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of SWE.6?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To demonstrate that the complete software meets all software requirements."
+        },
+        {
+          "id": "B",
+          "text": "To design individual function signatures."
+        },
+        {
+          "id": "C",
+          "text": "To define the software architecture."
+        },
+        {
+          "id": "D",
+          "text": "To replace all unit testing activities."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.6 là giai đoạn cuối, kiểm tra toàn bộ software trên target hardware, ECU thực hoặc HIL simulator để chứng minh đáp ứng software requirements.",
+      "relatedFlashcardIds": [
+        "testing-swe6-concept-013"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.6 — Software Qualification Test",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe6-output-quiz-015",
+      "topicId": "testing",
+      "sectionId": "swe-6",
+      "questionType": "single_choice",
+      "questionEn": "Which of the following is an output of SWE.6?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Qualification Test Report"
+        },
+        {
+          "id": "B",
+          "text": "Software Architecture Document only"
+        },
+        {
+          "id": "C",
+          "text": "System Requirements from SYS.2"
+        },
+        {
+          "id": "D",
+          "text": "Interface Control Documents only"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Output của SWE.6 gồm Software Qualification Test Specification, Qualification Test Report và Release Note.",
+      "relatedFlashcardIds": [
+        "testing-qualification-report-technical-term-014",
+        "testing-swe6-input-output-022"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.6 — Software Qualification Test",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "traceability-swe-mapping-quiz-016",
+      "topicId": "traceability",
+      "sectionId": "v-model",
+      "questionType": "single_choice",
+      "questionEn": "Which V-Model testing phase corresponds to SWE.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.6 — Software Qualification Test"
+        },
+        {
+          "id": "B",
+          "text": "SWE.4 — Software Unit Verification"
+        },
+        {
+          "id": "C",
+          "text": "SWE.5 — Integration Test"
+        },
+        {
+          "id": "D",
+          "text": "SWE.3 — Detailed Design"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.1 (Software Requirements) được liên kết với SWE.6 (Qualification Test) trong mapping của V-Model.",
+      "relatedFlashcardIds": [
+        "traceability-v-model-mapping-015"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "V-Model — Traceability Links",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "traceability-swe-mapping-quiz-017",
+      "topicId": "traceability",
+      "sectionId": "v-model",
+      "questionType": "single_choice",
+      "questionEn": "Which V-Model testing phase corresponds to SWE.2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.5 — Software Integration and Integration Test"
+        },
+        {
+          "id": "B",
+          "text": "SWE.6 — Qualification Test"
+        },
+        {
+          "id": "C",
+          "text": "SWE.4 — Unit Verification"
+        },
+        {
+          "id": "D",
+          "text": "SWE.1 — Requirements Analysis"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.2 (Architecture Design) được liên kết với SWE.5 (Integration Test).",
+      "relatedFlashcardIds": [
+        "traceability-v-model-mapping-015"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "V-Model — Traceability Links",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "traceability-swe-mapping-quiz-018",
+      "topicId": "traceability",
+      "sectionId": "v-model",
+      "questionType": "single_choice",
+      "questionEn": "Which V-Model testing phase corresponds to SWE.3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.4 — Software Unit Verification"
+        },
+        {
+          "id": "B",
+          "text": "SWE.6 — Qualification Test"
+        },
+        {
+          "id": "C",
+          "text": "SWE.5 — Integration Test"
+        },
+        {
+          "id": "D",
+          "text": "SWE.1 — Requirements Analysis"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.3 (Detailed Design and Unit Construction) được liên kết với SWE.4 (Unit Verification).",
+      "relatedFlashcardIds": [
+        "traceability-v-model-mapping-015"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "V-Model — Traceability Links",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-sequence-quiz-019",
+      "topicId": "aspice",
+      "sectionId": "v-model",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence correctly represents SWE.1 through SWE.6?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Requirements → Architecture → Detailed Design & Code → Unit → Integration → Qualification"
+        },
+        {
+          "id": "B",
+          "text": "Unit → Requirements → Integration → Architecture → Code → Qualification"
+        },
+        {
+          "id": "C",
+          "text": "Architecture → Qualification → Requirements → Unit → Code → Integration"
+        },
+        {
+          "id": "D",
+          "text": "Requirements → Unit → Code → Architecture → Qualification → Integration"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Trình tự học thuộc: SWE.1 Requirements, SWE.2 Architecture, SWE.3 Detailed Design & Code, SWE.4 Unit, SWE.5 Integration, SWE.6 Qualification.",
+      "relatedFlashcardIds": [
+        "aspice-swe-sequence-016"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "V-Model — SWE.1 to SWE.6",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe1-example-quiz-020",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "questionType": "single_choice",
+      "questionEn": "Which example best represents a detailed software requirement in SWE.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "AEB_Controller shall trigger a brake request within 50 ms through CAN ID 0x201."
+        },
+        {
+          "id": "B",
+          "text": "The vehicle shall be designed without any software architecture."
+        },
+        {
+          "id": "C",
+          "text": "The developer may choose any unverified behavior."
+        },
+        {
+          "id": "D",
+          "text": "Testing is unnecessary if the system requirement exists."
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ví dụ trong nguồn chuyển system requirement thành software requirement cụ thể: AEB_Controller trigger brake request trong vòng 50 ms qua CAN ID 0x201.",
+      "relatedFlashcardIds": [
+        "aspice-swe1-technical-term-003"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1 — Software Requirements Analysis",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

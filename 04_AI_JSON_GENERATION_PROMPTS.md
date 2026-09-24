@@ -27,7 +27,7 @@ Apply these rules to every generation task:
 - Write Vietnamese explanations in clear, memorable language.
 - Keep each item focused on one concept or learning objective.
 - Use stable, unique IDs.
-- Keep `topicId` in canonical lowercase form, e.g. `can`, `misra-c`, `autosar-classic`.
+- Keep `topicId` in canonical lowercase form, e.g. `can`, `misra-c`, `autosar`.
 - Do not lowercase content fields such as `term`, `definitionEn`, `questionEn`, or `explanationVi`.
 - Use supported `cardType` values:
   - `single_word`
@@ -43,7 +43,36 @@ Apply these rules to every generation task:
 - Include source traceability when available.
 - For ambiguous or low-confidence content, skip the item or flag it for review.
 
-## 3. Required Folder Structure
+## 3. Suggested Topics
+
+Use one of the existing topic IDs below whenever the source material matches. The
+topic ID must be lowercase and must match `content/topic-metadata.json` exactly.
+
+| `topicId` | Suggested scope |
+| --- | --- |
+| `aspice` | Automotive SPICE process assessment and engineering practices |
+| `safety` | Functional safety, ISO 26262, HARA, and ASIL |
+| `autosar` | AUTOSAR Classic/Adaptive, RTE, and BSW |
+| `can` | CAN protocol, frames, signaling, and communication |
+| `eth` | Automotive Ethernet and in-vehicle networking |
+| `misra-c` | MISRA C rules, compliant coding, and static analysis |
+| `testing` | Automotive software testing, verification, and validation |
+| `tools` | Automotive engineering, simulation, debugging, and analysis tools |
+| `templates` | Reusable engineering and documentation templates |
+| `traceability` | Requirements traceability and verification coverage |
+| `cyber` | Automotive cybersecurity and ISO/SAE 21434 |
+| `adas` | ADAS, perception, sensor fusion, and driver assistance |
+| `connected` | Connected vehicles, telematics, and vehicle-to-cloud communication |
+| `ee-arch` | Automotive electrical/electronic architecture and ECU domains |
+| `xev` | Electric, hybrid, and electrified vehicle powertrains |
+| `sdv` | Software-defined vehicle architecture and updates |
+| `linux` | Automotive and embedded Linux platforms |
+| `diagnostics` | OBD-II, UDS, DTCs, and automotive diagnostics |
+
+If the source does not match an existing topic, do not invent a new topic ID in the
+generated content. Flag it for review or update `topic-metadata.json` separately.
+
+## 4. Required Folder Structure
 
 ```text
 content/
@@ -67,7 +96,7 @@ Rules:
 - Contributors do not need to register topics manually.
 - Topic and section metadata come from item fields and optional metadata files.
 
-## 4. Prompt — Generate Flashcard File(s)
+## 5. Prompt — Generate Flashcard File(s)
 
 ```text
 You are an Automotive Engineering educator and technical flashcard designer.
@@ -81,6 +110,10 @@ Requirements:
 - The file name may be any valid filename; it does not determine topic.
 - Each item must have a unique `id`.
 - Each item must include a normalized lowercase `topicId`.
+- Choose `topicId` from this suggested list: `aspice`, `safety`, `autosar`, `can`, `eth`,
+  `misra-c`, `testing`, `tools`, `templates`, `traceability`, `cyber`, `adas`,
+  `connected`, `ee-arch`, `xev`, `sdv`, `linux`, `diagnostics`.
+- Prefer the topic whose scope best matches the source. Do not invent a new topic ID.
 - `sectionId` is optional but supported when applicable.
 - Use one of these `cardType` values only:
   single_word, technical_term, phrase, abbreviation, concept, comparison
@@ -122,7 +155,7 @@ Source data:
 Return JSON only.
 ```
 
-## 5. Prompt — Generate Quiz File(s)
+## 6. Prompt — Generate Quiz File(s)
 
 ```text
 You are an Automotive Engineering quiz designer.
@@ -135,6 +168,10 @@ Requirements:
 - Use `items` as the array of quiz questions.
 - Each item must have a unique `id`.
 - Each item must include a normalized lowercase `topicId`.
+- Choose `topicId` from this suggested list: `aspice`, `safety`, `autosar`, `can`, `eth`,
+  `misra-c`, `testing`, `tools`, `templates`, `traceability`, `cyber`, `adas`,
+  `connected`, `ee-arch`, `xev`, `sdv`, `linux`, `diagnostics`.
+- Prefer the topic whose scope best matches the source. Do not invent a new topic ID.
 - `sectionId` is optional but supported when applicable.
 - Use `questionType` as `single_choice` in the new schema, or `single-choice` for legacy compatibility.
 - Each question must have at least 2 options and exactly one correct answer.
@@ -179,7 +216,7 @@ Source data:
 Return JSON only.
 ```
 
-## 6. Prompt — Generate Topic Metadata File (Optional)
+## 7. Prompt — Generate Topic Metadata File (Optional)
 
 ```text
 You are an Automotive Engineering content catalog manager.
@@ -216,7 +253,7 @@ Source data:
 Return JSON only.
 ```
 
-## 7. Prompt — Review and Correct JSON
+## 8. Prompt — Review and Correct JSON
 
 ```text
 You are a senior Automotive Engineering reviewer.
@@ -251,7 +288,7 @@ Content JSON:
 [PASTE JSON]
 ```
 
-## 8. Recommended Workflow
+## 9. Recommended Workflow
 
 1. Choose the topic.
 2. Draft or update source notes.
@@ -262,7 +299,7 @@ Content JSON:
 7. Mark reviewed items as `approved` only after manual inspection.
 8. Commit changes to GitHub.
 
-## 9. Validation Checklist
+## 10. Validation Checklist
 
 Before content is accepted:
 

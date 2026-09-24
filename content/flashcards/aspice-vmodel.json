@@ -1,0 +1,380 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "aspice-v-model-concept-001",
+      "topicId": "aspice",
+      "sectionId": "v-model",
+      "cardType": "concept",
+      "term": "V-Model",
+      "definitionEn": "A software development model in which each design phase on the left side has a corresponding verification or testing phase on the right side.",
+      "explanationVi": "Mô hình phát triển phần mềm: bên trái là thiết kế, bên phải là kiểm tra tương ứng. Càng đi sâu vào thiết kế, giai đoạn test tương ứng càng gần implementation.",
+      "questionEn": "What is the V-Model in automotive software development?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "V-Model",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "traceability-v-model-concept-002",
+      "topicId": "traceability",
+      "sectionId": "v-model",
+      "cardType": "concept",
+      "term": "Traceability",
+      "definitionEn": "The ability to link requirements and design decisions to their corresponding verification and testing activities.",
+      "explanationVi": "Traceability là khả năng truy xuất từ requirement đến design, code và test tương ứng. Mọi requirement ở SWE.1 phải được verify bởi test ở SWE.6; design ở SWE.2 phải được verify bởi integration test ở SWE.5.",
+      "questionEn": "Why is traceability important in the V-Model?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "V-Model",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe1-technical-term-003",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "cardType": "technical_term",
+      "term": "SWE.1 — Software Requirements Analysis",
+      "definitionEn": "The process of transforming system-level requirements into testable software-level requirements.",
+      "explanationVi": "SWE.1 chuyển system requirements từ SYS.2 thành software requirements có thể kiểm tra được. Ví dụ: yêu cầu xe dừng trong 3 giây được chi tiết hóa thành brake request trong 50 ms qua CAN ID 0x201.",
+      "questionEn": "What is the purpose of SWE.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1 — Software Requirements Analysis",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-srs-abbreviation-004",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "cardType": "abbreviation",
+      "term": "SRS — Software Requirements Specification",
+      "definitionEn": "A document that specifies software requirements and their associated traceability information.",
+      "explanationVi": "SRS là tài liệu đặc tả software requirements. Output của SWE.1 gồm SRS và Traceability Matrix liên kết SRS với system requirements.",
+      "questionEn": "What is the main output document of SWE.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1 — Software Requirements Analysis",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe2-technical-term-005",
+      "topicId": "aspice",
+      "sectionId": "swe-2",
+      "cardType": "technical_term",
+      "term": "SWE.2 — Software Architectural Design",
+      "definitionEn": "The process of designing the overall software architecture, including software components, interfaces, data flow, and control flow.",
+      "explanationVi": "SWE.2 thiết kế kiến trúc tổng thể: chia SW thành SWC, định nghĩa interface, data flow và control flow. Nó tạo ra bản đồ để developer phát triển phần mềm theo cấu trúc thống nhất.",
+      "questionEn": "What does SWE.2 define in a software architecture?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.2 — Software Architectural Design",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sad-abbreviation-006",
+      "topicId": "aspice",
+      "sectionId": "swe-2",
+      "cardType": "abbreviation",
+      "term": "SAD — Software Architecture Document",
+      "definitionEn": "A document describing the software architecture, interfaces, and related architectural traceability.",
+      "explanationVi": "SAD là tài liệu kiến trúc phần mềm. Output của SWE.2 gồm SAD, Interface Specification và traceability từ SAD đến SRS.",
+      "questionEn": "What document is produced by SWE.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.2 — Software Architectural Design",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe3-concept-007",
+      "topicId": "aspice",
+      "sectionId": "swe-3",
+      "cardType": "concept",
+      "term": "SWE.3 — Software Detailed Design and Unit Construction",
+      "definitionEn": "The process of developing detailed designs for individual modules, defining algorithms and function signatures, and constructing the source code.",
+      "explanationVi": "SWE.3 đi sâu vào từng module: thiết kế state machine, algorithm, pseudocode, function signature và viết source code. Đây là bước biến architecture thành thiết kế chi tiết và code thực tế.",
+      "questionEn": "What activities are performed in SWE.3?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.3 — Software Detailed Design and Unit Construction",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sdd-abbreviation-008",
+      "topicId": "aspice",
+      "sectionId": "swe-3",
+      "cardType": "abbreviation",
+      "term": "SDD — Software Detailed Design Document",
+      "definitionEn": "A document describing the detailed design of software modules and their implementation-related details.",
+      "explanationVi": "SDD là tài liệu thiết kế chi tiết phần mềm. SWE.3 tạo ra SDD, source code và unit test specification.",
+      "questionEn": "What is the detailed design document produced in SWE.3?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.3 — Software Detailed Design and Unit Construction",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe4-concept-009",
+      "topicId": "testing",
+      "sectionId": "swe-4",
+      "cardType": "concept",
+      "term": "SWE.4 — Software Unit Verification",
+      "definitionEn": "The process of independently verifying individual software units, such as functions or modules.",
+      "explanationVi": "SWE.4 kiểm tra từng unit, function hoặc module một cách độc lập với phần còn lại của hệ thống. Có thể thực hiện trên PC (SIL) bằng Unity hoặc Google Test.",
+      "questionEn": "What is verified in SWE.4?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.4 — Software Unit Verification",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-code-coverage-technical-term-010",
+      "topicId": "testing",
+      "sectionId": "swe-4",
+      "cardType": "technical_term",
+      "term": "Code Coverage",
+      "definitionEn": "A measurement reported during unit verification, including statement coverage, branch coverage, and MC/DC.",
+      "explanationVi": "Code coverage là báo cáo mức độ bao phủ code trong unit test. Nội dung nguồn đề cập statement coverage, branch coverage và MC/DC.",
+      "questionEn": "Which coverage measures are listed as SWE.4 outputs?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.4 — Software Unit Verification",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe5-concept-011",
+      "topicId": "testing",
+      "sectionId": "swe-5",
+      "cardType": "concept",
+      "term": "SWE.5 — Software Integration and Integration Test",
+      "definitionEn": "The process of combining software components that have passed unit verification and testing the interfaces between them.",
+      "explanationVi": "SWE.5 ghép các component đã pass unit test và kiểm tra interface giữa chúng. Nội dung kiểm tra gồm signal gửi/nhận và yêu cầu timing.",
+      "questionEn": "What is the main purpose of SWE.5?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.5 — Software Integration and Integration Test",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-unit-integration-comparison-012",
+      "topicId": "testing",
+      "sectionId": "swe-4-swe-5",
+      "cardType": "comparison",
+      "term": "Unit Verification vs. Integration Test",
+      "definitionEn": "Unit verification checks individual units independently, while integration testing checks interactions and interfaces between combined components.",
+      "explanationVi": "Unit Test kiểm tra từng function hoặc module riêng lẻ. Integration Test kiểm tra các component sau khi ghép lại, tập trung vào interface, signal và timing.",
+      "questionEn": "What is the difference between SWE.4 and SWE.5?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.4 and SWE.5",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe6-concept-013",
+      "topicId": "testing",
+      "sectionId": "swe-6",
+      "cardType": "concept",
+      "term": "SWE.6 — Software Qualification Test",
+      "definitionEn": "The final software testing process that demonstrates whether the complete software meets the software requirements.",
+      "explanationVi": "SWE.6 là giai đoạn test cuối: kiểm tra toàn bộ software trên target hardware, ECU thực hoặc HIL simulator để chứng minh SW đáp ứng các software requirements từ SWE.1.",
+      "questionEn": "What is the purpose of SWE.6?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.6 — Software Qualification Test",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-qualification-report-technical-term-014",
+      "topicId": "testing",
+      "sectionId": "swe-6",
+      "cardType": "technical_term",
+      "term": "Qualification Test Report",
+      "definitionEn": "A report documenting the results of software qualification testing.",
+      "explanationVi": "Qualification Test Report là báo cáo kết quả qualification test. Theo nội dung nguồn, OEM cần báo cáo này để chứng minh software đáp ứng requirements trước khi delivery.",
+      "questionEn": "What report is produced during SWE.6 to document qualification test results?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.6 — Software Qualification Test",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "traceability-v-model-mapping-015",
+      "topicId": "traceability",
+      "sectionId": "v-model",
+      "cardType": "comparison",
+      "term": "V-Model Verification Mapping",
+      "definitionEn": "SWE.1 corresponds to SWE.6, SWE.2 corresponds to SWE.5, and SWE.3 corresponds to SWE.4 in the V-Model.",
+      "explanationVi": "Ba cặp cần nhớ: SWE.1 ↔ SWE.6 (Requirements ↔ Qualification), SWE.2 ↔ SWE.5 (Architecture ↔ Integration), SWE.3 ↔ SWE.4 (Detailed Design ↔ Unit Verification).",
+      "questionEn": "Which verification and testing phases correspond to SWE.1, SWE.2, and SWE.3?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "V-Model — Traceability Links",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-sequence-016",
+      "topicId": "aspice",
+      "sectionId": "v-model",
+      "cardType": "phrase",
+      "term": "Requirements → Architecture → Detailed Design → Unit → Integration → Qualification",
+      "definitionEn": "The sequence of software development and testing activities represented by SWE.1 through SWE.6.",
+      "explanationVi": "Chuỗi học thuộc: Requirement → Architecture → Detailed Design & Code → Unit Test → Integration Test → Qualification Test. Tương ứng SWE.1 → SWE.2 → SWE.3 → SWE.4 → SWE.5 → SWE.6.",
+      "questionEn": "What is the sequence of SWE.1 through SWE.6 in the V-Model?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "V-Model — SWE.1 to SWE.6",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe1-input-output-017",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "cardType": "comparison",
+      "term": "SWE.1 Input and Output",
+      "definitionEn": "SWE.1 takes system requirements, system architecture, and interface control documents as inputs, and produces the SRS and a traceability matrix as outputs.",
+      "explanationVi": "Input SWE.1: System Requirements (SYS.2), System Architecture (SYS.3), Interface Control Documents. Output: SRS và Traceability Matrix liên kết SRS với System Requirements.",
+      "questionEn": "What are the main inputs and outputs of SWE.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1 — Software Requirements Analysis",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe2-input-output-018",
+      "topicId": "aspice",
+      "sectionId": "swe-2",
+      "cardType": "comparison",
+      "term": "SWE.2 Input and Output",
+      "definitionEn": "SWE.2 takes the SRS from SWE.1 and produces the Software Architecture Document, interface specification, and traceability from SAD to SRS.",
+      "explanationVi": "Input SWE.2: SRS từ SWE.1. Output: SAD, Interface Specification và Traceability từ SAD đến SRS.",
+      "questionEn": "What are the main inputs and outputs of SWE.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.2 — Software Architectural Design",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe3-input-output-019",
+      "topicId": "aspice",
+      "sectionId": "swe-3",
+      "cardType": "comparison",
+      "term": "SWE.3 Input and Output",
+      "definitionEn": "SWE.3 takes the SAD from SWE.2 and produces the detailed design document, source code, and unit test specification.",
+      "explanationVi": "Input SWE.3: SAD từ SWE.2. Output: SDD, Source Code và Unit Test Specification.",
+      "questionEn": "What are the main inputs and outputs of SWE.3?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.3 — Software Detailed Design and Unit Construction",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe4-input-output-020",
+      "topicId": "testing",
+      "sectionId": "swe-4",
+      "cardType": "comparison",
+      "term": "SWE.4 Input and Output",
+      "definitionEn": "SWE.4 takes the detailed design and source code as inputs, and produces the unit test report and code coverage report.",
+      "explanationVi": "Input SWE.4: SDD từ SWE.3 và Source Code. Output: Unit Test Report và Code Coverage Report.",
+      "questionEn": "What are the main inputs and outputs of SWE.4?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.4 — Software Unit Verification",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe5-input-output-021",
+      "topicId": "testing",
+      "sectionId": "swe-5",
+      "cardType": "comparison",
+      "term": "SWE.5 Input and Output",
+      "definitionEn": "SWE.5 takes the SAD and source code that has passed SWE.4, and produces the integration test report and traceability from test to architecture.",
+      "explanationVi": "Input SWE.5: SAD từ SWE.2 và Source Code đã pass SWE.4. Output: Integration Test Report và Traceability từ Test đến Architecture.",
+      "questionEn": "What are the main inputs and outputs of SWE.5?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.5 — Software Integration and Integration Test",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-swe6-input-output-022",
+      "topicId": "testing",
+      "sectionId": "swe-6",
+      "cardType": "comparison",
+      "term": "SWE.6 Input and Output",
+      "definitionEn": "SWE.6 takes the SRS and software that has passed SWE.5, and produces the qualification test specification, qualification test report, and release note.",
+      "explanationVi": "Input SWE.6: SRS từ SWE.1 và SW đã pass SWE.5. Output: Software Qualification Test Specification, Qualification Test Report và Release Note.",
+      "questionEn": "What are the main inputs and outputs of SWE.6?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.6 — Software Qualification Test",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

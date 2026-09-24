@@ -2,25 +2,148 @@
   "schemaVersion": "1.0",
   "topics": [
     {
-      "topicId": "can",
-      "nameEn": "CAN",
-      "nameVi": "GIAO THỨC CAN",
-      "description": "Controller Area Network and differential signaling fundamentals.",
+      "topicId": "aspice",
+      "nameEn": "ASPICE",
+      "nameVi": "ASPICE",
+      "displayName": "ASPICE",
+      "description": "Automotive SPICE process assessment, capability levels, process areas, and engineering practices.",
       "order": 1
+    },
+    {
+      "topicId": "safety",
+      "nameEn": "Functional Safety",
+      "nameVi": "AN TOÀN CHỨC NĂNG",
+      "displayName": "SAFETY",
+      "description": "Automotive functional safety concepts, ISO 26262, HARA, ASIL, and safety engineering.",
+      "order": 2
     },
     {
       "topicId": "autosar",
       "nameEn": "AUTOSAR",
-      "nameVi": "KIẾN TRÚC PHẦN MỀM Ô TÔ",
-      "description": "Vehicle software architecture and ECU integration.",
-      "order": 2
+      "nameVi": "AUTOSAR",
+      "displayName": "AUTOSAR",
+      "description": "AUTOSAR Classic and Adaptive platforms, software architecture, RTE, BSW, and development tools.",
+      "order": 3
     },
     {
-      "topicId": "iso-26262",
-      "nameEn": "ISO 26262",
-      "nameVi": "AN TOÀN CHỨC NĂNG",
-      "description": "Functional safety processes and risk-based engineering practice.",
-      "order": 3
+      "topicId": "can",
+      "nameEn": "CAN",
+      "nameVi": "GIAO THỨC CAN",
+      "displayName": "CAN",
+      "description": "Controller Area Network fundamentals, protocol architecture, frames, signaling, and communication.",
+      "order": 4
+    },
+    {
+      "topicId": "eth",
+      "nameEn": "Automotive Ethernet",
+      "nameVi": "AUTOMOTIVE ETHERNET",
+      "displayName": "ETH",
+      "description": "Automotive Ethernet communication, physical layer, protocols, and in-vehicle networking.",
+      "order": 5
+    },
+    {
+      "topicId": "misra-c",
+      "nameEn": "MISRA C",
+      "nameVi": "MISRA C",
+      "displayName": "MISRA-C",
+      "description": "MISRA C coding guidelines, rule categories, common violations, compliant coding, and static analysis.",
+      "order": 6
+    },
+    {
+      "topicId": "testing",
+      "nameEn": "Automotive Testing",
+      "nameVi": "KIỂM THỬ AUTOMOTIVE",
+      "displayName": "TESTING",
+      "description": "Automotive software testing, verification, validation, test levels, and test techniques.",
+      "order": 7
+    },
+    {
+      "topicId": "tools",
+      "nameEn": "Automotive Engineering Tools",
+      "nameVi": "CÔNG CỤ KỸ THUẬT AUTOMOTIVE",
+      "displayName": "TOOLS",
+      "description": "Development, configuration, simulation, debugging, testing, and static analysis tools.",
+      "order": 8
+    },
+    {
+      "topicId": "templates",
+      "nameEn": "Engineering Templates",
+      "nameVi": "TEMPLATE KỸ THUẬT",
+      "displayName": "TEMPLATES",
+      "description": "Reusable coding templates, documentation templates, project structures, and engineering patterns.",
+      "order": 9
+    },
+    {
+      "topicId": "traceability",
+      "nameEn": "Requirements Traceability",
+      "nameVi": "TRUY VẾT YÊU CẦU",
+      "displayName": "TRACEABILITY",
+      "description": "Requirements traceability, bidirectional links, verification coverage, and engineering evidence.",
+      "order": 10
+    },
+    {
+      "topicId": "cyber",
+      "nameEn": "Automotive Cybersecurity",
+      "nameVi": "AN NINH MẠNG AUTOMOTIVE",
+      "displayName": "CYBER",
+      "description": "Automotive cybersecurity, threat analysis, risk assessment, security mechanisms, and ISO/SAE 21434.",
+      "order": 11
+    },
+    {
+      "topicId": "adas",
+      "nameEn": "Advanced Driver Assistance Systems",
+      "nameVi": "HỆ THỐNG HỖ TRỢ LÁI XE NÂNG CAO",
+      "displayName": "ADAS",
+      "description": "ADAS concepts, perception, sensor fusion, computer vision, and driver assistance functions.",
+      "order": 12
+    },
+    {
+      "topicId": "connected",
+      "nameEn": "Connected Vehicles",
+      "nameVi": "XE KẾT NỐI",
+      "displayName": "CONNECTED",
+      "description": "Connected vehicle technologies, vehicle-to-cloud communication, telematics, and connectivity.",
+      "order": 13
+    },
+    {
+      "topicId": "ee-arch",
+      "nameEn": "E/E Architecture",
+      "nameVi": "KIẾN TRÚC ĐIỆN/ĐIỆN TỬ",
+      "displayName": "E/E ARCH",
+      "description": "Automotive electrical and electronic architecture, ECU domains, networks, and system organization.",
+      "order": 14
+    },
+    {
+      "topicId": "xev",
+      "nameEn": "xEV",
+      "nameVi": "XE ĐIỆN VÀ XE ĐIỆN HÓA",
+      "displayName": "XEV",
+      "description": "Electrified vehicles, hybrid vehicles, battery electric vehicles, and electric powertrain technologies.",
+      "order": 15
+    },
+    {
+      "topicId": "sdv",
+      "nameEn": "Software-Defined Vehicle",
+      "nameVi": "XE ĐỊNH NGHĨA BẰNG PHẦN MỀM",
+      "displayName": "SDV",
+      "description": "Software-defined vehicle architecture, centralized computing, vehicle software platforms, and updates.",
+      "order": 16
+    },
+    {
+      "topicId": "linux",
+      "nameEn": "Automotive Linux",
+      "nameVi": "LINUX AUTOMOTIVE",
+      "displayName": "LINUX",
+      "description": "Linux operating systems, embedded Linux, automotive platforms, and system development.",
+      "order": 17
+    },
+    {
+      "topicId": "diagnostics",
+      "nameEn": "Automotive Diagnostics",
+      "nameVi": "CHẨN ĐOÁN AUTOMOTIVE",
+      "displayName": "DIAGNOSTICS",
+      "description": "Automotive diagnostics, OBD-II, UDS, diagnostic services, DTCs, and diagnostic communication.",
+      "order": 18
     }
   ]
 }
