@@ -1,0 +1,811 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "safety-hara-quiz-001",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What does HARA stand for?",
+      "options": [
+        { "id": "A", "text": "Hazard Analysis and Risk Assessment" },
+        { "id": "B", "text": "Hardware Analysis and Reliability Assessment" },
+        { "id": "C", "text": "Hazard Architecture and Risk Allocation" },
+        { "id": "D", "text": "Hardware Automotive Risk Analysis" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "HARA là Hazard Analysis and Risk Assessment, tức Phân tích mối nguy và đánh giá rủi ro.",
+      "relatedFlashcardIds": ["safety-hara-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "HARA Process",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-002",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which ISO 26262 part contains the core HARA process?",
+      "options": [
+        { "id": "A", "text": "Part 2" },
+        { "id": "B", "text": "Part 3" },
+        { "id": "C", "text": "Part 4" },
+        { "id": "D", "text": "Part 6" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "HARA là quy trình cốt lõi của ISO 26262 Part 3.",
+      "relatedFlashcardIds": ["safety-hara-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "HARA Process",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-003",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What is the main purpose of HARA?",
+      "options": [
+        { "id": "A", "text": "Identify hazards, assess risk, and determine ASIL" },
+        { "id": "B", "text": "Write all software source code" },
+        { "id": "C", "text": "Define the vehicle communication protocol" },
+        { "id": "D", "text": "Perform only hardware testing" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ba mục tiêu chính là xác định Hazard, đánh giá rủi ro và xác định ASIL.",
+      "relatedFlashcardIds": ["safety-hara-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "HARA Process",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-004",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What is an Item in HARA?",
+      "options": [
+        { "id": "A", "text": "The system or function being analyzed" },
+        { "id": "B", "text": "Only the ECU software" },
+        { "id": "C", "text": "Only the vehicle sensor" },
+        { "id": "D", "text": "The final safety test report" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Item là thứ được phân tích trong HARA, ví dụ hệ thống Cruise Control.",
+      "relatedFlashcardIds": ["safety-hara-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 1 - Identify Item",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-005",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What is the output of Step 1?",
+      "options": [
+        { "id": "A", "text": "ASIL Matrix" },
+        { "id": "B", "text": "Item Definition document" },
+        { "id": "C", "text": "Safety Goal only" },
+        { "id": "D", "text": "Test Report" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Bước 1 xác định Item và tạo Item Definition document.",
+      "relatedFlashcardIds": ["safety-hara-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 1 - Identify Item",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-006",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What should be clearly defined for an Item?",
+      "options": [
+        { "id": "A", "text": "Only its software version" },
+        { "id": "B", "text": "Its boundaries, ECUs, sensors, actuators, and interfaces" },
+        { "id": "C", "text": "Only its vehicle color" },
+        { "id": "D", "text": "Only its production cost" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Item phải xác định rõ ranh giới, ECU, sensor, actuator và interface liên quan.",
+      "relatedFlashcardIds": ["safety-hara-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 1 - Identify Item",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-007",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of Step 2?",
+      "options": [
+        { "id": "A", "text": "Identify potential Hazardous Events" },
+        { "id": "B", "text": "Assign software developers" },
+        { "id": "C", "text": "Select a programming language" },
+        { "id": "D", "text": "Define production costs" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Bước 2 brainstorm các lỗi hoặc tình huống có thể tạo ra Hazardous Events.",
+      "relatedFlashcardIds": ["safety-hara-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 2 - Identify Hazardous Events",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-008",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which Hazard describes uncontrolled acceleration?",
+      "options": [
+        { "id": "A", "text": "H1 Unintended Acceleration" },
+        { "id": "B", "text": "H2 No Deceleration on Demand" },
+        { "id": "C", "text": "H3 Unintended Engagement" },
+        { "id": "D", "text": "H4 Loss of Set Speed" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "H1 là Unintended Acceleration: hệ thống tăng tốc không kiểm soát được.",
+      "relatedFlashcardIds": ["safety-hara-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 2 - Identify Hazardous Events",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-009",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which fault type is associated with Unintended Acceleration?",
+      "options": [
+        { "id": "A", "text": "Omission fault" },
+        { "id": "B", "text": "Commission fault" },
+        { "id": "C", "text": "Value fault" },
+        { "id": "D", "text": "Exposure fault" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "H1 Unintended Acceleration được phân loại là Commission fault.",
+      "relatedFlashcardIds": ["safety-hara-008", "safety-hara-012"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 2 - Identify Hazardous Events",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-010",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which fault type means a required action is not performed?",
+      "options": [
+        { "id": "A", "text": "Commission fault" },
+        { "id": "B", "text": "Omission fault" },
+        { "id": "C", "text": "Value fault" },
+        { "id": "D", "text": "Severity fault" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Omission fault là lỗi khiến hệ thống không thực hiện hành động cần thiết.",
+      "relatedFlashcardIds": ["safety-hara-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 2 - Identify Hazardous Events",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-011",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which fault type means the system uses an incorrect value?",
+      "options": [
+        { "id": "A", "text": "Commission fault" },
+        { "id": "B", "text": "Omission fault" },
+        { "id": "C", "text": "Value fault" },
+        { "id": "D", "text": "Control fault" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Value fault là lỗi liên quan đến giá trị không đúng.",
+      "relatedFlashcardIds": ["safety-hara-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 2 - Identify Hazardous Events",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-012",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What does Operational Situation describe?",
+      "options": [
+        { "id": "A", "text": "The operating context in which a hazard may occur" },
+        { "id": "B", "text": "The ECU source code structure" },
+        { "id": "C", "text": "The manufacturing process" },
+        { "id": "D", "text": "The software compiler" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Operational Situation mô tả hoàn cảnh vận hành khi Hazard có thể xảy ra.",
+      "relatedFlashcardIds": ["safety-hara-015"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 3 - Identify Operational Situations",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-013",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which Operational Situation represents highway driving at 100-130 km/h?",
+      "options": [
+        { "id": "A", "text": "OS1" },
+        { "id": "B", "text": "OS2" },
+        { "id": "C", "text": "OS3" },
+        { "id": "D", "text": "H1" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "OS1 là đang chạy trên cao tốc ở 100-130 km/h.",
+      "relatedFlashcardIds": ["safety-hara-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 3 - Identify Operational Situations",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-014",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which Operational Situation is a residential area at 30-60 km/h?",
+      "options": [
+        { "id": "A", "text": "OS1" },
+        { "id": "B", "text": "OS2" },
+        { "id": "C", "text": "OS3" },
+        { "id": "D", "text": "H2" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "OS2 là khu dân cư, tốc độ 30-60 km/h, có người đi bộ và trẻ em.",
+      "relatedFlashcardIds": ["safety-hara-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 3 - Identify Operational Situations",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-015",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which Operational Situation is a parking area at 0-5 km/h?",
+      "options": [
+        { "id": "A", "text": "OS1" },
+        { "id": "B", "text": "OS2" },
+        { "id": "C", "text": "OS3" },
+        { "id": "D", "text": "H3" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "OS3 là bãi đậu xe ở 0-5 km/h, có nhiều vật cản và tường.",
+      "relatedFlashcardIds": ["safety-hara-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 3 - Identify Operational Situations",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-016",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What does S represent in HARA?",
+      "options": [
+        { "id": "A", "text": "Severity" },
+        { "id": "B", "text": "Safety State" },
+        { "id": "C", "text": "Sensor" },
+        { "id": "D", "text": "System" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "S là Severity, mức độ nghiêm trọng của hậu quả.",
+      "relatedFlashcardIds": ["safety-hara-019"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 4 - S, E, C Assessment",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-017",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What does E represent in HARA?",
+      "options": [
+        { "id": "A", "text": "Error" },
+        { "id": "B", "text": "Exposure" },
+        { "id": "C", "text": "Execution" },
+        { "id": "D", "text": "Environment" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "E là Exposure, mức độ thường xuyên của tình huống vận hành.",
+      "relatedFlashcardIds": ["safety-hara-020"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 4 - S, E, C Assessment",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-018",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What does C represent in HARA?",
+      "options": [
+        { "id": "A", "text": "Controllability" },
+        { "id": "B", "text": "Communication" },
+        { "id": "C", "text": "Configuration" },
+        { "id": "D", "text": "Compliance" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "C là Controllability, khả năng driver kiểm soát hoặc tránh tình huống nguy hiểm.",
+      "relatedFlashcardIds": ["safety-hara-021"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 4 - S, E, C Assessment",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-019",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which Severity level means fatal or non-recoverable injury?",
+      "options": [
+        { "id": "A", "text": "S0" },
+        { "id": "B", "text": "S1" },
+        { "id": "C", "text": "S2" },
+        { "id": "D", "text": "S3" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "S3 là tử vong hoặc không hồi phục.",
+      "relatedFlashcardIds": ["safety-hara-022"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 4 - Severity",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-020",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which Exposure level is greater than 10% of the time?",
+      "options": [
+        { "id": "A", "text": "E1" },
+        { "id": "B", "text": "E2" },
+        { "id": "C", "text": "E3" },
+        { "id": "D", "text": "E4" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "E4 là mức Exposure cao, lớn hơn 10% thời gian.",
+      "relatedFlashcardIds": ["safety-hara-023"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 4 - Exposure",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-021",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which Controllability level means less than 50% of drivers can avoid the situation?",
+      "options": [
+        { "id": "A", "text": "C0" },
+        { "id": "B", "text": "C1" },
+        { "id": "C", "text": "C2" },
+        { "id": "D", "text": "C3" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "C3 là khó kiểm soát, với dưới 50% driver có thể tránh được.",
+      "relatedFlashcardIds": ["safety-hara-024"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 4 - Controllability",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-022",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What does ASIL stand for?",
+      "options": [
+        { "id": "A", "text": "Automotive Safety Integrity Level" },
+        { "id": "B", "text": "Automotive System Integration Layer" },
+        { "id": "C", "text": "Automotive Safety Interface Logic" },
+        { "id": "D", "text": "Automotive System Integrity Language" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ASIL là Automotive Safety Integrity Level.",
+      "relatedFlashcardIds": ["safety-hara-025"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 5 - ASIL Matrix",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-023",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which parameters are used with the ASIL Matrix?",
+      "options": [
+        { "id": "A", "text": "S, E, and C" },
+        { "id": "B", "text": "Voltage, Current, and Power" },
+        { "id": "C", "text": "CPU, RAM, and ROM" },
+        { "id": "D", "text": "Speed, Torque, and Temperature" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ASIL được xác định từ Severity, Exposure và Controllability thông qua ASIL Matrix.",
+      "relatedFlashcardIds": ["safety-hara-026"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 5 - ASIL Matrix",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-024",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What ASIL results from H1 with S3, E4, and C3 in the example?",
+      "options": [
+        { "id": "A", "text": "ASIL A" },
+        { "id": "B", "text": "ASIL B" },
+        { "id": "C", "text": "ASIL C" },
+        { "id": "D", "text": "ASIL D" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Ví dụ H1 trên cao tốc có S3 + E4 + C3 và kết quả là ASIL D.",
+      "relatedFlashcardIds": ["safety-hara-027", "safety-hara-033"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 5 - ASIL Matrix",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-025",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of a Safety Goal?",
+      "options": [
+        { "id": "A", "text": "Define a high-level safety objective" },
+        { "id": "B", "text": "Define the ECU production cost" },
+        { "id": "C", "text": "Choose the programming language" },
+        { "id": "D", "text": "Specify the vehicle paint color" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Safety Goal xác định mục tiêu an toàn cấp cao cần đạt để xử lý Hazard.",
+      "relatedFlashcardIds": ["safety-hara-028"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 6 - Safety Goals",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-026",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What is the Safe State for SG-01 in the example?",
+      "options": [
+        { "id": "A", "text": "CC disabled" },
+        { "id": "B", "text": "CC forced to maximum speed" },
+        { "id": "C", "text": "CC remains fully active" },
+        { "id": "D", "text": "Powertrain acceleration enabled" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Safe State được nêu cho các ví dụ là CC disabled.",
+      "relatedFlashcardIds": ["safety-hara-029", "safety-hara-030"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 6 - Safety Goals",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-027",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What does SG-02 require when the driver requests deactivation?",
+      "options": [
+        { "id": "A", "text": "CC shall disengage within 500 ms" },
+        { "id": "B", "text": "CC shall accelerate immediately" },
+        { "id": "C", "text": "CC shall engage below 30 km/h" },
+        { "id": "D", "text": "CC shall ignore the driver request" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SG-02 yêu cầu CC phải ngắt trong vòng 500 ms khi driver yêu cầu deactivation.",
+      "relatedFlashcardIds": ["safety-hara-031"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 6 - Safety Goals",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-028",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What condition is specified by SG-03?",
+      "options": [
+        { "id": "A", "text": "CC shall not engage unless vehicle speed exceeds 30 km/h" },
+        { "id": "B", "text": "CC must always engage below 30 km/h" },
+        { "id": "C", "text": "CC must accelerate above 130 km/h" },
+        { "id": "D", "text": "CC must disengage after exactly 500 ms" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SG-03 quy định CC không được engage nếu tốc độ xe không vượt quá 30 km/h.",
+      "relatedFlashcardIds": ["safety-hara-032"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 6 - Safety Goals",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-029",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What ASIL is assigned to H2 in the example?",
+      "options": [
+        { "id": "A", "text": "ASIL A" },
+        { "id": "B", "text": "ASIL B" },
+        { "id": "C", "text": "ASIL C" },
+        { "id": "D", "text": "ASIL D" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "H2 No Deceleration on Demand được gán ASIL C trong dữ liệu.",
+      "relatedFlashcardIds": ["safety-hara-034"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 6 - Safety Goals",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-030",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "What ASIL is assigned to H3 in the example?",
+      "options": [
+        { "id": "A", "text": "ASIL A" },
+        { "id": "B", "text": "ASIL B" },
+        { "id": "C", "text": "ASIL C" },
+        { "id": "D", "text": "ASIL D" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "H3 Unintended Engagement được gán ASIL B trong dữ liệu.",
+      "relatedFlashcardIds": ["safety-hara-035"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 6 - Safety Goals",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-031",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence correctly represents the six HARA steps?",
+      "options": [
+        { "id": "A", "text": "Item → Hazardous Events → Operational Situations → S/E/C → ASIL → Safety Goals" },
+        { "id": "B", "text": "ASIL → Item → Safety Goals → Hazard → S/E/C → Testing" },
+        { "id": "C", "text": "Safety Goals → Item → Testing → ASIL → Hazard → S/E/C" },
+        { "id": "D", "text": "Item → Testing → Hazard → Software → ASIL → Safety Goals" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "6 bước lần lượt là Item, Hazardous Events, Operational Situations, S/E/C, ASIL Matrix và Safety Goals.",
+      "relatedFlashcardIds": ["safety-hara-036", "safety-hara-037"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "6 Steps HARA",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-032",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Why is HARA important in the safety lifecycle?",
+      "options": [
+        { "id": "A", "text": "Later safety activities are based on HARA results" },
+        { "id": "B", "text": "It replaces all software testing" },
+        { "id": "C", "text": "It defines only vehicle styling" },
+        { "id": "D", "text": "It eliminates the need for Safety Goals" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "HARA rất quan trọng vì các hoạt động safety sau đó đều dựa trên kết quả HARA.",
+      "relatedFlashcardIds": ["safety-hara-038"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "HARA Process",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-033",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly distinguishes Hazard from Operational Situation?",
+      "options": [
+        { "id": "A", "text": "Hazard describes the danger; Operational Situation describes the operating context" },
+        { "id": "B", "text": "Hazard is the ECU; Operational Situation is the software" },
+        { "id": "C", "text": "Hazard is an ASIL; Operational Situation is a Safety Goal" },
+        { "id": "D", "text": "They are exactly the same concept" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Hazard trả lời 'nguy hiểm gì?', còn Operational Situation trả lời 'trong hoàn cảnh nào?'.",
+      "relatedFlashcardIds": ["safety-hara-040"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Steps 2-3",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-034",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which HARA step evaluates Severity, Exposure, and Controllability?",
+      "options": [
+        { "id": "A", "text": "Step 1" },
+        { "id": "B", "text": "Step 2" },
+        { "id": "C", "text": "Step 4" },
+        { "id": "D", "text": "Step 6" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Bước 4 đánh giá ba yếu tố S, E và C.",
+      "relatedFlashcardIds": ["safety-hara-019", "safety-hara-020", "safety-hara-021"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 4 - S, E, C Assessment",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hara-quiz-035",
+      "topicId": "safety",
+      "sectionId": "hara-process",
+      "questionType": "single_choice",
+      "questionEn": "Which HARA step determines the ASIL using the ASIL Matrix?",
+      "options": [
+        { "id": "A", "text": "Step 2" },
+        { "id": "B", "text": "Step 3" },
+        { "id": "C", "text": "Step 4" },
+        { "id": "D", "text": "Step 5" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Bước 5 sử dụng ASIL Matrix để xác định ASIL từ kết quả đánh giá S, E và C.",
+      "relatedFlashcardIds": ["safety-hara-026"],
+      "source": {
+        "type": "technical_document",
+        "document": "HARA Process",
+        "section": "Step 5 - ASIL Matrix",
+        "reference": "content-source/ISO26262/HARA-Process.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

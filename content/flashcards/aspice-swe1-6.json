@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "aspice-swe-bp-001",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "cardType": "concept",
+      "term": "SWE.1 Base Practices",
+      "definitionEn": "Elicit, define, trace, ensure consistency, and communicate software requirements.",
+      "explanationVi": "Nhớ: Lấy → Viết → Trace → Kiểm → Nói. SWE.1 tập trung vào Software Requirements.",
+      "questionEn": "What are the five main Base Practices of SWE.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-002",
+      "topicId": "aspice",
+      "sectionId": "swe-2",
+      "cardType": "concept",
+      "term": "SWE.2 Base Practices",
+      "definitionEn": "Develop architecture, allocate requirements, define interfaces, describe dynamic behavior, and trace to requirements.",
+      "explanationVi": "Nhớ: Vẽ → Chia → Nối → Chạy → Trace. SWE.2 tập trung vào Software Architecture.",
+      "questionEn": "What are the five main Base Practices of SWE.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-003",
+      "topicId": "aspice",
+      "sectionId": "swe-3",
+      "cardType": "concept",
+      "term": "SWE.3 Base Practices",
+      "definitionEn": "Develop detailed design, define unit interfaces, describe behavior, define resource objectives, and construct software units.",
+      "explanationVi": "Nhớ: Thiết → Nối → Chạy → Tài nguyên → Code. SWE.3 đi từ detailed design đến coding.",
+      "questionEn": "What are the five main Base Practices of SWE.3?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-004",
+      "topicId": "aspice",
+      "sectionId": "swe-4",
+      "cardType": "concept",
+      "term": "SWE.4 Base Practices",
+      "definitionEn": "Develop unit tests, verify units, establish traceability, ensure consistency, and summarize results.",
+      "explanationVi": "Nhớ: Viết → Test → Trace → Kiểm → Báo. SWE.4 verify từng SW unit.",
+      "questionEn": "What are the five main Base Practices of SWE.4?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-005",
+      "topicId": "aspice",
+      "sectionId": "swe-5",
+      "cardType": "concept",
+      "term": "SWE.5 Base Practices",
+      "definitionEn": "Develop integration tests, integrate software items, perform integration tests, trace to architecture, and summarize results.",
+      "explanationVi": "Nhớ: Viết → Ghép → Test → Trace → Báo. SWE.5 kiểm tra việc tích hợp các SW component.",
+      "questionEn": "What are the five main Base Practices of SWE.5?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-006",
+      "topicId": "aspice",
+      "sectionId": "swe-6",
+      "cardType": "concept",
+      "term": "SWE.6 Base Practices",
+      "definitionEn": "Develop qualification tests, perform them, trace to SRS, ensure full requirement coverage, and summarize results.",
+      "explanationVi": "Nhớ: Viết → Test → Trace → Kiểm → Báo. SWE.6 verify toàn bộ SW trên target hardware.",
+      "questionEn": "What are the five main Base Practices of SWE.6?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-007",
+      "topicId": "aspice",
+      "sectionId": "swe-bp-memory",
+      "cardType": "phrase",
+      "term": "SWE.1 memory phrase",
+      "definitionEn": "Lấy → Viết → Trace → Kiểm → Nói",
+      "explanationVi": "Dùng 5 từ này để nhớ Elicit → Define → Trace → Consistency → Communicate.",
+      "questionEn": "What is an easy Vietnamese memory phrase for SWE.1 BPs?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-008",
+      "topicId": "aspice",
+      "sectionId": "swe-bp-memory",
+      "cardType": "phrase",
+      "term": "SWE.2 memory phrase",
+      "definitionEn": "Vẽ → Chia → Nối → Chạy → Trace",
+      "explanationVi": "Dùng 5 từ này để nhớ Develop → Allocate → Interface → Dynamic → Traceability.",
+      "questionEn": "What is an easy Vietnamese memory phrase for SWE.2 BPs?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-009",
+      "topicId": "aspice",
+      "sectionId": "swe-bp-memory",
+      "cardType": "phrase",
+      "term": "SWE.3 memory phrase",
+      "definitionEn": "Thiết → Nối → Chạy → Tài nguyên → Code",
+      "explanationVi": "Dùng 5 từ này để nhớ Design → Interface → Dynamic → Resource → Construct.",
+      "questionEn": "What is an easy Vietnamese memory phrase for SWE.3 BPs?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-010",
+      "topicId": "aspice",
+      "sectionId": "swe-bp-memory",
+      "cardType": "phrase",
+      "term": "SWE.4 memory phrase",
+      "definitionEn": "Viết → Test → Trace → Kiểm → Báo",
+      "explanationVi": "Dùng 5 từ này để nhớ Test Specification → Verify → Traceability → Consistency → Summarize.",
+      "questionEn": "What is an easy Vietnamese memory phrase for SWE.4 BPs?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-011",
+      "topicId": "aspice",
+      "sectionId": "swe-bp-memory",
+      "cardType": "phrase",
+      "term": "SWE.5 memory phrase",
+      "definitionEn": "Viết → Ghép → Test → Trace → Báo",
+      "explanationVi": "Dùng 5 từ này để nhớ Test Specification → Integrate → Test → Traceability → Summarize.",
+      "questionEn": "What is an easy Vietnamese memory phrase for SWE.5 BPs?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-bp-012",
+      "topicId": "aspice",
+      "sectionId": "swe-bp-memory",
+      "cardType": "phrase",
+      "term": "SWE.6 memory phrase",
+      "definitionEn": "Viết → Test → Trace → Kiểm → Báo",
+      "explanationVi": "Dùng 5 từ này để nhớ Test Specification → Qualification Test → Traceability → Consistency → Summarize.",
+      "questionEn": "What is an easy Vietnamese memory phrase for SWE.6 BPs?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

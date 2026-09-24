@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "aspice-man3-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "questionType": "single_choice",
+      "questionEn": "What is the primary focus of MAN.3?",
+      "options": [
+        { "id": "A", "text": "Managing project scope, estimates, resources, schedule and progress" },
+        { "id": "B", "text": "Performing independent quality assurance" },
+        { "id": "C", "text": "Controlling software configuration items only" },
+        { "id": "D", "text": "Implementing software requirements" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MAN.3 tập trung quản lý project: scope, estimate, resource, schedule, dependency, progress và corrective action.",
+      "relatedFlashcardIds": ["aspice-man3-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "MAN.3 Project Management",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-project-plan-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "questionType": "single_choice",
+      "questionEn": "Which evidence best supports project planning?",
+      "options": [
+        { "id": "A", "text": "Project Plan, WBS and Estimate Baseline" },
+        { "id": "B", "text": "Only a final test report" },
+        { "id": "C", "text": "Only a defect list" },
+        { "id": "D", "text": "Only a source-code repository" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Evidence tối thiểu cho planning là Project Plan, WBS và Estimate Baseline, thể hiện scope, work, resource và schedule.",
+      "relatedFlashcardIds": ["aspice-project-plan-004", "aspice-wbs-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 1 - Scope, estimate, resources, schedule, dependencies and feasibility",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-feasibility-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "questionType": "single_choice",
+      "questionEn": "What does feasibility assess?",
+      "options": [
+        { "id": "A", "text": "Whether the project can be achieved with the available constraints" },
+        { "id": "B", "text": "Whether every developer follows coding style" },
+        { "id": "C", "text": "Whether all defects are already closed" },
+        { "id": "D", "text": "Whether configuration items are archived" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Feasibility kiểm tra project có khả thi với scope, thời gian và resource hiện có hay không.",
+      "relatedFlashcardIds": ["aspice-feasibility-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 1 - Feasibility",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-variance-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "questionType": "single_choice",
+      "questionEn": "What should happen when a significant project variance is detected?",
+      "options": [
+        { "id": "A", "text": "Analyze it and determine corrective action or re-plan when needed" },
+        { "id": "B", "text": "Ignore it until project completion" },
+        { "id": "C", "text": "Delete the original plan" },
+        { "id": "D", "text": "Only report the number without action" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Variance không chỉ để báo cáo; cần phân tích và quyết định corrective action hoặc re-plan khi cần.",
+      "relatedFlashcardIds": ["aspice-variance-007", "aspice-corrective-action-008", "aspice-replan-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 2 - Progress, variance and corrective action",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-man5-quiz-005",
+      "topicId": "aspice",
+      "sectionId": "man5-risk-management",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best represents the basic MAN.5 risk flow?",
+      "options": [
+        { "id": "A", "text": "Identify → Analyze → Treat → Monitor" },
+        { "id": "B", "text": "Measure → Code → Test → Release" },
+        { "id": "C", "text": "Plan → Compile → Link → Deploy" },
+        { "id": "D", "text": "Review → Archive → Delete → Close" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MAN.5 có thể nhớ nhanh bằng I-A-T-M: Identify, Analyze, Treat và Monitor risk.",
+      "relatedFlashcardIds": ["aspice-man5-002", "aspice-risk-flow-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "MAN.5 Risk Management",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-risk-register-quiz-006",
+      "topicId": "aspice",
+      "sectionId": "man5-risk-management",
+      "questionType": "single_choice",
+      "questionEn": "Which information should be present in a useful risk register?",
+      "options": [
+        { "id": "A", "text": "Risk, trigger, owner, mitigation, due date and status" },
+        { "id": "B", "text": "Only the risk title" },
+        { "id": "C", "text": "Only the project name" },
+        { "id": "D", "text": "Only the final project cost" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Risk register/RAID cần đủ thông tin để theo dõi và hành động, đặc biệt trigger, owner, mitigation, due date và status.",
+      "relatedFlashcardIds": ["aspice-risk-register-011", "aspice-risk-trigger-012", "aspice-risk-owner-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 3 - Risk register",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-mitigation-quiz-007",
+      "topicId": "aspice",
+      "sectionId": "man5-risk-management",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of risk mitigation?",
+      "options": [
+        { "id": "A", "text": "Reduce the likelihood or impact of a risk" },
+        { "id": "B", "text": "Remove the need to monitor the project" },
+        { "id": "C", "text": "Replace the project plan" },
+        { "id": "D", "text": "Guarantee that the risk cannot occur" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Mitigation nhằm giảm khả năng xảy ra hoặc giảm tác động của risk; không có nghĩa là luôn loại bỏ hoàn toàn risk.",
+      "relatedFlashcardIds": ["aspice-mitigation-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 3 - Risk identification to mitigation/closure",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-man6-quiz-008",
+      "topicId": "aspice",
+      "sectionId": "man6-measurement",
+      "questionType": "single_choice",
+      "questionEn": "What should measurement start from?",
+      "options": [
+        { "id": "A", "text": "An information need" },
+        { "id": "B", "text": "A random metric" },
+        { "id": "C", "text": "A dashboard design" },
+        { "id": "D", "text": "A completed project" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MAN.6 bắt đầu từ information need: management cần biết điều gì để hỗ trợ decision.",
+      "relatedFlashcardIds": ["aspice-man6-003", "aspice-information-need-015"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 4 - Information need to metric and decision",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-measurement-flow-quiz-009",
+      "topicId": "aspice",
+      "sectionId": "man6-measurement",
+      "questionType": "single_choice",
+      "questionEn": "Which flow best describes MAN.6?",
+      "options": [
+        { "id": "A", "text": "Need → Measure → Data → Analyze → Decide" },
+        { "id": "B", "text": "Code → Build → Flash → Drive" },
+        { "id": "C", "text": "Risk → Close → Delete → Report" },
+        { "id": "D", "text": "Scope → Test → Archive → Release" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MAN.6 biến information need thành metric, data và analysis để tạo information phục vụ decision.",
+      "relatedFlashcardIds": ["aspice-measurement-flow-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "MAN.6 Measurement",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-dashboard-quiz-010",
+      "topicId": "aspice",
+      "sectionId": "man6-measurement",
+      "questionType": "single_choice",
+      "questionEn": "What makes a management dashboard useful?",
+      "options": [
+        { "id": "A", "text": "It connects measurement results to decisions or actions" },
+        { "id": "B", "text": "It contains as many metrics as possible" },
+        { "id": "C", "text": "It only displays historical data" },
+        { "id": "D", "text": "It replaces project management" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Dashboard tốt không chỉ báo cáo; metric/threshold phải hỗ trợ nhận biết vấn đề và thực hiện action.",
+      "relatedFlashcardIds": ["aspice-dashboard-018", "aspice-action-rule-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Measurement dashboard and action rule",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-man-boundary-quiz-011",
+      "topicId": "aspice",
+      "sectionId": "management-boundary",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly describes the MAN/SUP boundary?",
+      "options": [
+        { "id": "A", "text": "MAN manages project, risk and measurement; it does not replace SUP processes such as QA or CM" },
+        { "id": "B", "text": "MAN owns every supporting process in the project" },
+        { "id": "C", "text": "SUP replaces project management" },
+        { "id": "D", "text": "MAN.5 is the configuration management process" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MAN quản trị project/risk/measurement; không sở hữu thay các process hỗ trợ như QA hoặc Configuration Management.",
+      "relatedFlashcardIds": ["aspice-man-boundary-019"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Boundary / handoff",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pre-sales-quiz-012",
+      "topicId": "aspice",
+      "sectionId": "pre-sales-delivery",
+      "questionType": "single_choice",
+      "questionEn": "How can MAN.5 support pre-sales?",
+      "options": [
+        { "id": "A", "text": "Risk analysis can inform contingency in effort, schedule or proposal planning" },
+        { "id": "B", "text": "Risk management is only performed after project completion" },
+        { "id": "C", "text": "Risk analysis replaces scope definition" },
+        { "id": "D", "text": "Risk management eliminates the need for estimates" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Trong pre-sales, risk analysis giúp nhận diện uncertainty và hỗ trợ quyết định contingency cho effort, schedule hoặc proposal.",
+      "relatedFlashcardIds": ["aspice-pre-sales-delivery-020"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Pre-sales & Delivery",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

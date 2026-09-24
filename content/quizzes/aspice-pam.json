@@ -1,0 +1,435 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "aspice-pam-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "pam-foundation",
+      "questionType": "single_choice",
+      "questionEn": "What is the main difference between PRM and PAM?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PRM defines process expectations; PAM assesses process capability"
+        },
+        {
+          "id": "B",
+          "text": "PRM defines ratings; PAM defines project schedules"
+        },
+        {
+          "id": "C",
+          "text": "PRM manages work products; PAM creates software requirements"
+        },
+        {
+          "id": "D",
+          "text": "PRM is only for safety; PAM is only for software"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PRM mô tả process cần đạt gì; PAM cung cấp model để đánh giá process được thực hiện tốt đến mức nào.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-001"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PRM vs PAM"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "capability-assessment",
+      "questionType": "single_choice",
+      "questionEn": "What does the process dimension identify in an assessment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The capability level achieved"
+        },
+        {
+          "id": "B",
+          "text": "Which process is being assessed"
+        },
+        {
+          "id": "C",
+          "text": "The project budget"
+        },
+        {
+          "id": "D",
+          "text": "The number of work products"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Process dimension xác định đang đánh giá process nào; capability dimension xác định process đó đạt capability ở mức nào.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-002"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Process dimension vs Capability dimension"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "questionType": "single_choice",
+      "questionEn": "What does PA1.1 assess?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whether the process is performed and achieves its outcomes"
+        },
+        {
+          "id": "B",
+          "text": "Whether organizational processes are deployed"
+        },
+        {
+          "id": "C",
+          "text": "Whether work products are controlled"
+        },
+        {
+          "id": "D",
+          "text": "Whether the process is formally defined at organization level"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PA1.1 là Process Performance: kiểm tra process có được thực hiện và đạt process outcomes hay không.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-004"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PA1.1 Process Performance"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "questionType": "single_choice",
+      "questionEn": "What is the focus of PA2.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Defining the organizational process"
+        },
+        {
+          "id": "B",
+          "text": "Managing process performance through planning, monitoring, and adjustment"
+        },
+        {
+          "id": "C",
+          "text": "Deploying the process into a project"
+        },
+        {
+          "id": "D",
+          "text": "Determining the process scope"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "PA2.1 là Performance Management: tập trung vào planning, monitoring và adjustment của process performance.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-005"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PA2.1 Performance Management"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-005",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "questionType": "single_choice",
+      "questionEn": "What does PA2.2 assess?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whether work products are appropriately managed and controlled"
+        },
+        {
+          "id": "B",
+          "text": "Whether process outcomes exist"
+        },
+        {
+          "id": "C",
+          "text": "Whether the organization has a defined process"
+        },
+        {
+          "id": "D",
+          "text": "Whether a capability level is requested by the customer"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PA2.2 là Work Product Management: tập trung vào việc quản lý và kiểm soát work products.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-006"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PA2.2 Work Product Management"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-006",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "questionType": "single_choice",
+      "questionEn": "What does PA3.1 assess?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whether a defined process is established at organizational level"
+        },
+        {
+          "id": "B",
+          "text": "Whether the process is performed once"
+        },
+        {
+          "id": "C",
+          "text": "Whether work products are reviewed"
+        },
+        {
+          "id": "D",
+          "text": "Whether evidence has been sampled"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PA3.1 là Process Definition: kiểm tra organization có process chuẩn được định nghĩa hay chưa.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-007"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PA3.1 Process Definition"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-007",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "questionType": "single_choice",
+      "questionEn": "What does PA3.2 assess?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whether the defined process is deployed in the project or environment"
+        },
+        {
+          "id": "B",
+          "text": "Whether the process achieves its first outcome"
+        },
+        {
+          "id": "C",
+          "text": "Whether work products are controlled"
+        },
+        {
+          "id": "D",
+          "text": "Whether the assessment uses sampling"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PA3.2 là Process Deployment: kiểm tra process chuẩn có thực sự được triển khai vào project hoặc environment hay không.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-008"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PA3.2 Process Deployment"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-008",
+      "topicId": "aspice",
+      "sectionId": "rating",
+      "questionType": "single_choice",
+      "questionEn": "What does the rating 'F' mean in N/P/L/F?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fully achieved"
+        },
+        {
+          "id": "B",
+          "text": "Functionally defined"
+        },
+        {
+          "id": "C",
+          "text": "Formally reviewed"
+        },
+        {
+          "id": "D",
+          "text": "Fully documented"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "F = Fully achieved. N/P/L/F lần lượt là Not, Partially, Largely và Fully achieved.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-009"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "N/P/L/F Rating"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-009",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "questionType": "single_choice",
+      "questionEn": "Which PA rating combination is required for CL2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PA1.1 = F; PA2.1 and PA2.2 = L or F"
+        },
+        {
+          "id": "B",
+          "text": "PA1.1 = L; PA2.1 and PA2.2 = P"
+        },
+        {
+          "id": "C",
+          "text": "PA1.1 = F; PA2.1 = N; PA2.2 = P"
+        },
+        {
+          "id": "D",
+          "text": "PA1.1, PA2.1, PA2.2 all = P"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo capability rules trong source: CL2 cần PA1.1 = F và PA2.1, PA2.2 đạt L hoặc F.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-012"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Capability Level"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-010",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "questionType": "single_choice",
+      "questionEn": "Which combination is required for CL3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PA1.1, PA2.1, PA2.2 = F; PA3.1 and PA3.2 = L or F"
+        },
+        {
+          "id": "B",
+          "text": "PA1.1 = L; all other PAs = P"
+        },
+        {
+          "id": "C",
+          "text": "PA1.1 = F; PA2.1 and PA2.2 = P"
+        },
+        {
+          "id": "D",
+          "text": "Only PA3.1 and PA3.2 must be F"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CL3 cần PA1.1, PA2.1, PA2.2 = F; PA3.1 và PA3.2 phải đạt L hoặc F.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-013"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Capability Level"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-011",
+      "topicId": "aspice",
+      "sectionId": "assessment",
+      "questionType": "single_choice",
+      "questionEn": "What is the correct assessment flow?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Scope → Sampling → Evidence → Rating → Aggregate → Capability → Gap"
+        },
+        {
+          "id": "B",
+          "text": "Capability → Scope → Rating → Evidence → Sampling"
+        },
+        {
+          "id": "C",
+          "text": "Gap → Capability → Scope → Evidence → Rating"
+        },
+        {
+          "id": "D",
+          "text": "Rating → Capability → Scope → Sampling → Evidence"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Luồng cốt lõi: xác định scope, sampling, thu evidence, rating, aggregate rồi xác định capability và gap.",
+      "relatedFlashcardIds": [
+        "aspice-pam-foundation-014"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Evidence Logic"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-quiz-012",
+      "topicId": "aspice",
+      "sectionId": "assessment",
+      "questionType": "single_choice",
+      "questionEn": "Which statement about evidence is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Having a document automatically proves the process is achieved"
+        },
+        {
+          "id": "B",
+          "text": "Evidence should be relevant, objective, sufficient, consistent, and traceable"
+        },
+        {
+          "id": "C",
+          "text": "An interview statement is always sufficient evidence"
+        },
+        {
+          "id": "D",
+          "text": "Evidence is not needed when a process is documented"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Evidence không chỉ là có document. Evidence cần phù hợp, khách quan, đủ, nhất quán, traceable và phản ánh implementation thực tế.",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Evidence Logic"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

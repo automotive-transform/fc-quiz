@@ -1,0 +1,686 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "aspice-swe-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "questionType": "single_choice",
+      "questionEn": "What is the main purpose of SWE.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Define software requirements that are verifiable and traceable"
+        },
+        {
+          "id": "B",
+          "text": "Integrate software components"
+        },
+        {
+          "id": "C",
+          "text": "Perform qualification testing"
+        },
+        {
+          "id": "D",
+          "text": "Define detailed software unit design"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.1 tập trung phân tích và xác định Software Requirements có thể verify và trace tới System Requirements.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence is the easiest way to remember SWE.1 Base Practices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lấy → Viết → Trace → Kiểm → Nói"
+        },
+        {
+          "id": "B",
+          "text": "Vẽ → Chia → Nối → Chạy → Trace"
+        },
+        {
+          "id": "C",
+          "text": "Viết → Ghép → Test → Trace → Báo"
+        },
+        {
+          "id": "D",
+          "text": "Thiết → Nối → Chạy → Tài nguyên → Code"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.1 gồm Elicit → Define → Traceability → Consistency → Communicate, được nhớ bằng Lấy → Viết → Trace → Kiểm → Nói.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1–SWE.6: Chi tiết quy trình và lỗi phổ biến",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "swe-1",
+      "questionType": "single_choice",
+      "questionEn": "Which requirement is the best example of a testable requirement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The system shall be fast"
+        },
+        {
+          "id": "B",
+          "text": "The system shall work correctly"
+        },
+        {
+          "id": "C",
+          "text": "Response time shall be ≤ 10 ms"
+        },
+        {
+          "id": "D",
+          "text": "The system shall be user-friendly"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Requirement tốt phải measurable và testable. Response time ≤10ms có tiêu chí đo rõ ràng.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.1: Viết requirement chuẩn ASPICE",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "swe-2",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best describes SWE.2 Base Practices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lấy → Viết → Trace → Kiểm → Nói"
+        },
+        {
+          "id": "B",
+          "text": "Vẽ → Chia → Nối → Chạy → Trace"
+        },
+        {
+          "id": "C",
+          "text": "Viết → Test → Trace → Kiểm → Báo"
+        },
+        {
+          "id": "D",
+          "text": "Viết → Ghép → Test → Trace → Báo"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "SWE.2 gồm Develop Architecture → Allocate → Interface → Dynamic Behavior → Traceability.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.2: Cấu trúc SAD chuẩn",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-005",
+      "topicId": "aspice",
+      "sectionId": "swe-2",
+      "questionType": "single_choice",
+      "questionEn": "Which document is the main architecture artifact in SWE.2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Software Requirements Specification (SRS)"
+        },
+        {
+          "id": "B",
+          "text": "Software Architecture Document (SAD)"
+        },
+        {
+          "id": "C",
+          "text": "Unit Test Report"
+        },
+        {
+          "id": "D",
+          "text": "Release Note"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "SAD là Software Architecture Document, artifact chính của SWE.2.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.2: Cấu trúc SAD chuẩn",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-006",
+      "topicId": "aspice",
+      "sectionId": "swe-3",
+      "questionType": "single_choice",
+      "questionEn": "What is the main focus of SWE.3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Detailed design and construction of software units"
+        },
+        {
+          "id": "B",
+          "text": "System-level requirements elicitation"
+        },
+        {
+          "id": "C",
+          "text": "Qualification testing on target hardware"
+        },
+        {
+          "id": "D",
+          "text": "Only software integration testing"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.3 thiết kế chi tiết từng SW unit và xây dựng source code theo thiết kế.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.3: Thiết kế chi tiết và xây dựng code",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-007",
+      "topicId": "aspice",
+      "sectionId": "swe-3",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best describes SWE.3 Base Practices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vẽ → Chia → Nối → Chạy → Trace"
+        },
+        {
+          "id": "B",
+          "text": "Thiết → Nối → Chạy → Tài nguyên → Code"
+        },
+        {
+          "id": "C",
+          "text": "Viết → Test → Trace → Kiểm → Báo"
+        },
+        {
+          "id": "D",
+          "text": "Lấy → Viết → Trace → Kiểm → Nói"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "SWE.3 gồm Detailed Design → Unit Interface → Dynamic Behavior → Resource Objectives → Construct.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.3: Thiết kế chi tiết và xây dựng code",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-008",
+      "topicId": "aspice",
+      "sectionId": "swe-4",
+      "questionType": "single_choice",
+      "questionEn": "What does SWE.4 primarily verify?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whether each software unit meets its detailed design"
+        },
+        {
+          "id": "B",
+          "text": "Whether the entire vehicle meets system requirements"
+        },
+        {
+          "id": "C",
+          "text": "Whether all ECUs communicate over Ethernet"
+        },
+        {
+          "id": "D",
+          "text": "Whether the software architecture is documented"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.4 verify từng SW unit đáp ứng Software Detailed Design và đạt mục tiêu coverage.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.4: Code Coverage Requirements",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-009",
+      "topicId": "aspice",
+      "sectionId": "swe-4",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best describes SWE.4 Base Practices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Viết → Test → Trace → Kiểm → Báo"
+        },
+        {
+          "id": "B",
+          "text": "Viết → Ghép → Test → Trace → Báo"
+        },
+        {
+          "id": "C",
+          "text": "Vẽ → Chia → Nối → Chạy → Trace"
+        },
+        {
+          "id": "D",
+          "text": "Thiết → Nối → Chạy → Tài nguyên → Code"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.4 gồm Test Specification → Unit Verification → Traceability → Consistency → Summarize.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.4: Code Coverage Requirements",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-010",
+      "topicId": "aspice",
+      "sectionId": "swe-4",
+      "questionType": "single_choice",
+      "questionEn": "Which coverage target is stated for ASIL-C/D in the source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Statement coverage ≥ 80%"
+        },
+        {
+          "id": "B",
+          "text": "Statement + Branch coverage 100%"
+        },
+        {
+          "id": "C",
+          "text": "MC/DC coverage 100%"
+        },
+        {
+          "id": "D",
+          "text": "No coverage target"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Theo source, ASIL-C/D có mục tiêu MC/DC coverage 100%.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.4: Code Coverage Requirements",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-011",
+      "topicId": "aspice",
+      "sectionId": "swe-5",
+      "questionType": "single_choice",
+      "questionEn": "What is the main purpose of SWE.5?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verify interfaces between integrated software components"
+        },
+        {
+          "id": "B",
+          "text": "Write the initial software requirements"
+        },
+        {
+          "id": "C",
+          "text": "Define individual unit coding rules"
+        },
+        {
+          "id": "D",
+          "text": "Create only the software architecture document"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.5 tích hợp các SW component và verify interface giữa chúng hoạt động đúng theo architecture.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.5: Software Integration",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-012",
+      "topicId": "aspice",
+      "sectionId": "swe-5",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best describes SWE.5 Base Practices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Viết → Test → Trace → Kiểm → Báo"
+        },
+        {
+          "id": "B",
+          "text": "Viết → Ghép → Test → Trace → Báo"
+        },
+        {
+          "id": "C",
+          "text": "Lấy → Viết → Trace → Kiểm → Nói"
+        },
+        {
+          "id": "D",
+          "text": "Vẽ → Chia → Nối → Chạy → Trace"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "SWE.5 gồm Integration Test Specification → Integrate → Integration Test → Traceability → Summarize.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.5: Software Integration",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-013",
+      "topicId": "aspice",
+      "sectionId": "swe-6",
+      "questionType": "single_choice",
+      "questionEn": "What does SWE.6 verify?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The entire software meets the software requirements on target hardware"
+        },
+        {
+          "id": "B",
+          "text": "Only individual software units meet detailed design"
+        },
+        {
+          "id": "C",
+          "text": "Only the interfaces between two components work"
+        },
+        {
+          "id": "D",
+          "text": "Only the software architecture has a block diagram"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.6 verify toàn bộ SW đáp ứng SW requirements của SWE.1 trên target hardware.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.6: Qualification Test",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-014",
+      "topicId": "aspice",
+      "sectionId": "swe-6",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best describes SWE.6 Base Practices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Viết → Test → Trace → Kiểm → Báo"
+        },
+        {
+          "id": "B",
+          "text": "Viết → Ghép → Test → Trace → Báo"
+        },
+        {
+          "id": "C",
+          "text": "Thiết → Nối → Chạy → Tài nguyên → Code"
+        },
+        {
+          "id": "D",
+          "text": "Vẽ → Chia → Nối → Chạy → Trace"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.6 gồm Qualification Test Specification → Qualification Test → Traceability → Consistency → Summarize.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "SWE.6: Qualification Test",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-015",
+      "topicId": "aspice",
+      "sectionId": "traceability",
+      "questionType": "single_choice",
+      "questionEn": "What is the key traceability requirement across SWE.1–SWE.6?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Requirements only need to trace forward to design"
+        },
+        {
+          "id": "B",
+          "text": "Every requirement should trace in both directions to test cases"
+        },
+        {
+          "id": "C",
+          "text": "Only failed test cases need traceability"
+        },
+        {
+          "id": "D",
+          "text": "Traceability is optional if testing is automated"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Source nhấn mạnh bidirectional traceability: Requirement → Test Case và Test Case → Requirement.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "Critical: Traceability là yêu cầu số 1",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-016",
+      "topicId": "aspice",
+      "sectionId": "audit-gates",
+      "questionType": "single_choice",
+      "questionEn": "Which evidence is expected at the SWE.1 audit gate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SRS, unique requirement IDs, traceability, review record, and change history"
+        },
+        {
+          "id": "B",
+          "text": "Only a qualification test report"
+        },
+        {
+          "id": "C",
+          "text": "Only an integration defect log"
+        },
+        {
+          "id": "D",
+          "text": "Only a code coverage report"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.1 audit cần SRS, ID duy nhất, trace tới system requirements, review record và change history.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "Evidence & Audit Gates",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-017",
+      "topicId": "aspice",
+      "sectionId": "audit-gates",
+      "questionType": "single_choice",
+      "questionEn": "Which is a major SWE.2 audit red flag?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The architecture has a block diagram and allocation matrix"
+        },
+        {
+          "id": "B",
+          "text": "Components in the code do not match the SAD"
+        },
+        {
+          "id": "C",
+          "text": "Interfaces are documented"
+        },
+        {
+          "id": "D",
+          "text": "Requirements are allocated to components"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Một red flag của SWE.2 là component trong code không khớp với SAD.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "Evidence & Audit Gates",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-018",
+      "topicId": "aspice",
+      "sectionId": "audit-gates",
+      "questionType": "single_choice",
+      "questionEn": "Which evidence is especially important for SWE.4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Unit test specification, automated test report, coverage report, and traceability"
+        },
+        {
+          "id": "B",
+          "text": "Only the software architecture block diagram"
+        },
+        {
+          "id": "C",
+          "text": "Only the release note"
+        },
+        {
+          "id": "D",
+          "text": "Only the system context diagram"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.4 audit cần evidence của unit testing, automated execution, coverage và traceability test tới SDD.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "Evidence & Audit Gates",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-019",
+      "topicId": "aspice",
+      "sectionId": "audit-gates",
+      "questionType": "single_choice",
+      "questionEn": "Which is a SWE.5 audit red flag?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An incremental integration strategy is documented"
+        },
+        {
+          "id": "B",
+          "text": "Defects are tracked with status"
+        },
+        {
+          "id": "C",
+          "text": "Integration testing is only 'run it and see if it crashes'"
+        },
+        {
+          "id": "D",
+          "text": "Pass criteria are clearly defined"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Source xem việc integration test chỉ chạy thử xem có crash hay không là red flag vì thiếu pass criteria rõ ràng.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "Evidence & Audit Gates",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-quiz-020",
+      "topicId": "aspice",
+      "sectionId": "audit-gates",
+      "questionType": "single_choice",
+      "questionEn": "Which evidence is specifically expected for SWE.6?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Qualification test report on target hardware and regression evidence"
+        },
+        {
+          "id": "B",
+          "text": "Only a detailed design document"
+        },
+        {
+          "id": "C",
+          "text": "Only a component allocation table"
+        },
+        {
+          "id": "D",
+          "text": "Only a MISRA deviation log"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.6 cần qualification test trên target HW, full traceability và regression test evidence.",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform",
+        "section": "Evidence & Audit Gates",
+        "reference": "content-source/Automotive Transform.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

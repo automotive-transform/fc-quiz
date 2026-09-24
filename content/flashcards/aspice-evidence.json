@@ -1,0 +1,703 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "aspice-evidence-cl-001",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "concept",
+      "term": "Capability Level 1",
+      "definitionEn": "Process Performance: achieve process outcomes.",
+      "explanationVi": "L1 nghĩa là process được thực hiện và đạt outcome; các BP được thực hiện và output tồn tại.",
+      "questionEn": "What does Capability Level 1 focus on?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-002",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "abbreviation",
+      "term": "PA 1.1",
+      "definitionEn": "Process Performance.",
+      "explanationVi": "PA 1.1 là Process Performance, thuộc Level 1.",
+      "questionEn": "What is PA 1.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-003",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "technical_term",
+      "term": "GP 1.1.1: Achieve process outcomes",
+      "definitionEn": "Achieve the outcomes required by the process.",
+      "explanationVi": "Thực hiện các BP và tạo ra output tương ứng.",
+      "questionEn": "What is GP 1.1.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-004",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "concept",
+      "term": "Capability Level 2",
+      "definitionEn": "Performance Management and Work Product Management.",
+      "explanationVi": "L2 yêu cầu các BP của L1 được thực hiện và có evidence cho Performance Management và Work Product Management.",
+      "questionEn": "What must be added to achieve Capability Level 2?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-005",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "abbreviation",
+      "term": "PA 2.1",
+      "definitionEn": "Performance Management.",
+      "explanationVi": "PA 2.1 tập trung vào quản lý việc thực hiện process.",
+      "questionEn": "What is PA 2.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-006",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "technical_term",
+      "term": "GP 2.1.1: Identify objectives",
+      "definitionEn": "Identify the objectives for process performance.",
+      "explanationVi": "Xác định mục tiêu cần đạt của việc thực hiện process.",
+      "questionEn": "What does GP 2.1.1 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-007",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "technical_term",
+      "term": "GP 2.1.2: Plan performance",
+      "definitionEn": "Plan how process performance will be achieved.",
+      "explanationVi": "Lập kế hoạch để thực hiện và đạt performance của process.",
+      "questionEn": "What does GP 2.1.2 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-008",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "technical_term",
+      "term": "GP 2.1.3: Monitor performance",
+      "definitionEn": "Monitor process performance against the plan.",
+      "explanationVi": "Theo dõi performance và tiến độ thực hiện process.",
+      "questionEn": "What does GP 2.1.3 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-009",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "technical_term",
+      "term": "GP 2.1.4: Adjust performance",
+      "definitionEn": "Adjust process performance when needed.",
+      "explanationVi": "Điều chỉnh performance khi việc thực hiện không đạt kế hoạch hoặc cần thay đổi.",
+      "questionEn": "What does GP 2.1.4 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-010",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "concept",
+      "term": "PA 2.1 Evidence",
+      "definitionEn": "Project plan, schedule, progress tracking, and review meeting minutes.",
+      "explanationVi": "Evidence chính của PA 2.1 gồm project plan, schedule, progress tracking và review meeting minutes.",
+      "questionEn": "What evidence supports PA 2.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-011",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "abbreviation",
+      "term": "PA 2.2",
+      "definitionEn": "Work Product Management.",
+      "explanationVi": "PA 2.2 tập trung vào việc định nghĩa, review, nhận diện, kiểm soát và điều chỉnh work product.",
+      "questionEn": "What is PA 2.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-012",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "technical_term",
+      "term": "GP 2.2.1: Define requirements for WP",
+      "definitionEn": "Define requirements for work products.",
+      "explanationVi": "Xác định các yêu cầu đối với Work Product (WP).",
+      "questionEn": "What does GP 2.2.1 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-013",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "technical_term",
+      "term": "GP 2.2.2: Define requirements for review",
+      "definitionEn": "Define requirements for reviewing work products.",
+      "explanationVi": "Xác định yêu cầu cần có khi review Work Product.",
+      "questionEn": "What does GP 2.2.2 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-014",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "technical_term",
+      "term": "GP 2.2.3: Identify/control WP",
+      "definitionEn": "Identify and control work products.",
+      "explanationVi": "Nhận diện và kiểm soát các Work Product.",
+      "questionEn": "What does GP 2.2.3 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-015",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "technical_term",
+      "term": "GP 2.2.4: Review/adjust WP",
+      "definitionEn": "Review and adjust work products.",
+      "explanationVi": "Review Work Product và điều chỉnh khi cần thiết.",
+      "questionEn": "What does GP 2.2.4 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-016",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "concept",
+      "term": "PA 2.2 Evidence",
+      "definitionEn": "Document templates, review records, version control logs, and baseline records.",
+      "explanationVi": "Evidence gồm document templates, review records, version control logs và baseline records.",
+      "questionEn": "What evidence supports PA 2.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-017",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "abbreviation",
+      "term": "PA 3.1",
+      "definitionEn": "Process Definition.",
+      "explanationVi": "PA 3.1 tập trung vào việc định nghĩa process chuẩn của organization.",
+      "questionEn": "What is PA 3.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-018",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "concept",
+      "term": "PA 3.1 Generic Practices",
+      "definitionEn": "Define standard process, sequence/interaction, roles/competencies, and infrastructure.",
+      "explanationVi": "PA 3.1 gồm process chuẩn, sequence/interaction, roles/competencies và infrastructure.",
+      "questionEn": "What does PA 3.1 define?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-019",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "concept",
+      "term": "PA 3.1 Evidence",
+      "definitionEn": "Process description document, competency matrix, and tool qualification records.",
+      "explanationVi": "Evidence gồm process description document, competency matrix và tool qualification records.",
+      "questionEn": "What evidence supports PA 3.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-020",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "abbreviation",
+      "term": "PA 3.2",
+      "definitionEn": "Process Deployment.",
+      "explanationVi": "PA 3.2 tập trung vào việc triển khai process đã được định nghĩa.",
+      "questionEn": "What is PA 3.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-021",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "concept",
+      "term": "PA 3.2 Generic Practices",
+      "definitionEn": "Deploy process, assign responsibilities, ensure competencies, provide resources, and collect data.",
+      "explanationVi": "PA 3.2 gồm deploy process, assign responsibilities, ensure competencies, provide resources và collect process data.",
+      "questionEn": "What are the five PA 3.2 practices?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-022",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "concept",
+      "term": "PA 3.2 Evidence",
+      "definitionEn": "Training records, project tailoring records, metrics data, and lessons learned.",
+      "explanationVi": "Evidence gồm training records, project tailoring records, metrics data và lessons learned.",
+      "questionEn": "What evidence supports PA 3.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-cl-023",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "cardType": "comparison",
+      "term": "L1 vs L2 vs L3",
+      "definitionEn": "L1 performs; L2 manages performance and work products; L3 defines and deploys processes.",
+      "explanationVi": "L1 = làm; L2 = quản process và work product; L3 = định nghĩa và triển khai process.",
+      "questionEn": "How do ASPICE L1, L2, and L3 differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-001",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "concept",
+      "term": "Requirements Management Tools",
+      "definitionEn": "IBM DOORS, Polarion, Jama, and Excel.",
+      "explanationVi": "Các tool phổ biến cho Requirements Management gồm IBM DOORS, Polarion, Jama và Excel.",
+      "questionEn": "Which tools are used for Requirements Management?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-002",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "IBM DOORS",
+      "definitionEn": "A Requirements Management tool described as an industry standard.",
+      "explanationVi": "IBM DOORS là tool Requirements Management được tài liệu mô tả là tiêu chuẩn ngành.",
+      "questionEn": "What is IBM DOORS used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-003",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "concept",
+      "term": "Architecture Design Tools",
+      "definitionEn": "Enterprise Architect, SystemDesk, and DaVinci Developer.",
+      "explanationVi": "Các tool Architecture Design gồm Enterprise Architect, SystemDesk và DaVinci Developer.",
+      "questionEn": "Which tools are used for Architecture Design?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-004",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "Enterprise Architect",
+      "definitionEn": "An Architecture Design tool commonly used for UML/SysML.",
+      "explanationVi": "Enterprise Architect là tool Architecture Design phổ biến cho UML/SysML.",
+      "questionEn": "What is Enterprise Architect commonly used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-005",
+      "topicId": "misra-c",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "concept",
+      "term": "MISRA Check Tools",
+      "definitionEn": "PC-lint, Polyspace, LDRA, and cppcheck.",
+      "explanationVi": "Các tool kiểm tra MISRA gồm PC-lint, Polyspace, LDRA và cppcheck.",
+      "questionEn": "Which tools are used for MISRA checking?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-006",
+      "topicId": "misra-c",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "cppcheck",
+      "definitionEn": "A free MISRA checking tool that is not fully complete.",
+      "explanationVi": "cppcheck miễn phí nhưng không đầy đủ cho MISRA check.",
+      "questionEn": "What is the key note about cppcheck?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-007",
+      "topicId": "testing",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "concept",
+      "term": "Unit Testing Tools",
+      "definitionEn": "Unity, Google Test, VectorCAST, and LDRA.",
+      "explanationVi": "Các tool Unit Testing gồm Unity, Google Test, VectorCAST và LDRA.",
+      "questionEn": "Which tools are used for Unit Testing?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-008",
+      "topicId": "testing",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "Unity",
+      "definitionEn": "A free Unit Testing tool described as very good for C code.",
+      "explanationVi": "Unity miễn phí và được tài liệu mô tả là rất tốt cho C code.",
+      "questionEn": "What is the key note about Unity?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-009",
+      "topicId": "testing",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "concept",
+      "term": "Coverage Tools",
+      "definitionEn": "lcov/gcov, BullseyeCoverage, and VectorCAST.",
+      "explanationVi": "Các tool Coverage gồm lcov/gcov, BullseyeCoverage và VectorCAST.",
+      "questionEn": "Which tools are used for Coverage?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-010",
+      "topicId": "testing",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "lcov/gcov",
+      "definitionEn": "Free coverage tools; gcov 9+ is described as sufficient for MC/DC.",
+      "explanationVi": "lcov miễn phí; tài liệu nêu gcov 9+ đủ cho MC/DC.",
+      "questionEn": "What is the key note about lcov/gcov?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-011",
+      "topicId": "can",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "concept",
+      "term": "CAN Testing Tools",
+      "definitionEn": "CANoe, CANalyzer, and CANdb++.",
+      "explanationVi": "Các tool CAN Testing gồm CANoe, CANalyzer và CANdb++.",
+      "questionEn": "Which tools are used for CAN Testing?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-012",
+      "topicId": "can",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "CANoe",
+      "definitionEn": "A Vector tool used for CAN testing.",
+      "explanationVi": "CANoe là tool của Vector được dùng cho CAN Testing.",
+      "questionEn": "What is CANoe used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-013",
+      "topicId": "testing",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "concept",
+      "term": "HIL Simulation Tools",
+      "definitionEn": "dSPACE, NI VeriStand, and IPG CarMaker.",
+      "explanationVi": "Các tool HIL Simulation gồm dSPACE, NI VeriStand và IPG CarMaker.",
+      "questionEn": "Which tools are used for HIL Simulation?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-014",
+      "topicId": "testing",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "dSPACE",
+      "definitionEn": "An HIL Simulation tool described as most popular in Tier-1.",
+      "explanationVi": "dSPACE là tool HIL Simulation được tài liệu mô tả là phổ biến nhất trong Tier-1.",
+      "questionEn": "What is the key note about dSPACE?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-015",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "concept",
+      "term": "Version Control Tools",
+      "definitionEn": "Git + Gerrit, SVN, and ClearCase.",
+      "explanationVi": "Các tool Version Control gồm Git + Gerrit, SVN và ClearCase.",
+      "questionEn": "Which tools are used for Version Control?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-016",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "Git + Gerrit",
+      "definitionEn": "A Version Control combination described as a modern standard.",
+      "explanationVi": "Git + Gerrit là bộ Version Control được tài liệu mô tả là modern standard.",
+      "questionEn": "What is the key note about Git + Gerrit?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-017",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "concept",
+      "term": "Defect Tracking Tools",
+      "definitionEn": "Jira, Azure DevOps, and HP ALM.",
+      "explanationVi": "Các tool Defect Tracking gồm Jira, Azure DevOps và HP ALM.",
+      "questionEn": "Which tools are used for Defect Tracking?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-tools-018",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "Jira",
+      "definitionEn": "A Defect Tracking tool described as most popular among suppliers.",
+      "explanationVi": "Jira là tool Defect Tracking được tài liệu mô tả là phổ biến nhất trong supplier.",
+      "questionEn": "What is the key note about Jira?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

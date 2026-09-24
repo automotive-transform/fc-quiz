@@ -1,0 +1,992 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "aspice-overview-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "overview",
+      "questionType": "single_choice",
+      "questionEn": "What does ASPICE stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Automotive Software Process Improvement and Capability dEtermination"
+        },
+        {
+          "id": "B",
+          "text": "Automotive Safety Process Integration and Control Engineering"
+        },
+        {
+          "id": "C",
+          "text": "Automotive System Performance Improvement and Control Evaluation"
+        },
+        {
+          "id": "D",
+          "text": "Automotive Software Product Integration and Compliance Engineering"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ASPICE là viết tắt của Automotive Software Process Improvement and Capability dEtermination.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Overview",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-overview-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "overview",
+      "questionType": "single_choice",
+      "questionEn": "What is ASPICE primarily?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A software product"
+        },
+        {
+          "id": "B",
+          "text": "A process assessment framework"
+        },
+        {
+          "id": "C",
+          "text": "A coding language"
+        },
+        {
+          "id": "D",
+          "text": "A testing tool"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "ASPICE không phải product hay software; đây là framework để đánh giá quy trình phát triển automotive software.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Overview",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-overview-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "overview",
+      "questionType": "single_choice",
+      "questionEn": "What is the current ASPICE version stated in the source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PAM v2.0"
+        },
+        {
+          "id": "B",
+          "text": "PAM v3.0"
+        },
+        {
+          "id": "C",
+          "text": "PAM v3.1"
+        },
+        {
+          "id": "D",
+          "text": "PAM v4.0"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Nguồn tài liệu nêu phiên bản hiện tại là PAM v3.1, tức Process Assessment Model version 3.1.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Overview",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-overview-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "overview",
+      "questionType": "single_choice",
+      "questionEn": "Which statement best describes ASPICE?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It defines exactly what the automotive software must do."
+        },
+        {
+          "id": "B",
+          "text": "It defines the process for developing quality automotive software."
+        },
+        {
+          "id": "C",
+          "text": "It replaces all coding standards."
+        },
+        {
+          "id": "D",
+          "text": "It is only a unit testing framework."
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "ASPICE tập trung vào chất lượng quy trình phát triển, không quy định trực tiếp software phải thực hiện chức năng gì.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Overview",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-history-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "history",
+      "questionType": "single_choice",
+      "questionEn": "What standard was ASPICE based on and customized for automotive use?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ISO 9001"
+        },
+        {
+          "id": "B",
+          "text": "ISO/IEC 15504 (SPICE)"
+        },
+        {
+          "id": "C",
+          "text": "ISO 26262"
+        },
+        {
+          "id": "D",
+          "text": "ISO 21448"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Nguồn cho biết ASPICE dựa trên ISO/IEC 15504 (SPICE) và được tùy chỉnh cho ngành automotive.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "History",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "questionType": "single_choice",
+      "questionEn": "Which capability level is called Managed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Level 1"
+        },
+        {
+          "id": "B",
+          "text": "Level 2"
+        },
+        {
+          "id": "C",
+          "text": "Level 3"
+        },
+        {
+          "id": "D",
+          "text": "Level 4"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Level 2 là Managed: có planning, tracking và review.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Capability Levels",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "questionType": "single_choice",
+      "questionEn": "What characterizes ASPICE Level 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Work is completely ad hoc."
+        },
+        {
+          "id": "B",
+          "text": "Work is performed but not consistently repeatable."
+        },
+        {
+          "id": "C",
+          "text": "The process is standardized across the company."
+        },
+        {
+          "id": "D",
+          "text": "Only quantitative measurements are used."
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Level 3 là Established: process được chuẩn hóa và áp dụng trên toàn công ty.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Capability Levels",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "questionType": "single_choice",
+      "questionEn": "Which level focuses on quantitative measurement and prediction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Level 2 - Managed"
+        },
+        {
+          "id": "B",
+          "text": "Level 3 - Established"
+        },
+        {
+          "id": "C",
+          "text": "Level 4 - Predictable"
+        },
+        {
+          "id": "D",
+          "text": "Level 5 - Optimizing"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Level 4 là Predictable, tập trung vào quantitative measurement; nguồn cho biết mức này hiếm trong thực tế.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Capability Levels",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "questionType": "single_choice",
+      "questionEn": "Which capability level represents continuous improvement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Level 1"
+        },
+        {
+          "id": "B",
+          "text": "Level 2"
+        },
+        {
+          "id": "C",
+          "text": "Level 4"
+        },
+        {
+          "id": "D",
+          "text": "Level 5"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Level 5 là Optimizing, tập trung vào continuous improvement.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Capability Levels",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-audit-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "audit",
+      "questionType": "single_choice",
+      "questionEn": "How long does a typical ASPICE audit take according to the source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 hour"
+        },
+        {
+          "id": "B",
+          "text": "1 day"
+        },
+        {
+          "id": "C",
+          "text": "3-5 days"
+        },
+        {
+          "id": "D",
+          "text": "2-3 weeks"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Nguồn nêu typical ASPICE audit kéo dài khoảng 3–5 ngày.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Audit",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-audit-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "audit",
+      "questionType": "single_choice",
+      "questionEn": "Which document is an example of ASPICE audit evidence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SRS"
+        },
+        {
+          "id": "B",
+          "text": "Personal diary"
+        },
+        {
+          "id": "C",
+          "text": "Office seating plan"
+        },
+        {
+          "id": "D",
+          "text": "Employee vacation request"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SRS là một trong các loại evidence được auditor yêu cầu, cùng với SDD, test reports, review records và traceability matrix.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Audit",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-audit-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "audit",
+      "questionType": "single_choice",
+      "questionEn": "What does the source emphasize about documentation during an ASPICE audit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Documentation is optional if the team explains the process."
+        },
+        {
+          "id": "B",
+          "text": "Without documented evidence, the process cannot be demonstrated as achieved."
+        },
+        {
+          "id": "C",
+          "text": "Only source code needs documentation."
+        },
+        {
+          "id": "D",
+          "text": "Documentation is only needed after release."
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Nguồn nhấn mạnh: không có document → không có evidence → process không đạt.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Audit",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-audit-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "audit",
+      "questionType": "single_choice",
+      "questionEn": "Which rating range corresponds to Fully?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0-15%"
+        },
+        {
+          "id": "B",
+          "text": "15-50%"
+        },
+        {
+          "id": "C",
+          "text": "50-85%"
+        },
+        {
+          "id": "D",
+          "text": "85-100%"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Theo nguồn: N = 0–15%, P = 15–50%, L = 50–85%, F = 85–100%.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Audit",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-process-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "questionType": "single_choice",
+      "questionEn": "What is the main purpose of SWE.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Software Requirements Analysis"
+        },
+        {
+          "id": "B",
+          "text": "Software Detailed Design"
+        },
+        {
+          "id": "C",
+          "text": "Software Unit Verification"
+        },
+        {
+          "id": "D",
+          "text": "Project Management"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWE.1 là Software Requirements Analysis: thu thập, phân tích và phê duyệt SW requirements từ system level.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Main Automotive SW ASPICE Processes",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-process-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "questionType": "single_choice",
+      "questionEn": "Which ASPICE process defines architecture, components, interfaces, and data flow?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.1"
+        },
+        {
+          "id": "B",
+          "text": "SWE.2"
+        },
+        {
+          "id": "C",
+          "text": "SWE.4"
+        },
+        {
+          "id": "D",
+          "text": "SWE.6"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "SWE.2 là Software Architectural Design, tập trung vào architecture, components, interfaces và data flow.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Main Automotive SW ASPICE Processes",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-process-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "questionType": "single_choice",
+      "questionEn": "Which process covers detailed module design, state machines, algorithms, and function signatures?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.2"
+        },
+        {
+          "id": "B",
+          "text": "SWE.3"
+        },
+        {
+          "id": "C",
+          "text": "SWE.5"
+        },
+        {
+          "id": "D",
+          "text": "SWS.1"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "SWE.3 là Software Detailed Design, bao gồm detailed module design, state machine, algorithm và function signature.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Main Automotive SW ASPICE Processes",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-process-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "questionType": "single_choice",
+      "questionEn": "Which process is responsible for unit testing a function or module?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.3"
+        },
+        {
+          "id": "B",
+          "text": "SWE.4"
+        },
+        {
+          "id": "C",
+          "text": "SWE.5"
+        },
+        {
+          "id": "D",
+          "text": "SWE.6"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "SWE.4 là Software Unit Verification, viết và chạy unit tests cho function hoặc module.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Main Automotive SW ASPICE Processes",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-process-quiz-005",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "questionType": "single_choice",
+      "questionEn": "Which process focuses on combining components and testing their interfaces?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.1"
+        },
+        {
+          "id": "B",
+          "text": "SWE.4"
+        },
+        {
+          "id": "C",
+          "text": "SWE.5"
+        },
+        {
+          "id": "D",
+          "text": "SWE.6"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "SWE.5 là Software Integration & Integration Test, kết hợp components và test interfaces giữa chúng.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Main Automotive SW ASPICE Processes",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-process-quiz-006",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "questionType": "single_choice",
+      "questionEn": "Which process tests the full software on target hardware to prove requirements are met?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.2"
+        },
+        {
+          "id": "B",
+          "text": "SWE.4"
+        },
+        {
+          "id": "C",
+          "text": "SWE.5"
+        },
+        {
+          "id": "D",
+          "text": "SWE.6"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "SWE.6 là Software Qualification Test, test full software trên target hardware để chứng minh requirements được đáp ứng.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Main Automotive SW ASPICE Processes",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-process-quiz-007",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "questionType": "single_choice",
+      "questionEn": "Which process covers configuration, change, build, and release management?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.1"
+        },
+        {
+          "id": "B",
+          "text": "SWS.1"
+        },
+        {
+          "id": "C",
+          "text": "MAN.3"
+        },
+        {
+          "id": "D",
+          "text": "SWE.6"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "SWS.1 là Software Support, bao gồm configuration, change, build và release management.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Main Automotive SW ASPICE Processes",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-process-quiz-008",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "questionType": "single_choice",
+      "questionEn": "Which process covers planning, progress tracking, and risk management?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MAN.3"
+        },
+        {
+          "id": "B",
+          "text": "SWE.2"
+        },
+        {
+          "id": "C",
+          "text": "SWE.4"
+        },
+        {
+          "id": "D",
+          "text": "SWS.1"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MAN.3 là Project Management, bao gồm planning, progress tracking và risk management.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Main Automotive SW ASPICE Processes",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-comparison-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "standards-comparison",
+      "questionType": "single_choice",
+      "questionEn": "What is the primary focus of ASPICE?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Functional safety"
+        },
+        {
+          "id": "B",
+          "text": "Process quality"
+        },
+        {
+          "id": "C",
+          "text": "Coding rules"
+        },
+        {
+          "id": "D",
+          "text": "Standardized software architecture"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "ASPICE tập trung vào process quality và đặt câu hỏi liệu quy trình có đúng đắn hay không.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Standards Comparison",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-comparison-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "standards-comparison",
+      "questionType": "single_choice",
+      "questionEn": "Which standard primarily addresses functional safety?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ASPICE"
+        },
+        {
+          "id": "B",
+          "text": "ISO 26262"
+        },
+        {
+          "id": "C",
+          "text": "MISRA-C"
+        },
+        {
+          "id": "D",
+          "text": "AUTOSAR"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "ISO 26262 tập trung vào Functional Safety, trong khi ASPICE tập trung vào process quality.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Standards Comparison",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-comparison-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "standards-comparison",
+      "questionType": "single_choice",
+      "questionEn": "Which standard focuses on coding rules for safer C code?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MISRA-C"
+        },
+        {
+          "id": "B",
+          "text": "ASPICE"
+        },
+        {
+          "id": "C",
+          "text": "SOTIF"
+        },
+        {
+          "id": "D",
+          "text": "AUTOSAR"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MISRA-C là coding standard, tập trung vào việc code được viết theo các rule an toàn.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Standards Comparison",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-lifecycle-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "project-lifecycle",
+      "questionType": "single_choice",
+      "questionEn": "Which ASPICE process is associated with the Requirements Phase?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MAN.3"
+        },
+        {
+          "id": "B",
+          "text": "SWE.1"
+        },
+        {
+          "id": "C",
+          "text": "SWE.3"
+        },
+        {
+          "id": "D",
+          "text": "SWE.6"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Requirements Phase gắn với SWE.1 và tạo ra Software Requirements Specification.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Project Lifecycle",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-lifecycle-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "project-lifecycle",
+      "questionType": "single_choice",
+      "questionEn": "What is the typical output of the Design Phase in the source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Architecture and Detailed Design"
+        },
+        {
+          "id": "B",
+          "text": "Unit test report"
+        },
+        {
+          "id": "C",
+          "text": "Release note"
+        },
+        {
+          "id": "D",
+          "text": "Technical offer"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Design Phase gồm SWE.2/SWE.3 và output là Architecture/Detailed Design.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Project Lifecycle",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-lifecycle-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "project-lifecycle",
+      "questionType": "single_choice",
+      "questionEn": "Which phase produces a MISRA-compliant source code according to the source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Requirements Phase"
+        },
+        {
+          "id": "B",
+          "text": "Coding Phase"
+        },
+        {
+          "id": "C",
+          "text": "Integration Testing"
+        },
+        {
+          "id": "D",
+          "text": "Release"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Coding Phase gắn với SWE.3 và output được nêu là MISRA-compliant source code.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Project Lifecycle",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-lifecycle-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "project-lifecycle",
+      "questionType": "single_choice",
+      "questionEn": "Which phase produces the Unit Test Report?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Unit Testing"
+        },
+        {
+          "id": "B",
+          "text": "Design Phase"
+        },
+        {
+          "id": "C",
+          "text": "Release"
+        },
+        {
+          "id": "D",
+          "text": "Concept & Quotation"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Unit Testing gắn với SWE.4 và output là Unit test report/coverage.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Project Lifecycle",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-lifecycle-quiz-005",
+      "topicId": "aspice",
+      "sectionId": "project-lifecycle",
+      "questionType": "single_choice",
+      "questionEn": "Which process is associated with the Release phase?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SWE.1"
+        },
+        {
+          "id": "B",
+          "text": "SWE.4"
+        },
+        {
+          "id": "C",
+          "text": "SWE.6"
+        },
+        {
+          "id": "D",
+          "text": "SWS.1"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Release phase gắn với SWS.1 Software Support và output là Release note/delivered SW.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE là gì?",
+        "section": "Project Lifecycle",
+        "reference": "content-source/ASPICE/ASPICE-overview.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

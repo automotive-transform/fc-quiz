@@ -42,6 +42,10 @@ npm run validate:content
 npm test
 npm run build
 ```
+OR 
+```bash
+npm run validate:content && npm test && npm run build
+```
 
 The build automatically discovers new JSON files. No React code or manual topic
 registration is required.

@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "aspice-acq-spl-001",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "abbreviation",
+      "term": "ACQ",
+      "definitionEn": "Acquisition process group.",
+      "explanationVi": "Nhóm process Acquisition, thuộc phía Customer trong quan hệ Customer-Supplier.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ASPICE Customer-Supplier",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-002",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "abbreviation",
+      "term": "SPL",
+      "definitionEn": "Supply process group.",
+      "explanationVi": "Nhóm process Supply, thuộc phía Supplier trong quan hệ Customer-Supplier.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ASPICE Customer-Supplier",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-003",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "technical_term",
+      "term": "ACQ.4 Supplier Monitoring",
+      "definitionEn": "Tracks and assesses an external contract-based supplier against agreed commitments.",
+      "explanationVi": "Customer theo dõi và đánh giá Supplier dựa trên các cam kết đã thống nhất.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ACQ.4 Supplier Monitoring",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-004",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "technical_term",
+      "term": "SPL.2 Product Release",
+      "definitionEn": "Controls the release of a product to the intended customer.",
+      "explanationVi": "Supplier kiểm soát việc release sản phẩm cho Customer dự kiến.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "SPL.2 Product Release",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-005",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "comparison",
+      "term": "ACQ.4 vs SPL.2",
+      "definitionEn": "ACQ.4 monitors the supplier; SPL.2 controls product release.",
+      "explanationVi": "ACQ.4: Customer theo dõi Supplier. SPL.2: Supplier kiểm soát Product Release.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ACQ.4 and SPL.2 position",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-006",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "concept",
+      "term": "ACQ.4 Position",
+      "definitionEn": "A Customer-side primary life cycle process for supplier monitoring.",
+      "explanationVi": "ACQ.4 nằm phía Customer, dùng để monitor performance của Supplier.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ACQ.4 and SPL.2 position",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-007",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "concept",
+      "term": "SPL.2 Position",
+      "definitionEn": "A Supplier-side primary life cycle process for product release.",
+      "explanationVi": "SPL.2 nằm phía Supplier, dùng để kiểm soát release Product cho Customer.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ACQ.4 and SPL.2 position",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-008",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "comparison",
+      "term": "Customer vs Supplier",
+      "definitionEn": "ACQ belongs to Acquisition; SPL belongs to Supply.",
+      "explanationVi": "ACQ gắn với Customer/Acquisition; SPL gắn với Supplier/Supply.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "Customer-Supplier relationship",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-009",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "concept",
+      "term": "ACQ.4 Key Question",
+      "definitionEn": "Is the supplier performing according to the agreed commitments?",
+      "explanationVi": "Câu hỏi nhớ nhanh: Supplier có đang làm đúng các cam kết đã thống nhất không?",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ACQ.4 vs SPL.2",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-010",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "concept",
+      "term": "SPL.2 Key Question",
+      "definitionEn": "Is the product ready and approved for delivery to the customer?",
+      "explanationVi": "Câu hỏi nhớ nhanh: Product đã đủ điều kiện và được approve để giao Customer chưa?",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ACQ.4 vs SPL.2",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-011",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "technical_term",
+      "term": "ACQ.4 Outcomes",
+      "definitionEn": "Joint activities, information exchange, supplier monitoring, and agreement changes.",
+      "explanationVi": "4 outcome: thực hiện hoạt động chung, trao đổi thông tin, monitor Supplier và thay đổi Agreement khi cần.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ACQ.4 Process Outcomes",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-012",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "phrase",
+      "term": "ACQ.4 Base Practices",
+      "definitionEn": "Agree, exchange, review work, review progress, and correct deviations.",
+      "explanationVi": "5 BP: thống nhất → trao đổi → review work → review progress → correct deviation.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ACQ.4 Base Practices",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-013",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "phrase",
+      "term": "Schedule, Quality, Cost",
+      "definitionEn": "Three key areas reviewed for supplier progress.",
+      "explanationVi": "ACQ.4.BP4 tập trung review tiến độ theo Schedule, Quality và Cost.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "ACQ.4 BP4",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-014",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "phrase",
+      "term": "Approval Before Delivery",
+      "definitionEn": "Release approval is performed before delivery.",
+      "explanationVi": "Trong SPL.2, release phải được approve theo criteria trước khi delivery.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "SPL.2 Base Practices",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-015",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "phrase",
+      "term": "Release Package",
+      "definitionEn": "A package assembled from configured items for product release.",
+      "explanationVi": "Package release được assemble từ các configured items.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "SPL.2 Release Package",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-016",
+      "topicId": "aspice",
+      "sectionId": "customer-supplier",
+      "cardType": "technical_term",
+      "term": "Known Issues",
+      "definitionEn": "Known issues documented as part of the release note.",
+      "explanationVi": "Các vấn đề đã biết phải được ghi nhận trong Release Note của release.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform",
+        "section": "SPL.2 Release Note",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

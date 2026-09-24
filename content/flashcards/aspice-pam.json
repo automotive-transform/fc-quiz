@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "aspice-pam-foundation-001",
+      "topicId": "aspice",
+      "sectionId": "pam-foundation",
+      "cardType": "comparison",
+      "term": "PRM vs PAM",
+      "definitionEn": "PRM defines processes, purposes, and outcomes; PAM provides the model for assessing process capability.",
+      "explanationVi": "PRM trả lời process phải làm gì; PAM dùng để đánh giá process đang được thực hiện tốt đến mức nào.",
+      "questionEn": "What is the relationship between PRM and PAM?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PRM vs PAM"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-002",
+      "topicId": "aspice",
+      "sectionId": "capability-assessment",
+      "cardType": "concept",
+      "term": "Process Dimension vs Capability Dimension",
+      "definitionEn": "The process dimension identifies which process is assessed; the capability dimension determines how well it is performed.",
+      "explanationVi": "Process dimension hỏi đánh giá process nào; capability dimension hỏi process đó đạt mức capability nào.",
+      "questionEn": "What do the process and capability dimensions represent?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Process dimension vs Capability dimension"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-003",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "cardType": "technical_term",
+      "term": "Process Attribute (PA)",
+      "definitionEn": "A process attribute is used to assess the capability of a process.",
+      "explanationVi": "PA là thuộc tính dùng để đánh giá process đang đạt capability ở mức nào.",
+      "questionEn": "What is the role of a Process Attribute (PA)?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Process Attributes"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-004",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "cardType": "concept",
+      "term": "PA1.1",
+      "definitionEn": "PA1.1 assesses whether the process is performed and achieves its process outcomes.",
+      "explanationVi": "PA1.1 hỏi process có thực sự được thực hiện và đạt các process outcomes hay không.",
+      "questionEn": "What does PA1.1 assess?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PA1.1 Process Performance"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-005",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "cardType": "concept",
+      "term": "PA2.1",
+      "definitionEn": "PA2.1 assesses whether process performance is managed through planning, monitoring, and adjustment.",
+      "explanationVi": "PA2.1 tập trung vào việc quản lý process: lập kế hoạch, theo dõi và điều chỉnh khi cần.",
+      "questionEn": "What does PA2.1 assess?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PA2.1 Performance Management"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-006",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "cardType": "concept",
+      "term": "PA2.2",
+      "definitionEn": "PA2.2 assesses whether work products are appropriately managed and controlled.",
+      "explanationVi": "PA2.2 tập trung vào việc quản lý và kiểm soát work products.",
+      "questionEn": "What does PA2.2 assess?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PA2.2 Work Product Management"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-007",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "cardType": "concept",
+      "term": "PA3.1",
+      "definitionEn": "PA3.1 assesses whether a defined process is established at the organizational level.",
+      "explanationVi": "PA3.1 hỏi organization có process chuẩn được định nghĩa hay chưa.",
+      "questionEn": "What does PA3.1 assess?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PA3.1 Process Definition"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-008",
+      "topicId": "aspice",
+      "sectionId": "process-attributes",
+      "cardType": "concept",
+      "term": "PA3.2",
+      "definitionEn": "PA3.2 assesses whether the defined process is deployed in the project or environment.",
+      "explanationVi": "PA3.2 hỏi process chuẩn có thực sự được triển khai vào project hay environment hay không.",
+      "questionEn": "What does PA3.2 assess?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PA3.2 Process Deployment"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-009",
+      "topicId": "aspice",
+      "sectionId": "rating",
+      "cardType": "comparison",
+      "term": "N / P / L / F",
+      "definitionEn": "N, P, L, and F represent Not, Partially, Largely, and Fully achieved.",
+      "explanationVi": "N = Not, P = Partially, L = Largely, F = Fully achieved; đây là các mức rating achievement.",
+      "questionEn": "What do the N/P/L/F ratings mean?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "N/P/L/F Rating"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-010",
+      "topicId": "aspice",
+      "sectionId": "rating",
+      "cardType": "concept",
+      "term": "Rating to Capability Level",
+      "definitionEn": "Evidence is judged using N/P/L/F ratings, and the applicable rating rules determine the achieved capability level.",
+      "explanationVi": "Evidence → rating N/P/L/F → áp dụng capability rules → xác định CL đạt được.",
+      "questionEn": "How does evidence lead to a capability level?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Rating and Capability Level"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-011",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "cardType": "concept",
+      "term": "CL1",
+      "definitionEn": "CL1 is achieved when PA1.1 is rated Largely or Fully achieved.",
+      "explanationVi": "CL1 tương ứng với process được thực hiện; PA1.1 phải đạt L hoặc F.",
+      "questionEn": "What is the key requirement for CL1?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Capability Level"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-012",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "cardType": "concept",
+      "term": "CL2",
+      "definitionEn": "CL2 requires PA1.1 Fully achieved and PA2.1 and PA2.2 Largely or Fully achieved.",
+      "explanationVi": "CL2 cần PA1.1 = F; PA2.1 và PA2.2 phải đạt L hoặc F.",
+      "questionEn": "What PA ratings are required for CL2?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Capability Level"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-013",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "cardType": "concept",
+      "term": "CL3",
+      "definitionEn": "CL3 requires PA1.1, PA2.1, and PA2.2 Fully achieved, with PA3.1 and PA3.2 Largely or Fully achieved.",
+      "explanationVi": "CL3 cần PA1.1/PA2.1/PA2.2 = F; PA3.1/PA3.2 phải đạt L hoặc F.",
+      "questionEn": "What PA ratings are required for CL3?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Capability Level"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-014",
+      "topicId": "aspice",
+      "sectionId": "assessment",
+      "cardType": "phrase",
+      "term": "Evidence → Rating → Capability Level",
+      "definitionEn": "Assessment evidence supports a rating, and ratings are used to determine capability level.",
+      "explanationVi": "Chuỗi tư duy cốt lõi: evidence chứng minh achievement → rating → capability level.",
+      "questionEn": "What is the core assessment flow from evidence to capability?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "Evidence Logic"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pam-foundation-015",
+      "topicId": "aspice",
+      "sectionId": "version-history",
+      "cardType": "comparison",
+      "term": "PAM 3.1 vs PAM 4.0",
+      "definitionEn": "PAM 3.1 was released in 2017; PAM 4.0 was released in 2023 as a complete revision.",
+      "explanationVi": "PAM 3.1 phát hành năm 2017; PAM 4.0 phát hành năm 2023 và là một complete revision.",
+      "questionEn": "What is the key version difference between PAM 3.1 and PAM 4.0?",
+      "source": {
+        "type": "conversation",
+        "document": "ASPICE PAM Foundation, Capability & Assessment",
+        "section": "PAM Version History"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

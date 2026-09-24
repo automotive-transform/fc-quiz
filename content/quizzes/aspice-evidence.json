@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "aspice-evidence-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "What is the main focus of Capability Level 1?",
+      "options": [
+        { "id": "A", "text": "Process Performance" },
+        { "id": "B", "text": "Work Product Management" },
+        { "id": "C", "text": "Process Deployment" },
+        { "id": "D", "text": "Tool Qualification" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "L1 tập trung vào Process Performance: các BP được thực hiện và output tồn tại.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-001", "aspice-evidence-cl-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "What evidence is required for GP 1.1.1?",
+      "options": [
+        { "id": "A", "text": "Training records and metrics data" },
+        { "id": "B", "text": "BPs are performed and outputs exist" },
+        { "id": "C", "text": "Version control logs and baselines" },
+        { "id": "D", "text": "Competency matrix and tool qualification records" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "GP 1.1.1 yêu cầu đạt process outcomes; evidence là BPs được thực hiện và output tồn tại.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "Which two Process Attributes belong to Capability Level 2?",
+      "options": [
+        { "id": "A", "text": "Process Performance and Process Definition" },
+        { "id": "B", "text": "Performance Management and Work Product Management" },
+        { "id": "C", "text": "Process Definition and Process Deployment" },
+        { "id": "D", "text": "Process Performance and Process Deployment" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "L2 gồm PA 2.1 Performance Management và PA 2.2 Work Product Management.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-004", "aspice-evidence-cl-005", "aspice-evidence-cl-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "What is the correct sequence for PA 2.1?",
+      "options": [
+        { "id": "A", "text": "Review → Control → Define → Adjust" },
+        { "id": "B", "text": "Identify objectives → Plan → Monitor → Adjust" },
+        { "id": "C", "text": "Deploy → Assign → Train → Measure" },
+        { "id": "D", "text": "Define → Review → Control → Baseline" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "PA 2.1 gồm Identify objectives, Plan performance, Monitor performance và Adjust performance.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-006", "aspice-evidence-cl-007", "aspice-evidence-cl-008", "aspice-evidence-cl-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-005",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "Which evidence supports PA 2.1 Performance Management?",
+      "options": [
+        { "id": "A", "text": "Project plan, schedule, progress tracking, and review meeting minutes" },
+        { "id": "B", "text": "Training records, tailoring records, metrics, and lessons learned" },
+        { "id": "C", "text": "Document templates, review records, and baseline records only" },
+        { "id": "D", "text": "Process description, competency matrix, and tool qualification records" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PA 2.1 cần evidence về kế hoạch, schedule, tiến độ và review meeting.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-006",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "Which activity belongs to PA 2.2 Work Product Management?",
+      "options": [
+        { "id": "A", "text": "Identify objectives" },
+        { "id": "B", "text": "Monitor performance" },
+        { "id": "C", "text": "Identify and control work products" },
+        { "id": "D", "text": "Collect process data" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "GP 2.2.3 yêu cầu Identify/control WP, tức nhận diện và kiểm soát Work Product.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-011", "aspice-evidence-cl-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-007",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "Which evidence supports PA 2.2 Work Product Management?",
+      "options": [
+        { "id": "A", "text": "Project plan and schedule" },
+        { "id": "B", "text": "Document templates, review records, version control logs, and baseline records" },
+        { "id": "C", "text": "Training records and lessons learned" },
+        { "id": "D", "text": "Competency matrix and tool qualification records" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "PA 2.2 cần evidence để chứng minh Work Product được định nghĩa, review và kiểm soát.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-008",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "What is the main focus of PA 3.1 Process Definition?",
+      "options": [
+        { "id": "A", "text": "Managing project progress" },
+        { "id": "B", "text": "Defining the standard process" },
+        { "id": "C", "text": "Tracking defects" },
+        { "id": "D", "text": "Performing unit tests" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "PA 3.1 tập trung vào Process Definition: định nghĩa process chuẩn cùng sequence, roles/competencies và infrastructure.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-017", "aspice-evidence-cl-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-009",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "Which item is evidence for PA 3.1?",
+      "options": [
+        { "id": "A", "text": "Process description document" },
+        { "id": "B", "text": "Review meeting minutes" },
+        { "id": "C", "text": "Project schedule" },
+        { "id": "D", "text": "Defect tracking report" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PA 3.1 có evidence gồm process description document, competency matrix và tool qualification records.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-019"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-010",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "Which activity belongs to PA 3.2 Process Deployment?",
+      "options": [
+        { "id": "A", "text": "Deploy the defined process" },
+        { "id": "B", "text": "Define requirements for work products" },
+        { "id": "C", "text": "Identify objectives" },
+        { "id": "D", "text": "Achieve process outcomes" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PA 3.2 tập trung vào triển khai process đã được định nghĩa vào thực tế.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-020", "aspice-evidence-cl-021"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-011",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "Which evidence supports PA 3.2 Process Deployment?",
+      "options": [
+        { "id": "A", "text": "Project plan, schedule, progress tracking, and review minutes" },
+        { "id": "B", "text": "Document templates, review records, version logs, and baselines" },
+        { "id": "C", "text": "Training records, project tailoring records, metrics data, and lessons learned" },
+        { "id": "D", "text": "Process description, competency matrix, and tool qualification records" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "PA 3.2 có evidence gồm training, project tailoring, metrics data và lessons learned.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-022"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-evidence-quiz-012",
+      "topicId": "aspice",
+      "sectionId": "capability-level-attributes",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly summarizes L1, L2, and L3?",
+      "options": [
+        { "id": "A", "text": "L1 manages, L2 performs, L3 tests" },
+        { "id": "B", "text": "L1 performs, L2 manages, L3 defines and deploys" },
+        { "id": "C", "text": "L1 defines, L2 deploys, L3 performs" },
+        { "id": "D", "text": "L1 tests, L2 reviews, L3 codes" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Cách nhớ: L1 = làm; L2 = quản process và work product; L3 = chuẩn hóa và triển khai process.",
+      "relatedFlashcardIds": ["aspice-evidence-cl-023"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Process Reference: Capability Level Attributes",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "tools-aspice-quiz-001",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which tool is described as an industry standard for Requirements Management?",
+      "options": [
+        { "id": "A", "text": "IBM DOORS" },
+        { "id": "B", "text": "CANoe" },
+        { "id": "C", "text": "Jira" },
+        { "id": "D", "text": "dSPACE" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tài liệu mô tả IBM DOORS là tiêu chuẩn ngành cho Requirements Management.",
+      "relatedFlashcardIds": ["aspice-tools-001", "aspice-tools-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "tools-aspice-quiz-002",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which tool is commonly used for UML/SysML Architecture Design?",
+      "options": [
+        { "id": "A", "text": "Enterprise Architect" },
+        { "id": "B", "text": "Unity" },
+        { "id": "C", "text": "Jira" },
+        { "id": "D", "text": "CANalyzer" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Enterprise Architect là tool Architecture Design phổ biến cho UML/SysML.",
+      "relatedFlashcardIds": ["aspice-tools-003", "aspice-tools-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-001",
+      "topicId": "misra-c",
+      "sectionId": "aspice-tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which tool is free but not fully complete for MISRA checking?",
+      "options": [
+        { "id": "A", "text": "Polyspace" },
+        { "id": "B", "text": "LDRA" },
+        { "id": "C", "text": "cppcheck" },
+        { "id": "D", "text": "PC-lint" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Tài liệu nêu cppcheck miễn phí nhưng không đầy đủ cho MISRA check.",
+      "relatedFlashcardIds": ["aspice-tools-005", "aspice-tools-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-tools-quiz-001",
+      "topicId": "testing",
+      "sectionId": "aspice-tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which tool is described as free and very good for C Unit Testing?",
+      "options": [
+        { "id": "A", "text": "Unity" },
+        { "id": "B", "text": "BullseyeCoverage" },
+        { "id": "C", "text": "CANoe" },
+        { "id": "D", "text": "SystemDesk" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Unity là tool Unit Testing miễn phí và được tài liệu mô tả là rất tốt cho C code.",
+      "relatedFlashcardIds": ["aspice-tools-007", "aspice-tools-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-tools-quiz-002",
+      "topicId": "testing",
+      "sectionId": "aspice-tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which coverage tool is free according to the source?",
+      "options": [
+        { "id": "A", "text": "VectorCAST" },
+        { "id": "B", "text": "BullseyeCoverage" },
+        { "id": "C", "text": "lcov" },
+        { "id": "D", "text": "LDRA" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Tài liệu nêu lcov miễn phí; đồng thời nêu gcov 9+ đủ cho MC/DC.",
+      "relatedFlashcardIds": ["aspice-tools-009", "aspice-tools-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-tools-quiz-001",
+      "topicId": "can",
+      "sectionId": "aspice-tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which set contains CAN Testing tools?",
+      "options": [
+        { "id": "A", "text": "CANoe, CANalyzer, CANdb++" },
+        { "id": "B", "text": "Unity, Google Test, LDRA" },
+        { "id": "C", "text": "DOORS, Polarion, Jama" },
+        { "id": "D", "text": "Jira, SVN, ClearCase" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN Testing sử dụng các tool CANoe, CANalyzer và CANdb++.",
+      "relatedFlashcardIds": ["aspice-tools-011", "aspice-tools-012"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "testing-tools-quiz-003",
+      "topicId": "testing",
+      "sectionId": "aspice-tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which tool is described as most popular for HIL Simulation in Tier-1?",
+      "options": [
+        { "id": "A", "text": "dSPACE" },
+        { "id": "B", "text": "NI VeriStand" },
+        { "id": "C", "text": "IPG CarMaker" },
+        { "id": "D", "text": "Unity" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tài liệu mô tả dSPACE là tool HIL Simulation phổ biến nhất trong Tier-1.",
+      "relatedFlashcardIds": ["aspice-tools-013", "aspice-tools-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "tools-aspice-quiz-003",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which combination is described as a modern standard for Version Control?",
+      "options": [
+        { "id": "A", "text": "Git + Gerrit" },
+        { "id": "B", "text": "SVN + Jira" },
+        { "id": "C", "text": "ClearCase + DOORS" },
+        { "id": "D", "text": "Git + CANoe" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tài liệu mô tả Git + Gerrit là modern standard cho Version Control.",
+      "relatedFlashcardIds": ["aspice-tools-015", "aspice-tools-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "tools-aspice-quiz-004",
+      "topicId": "tools",
+      "sectionId": "aspice-tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which tool is described as most popular for Defect Tracking among suppliers?",
+      "options": [
+        { "id": "A", "text": "Jira" },
+        { "id": "B", "text": "Azure DevOps" },
+        { "id": "C", "text": "HP ALM" },
+        { "id": "D", "text": "Polarion" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tài liệu mô tả Jira là tool Defect Tracking phổ biến nhất trong supplier.",
+      "relatedFlashcardIds": ["aspice-tools-017", "aspice-tools-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE Evidence & Gates",
+        "section": "ASPICE Tools Ecosystem",
+        "reference": "content-source/ASPICE/Evidence-and-Gates.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

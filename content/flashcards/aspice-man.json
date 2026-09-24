@@ -1,0 +1,346 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "aspice-man3-001",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "cardType": "abbreviation",
+      "term": "MAN.3",
+      "definitionEn": "Project Management.",
+      "explanationVi": "Quản lý project: scope, estimate, resource, schedule, dependency, progress và corrective action.",
+      "questionEn": "What does MAN.3 primarily manage?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "MAN.3 Project Management",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-man5-002",
+      "topicId": "aspice",
+      "sectionId": "man5-risk-management",
+      "cardType": "abbreviation",
+      "term": "MAN.5",
+      "definitionEn": "Risk Management.",
+      "explanationVi": "Quản trị risk end-to-end: identify, analyze, treat, monitor và close hoặc escalate.",
+      "questionEn": "What is the primary purpose of MAN.5?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "MAN.5 Risk Management",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-man6-003",
+      "topicId": "aspice",
+      "sectionId": "man6-measurement",
+      "cardType": "abbreviation",
+      "term": "MAN.6",
+      "definitionEn": "Measurement.",
+      "explanationVi": "Biến information need thành metric, data, analysis và information phục vụ management decision.",
+      "questionEn": "What is the primary purpose of MAN.6?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "MAN.6 Measurement",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-project-plan-004",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "cardType": "technical_term",
+      "term": "Project Plan",
+      "definitionEn": "A plan defining project scope, work, resources, schedule and dependencies.",
+      "explanationVi": "Kế hoạch thể hiện project làm gì, ai làm, cần bao nhiêu nguồn lực, khi nào làm và phụ thuộc gì.",
+      "questionEn": "What should a project plan establish?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 1 - Scope, estimate, resources, schedule, dependencies and feasibility",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-wbs-005",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "cardType": "abbreviation",
+      "term": "WBS",
+      "definitionEn": "Work Breakdown Structure.",
+      "explanationVi": "Phân rã project thành các work package hoặc hoạt động để dễ estimate và lập schedule.",
+      "questionEn": "What does WBS stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 1 - Project Plan/WBS/Estimate Baseline",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-feasibility-006",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "cardType": "technical_term",
+      "term": "Feasibility",
+      "definitionEn": "Assessment of whether the project can be achieved with available scope, time and resources.",
+      "explanationVi": "Đánh giá project có khả thi với scope, thời gian và resource hiện có hay không.",
+      "questionEn": "What does feasibility assess in project planning?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 1 - Feasibility",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-variance-007",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "cardType": "technical_term",
+      "term": "Variance",
+      "definitionEn": "The difference between planned and actual project performance.",
+      "explanationVi": "Độ lệch giữa kế hoạch và thực tế, ví dụ effort, schedule hoặc completion.",
+      "questionEn": "What does project variance compare?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 2 - Progress, variance and corrective action",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-corrective-action-008",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "cardType": "technical_term",
+      "term": "Corrective Action",
+      "definitionEn": "An action taken to address a detected project deviation or problem.",
+      "explanationVi": "Hành động để xử lý deviation/problem đã phát hiện và đưa project về hướng kiểm soát.",
+      "questionEn": "What follows significant project variance?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 2 - Progress, variance and corrective action",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-replan-009",
+      "topicId": "aspice",
+      "sectionId": "man3-project-management",
+      "cardType": "technical_term",
+      "term": "Re-plan",
+      "definitionEn": "Updating the project plan after changes, deviations or new information.",
+      "explanationVi": "Điều chỉnh lại project plan khi có thay đổi, variance hoặc thông tin mới.",
+      "questionEn": "When may a project need to re-plan?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 2 - Status, variance and corrective action",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-risk-flow-010",
+      "topicId": "aspice",
+      "sectionId": "man5-risk-management",
+      "cardType": "phrase",
+      "term": "Identify → Analyze → Treat → Monitor",
+      "definitionEn": "A basic end-to-end risk management flow.",
+      "explanationVi": "Chuỗi nhớ nhanh của MAN.5: xác định risk, phân tích, xử lý và theo dõi.",
+      "questionEn": "What is the basic MAN.5 risk management flow?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "MAN.5 Risk Management",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-risk-register-011",
+      "topicId": "aspice",
+      "sectionId": "man5-risk-management",
+      "cardType": "technical_term",
+      "term": "Risk Register",
+      "definitionEn": "A record used to identify, analyze, treat and monitor project risks.",
+      "explanationVi": "Danh sách quản lý risk, nên có risk, owner, trigger, mitigation, due date và status.",
+      "questionEn": "What evidence records project risks and their treatment?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 3 - Risk register",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-risk-trigger-012",
+      "topicId": "aspice",
+      "sectionId": "man5-risk-management",
+      "cardType": "technical_term",
+      "term": "Risk Trigger",
+      "definitionEn": "A condition or signal indicating that a risk may occur or its status has changed.",
+      "explanationVi": "Điều kiện báo hiệu risk có thể xảy ra hoặc trạng thái risk đã thay đổi.",
+      "questionEn": "What does a risk trigger indicate?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 3 - RAID with trigger, owner and due date",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-risk-owner-013",
+      "topicId": "aspice",
+      "sectionId": "man5-risk-management",
+      "cardType": "technical_term",
+      "term": "Risk Owner",
+      "definitionEn": "The person responsible for monitoring and managing a specific risk.",
+      "explanationVi": "Người chịu trách nhiệm theo dõi và quản lý một risk cụ thể.",
+      "questionEn": "Who is accountable for monitoring a specific risk?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 3 - RAID with trigger, owner and due date",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-mitigation-014",
+      "topicId": "aspice",
+      "sectionId": "man5-risk-management",
+      "cardType": "technical_term",
+      "term": "Mitigation",
+      "definitionEn": "An action intended to reduce the likelihood or impact of a risk.",
+      "explanationVi": "Biện pháp xử lý nhằm giảm khả năng xảy ra hoặc giảm tác động của risk.",
+      "questionEn": "What is the purpose of risk mitigation?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 3 - Risk identification to mitigation/closure",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-information-need-015",
+      "topicId": "aspice",
+      "sectionId": "man6-measurement",
+      "cardType": "technical_term",
+      "term": "Information Need",
+      "definitionEn": "The management information needed to support a decision.",
+      "explanationVi": "Thông tin management cần biết để có thể phân tích và ra quyết định.",
+      "questionEn": "What should measurement start from?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 4 - Information need to metric and decision",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-measurement-flow-016",
+      "topicId": "aspice",
+      "sectionId": "man6-measurement",
+      "cardType": "phrase",
+      "term": "Need → Measure → Data → Analyze → Decide",
+      "definitionEn": "A practical flow from management information need to decision.",
+      "explanationVi": "Chuỗi nhớ MAN.6: xác định cần biết gì, chọn metric, lấy data, phân tích rồi quyết định.",
+      "questionEn": "What is the core MAN.6 measurement flow?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "MAN.6 Measurement",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-action-rule-017",
+      "topicId": "aspice",
+      "sectionId": "man6-measurement",
+      "cardType": "technical_term",
+      "term": "Action Rule",
+      "definitionEn": "A defined rule linking a measurement result or threshold to a management action.",
+      "explanationVi": "Quy tắc nối metric/threshold với hành động cụ thể, để dashboard phục vụ quyết định.",
+      "questionEn": "How should a dashboard support management action?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Checklist 4 - Measurement plan, dashboard and action rule",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-dashboard-018",
+      "topicId": "aspice",
+      "sectionId": "man6-measurement",
+      "cardType": "technical_term",
+      "term": "Dashboard",
+      "definitionEn": "A view of measurement information used to monitor status and support decisions.",
+      "explanationVi": "Dashboard không chỉ để báo cáo; phải giúp nhìn trạng thái, phát hiện vấn đề và hỗ trợ action.",
+      "questionEn": "What should a management dashboard support?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Measurement dashboard and action rule",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-man-boundary-019",
+      "topicId": "aspice",
+      "sectionId": "management-boundary",
+      "cardType": "comparison",
+      "term": "MAN vs SUP",
+      "definitionEn": "MAN manages project, risk and measurement; SUP covers supporting processes such as QA and configuration management.",
+      "explanationVi": "MAN quản trị project/risk/measurement; không sở hữu thay QA hoặc Configuration Management của SUP.",
+      "questionEn": "What is the key boundary between MAN and SUP?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Boundary / handoff",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-pre-sales-delivery-020",
+      "topicId": "aspice",
+      "sectionId": "pre-sales-delivery",
+      "cardType": "comparison",
+      "term": "Pre-sales vs Delivery",
+      "definitionEn": "Pre-sales uses scope, estimate and risk to form the proposal; delivery uses plan, measurement and risk control to manage execution.",
+      "explanationVi": "Pre-sales tập trung scope/estimate/risk/contingency; delivery tập trung execution/progress/measurement/risk/decision.",
+      "questionEn": "How do MAN processes support pre-sales and delivery?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE MAN.3/MAN.5/MAN.6 Project, Risk & Measurement Governance",
+        "section": "Pre-sales & Delivery",
+        "reference": "content-source/ASPICE/MAN3-MAN5-MAN6.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

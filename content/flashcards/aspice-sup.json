@@ -1,0 +1,516 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "aspice-sup-quality-config-001",
+      "topicId": "aspice",
+      "sectionId": "sup-overview",
+      "cardType": "abbreviation",
+      "term": "SUP.1",
+      "definitionEn": "Quality Assurance",
+      "explanationVi": "SUP.1 là Quality Assurance: kiểm tra một cách độc lập và khách quan xem project có tuân thủ criteria và process đã xác định hay không.",
+      "questionEn": "What is the primary purpose of SUP.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Quality, configuration, problem & change",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-002",
+      "topicId": "aspice",
+      "sectionId": "sup-overview",
+      "cardType": "abbreviation",
+      "term": "SUP.8",
+      "definitionEn": "Configuration Management",
+      "explanationVi": "SUP.8 là Configuration Management: kiểm soát Configuration Items, baseline, status, access và backup/recovery để bảo đảm configuration integrity.",
+      "questionEn": "What does SUP.8 control?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Quality, configuration, problem & change",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-003",
+      "topicId": "aspice",
+      "sectionId": "sup-overview",
+      "cardType": "abbreviation",
+      "term": "SUP.9",
+      "definitionEn": "Problem Resolution Management",
+      "explanationVi": "SUP.9 quản lý problem từ lúc nhận diện, phân loại, phân tích, xử lý cho đến khi được verification và closure.",
+      "questionEn": "What does SUP.9 manage?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Quality, configuration, problem & change",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-004",
+      "topicId": "aspice",
+      "sectionId": "sup-overview",
+      "cardType": "abbreviation",
+      "term": "SUP.10",
+      "definitionEn": "Change Request Management",
+      "explanationVi": "SUP.10 kiểm soát change từ request, impact analysis, approval, implementation đến verification và closure.",
+      "questionEn": "What does SUP.10 control?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Quality, configuration, problem & change",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-005",
+      "topicId": "aspice",
+      "sectionId": "sup-1",
+      "cardType": "concept",
+      "term": "Quality Assurance",
+      "definitionEn": "An objective activity that checks compliance against defined criteria.",
+      "explanationVi": "QA kiểm tra khách quan xem hoạt động và work product có phù hợp với criteria đã xác định hay không.",
+      "questionEn": "What is Quality Assurance in SUP.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.1 Quality Assurance",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-006",
+      "topicId": "aspice",
+      "sectionId": "sup-1",
+      "cardType": "phrase",
+      "term": "Independent and objective",
+      "definitionEn": "QA performs assessment with appropriate independence and objectivity.",
+      "explanationVi": "QA phải có mức độ độc lập và khách quan phù hợp với hoạt động được đánh giá.",
+      "questionEn": "What does independent and objective mean for QA?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.1 Quality Assurance",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-007",
+      "topicId": "aspice",
+      "sectionId": "sup-1",
+      "cardType": "concept",
+      "term": "Nonconformity",
+      "definitionEn": "A finding where an activity or work product does not meet defined criteria.",
+      "explanationVi": "Nonconformity là điểm không phù hợp với criteria và phải được ghi nhận, theo dõi và xử lý.",
+      "questionEn": "What is a nonconformity in QA?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.1 Quality Assurance",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-008",
+      "topicId": "aspice",
+      "sectionId": "sup-1",
+      "cardType": "concept",
+      "term": "QA Plan",
+      "definitionEn": "A plan defining QA scope, activities, schedule, criteria, responsibilities and reporting.",
+      "explanationVi": "QA Plan xác định kiểm tra cái gì, khi nào, theo criteria nào, ai thực hiện và báo cáo ra sao.",
+      "questionEn": "What does a QA Plan define?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.1 evidence",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-009",
+      "topicId": "aspice",
+      "sectionId": "sup-1",
+      "cardType": "phrase",
+      "term": "Verified closure",
+      "definitionEn": "Closure supported by evidence that the issue or finding was successfully addressed.",
+      "explanationVi": "Không chỉ nói đã sửa; phải có evidence verification chứng minh vấn đề đã được xử lý trước khi đóng.",
+      "questionEn": "What does verified closure mean?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.1 closure",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-010",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "cardType": "abbreviation",
+      "term": "CI",
+      "definitionEn": "Configuration Item",
+      "explanationVi": "CI là item được đưa vào Configuration Management để được kiểm soát về version, status và integrity.",
+      "questionEn": "What does CI mean in configuration management?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 Configuration Management",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-011",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "cardType": "technical_term",
+      "term": "Configuration Item",
+      "definitionEn": "An item placed under configuration control.",
+      "explanationVi": "Configuration Item là item được project xác định cần quản lý và kiểm soát configuration.",
+      "questionEn": "What is a Configuration Item?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 Configuration Management",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-012",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "cardType": "technical_term",
+      "term": "Baseline",
+      "definitionEn": "An identified configuration used as a controlled reference.",
+      "explanationVi": "Baseline là configuration/version đã được xác định và kiểm soát làm cơ sở tham chiếu.",
+      "questionEn": "What is a baseline in configuration management?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 baseline",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-013",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "cardType": "concept",
+      "term": "Status Accounting",
+      "definitionEn": "Recording and reporting the status of configuration items.",
+      "explanationVi": "Status Accounting giúp biết CI đang ở trạng thái nào, version nào và thay đổi ra sao.",
+      "questionEn": "What is Status Accounting?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 status accounting",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-014",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "cardType": "concept",
+      "term": "Access Control",
+      "definitionEn": "Controlling who is authorized to modify controlled configuration items.",
+      "explanationVi": "Access Control giới hạn quyền sửa configuration theo vai trò và thẩm quyền.",
+      "questionEn": "Why is access control important in configuration management?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 access control",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-015",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "cardType": "comparison",
+      "term": "Configuration Management vs Development",
+      "definitionEn": "CM controls configuration integrity; development creates and modifies technical content.",
+      "explanationVi": "CM kiểm soát configuration và integrity; development chịu trách nhiệm tạo và sửa nội dung kỹ thuật.",
+      "questionEn": "How does Configuration Management differ from Development?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Process boundaries",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-016",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "cardType": "concept",
+      "term": "Backup and Recovery",
+      "definitionEn": "Measures for preserving controlled data and restoring it when needed.",
+      "explanationVi": "Backup lưu dữ liệu; Recovery giúp khôi phục dữ liệu khi xảy ra mất mát hoặc sự cố.",
+      "questionEn": "Why are backup and recovery part of configuration control?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 backup and recovery",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-017",
+      "topicId": "aspice",
+      "sectionId": "sup-9",
+      "cardType": "technical_term",
+      "term": "Problem Lifecycle",
+      "definitionEn": "The controlled flow from problem identification through verification and closure.",
+      "explanationVi": "Problem lifecycle đi từ nhận diện → phân loại → phân tích → xử lý → verification → closure.",
+      "questionEn": "What is the basic SUP.9 problem lifecycle?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.9 Problem Resolution Management",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-018",
+      "topicId": "aspice",
+      "sectionId": "sup-9",
+      "cardType": "phrase",
+      "term": "Identify → Classify → Analyze → Resolve → Verify → Close",
+      "definitionEn": "A compact sequence for managing a problem to verified closure.",
+      "explanationVi": "Chuỗi nhớ SUP.9: phát hiện → phân loại → phân tích → xử lý → xác minh → đóng.",
+      "questionEn": "What sequence summarizes SUP.9 problem handling?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.9 lifecycle",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-019",
+      "topicId": "aspice",
+      "sectionId": "sup-9",
+      "cardType": "concept",
+      "term": "Problem Classification",
+      "definitionEn": "Categorizing a problem to support appropriate handling and prioritization.",
+      "explanationVi": "Classification giúp xác định loại, severity hoặc priority của problem để xử lý phù hợp.",
+      "questionEn": "Why is a problem classified?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.9 classification",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-020",
+      "topicId": "aspice",
+      "sectionId": "sup-9",
+      "cardType": "comparison",
+      "term": "Problem vs Change Request",
+      "definitionEn": "A problem records an issue; a change request controls a requested modification.",
+      "explanationVi": "Problem ghi nhận vấn đề/lỗi; Change Request kiểm soát yêu cầu thay đổi. Một problem có thể dẫn tới change.",
+      "questionEn": "What is the difference between a problem and a change request?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.9 vs SUP.10",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-021",
+      "topicId": "aspice",
+      "sectionId": "sup-9",
+      "cardType": "concept",
+      "term": "Problem Record",
+      "definitionEn": "A record containing problem classification, analysis, resolution, verification and closure evidence.",
+      "explanationVi": "Problem Record lưu thông tin từ problem ban đầu đến resolution, verification và closure.",
+      "questionEn": "What should a Problem Record provide?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.9 evidence",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-022",
+      "topicId": "aspice",
+      "sectionId": "sup-9",
+      "cardType": "concept",
+      "term": "Verification",
+      "definitionEn": "Evidence-based confirmation that the implemented resolution addresses the problem.",
+      "explanationVi": "Verification chứng minh bằng evidence rằng resolution đã xử lý được problem.",
+      "questionEn": "Why is verification needed before problem closure?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.9 verification",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-023",
+      "topicId": "aspice",
+      "sectionId": "sup-10",
+      "cardType": "technical_term",
+      "term": "Change Request",
+      "definitionEn": "A controlled request to modify an approved or controlled item.",
+      "explanationVi": "Change Request là yêu cầu thay đổi một item/configuration đã được kiểm soát và phải đi qua workflow xác định.",
+      "questionEn": "What is a Change Request?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.10 Change Request Management",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-024",
+      "topicId": "aspice",
+      "sectionId": "sup-10",
+      "cardType": "concept",
+      "term": "Impact Analysis",
+      "definitionEn": "Analysis of the technical, quality, schedule, cost, test and other effects of a proposed change.",
+      "explanationVi": "Impact Analysis xem change ảnh hưởng đến requirement, design, code, test, schedule, quality và các phần liên quan thế nào.",
+      "questionEn": "What is the purpose of change impact analysis?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.10 impact analysis",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-025",
+      "topicId": "aspice",
+      "sectionId": "sup-10",
+      "cardType": "abbreviation",
+      "term": "CCB",
+      "definitionEn": "Change Control Board or defined change-approval authority.",
+      "explanationVi": "CCB là nhóm hoặc cơ chế có thẩm quyền xem xét và quyết định change theo governance của project.",
+      "questionEn": "What is the role of a CCB?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.10 approval",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-026",
+      "topicId": "aspice",
+      "sectionId": "sup-10",
+      "cardType": "phrase",
+      "term": "Request → Impact → Approve → Implement → Verify → Close",
+      "definitionEn": "A compact sequence for controlled change management.",
+      "explanationVi": "Chuỗi nhớ SUP.10: yêu cầu → đánh giá ảnh hưởng → phê duyệt → thực hiện → xác minh → đóng.",
+      "questionEn": "What sequence summarizes SUP.10 change handling?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.10 lifecycle",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-027",
+      "topicId": "aspice",
+      "sectionId": "sup-10",
+      "cardType": "concept",
+      "term": "Scope Creep",
+      "definitionEn": "Uncontrolled expansion of project scope through changes without proper impact and approval.",
+      "explanationVi": "Scope creep xảy ra khi thay đổi được đưa vào mà không kiểm soát impact, effort, schedule và approval.",
+      "questionEn": "How does change control help prevent scope creep?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.10 and pre-sales",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-028",
+      "topicId": "aspice",
+      "sectionId": "sup-pre-sales",
+      "cardType": "comparison",
+      "term": "SUP.1 vs SUP.8",
+      "definitionEn": "SUP.1 checks compliance; SUP.8 controls configuration integrity.",
+      "explanationVi": "SUP.1 hỏi 'Có làm đúng không?'; SUP.8 hỏi 'Thứ đã làm có được kiểm soát đúng không?'.",
+      "questionEn": "How do SUP.1 and SUP.8 differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Process relationship",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-029",
+      "topicId": "aspice",
+      "sectionId": "sup-pre-sales",
+      "cardType": "comparison",
+      "term": "SUP.9 vs SUP.10",
+      "definitionEn": "SUP.9 manages problems; SUP.10 manages requested changes.",
+      "explanationVi": "SUP.9 xử lý vấn đề; SUP.10 kiểm soát thay đổi. Problem có thể dẫn tới Change Request.",
+      "questionEn": "How do SUP.9 and SUP.10 relate?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Process relationship",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quality-config-030",
+      "topicId": "aspice",
+      "sectionId": "sup-pre-sales",
+      "cardType": "concept",
+      "term": "Evidence Chain",
+      "definitionEn": "Traceable evidence connecting an issue or change to action, verification and closure.",
+      "explanationVi": "Evidence chain cho phép trace từ problem/change → action → verification → closure và các item liên quan.",
+      "questionEn": "What is an evidence chain?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Evidence and audit",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

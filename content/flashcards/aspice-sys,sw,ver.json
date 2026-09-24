@@ -1,0 +1,618 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "aspice-sys-swe-vv-001",
+      "topicId": "aspice",
+      "sectionId": "sys-requirements",
+      "cardType": "concept",
+      "term": "Stakeholder Need",
+      "definitionEn": "A need or expectation expressed by a stakeholder.",
+      "explanationVi": "Nhu cầu hoặc kỳ vọng của stakeholder; là đầu vào để hình thành system requirements.",
+      "questionEn": "What is a stakeholder need?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.1–SYS.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-002",
+      "topicId": "aspice",
+      "sectionId": "sys-requirements",
+      "cardType": "comparison",
+      "term": "Stakeholder Need vs System Requirement",
+      "definitionEn": "A need states what stakeholders want; a system requirement defines what the system shall do.",
+      "explanationVi": "Stakeholder need nói stakeholder muốn gì; system requirement chuyển thành yêu cầu kỹ thuật mà system phải thực hiện.",
+      "questionEn": "How do stakeholder needs differ from system requirements?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.1–SYS.2",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-003",
+      "topicId": "aspice",
+      "sectionId": "sys-requirements",
+      "cardType": "abbreviation",
+      "term": "SYS.1",
+      "definitionEn": "Requirements Elicitation.",
+      "explanationVi": "Thu thập và xác định nhu cầu/yêu cầu từ các stakeholder, bao gồm source và agreement.",
+      "questionEn": "What is the purpose of SYS.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.1",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-004",
+      "topicId": "aspice",
+      "sectionId": "sys-requirements",
+      "cardType": "abbreviation",
+      "term": "SYS.2",
+      "definitionEn": "System Requirements Analysis.",
+      "explanationVi": "Phân tích và chuyển stakeholder needs thành system requirements rõ ràng, khả thi, nhất quán và có thể verify.",
+      "questionEn": "What is the purpose of SYS.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.2",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-005",
+      "topicId": "aspice",
+      "sectionId": "sys-requirements",
+      "cardType": "abbreviation",
+      "term": "SYS.3",
+      "definitionEn": "System Architectural Design.",
+      "explanationVi": "Thiết kế system architecture, allocation, interfaces, dynamic behavior và rationale.",
+      "questionEn": "What is the purpose of SYS.3?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-006",
+      "topicId": "aspice",
+      "sectionId": "sys-requirements",
+      "cardType": "concept",
+      "term": "Requirement Quality Criteria",
+      "definitionEn": "Criteria such as correctness, completeness, consistency, feasibility, verifiability and traceability.",
+      "explanationVi": "Requirement cần đúng, đủ, nhất quán, khả thi, test/verify được và trace được.",
+      "questionEn": "What makes a system requirement high quality?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.2",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-007",
+      "topicId": "aspice",
+      "sectionId": "sys-requirements",
+      "cardType": "technical_term",
+      "term": "Definition of Ready",
+      "definitionEn": "Criteria that must be satisfied before an artifact proceeds to the next stage.",
+      "explanationVi": "Bộ điều kiện xác định requirement/design đã đủ rõ, đủ chất lượng và sẵn sàng chuyển sang bước tiếp theo.",
+      "questionEn": "What is a Definition of Ready?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.1–SYS.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-008",
+      "topicId": "aspice",
+      "sectionId": "sys-architecture",
+      "cardType": "technical_term",
+      "term": "Allocation",
+      "definitionEn": "Assignment of system functions or requirements to system elements.",
+      "explanationVi": "Phân bổ function hoặc requirement cho component/system element phù hợp.",
+      "questionEn": "What does allocation mean in system architecture?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-009",
+      "topicId": "aspice",
+      "sectionId": "sys-architecture",
+      "cardType": "technical_term",
+      "term": "Interface",
+      "definitionEn": "A defined interaction boundary between system elements.",
+      "explanationVi": "Điểm và quy tắc giao tiếp giữa các component, mô tả dữ liệu hoặc tương tác trao đổi.",
+      "questionEn": "What does an architecture interface describe?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-010",
+      "topicId": "aspice",
+      "sectionId": "sys-architecture",
+      "cardType": "technical_term",
+      "term": "Rationale",
+      "definitionEn": "The reasoning that explains why an architectural decision was made.",
+      "explanationVi": "Lý do giải thích tại sao architecture hoặc design được chọn theo cách đó.",
+      "questionEn": "What is architectural rationale?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-011",
+      "topicId": "aspice",
+      "sectionId": "traceability",
+      "cardType": "technical_term",
+      "term": "Bidirectional Traceability",
+      "definitionEn": "The ability to trace artifacts forward and backward across development levels.",
+      "explanationVi": "Có thể trace cả xuôi và ngược giữa stakeholder, requirements, architecture, design và test.",
+      "questionEn": "What does bidirectional traceability mean?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.1–SYS.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-012",
+      "topicId": "traceability",
+      "sectionId": "traceability",
+      "cardType": "technical_term",
+      "term": "Orphan Requirement",
+      "definitionEn": "A requirement that has no corresponding downstream design or implementation link.",
+      "explanationVi": "Requirement không có liên kết tới design/implementation phía sau, cần được phát hiện và xử lý.",
+      "questionEn": "What is an orphan requirement?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.1–SYS.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-013",
+      "topicId": "aspice",
+      "sectionId": "baseline",
+      "cardType": "technical_term",
+      "term": "Baseline",
+      "definitionEn": "A controlled version of an artifact used as an approved reference.",
+      "explanationVi": "Phiên bản artifact đã được review/kiểm soát và dùng làm reference chính thức cho downstream.",
+      "questionEn": "What is a baseline in ASPICE work?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.1–SYS.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-014",
+      "topicId": "aspice",
+      "sectionId": "sw-requirements",
+      "cardType": "abbreviation",
+      "term": "SWE.1",
+      "definitionEn": "Software Requirements Analysis.",
+      "explanationVi": "Phân tích system requirements để xác định software requirements rõ ràng, khả thi, testable và traceable.",
+      "questionEn": "What is the purpose of SWE.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SWE.1–SWE.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-015",
+      "topicId": "aspice",
+      "sectionId": "sw-architecture",
+      "cardType": "abbreviation",
+      "term": "SWE.2",
+      "definitionEn": "Software Architectural Design.",
+      "explanationVi": "Thiết kế software architecture, component, interface, dependency, data/control flow và behavior.",
+      "questionEn": "What is the purpose of SWE.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SWE.2",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-016",
+      "topicId": "aspice",
+      "sectionId": "sw-construction",
+      "cardType": "abbreviation",
+      "term": "SWE.3",
+      "definitionEn": "Software Detailed Design and Unit Construction.",
+      "explanationVi": "Đi từ software architecture xuống detailed design, unit và code, giữ consistency và traceability.",
+      "questionEn": "What is the purpose of SWE.3?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SWE.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-017",
+      "topicId": "traceability",
+      "sectionId": "sw-traceability",
+      "cardType": "comparison",
+      "term": "SYS-to-SWE Trace",
+      "definitionEn": "A linkage from system requirements through software requirements, architecture, design and code.",
+      "explanationVi": "Chuỗi trace: SYS requirement → SWE.1 → SWE.2 → SWE.3 → code.",
+      "questionEn": "What is the typical SYS-to-SWE trace chain?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SWE.1–SWE.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-018",
+      "topicId": "aspice",
+      "sectionId": "change-impact",
+      "cardType": "technical_term",
+      "term": "Change Impact Analysis",
+      "definitionEn": "Analysis of artifacts and tests affected by a change.",
+      "explanationVi": "Phân tích requirement/design/code/test nào bị ảnh hưởng khi một artifact thay đổi.",
+      "questionEn": "What is change impact analysis used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SWE.1–SWE.3",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-019",
+      "topicId": "testing",
+      "sectionId": "verification-validation",
+      "cardType": "comparison",
+      "term": "Verification vs Validation",
+      "definitionEn": "Verification checks conformity to specification; validation checks suitability for intended use.",
+      "explanationVi": "Verification: làm đúng specification chưa? Validation: sản phẩm có phù hợp intended use không?",
+      "questionEn": "What is the difference between verification and validation?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "Verification & Validation",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-020",
+      "topicId": "aspice",
+      "sectionId": "software-verification",
+      "cardType": "abbreviation",
+      "term": "SWE.4",
+      "definitionEn": "Software Unit Verification.",
+      "explanationVi": "Verification ở mức unit, kiểm tra unit có phù hợp với detailed design hay không.",
+      "questionEn": "What does SWE.4 verify?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SWE.4",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-021",
+      "topicId": "aspice",
+      "sectionId": "software-verification",
+      "cardType": "abbreviation",
+      "term": "SWE.5",
+      "definitionEn": "Software Integration and Integration Test.",
+      "explanationVi": "Kiểm tra các software components sau khi integration, tập trung vào interface và interaction.",
+      "questionEn": "What does SWE.5 verify?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SWE.5",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-022",
+      "topicId": "aspice",
+      "sectionId": "software-verification",
+      "cardType": "abbreviation",
+      "term": "SWE.6",
+      "definitionEn": "Software Qualification Test.",
+      "explanationVi": "Qualification test ở mức software, dùng software requirements làm test basis.",
+      "questionEn": "What does SWE.6 qualify?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SWE.6",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-023",
+      "topicId": "aspice",
+      "sectionId": "system-verification",
+      "cardType": "abbreviation",
+      "term": "SYS.4",
+      "definitionEn": "System Integration and Integration Test.",
+      "explanationVi": "Tích hợp các system elements và kiểm tra interface, interaction giữa chúng.",
+      "questionEn": "What does SYS.4 verify?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.4",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-024",
+      "topicId": "aspice",
+      "sectionId": "system-verification",
+      "cardType": "abbreviation",
+      "term": "SYS.5",
+      "definitionEn": "System Qualification Test.",
+      "explanationVi": "Qualification test ở mức system, dùng system requirements làm test basis.",
+      "questionEn": "What does SYS.5 qualify?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "SYS.5",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-025",
+      "topicId": "aspice",
+      "sectionId": "validation",
+      "cardType": "abbreviation",
+      "term": "VAL.1",
+      "definitionEn": "Validation.",
+      "explanationVi": "Chứng minh sản phẩm phù hợp với intended use và operational context.",
+      "questionEn": "What is the purpose of VAL.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "VAL.1",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-026",
+      "topicId": "testing",
+      "sectionId": "test-strategy",
+      "cardType": "concept",
+      "term": "V&V Strategy",
+      "definitionEn": "A strategy defining objectives, criteria, test selection, coverage, environment and execution approach.",
+      "explanationVi": "Chiến lược V&V xác định mục tiêu, criteria, lựa chọn test, coverage, environment và cách thực thi.",
+      "questionEn": "What should a V&V strategy define?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "Verification & Validation",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-027",
+      "topicId": "testing",
+      "sectionId": "test-evidence",
+      "cardType": "phrase",
+      "term": "REQ → TEST → RESULT → CONFIG",
+      "definitionEn": "A trace chain connecting a requirement to its test, result and test configuration.",
+      "explanationVi": "Chuỗi evidence: requirement → test case/execution → result → configuration đã được test.",
+      "questionEn": "What is the key test evidence chain?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "Verification & Validation",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-028",
+      "topicId": "testing",
+      "sectionId": "test-configuration",
+      "cardType": "technical_term",
+      "term": "Test Configuration",
+      "definitionEn": "The controlled software, hardware, environment and configuration used for test execution.",
+      "explanationVi": "Thông tin xác định chính xác version software, hardware, environment và configuration khi test.",
+      "questionEn": "Why must test configuration be recorded?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "Verification & Validation",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-029",
+      "topicId": "testing",
+      "sectionId": "anomaly-management",
+      "cardType": "technical_term",
+      "term": "Anomaly",
+      "definitionEn": "A detected discrepancy or unexpected result requiring analysis and controlled resolution.",
+      "explanationVi": "Sai khác hoặc kết quả bất thường được phát hiện trong test và cần được phân tích, xử lý có kiểm soát.",
+      "questionEn": "What is an anomaly in verification?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "Verification & Validation",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-030",
+      "topicId": "testing",
+      "sectionId": "regression",
+      "cardType": "technical_term",
+      "term": "Regression Test",
+      "definitionEn": "Testing performed after a change to check that existing functionality still works.",
+      "explanationVi": "Sau khi sửa lỗi/thay đổi, chạy lại các test liên quan để kiểm tra chức năng cũ không bị hỏng.",
+      "questionEn": "Why is regression testing performed?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "Verification & Validation",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-031",
+      "topicId": "testing",
+      "sectionId": "test-management",
+      "cardType": "technical_term",
+      "term": "Exit Criteria",
+      "definitionEn": "Defined conditions that must be met before a test phase can be considered complete.",
+      "explanationVi": "Điều kiện phải đạt trước khi kết thúc test, thay vì kết thúc chỉ vì hết thời gian.",
+      "questionEn": "What are test exit criteria?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "Verification & Validation",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-032",
+      "topicId": "testing",
+      "sectionId": "test-summary",
+      "cardType": "technical_term",
+      "term": "Test Summary Report",
+      "definitionEn": "A summary of test execution, results, coverage, anomalies and overall status.",
+      "explanationVi": "Báo cáo tổng hợp planned, executed, passed, failed, coverage, anomalies và trạng thái test.",
+      "questionEn": "What does a test summary report contain?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "Verification & Validation",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-033",
+      "topicId": "aspice",
+      "sectionId": "validation",
+      "cardType": "technical_term",
+      "term": "Intended Use",
+      "definitionEn": "The purpose for which the product is intended to be used.",
+      "explanationVi": "Mục đích sử dụng mà sản phẩm được thiết kế để đáp ứng.",
+      "questionEn": "What does intended use mean in validation?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "VAL.1",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-034",
+      "topicId": "aspice",
+      "sectionId": "validation",
+      "cardType": "technical_term",
+      "term": "Operational Context",
+      "definitionEn": "The real or defined operating context in which the product is intended to be used.",
+      "explanationVi": "Bối cảnh vận hành mà sản phẩm được dự kiến sử dụng, gồm các điều kiện và scenario liên quan.",
+      "questionEn": "Why is operational context important for validation?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "VAL.1",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-035",
+      "topicId": "aspice",
+      "sectionId": "overall-flow",
+      "cardType": "phrase",
+      "term": "WHAT → HOW → PROVE → USE",
+      "definitionEn": "Requirements define what; architecture defines how; verification proves conformity; validation checks intended use.",
+      "explanationVi": "WHAT = requirements; HOW = architecture/design; PROVE = verification; USE = validation.",
+      "questionEn": "What four words summarize the ASPICE flow?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "Overall flow",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sys-swe-vv-036",
+      "topicId": "aspice",
+      "sectionId": "overall-flow",
+      "cardType": "phrase",
+      "term": "TRACE → BASELINE → TEST → EVIDENCE",
+      "definitionEn": "Four key controls for maintaining consistency and proving engineering results.",
+      "explanationVi": "Trace mọi artifact; baseline version được kiểm soát; test theo basis; lưu evidence để chứng minh.",
+      "questionEn": "What four keywords summarize the project control flow?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE – System Requirements, Architecture, Verification & Validation",
+        "section": "Overall checklist",
+        "reference": "content-source/ASPICE/SYS-SWE-VV.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

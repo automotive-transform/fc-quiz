@@ -1,0 +1,592 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "aspice-acq-spl-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "acq-spl",
+      "questionType": "single_choice",
+      "questionEn": "What does ACQ.4 Supplier Monitoring primarily focus on?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Monitoring supplier performance against agreed commitments"
+        },
+        {
+          "id": "B",
+          "text": "Designing the supplier's software architecture"
+        },
+        {
+          "id": "C",
+          "text": "Releasing the final product to the customer"
+        },
+        {
+          "id": "D",
+          "text": "Defining the vehicle electrical architecture"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ACQ.4 tập trung theo dõi và đánh giá supplier có thực hiện đúng các cam kết đã thỏa thuận hay không.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-003",
+        "aspice-acq-spl-009"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "ACQ.4 Supplier Monitoring",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "acq-spl",
+      "questionType": "single_choice",
+      "questionEn": "Which statement best describes SPL.2 Product Release?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It controls the release of a product to the intended customer"
+        },
+        {
+          "id": "B",
+          "text": "It monitors supplier cost and schedule performance"
+        },
+        {
+          "id": "C",
+          "text": "It defines customer acquisition contracts"
+        },
+        {
+          "id": "D",
+          "text": "It performs supplier qualification"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SPL.2 tập trung kiểm soát việc release product cho intended customer.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-004",
+        "aspice-acq-spl-010"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "SPL.2 Product Release",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "acq-spl",
+      "questionType": "single_choice",
+      "questionEn": "Which process is primarily associated with the customer side?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ACQ.4 Supplier Monitoring"
+        },
+        {
+          "id": "B",
+          "text": "SPL.2 Product Release"
+        },
+        {
+          "id": "C",
+          "text": "Product Release Note"
+        },
+        {
+          "id": "D",
+          "text": "Release Package Assembly"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Trong mối quan hệ Customer–Supplier, ACQ thuộc phía customer; ACQ.4 dùng để monitor supplier.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-006",
+        "aspice-acq-spl-008"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "Customer-Supplier / ACQ-SPL",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "acq-spl",
+      "questionType": "single_choice",
+      "questionEn": "Which process is primarily associated with the supplier side?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SPL.2 Product Release"
+        },
+        {
+          "id": "B",
+          "text": "ACQ.4 Supplier Monitoring"
+        },
+        {
+          "id": "C",
+          "text": "Customer Acquisition"
+        },
+        {
+          "id": "D",
+          "text": "Supplier Monitoring by the customer"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SPL là Supply và nằm ở phía supplier; SPL.2 kiểm soát product release.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-007",
+        "aspice-acq-spl-008"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "Customer-Supplier / ACQ-SPL",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-005",
+      "topicId": "aspice",
+      "sectionId": "acq-4",
+      "questionType": "single_choice",
+      "questionEn": "Which is an outcome of ACQ.4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Supplier performance is monitored against agreements"
+        },
+        {
+          "id": "B",
+          "text": "The product is always released without approval"
+        },
+        {
+          "id": "C",
+          "text": "All supplier contracts are automatically renewed"
+        },
+        {
+          "id": "D",
+          "text": "The supplier determines customer requirements independently"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Một outcome của ACQ.4 là supplier performance được monitor đối chiếu với các agreement đã thống nhất.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-011"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "ACQ.4 Process Outcomes",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-006",
+      "topicId": "aspice",
+      "sectionId": "acq-4",
+      "questionType": "single_choice",
+      "questionEn": "What should happen when ACQ.4 identifies deviations from agreed commitments?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Act to correct the deviations"
+        },
+        {
+          "id": "B",
+          "text": "Ignore them until final delivery"
+        },
+        {
+          "id": "C",
+          "text": "Delete the original agreement"
+        },
+        {
+          "id": "D",
+          "text": "Automatically terminate the supplier"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ACQ.4 BP5 yêu cầu action để correct deviations; nếu mục tiêu không đạt được thì negotiate change và document trong agreement.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-012"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "ACQ.4 Base Practices",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-007",
+      "topicId": "aspice",
+      "sectionId": "acq-4",
+      "questionType": "single_choice",
+      "questionEn": "Which three areas are explicitly reviewed for supplier progress in ACQ.4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Schedule, Quality, Cost"
+        },
+        {
+          "id": "B",
+          "text": "Color, Weight, Shape"
+        },
+        {
+          "id": "C",
+          "text": "Marketing, Sales, Branding"
+        },
+        {
+          "id": "D",
+          "text": "CPU, RAM, Storage"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ACQ.4 BP4 yêu cầu review supplier progress theo Schedule, Quality và Cost, đồng thời theo dõi open measures và risk mitigation.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-013"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "ACQ.4 Base Practices",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-008",
+      "topicId": "aspice",
+      "sectionId": "spl-2",
+      "questionType": "single_choice",
+      "questionEn": "What must happen before a product release is delivered?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Release approval must be performed against defined criteria"
+        },
+        {
+          "id": "B",
+          "text": "All known issues must be eliminated"
+        },
+        {
+          "id": "C",
+          "text": "The supplier must remove all release documentation"
+        },
+        {
+          "id": "D",
+          "text": "The customer must rewrite the release package"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SPL.2 yêu cầu release approval trước delivery, dựa trên các release criteria đã được định nghĩa.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-014"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "SPL.2 Base Practices",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-009",
+      "topicId": "aspice",
+      "sectionId": "spl-2",
+      "questionType": "single_choice",
+      "questionEn": "From what should a product release package be assembled?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Items under configuration control"
+        },
+        {
+          "id": "B",
+          "text": "Uncontrolled temporary files only"
+        },
+        {
+          "id": "C",
+          "text": "Customer meeting notes only"
+        },
+        {
+          "id": "D",
+          "text": "Supplier emails without configuration control"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SPL.2 BP4 yêu cầu build release từ các item under configuration control và đảm bảo integrity.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-015"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "SPL.2 Base Practices",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-010",
+      "topicId": "aspice",
+      "sectionId": "spl-2",
+      "questionType": "single_choice",
+      "questionEn": "What information should a Release Note include?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Key characteristics such as legal aspects, target markets and known issues"
+        },
+        {
+          "id": "B",
+          "text": "Only the supplier's internal meeting schedule"
+        },
+        {
+          "id": "C",
+          "text": "Only the product source code"
+        },
+        {
+          "id": "D",
+          "text": "Only the customer's organization chart"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SPL.2 BP6 yêu cầu mỗi release có Release Note, gồm các đặc tính chính như legal aspects, target markets, legislation và Known Issues.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-016"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "SPL.2 Base Practices",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-011",
+      "topicId": "aspice",
+      "sectionId": "acq-spl",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best summarizes ACQ.4 Supplier Monitoring?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Agree → Exchange → Review Work → Review Progress → Correct"
+        },
+        {
+          "id": "B",
+          "text": "Design → Code → Compile → Deploy → Delete"
+        },
+        {
+          "id": "C",
+          "text": "Release → Test → Contract → Acquire → Design"
+        },
+        {
+          "id": "D",
+          "text": "Market → Sell → Advertise → Release → Support"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Mẹo nhớ ACQ.4: AGREE → EXCHANGE → REVIEW WORK → REVIEW PROGRESS → CORRECT.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-012"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "ACQ.4 Supplier Monitoring",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-acq-spl-quiz-012",
+      "topicId": "aspice",
+      "sectionId": "spl-2",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best summarizes SPL.2 Product Release?",
+      "options": [
+        {
+          "id": "A",
+          "text": "WHAT → PACKAGE → ID → CONFIG → APPROVE → NOTE → SUPPORT → DELIVER"
+        },
+        {
+          "id": "B",
+          "text": "AGREE → EXCHANGE → REVIEW → CORRECT → ACQUIRE"
+        },
+        {
+          "id": "C",
+          "text": "RFQ → ASSUMPTION → EXCLUSION → HANDOVER"
+        },
+        {
+          "id": "D",
+          "text": "PLAN → CODE → DEBUG → DELETE → RELEASE"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Mẹo nhớ SPL.2: WHAT → PACKAGE → ID → CONFIG → APPROVE → NOTE → SUPPORT → DELIVER.",
+      "relatedFlashcardIds": [
+        "aspice-acq-spl-014",
+        "aspice-acq-spl-015",
+        "aspice-acq-spl-016"
+      ],
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "SPL.2 Product Release",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-poa-quiz-013",
+      "topicId": "aspice",
+      "sectionId": "poa",
+      "questionType": "single_choice",
+      "questionEn": "What is the main purpose of PoA in a pre-sales context?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Evaluate a partner's potential to perform and deliver in a specific context"
+        },
+        {
+          "id": "B",
+          "text": "Replace every full ASPICE assessment"
+        },
+        {
+          "id": "C",
+          "text": "Define vehicle styling requirements"
+        },
+        {
+          "id": "D",
+          "text": "Release the final product to the customer"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PoA dùng để đánh giá potential của partner/supplier trong một context cụ thể, thường hỗ trợ pre-sales, partner evaluation và risk reduction.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "PoA Potential Analysis",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-poa-quiz-014",
+      "topicId": "aspice",
+      "sectionId": "poa",
+      "questionType": "single_choice",
+      "questionEn": "Which structure best describes the PoA scope model discussed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "BASIC mandatory + at least one Plugin + optional FLEX"
+        },
+        {
+          "id": "B",
+          "text": "FLEX mandatory + no BASIC + no Plugin"
+        },
+        {
+          "id": "C",
+          "text": "Only one mandatory Plugin"
+        },
+        {
+          "id": "D",
+          "text": "BASIC optional + FLEX mandatory"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Cấu trúc được nêu là BASIC bắt buộc + ít nhất một Plugin + FLEX tùy nhu cầu.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "PoA Scope Structure",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-poa-quiz-015",
+      "topicId": "aspice",
+      "sectionId": "poa-pre-sales",
+      "questionType": "single_choice",
+      "questionEn": "Which item describes a condition assumed to be true for an estimate or commitment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Assumption"
+        },
+        {
+          "id": "B",
+          "text": "Exclusion"
+        },
+        {
+          "id": "C",
+          "text": "Effort Driver"
+        },
+        {
+          "id": "D",
+          "text": "Handover"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Assumption là điều kiện được giả định là đúng để làm cơ sở cho estimate hoặc commitment.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "PoA Pre-sales Scope",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-poa-quiz-016",
+      "topicId": "aspice",
+      "sectionId": "poa-pre-sales",
+      "questionType": "single_choice",
+      "questionEn": "What does an exclusion define in a PoA pre-sales scope?",
+      "options": [
+        {
+          "id": "A",
+          "text": "What is not included in the scope"
+        },
+        {
+          "id": "B",
+          "text": "What drives project effort"
+        },
+        {
+          "id": "C",
+          "text": "Why the scope was selected"
+        },
+        {
+          "id": "D",
+          "text": "How the product is released"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Exclusion xác định rõ những gì không nằm trong phạm vi scope.",
+      "source": {
+        "type": "conversation",
+        "document": "Automotive Transform project conversation",
+        "section": "PoA Pre-sales Scope",
+        "reference": "content-source/conversation/automotive-transform.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

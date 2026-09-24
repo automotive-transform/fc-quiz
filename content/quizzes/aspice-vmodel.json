@@ -41,7 +41,7 @@
     },
     {
       "id": "traceability-v-model-quiz-002",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "v-model",
       "questionType": "single_choice",
       "questionEn": "What is the main principle of traceability in the V-Model?",
@@ -338,7 +338,7 @@
     },
     {
       "id": "testing-swe4-quiz-010",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-4",
       "questionType": "single_choice",
       "questionEn": "What is the main purpose of SWE.4?",
@@ -375,7 +375,7 @@
     },
     {
       "id": "testing-swe4-coverage-quiz-011",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-4",
       "questionType": "single_choice",
       "questionEn": "Which coverage measures are listed in the SWE.4 output?",
@@ -412,7 +412,7 @@
     },
     {
       "id": "testing-swe5-quiz-012",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-5",
       "questionType": "single_choice",
       "questionEn": "What does SWE.5 primarily test?",
@@ -449,7 +449,7 @@
     },
     {
       "id": "testing-unit-integration-quiz-013",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-4-swe-5",
       "questionType": "single_choice",
       "questionEn": "What is the key difference between SWE.4 and SWE.5?",
@@ -486,7 +486,7 @@
     },
     {
       "id": "testing-swe6-quiz-014",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-6",
       "questionType": "single_choice",
       "questionEn": "What is the purpose of SWE.6?",
@@ -523,7 +523,7 @@
     },
     {
       "id": "testing-swe6-output-quiz-015",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-6",
       "questionType": "single_choice",
       "questionEn": "Which of the following is an output of SWE.6?",
@@ -561,7 +561,7 @@
     },
     {
       "id": "traceability-swe-mapping-quiz-016",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "v-model",
       "questionType": "single_choice",
       "questionEn": "Which V-Model testing phase corresponds to SWE.1?",
@@ -598,7 +598,7 @@
     },
     {
       "id": "traceability-swe-mapping-quiz-017",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "v-model",
       "questionType": "single_choice",
       "questionEn": "Which V-Model testing phase corresponds to SWE.2?",
@@ -635,7 +635,7 @@
     },
     {
       "id": "traceability-swe-mapping-quiz-018",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "v-model",
       "questionType": "single_choice",
       "questionEn": "Which V-Model testing phase corresponds to SWE.3?",

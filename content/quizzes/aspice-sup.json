@@ -1,0 +1,512 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "aspice-sup-quiz-001",
+      "topicId": "aspice",
+      "sectionId": "sup-overview",
+      "questionType": "single_choice",
+      "questionEn": "What is the primary purpose of SUP.1?",
+      "options": [
+        { "id": "A", "text": "Perform objective and independent quality assurance" },
+        { "id": "B", "text": "Own the project release schedule" },
+        { "id": "C", "text": "Develop all software components" },
+        { "id": "D", "text": "Approve every technical design" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SUP.1 tập trung vào QA độc lập và khách quan, kiểm tra compliance theo criteria đã xác định.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-001", "aspice-sup-quality-config-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.1 Quality Assurance",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-002",
+      "topicId": "aspice",
+      "sectionId": "sup-1",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best summarizes SUP.1 QA handling?",
+      "options": [
+        { "id": "A", "text": "Criteria → Audit → NC → Escalate → Closure" },
+        { "id": "B", "text": "Request → Code → Release → Backup" },
+        { "id": "C", "text": "Design → Implement → Sell → Close" },
+        { "id": "D", "text": "Problem → Baseline → Release → Archive" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SUP.1 bắt đầu bằng criteria, thực hiện audit, ghi nhận nonconformity, escalation khi cần và theo dõi closure.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-007", "aspice-sup-quality-config-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.1 Quality Assurance",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-003",
+      "topicId": "aspice",
+      "sectionId": "sup-1",
+      "questionType": "single_choice",
+      "questionEn": "What should a QA Plan define?",
+      "options": [
+        { "id": "A", "text": "QA scope, activities, schedule, criteria and responsibilities" },
+        { "id": "B", "text": "Only the software source code structure" },
+        { "id": "C", "text": "Only the customer release date" },
+        { "id": "D", "text": "Only developer salaries and resources" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "QA Plan xác định QA sẽ kiểm tra gì, khi nào, theo criteria nào và ai chịu trách nhiệm.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.1 evidence",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-004",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "questionType": "single_choice",
+      "questionEn": "What does SUP.8 primarily control?",
+      "options": [
+        { "id": "A", "text": "Configuration integrity and controlled configuration items" },
+        { "id": "B", "text": "Customer marketing activities" },
+        { "id": "C", "text": "Only software unit testing" },
+        { "id": "D", "text": "Only project financial reporting" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SUP.8 kiểm soát configuration items, baseline, status, access và backup/recovery để giữ configuration integrity.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-002", "aspice-sup-quality-config-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 Configuration Management",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-005",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "questionType": "single_choice",
+      "questionEn": "What is a Configuration Item (CI)?",
+      "options": [
+        { "id": "A", "text": "An item placed under configuration control" },
+        { "id": "B", "text": "Any informal discussion between developers" },
+        { "id": "C", "text": "Only a customer contract" },
+        { "id": "D", "text": "Only a hardware ECU" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CI là item được project xác định cần đưa vào Configuration Management và được kiểm soát.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-010", "aspice-sup-quality-config-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 Configuration Management",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-006",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of a baseline?",
+      "options": [
+        { "id": "A", "text": "Provide an identified configuration as a controlled reference" },
+        { "id": "B", "text": "Allow anyone to modify configuration without control" },
+        { "id": "C", "text": "Replace all verification activities" },
+        { "id": "D", "text": "Delete the history of configuration changes" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Baseline là configuration/version đã được xác định và kiểm soát để làm cơ sở tham chiếu.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-012"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 baseline",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-007",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "questionType": "single_choice",
+      "questionEn": "What does Status Accounting help the project know?",
+      "options": [
+        { "id": "A", "text": "The status and version of configuration items" },
+        { "id": "B", "text": "Only the number of project meetings" },
+        { "id": "C", "text": "Only the customer satisfaction score" },
+        { "id": "D", "text": "Only the hardware manufacturing cost" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Status Accounting giúp theo dõi trạng thái, version và thông tin liên quan của configuration items.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 status accounting",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-008",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "questionType": "single_choice",
+      "questionEn": "Why is access control important in Configuration Management?",
+      "options": [
+        { "id": "A", "text": "To control who is authorized to modify controlled items" },
+        { "id": "B", "text": "To eliminate the need for baselines" },
+        { "id": "C", "text": "To allow unrestricted modification" },
+        { "id": "D", "text": "To replace backup and recovery" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Access Control giới hạn quyền sửa configuration theo vai trò và thẩm quyền, giúp bảo vệ integrity.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 access control",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-009",
+      "topicId": "aspice",
+      "sectionId": "sup-8",
+      "questionType": "single_choice",
+      "questionEn": "Why are backup and recovery relevant to Configuration Management?",
+      "options": [
+        { "id": "A", "text": "They support preservation and restoration of controlled data" },
+        { "id": "B", "text": "They replace change approval" },
+        { "id": "C", "text": "They remove the need for configuration control" },
+        { "id": "D", "text": "They define software requirements" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Backup bảo vệ dữ liệu; recovery giúp khôi phục dữ liệu khi xảy ra mất mát hoặc sự cố.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.8 backup and recovery",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-010",
+      "topicId": "aspice",
+      "sectionId": "sup-9",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best summarizes the SUP.9 problem lifecycle?",
+      "options": [
+        { "id": "A", "text": "Identify → Classify → Analyze → Resolve → Verify → Close" },
+        { "id": "B", "text": "Request → Approve → Release → Archive" },
+        { "id": "C", "text": "Baseline → Code → Sell → Recover" },
+        { "id": "D", "text": "Audit → Release → Design → Delete" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SUP.9 quản lý problem xuyên suốt từ nhận diện đến verification và closure.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-017", "aspice-sup-quality-config-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.9 Problem Resolution Management",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-011",
+      "topicId": "aspice",
+      "sectionId": "sup-9",
+      "questionType": "single_choice",
+      "questionEn": "Why should a problem be classified?",
+      "options": [
+        { "id": "A", "text": "To support appropriate handling and prioritization" },
+        { "id": "B", "text": "To avoid recording the problem" },
+        { "id": "C", "text": "To bypass verification" },
+        { "id": "D", "text": "To automatically close the problem" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Classification giúp xác định loại, severity hoặc priority để problem được xử lý phù hợp.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-019"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.9 classification",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-012",
+      "topicId": "aspice",
+      "sectionId": "sup-9",
+      "questionType": "single_choice",
+      "questionEn": "What must be demonstrated before a problem is closed?",
+      "options": [
+        { "id": "A", "text": "Evidence that the resolution was verified" },
+        { "id": "B", "text": "Only a developer statement that it is fixed" },
+        { "id": "C", "text": "A new project plan" },
+        { "id": "D", "text": "A new customer contract" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Problem cần được verification bằng evidence trước khi closure; chỉ nói 'đã sửa' là chưa đủ.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-022", "aspice-sup-quality-config-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.9 verification and closure",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-013",
+      "topicId": "aspice",
+      "sectionId": "sup-9",
+      "questionType": "single_choice",
+      "questionEn": "What is the difference between a problem and a Change Request?",
+      "options": [
+        { "id": "A", "text": "A problem records an issue; a Change Request controls a requested modification" },
+        { "id": "B", "text": "They are always exactly the same record" },
+        { "id": "C", "text": "A problem is only for project planning" },
+        { "id": "D", "text": "A Change Request is only a test result" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Problem ghi nhận vấn đề/lỗi; Change Request kiểm soát yêu cầu thay đổi. Một problem có thể dẫn tới change.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-020"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.9 vs SUP.10",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-014",
+      "topicId": "aspice",
+      "sectionId": "sup-10",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of a Change Request?",
+      "options": [
+        { "id": "A", "text": "To control a requested modification to a controlled item" },
+        { "id": "B", "text": "To replace all configuration management" },
+        { "id": "C", "text": "To record only test failures" },
+        { "id": "D", "text": "To remove approval from changes" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Change Request là cơ chế kiểm soát yêu cầu thay đổi đối với item/configuration đã được quản lý.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-023"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.10 Change Request Management",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-015",
+      "topicId": "aspice",
+      "sectionId": "sup-10",
+      "questionType": "single_choice",
+      "questionEn": "What is the main purpose of Change Impact Analysis?",
+      "options": [
+        { "id": "A", "text": "Determine what may be affected by the proposed change" },
+        { "id": "B", "text": "Automatically approve every change" },
+        { "id": "C", "text": "Delete obsolete configuration history" },
+        { "id": "D", "text": "Replace verification after implementation" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Impact Analysis xác định các ảnh hưởng của change tới requirement, design, code, test, schedule, quality và các phần liên quan.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-024"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.10 impact analysis",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-016",
+      "topicId": "aspice",
+      "sectionId": "sup-10",
+      "questionType": "single_choice",
+      "questionEn": "What is the role of a CCB?",
+      "options": [
+        { "id": "A", "text": "Review and decide changes according to defined authority" },
+        { "id": "B", "text": "Write all source code" },
+        { "id": "C", "text": "Perform every software test" },
+        { "id": "D", "text": "Replace Configuration Management" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CCB hoặc authority được xác định có nhiệm vụ xem xét và quyết định change theo governance của project.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-025"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.10 approval",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-017",
+      "topicId": "aspice",
+      "sectionId": "sup-10",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best summarizes SUP.10?",
+      "options": [
+        { "id": "A", "text": "Request → Impact → Approve → Implement → Verify → Close" },
+        { "id": "B", "text": "Identify → Classify → Resolve → Backup" },
+        { "id": "C", "text": "Audit → Baseline → Release → Sell" },
+        { "id": "D", "text": "Code → Test → Delete → Approve" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SUP.10 kiểm soát change từ request, impact analysis, approval, implementation đến verification và closure.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-026"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.10 lifecycle",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-018",
+      "topicId": "aspice",
+      "sectionId": "sup-10",
+      "questionType": "single_choice",
+      "questionEn": "How does change control help prevent scope creep?",
+      "options": [
+        { "id": "A", "text": "It requires changes to be assessed and approved before implementation" },
+        { "id": "B", "text": "It allows every requested change immediately" },
+        { "id": "C", "text": "It removes the need to estimate effort" },
+        { "id": "D", "text": "It prevents all changes from being requested" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Change control biến yêu cầu thay đổi thành workflow có impact, effort, schedule và approval thay vì làm tự phát.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-027"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "SUP.10 and pre-sales",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-019",
+      "topicId": "aspice",
+      "sectionId": "sup-overview",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly distinguishes SUP.1 from SUP.8?",
+      "options": [
+        { "id": "A", "text": "SUP.1 checks compliance; SUP.8 controls configuration integrity" },
+        { "id": "B", "text": "SUP.1 manages releases; SUP.8 manages customer contracts" },
+        { "id": "C", "text": "SUP.1 fixes problems; SUP.8 approves requirements" },
+        { "id": "D", "text": "SUP.1 and SUP.8 have exactly the same purpose" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SUP.1 tập trung QA/compliance; SUP.8 tập trung configuration control và integrity.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-028"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Process relationship",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-020",
+      "topicId": "aspice",
+      "sectionId": "sup-overview",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly describes the relationship between SUP.9 and SUP.10?",
+      "options": [
+        { "id": "A", "text": "SUP.9 manages problems; SUP.10 manages requested changes" },
+        { "id": "B", "text": "SUP.9 manages configuration; SUP.10 performs QA audits" },
+        { "id": "C", "text": "SUP.9 and SUP.10 are both only backup processes" },
+        { "id": "D", "text": "SUP.10 replaces problem resolution completely" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SUP.9 xử lý problem; SUP.10 kiểm soát change. Một problem có thể dẫn tới Change Request.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-020", "aspice-sup-quality-config-029"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Process relationship",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-021",
+      "topicId": "aspice",
+      "sectionId": "sup-overview",
+      "questionType": "single_choice",
+      "questionEn": "Which evidence chain best demonstrates controlled problem and change handling?",
+      "options": [
+        { "id": "A", "text": "Problem → Change → Impact → Approval → Implementation → Verification → Closure" },
+        { "id": "B", "text": "Problem → Delete → Release → Archive" },
+        { "id": "C", "text": "Change → Code immediately → Close without verification" },
+        { "id": "D", "text": "Audit → Marketing → Contract → Release" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Evidence chain phải cho phép trace từ vấn đề hoặc change qua action, verification và closure.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-030"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Evidence and audit",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-sup-quiz-022",
+      "topicId": "aspice",
+      "sectionId": "sup-overview",
+      "questionType": "single_choice",
+      "questionEn": "Which statement matches the process boundary described for QA?",
+      "options": [
+        { "id": "A", "text": "QA performs independent assessment and does not own project execution" },
+        { "id": "B", "text": "QA owns the entire project plan and release" },
+        { "id": "C", "text": "QA must implement all software changes" },
+        { "id": "D", "text": "QA replaces Configuration Management" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo boundary đã nêu, QA không sở hữu project plan hoặc release; QA tập trung audit độc lập, compliance và closure.",
+      "relatedFlashcardIds": ["aspice-sup-quality-config-005", "aspice-sup-quality-config-028"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASPICE SUP.1, SUP.8, SUP.9, SUP.10",
+        "section": "Process boundaries",
+        "reference": "content-source/ASPICE/SUP-1-8-9-10.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

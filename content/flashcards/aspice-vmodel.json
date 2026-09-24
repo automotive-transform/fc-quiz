@@ -21,7 +21,7 @@
     },
     {
       "id": "traceability-v-model-concept-002",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "v-model",
       "cardType": "concept",
       "term": "Traceability",
@@ -140,7 +140,7 @@
     },
     {
       "id": "testing-swe4-concept-009",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-4",
       "cardType": "concept",
       "term": "SWE.4 — Software Unit Verification",
@@ -157,7 +157,7 @@
     },
     {
       "id": "testing-code-coverage-technical-term-010",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-4",
       "cardType": "technical_term",
       "term": "Code Coverage",
@@ -174,7 +174,7 @@
     },
     {
       "id": "testing-swe5-concept-011",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-5",
       "cardType": "concept",
       "term": "SWE.5 — Software Integration and Integration Test",
@@ -191,7 +191,7 @@
     },
     {
       "id": "testing-unit-integration-comparison-012",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-4-swe-5",
       "cardType": "comparison",
       "term": "Unit Verification vs. Integration Test",
@@ -208,7 +208,7 @@
     },
     {
       "id": "testing-swe6-concept-013",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-6",
       "cardType": "concept",
       "term": "SWE.6 — Software Qualification Test",
@@ -225,7 +225,7 @@
     },
     {
       "id": "testing-qualification-report-technical-term-014",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-6",
       "cardType": "technical_term",
       "term": "Qualification Test Report",
@@ -242,7 +242,7 @@
     },
     {
       "id": "traceability-v-model-mapping-015",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "v-model",
       "cardType": "comparison",
       "term": "V-Model Verification Mapping",
@@ -327,7 +327,7 @@
     },
     {
       "id": "testing-swe4-input-output-020",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-4",
       "cardType": "comparison",
       "term": "SWE.4 Input and Output",
@@ -344,7 +344,7 @@
     },
     {
       "id": "testing-swe5-input-output-021",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-5",
       "cardType": "comparison",
       "term": "SWE.5 Input and Output",
@@ -361,7 +361,7 @@
     },
     {
       "id": "testing-swe6-input-output-022",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "swe-6",
       "cardType": "comparison",
       "term": "SWE.6 Input and Output",

@@ -1,0 +1,438 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "aspice-overview-001",
+      "topicId": "aspice",
+      "sectionId": "overview",
+      "cardType": "abbreviation",
+      "term": "ASPICE",
+      "definitionEn": "Automotive SPICE: Software Process Improvement and Capability dEtermination.",
+      "explanationVi": "ASPICE là framework đánh giá quy trình phát triển phần mềm dành cho ngành ô tô.",
+      "questionEn": "What does ASPICE stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE là gì?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-overview-002",
+      "topicId": "aspice",
+      "sectionId": "overview",
+      "cardType": "technical_term",
+      "term": "Process Assessment Model (PAM)",
+      "definitionEn": "A model used to assess software development processes.",
+      "explanationVi": "PAM là mô hình dùng để đánh giá các quy trình phát triển phần mềm.",
+      "questionEn": "What does PAM mean in ASPICE?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Định nghĩa chính thức"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-overview-003",
+      "topicId": "aspice",
+      "sectionId": "overview",
+      "cardType": "concept",
+      "term": "ASPICE",
+      "definitionEn": "A framework for assessing automotive software development processes, not a software product.",
+      "explanationVi": "ASPICE là framework đánh giá process, không phải sản phẩm hay phần mềm.",
+      "questionEn": "Is ASPICE a software product?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Định nghĩa chính thức"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-001",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "cardType": "single_word",
+      "term": "Incomplete",
+      "definitionEn": "Capability Level 0: the process is incomplete.",
+      "explanationVi": "Level 0: quy trình chưa hoàn chỉnh; output không nhất quán.",
+      "questionEn": "What is ASPICE Capability Level 0 called?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE Capability Levels"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-002",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "cardType": "single_word",
+      "term": "Performed",
+      "definitionEn": "Capability Level 1: the process is performed and produces outputs.",
+      "explanationVi": "Level 1: có thực hiện và tạo output, nhưng chưa nhất quán.",
+      "questionEn": "What is ASPICE Capability Level 1 called?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE Capability Levels"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-003",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "cardType": "single_word",
+      "term": "Managed",
+      "definitionEn": "Capability Level 2: the process is planned, tracked, and reviewed.",
+      "explanationVi": "Level 2: process có planning, tracking và review.",
+      "questionEn": "What is ASPICE Capability Level 2 called?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE Capability Levels"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-004",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "cardType": "single_word",
+      "term": "Established",
+      "definitionEn": "Capability Level 3: the process is standardized across the organization.",
+      "explanationVi": "Level 3: process được chuẩn hóa trong toàn công ty.",
+      "questionEn": "What is ASPICE Capability Level 3 called?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE Capability Levels"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-005",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "cardType": "single_word",
+      "term": "Predictable",
+      "definitionEn": "Capability Level 4: the process is measured quantitatively.",
+      "explanationVi": "Level 4: process được đo lường bằng các chỉ số định lượng.",
+      "questionEn": "What is ASPICE Capability Level 4 called?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE Capability Levels"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-006",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "cardType": "single_word",
+      "term": "Optimizing",
+      "definitionEn": "Capability Level 5: continuous improvement of the process.",
+      "explanationVi": "Level 5: process được cải tiến liên tục.",
+      "questionEn": "What is ASPICE Capability Level 5 called?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE Capability Levels"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-levels-007",
+      "topicId": "aspice",
+      "sectionId": "capability-levels",
+      "cardType": "comparison",
+      "term": "Capability Levels 0–5",
+      "definitionEn": "Incomplete, Performed, Managed, Established, Predictable, Optimizing.",
+      "explanationVi": "Nhớ: Chưa làm → Làm → Quản lý → Chuẩn hóa → Đo lường → Cải tiến.",
+      "questionEn": "What is the ASPICE Capability Level progression?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE Capability Levels"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-audit-001",
+      "topicId": "aspice",
+      "sectionId": "audit",
+      "cardType": "concept",
+      "term": "ASPICE Audit",
+      "definitionEn": "An assessment involving interviews, document review, consistency checks, and ratings.",
+      "explanationVi": "Audit gồm phỏng vấn team, xem documents, kiểm tra consistency và gán rating.",
+      "questionEn": "What are the main activities in an ASPICE audit?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE trong thực tế"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-audit-002",
+      "topicId": "aspice",
+      "sectionId": "audit",
+      "cardType": "concept",
+      "term": "Evidence",
+      "definitionEn": "Documented proof supporting claims that a process was performed.",
+      "explanationVi": "Evidence là bằng chứng tài liệu chứng minh process đã được thực hiện.",
+      "questionEn": "Why is evidence important in ASPICE?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Key Insight"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-audit-003",
+      "topicId": "aspice",
+      "sectionId": "audit",
+      "cardType": "comparison",
+      "term": "N / P / L / F",
+      "definitionEn": "Not, Partially, Largely, and Fully achieved ratings.",
+      "explanationVi": "Các mức rating: N 0–15%, P 15–50%, L 50–85%, F 85–100%.",
+      "questionEn": "What are the four ASPICE process attribute ratings?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Gán rating"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-001",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "cardType": "technical_term",
+      "term": "SWE.1",
+      "definitionEn": "Software Requirements Analysis.",
+      "explanationVi": "Phân tích và thu thập SW requirements từ system level.",
+      "questionEn": "What is SWE.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Các quy trình chính trong Automotive SW ASPICE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-002",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "cardType": "technical_term",
+      "term": "SWE.2",
+      "definitionEn": "Software Architectural Design.",
+      "explanationVi": "Thiết kế kiến trúc software gồm component, interface và data flow.",
+      "questionEn": "What is SWE.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Các quy trình chính trong Automotive SW ASPICE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-003",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "cardType": "technical_term",
+      "term": "SWE.3",
+      "definitionEn": "Software Detailed Design.",
+      "explanationVi": "Thiết kế chi tiết module, state machine, algorithm và function signature.",
+      "questionEn": "What is SWE.3?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Các quy trình chính trong Automotive SW ASPICE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-004",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "cardType": "technical_term",
+      "term": "SWE.4",
+      "definitionEn": "Software Unit Verification.",
+      "explanationVi": "Viết và chạy unit test cho từng function hoặc module.",
+      "questionEn": "What is SWE.4?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Các quy trình chính trong Automotive SW ASPICE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-005",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "cardType": "technical_term",
+      "term": "SWE.5",
+      "definitionEn": "Software Integration & Integration Test.",
+      "explanationVi": "Kết hợp các component và kiểm thử interface giữa chúng.",
+      "questionEn": "What is SWE.5?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Các quy trình chính trong Automotive SW ASPICE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-swe-006",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "cardType": "technical_term",
+      "term": "SWE.6",
+      "definitionEn": "Software Qualification Test.",
+      "explanationVi": "Test toàn bộ SW trên target hardware để chứng minh đáp ứng requirements.",
+      "questionEn": "What is SWE.6?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Các quy trình chính trong Automotive SW ASPICE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-processes-007",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "cardType": "comparison",
+      "term": "SWE.1 → SWE.6",
+      "definitionEn": "Requirements → Architecture → Detailed Design → Unit → Integration → Qualification.",
+      "explanationVi": "Chuỗi chính: Requirement → Architecture → Detail → Unit → Integration → Qualification.",
+      "questionEn": "What is the main SWE.1–SWE.6 flow?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Các quy trình chính trong Automotive SW ASPICE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-support-001",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "cardType": "technical_term",
+      "term": "SWS.1",
+      "definitionEn": "Software Support.",
+      "explanationVi": "Hỗ trợ quản lý configuration, change, build và release.",
+      "questionEn": "What is SWS.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Các quy trình chính trong Automotive SW ASPICE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-management-001",
+      "topicId": "aspice",
+      "sectionId": "software-processes",
+      "cardType": "technical_term",
+      "term": "MAN.3",
+      "definitionEn": "Project Management.",
+      "explanationVi": "Lập kế hoạch, theo dõi tiến độ và quản lý risk của project.",
+      "questionEn": "What is MAN.3?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Các quy trình chính trong Automotive SW ASPICE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-comparison-001",
+      "topicId": "aspice",
+      "sectionId": "standards-comparison",
+      "cardType": "comparison",
+      "term": "ASPICE vs ISO 26262",
+      "definitionEn": "ASPICE focuses on process quality; ISO 26262 focuses on functional safety.",
+      "explanationVi": "ASPICE tập trung process quality; ISO 26262 tập trung functional safety.",
+      "questionEn": "How does ASPICE differ from ISO 26262?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE so với các tiêu chuẩn khác"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-comparison-002",
+      "topicId": "aspice",
+      "sectionId": "standards-comparison",
+      "cardType": "comparison",
+      "term": "ASPICE vs SOTIF",
+      "definitionEn": "ASPICE focuses on process quality; SOTIF focuses on intended functionality.",
+      "explanationVi": "ASPICE tập trung process quality; SOTIF tập trung intended functionality.",
+      "questionEn": "How does ASPICE differ from SOTIF?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE so với các tiêu chuẩn khác"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-comparison-003",
+      "topicId": "aspice",
+      "sectionId": "standards-comparison",
+      "cardType": "comparison",
+      "term": "ASPICE vs AUTOSAR",
+      "definitionEn": "ASPICE assesses process; AUTOSAR addresses software architecture.",
+      "explanationVi": "ASPICE đánh giá process; AUTOSAR liên quan đến software architecture.",
+      "questionEn": "How does ASPICE differ from AUTOSAR?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE so với các tiêu chuẩn khác"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-comparison-004",
+      "topicId": "aspice",
+      "sectionId": "standards-comparison",
+      "cardType": "comparison",
+      "term": "ASPICE vs MISRA-C",
+      "definitionEn": "ASPICE focuses on process quality; MISRA-C focuses on coding rules.",
+      "explanationVi": "ASPICE tập trung process quality; MISRA-C tập trung coding standard.",
+      "questionEn": "How does ASPICE differ from MISRA-C?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "ASPICE so với các tiêu chuẩn khác"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "aspice-lifecycle-001",
+      "topicId": "aspice",
+      "sectionId": "project-lifecycle",
+      "cardType": "comparison",
+      "term": "Project Lifecycle",
+      "definitionEn": "Concept → Requirements → Design → Coding → Unit Test → Integration → Qualification → Release.",
+      "explanationVi": "Vòng đời: Concept → Requirement → Design → Coding → Unit → Integration → Qualification → Release.",
+      "questionEn": "What is the ASPICE project lifecycle sequence?",
+      "source": {
+        "type": "technical_document",
+        "document": "Automotive Transform.md",
+        "section": "Vòng đời dự án và ASPICE"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}
