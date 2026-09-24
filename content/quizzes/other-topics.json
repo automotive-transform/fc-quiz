@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "quiz-autosar-001",
+      "topicId": "autosar",
+      "sectionId": "architecture",
+      "questionType": "single_choice",
+      "questionEn": "What is AUTOSAR mainly intended to standardize?",
+      "questionVi": "AUTOSAR chủ yếu nhằm chuẩn hóa điều gì?",
+      "options": [
+        { "id": "A", "text": "Automotive software architecture across ECUs" },
+        { "id": "B", "text": "Battery chemistry" },
+        { "id": "C", "text": "Physical wheel alignment" },
+        { "id": "D", "text": "Paint thickness testing" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "AUTOSAR giúp chuẩn hóa kiến trúc phần mềm ô tô và tách logic ứng dụng khỏi nền tảng phần cứng và phần mềm cơ bản.",
+      "difficulty": "easy",
+      "relatedFlashcardIds": ["autosar-term-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR Overview",
+        "section": "Architecture",
+        "reference": "content-source/AUTOSAR/AUTOSAR-overview.md"
+      },
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quiz-iso-26262-001",
+      "topicId": "iso-26262",
+      "sectionId": "safety-levels",
+      "questionType": "single_choice",
+      "questionEn": "What does ASIL represent in functional safety?",
+      "questionVi": "ASIL đại diện cho gì trong an toàn chức năng?",
+      "options": [
+        { "id": "A", "text": "A risk-based safety level for required safety measures" },
+        { "id": "B", "text": "A battery charge rate" },
+        { "id": "C", "text": "A type of ECU sensor" },
+        { "id": "D", "text": "A CAN frame identifier" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ASIL là mức độ an toàn theo mức độ rủi ro, xác định độ nghiêm ngặt của các biện pháp an toàn cần áp dụng.",
+      "difficulty": "medium",
+      "relatedFlashcardIds": ["iso-26262-term-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Overview",
+        "section": "Safety levels",
+        "reference": "content-source/ISO-26262/ISO-26262-overview.md"
+      },
+      "reviewStatus": "approved"
+    }
+  ]
+}

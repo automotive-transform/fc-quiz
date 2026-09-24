@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "topics": [
+    {
+      "topicId": "can",
+      "nameEn": "CAN",
+      "nameVi": "GIAO THỨC CAN",
+      "description": "Controller Area Network and differential signaling fundamentals.",
+      "order": 1
+    },
+    {
+      "topicId": "autosar",
+      "nameEn": "AUTOSAR",
+      "nameVi": "KIẾN TRÚC PHẦN MỀM Ô TÔ",
+      "description": "Vehicle software architecture and ECU integration.",
+      "order": 2
+    },
+    {
+      "topicId": "iso-26262",
+      "nameEn": "ISO 26262",
+      "nameVi": "AN TOÀN CHỨC NĂNG",
+      "description": "Functional safety processes and risk-based engineering practice.",
+      "order": 3
+    }
+  ]
+}

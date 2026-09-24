@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "quiz-can-001",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "questionType": "single_choice",
+      "questionEn": "What is the main advantage of differential signaling in CAN?",
+      "questionVi": "Lợi ích chính của truyền tín hiệu vi sai trong CAN là gì?",
+      "options": [
+        { "id": "A", "text": "Improved noise rejection" },
+        { "id": "B", "text": "Higher battery voltage" },
+        { "id": "C", "text": "Automatic encryption" },
+        { "id": "D", "text": "Wireless communication" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Phương pháp vi sai giúp giảm ảnh hưởng của nhiễu chung lên cả hai dây, nên cải thiện độ tin cậy của truyền thông CAN.",
+      "difficulty": "easy",
+      "relatedFlashcardIds": ["can-term-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Physical layer",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quiz-can-002",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "questionType": "single_choice",
+      "questionEn": "Which pair of signals is used in CAN differential transmission?",
+      "questionVi": "Cặp tín hiệu nào được sử dụng trong truyền dẫn vi sai của CAN?",
+      "options": [
+        { "id": "A", "text": "CANH and CANL" },
+        { "id": "B", "text": "LIN and PWM" },
+        { "id": "C", "text": "UART and SPI" },
+        { "id": "D", "text": "RX and TX only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN truyền tín hiệu trên hai dây CANH và CANL, và phía thu so sánh chênh lệch điện áp giữa chúng.",
+      "difficulty": "easy",
+      "relatedFlashcardIds": ["can-term-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Physical layer",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "approved"
+    }
+  ]
+}
