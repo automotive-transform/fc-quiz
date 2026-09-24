@@ -1,0 +1,813 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "autosar-tools-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which tool is used to design SWCs, ports, runnables, and generate ARXML?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vector DaVinci Developer"
+        },
+        {
+          "id": "B",
+          "text": "Vector CANalyzer"
+        },
+        {
+          "id": "C",
+          "text": "LDRA TBvision"
+        },
+        {
+          "id": "D",
+          "text": "Green Hills MULTI"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "DaVinci Developer dùng để thiết kế SWC, ports, runnables và tạo ARXML.",
+      "relatedFlashcardIds": [
+        "autosar-tools-da-vinci-developer-002"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which tool is mainly used for AUTOSAR BSW configuration?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vector DaVinci Configurator Pro"
+        },
+        {
+          "id": "B",
+          "text": "Vector CANoe"
+        },
+        {
+          "id": "C",
+          "text": "IAR Embedded Workbench"
+        },
+        {
+          "id": "D",
+          "text": "LDRA TBvision"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "DaVinci Configurator Pro dùng để cấu hình các BSW module như OS, Com, NvM và DEM.",
+      "relatedFlashcardIds": [
+        "autosar-tools-davinci-configurator-004"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "BSW Config"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which tool is used to configure and deliver a complete AUTOSAR BSW stack?",
+      "options": [
+        {
+          "id": "A",
+          "text": "EB tresos Studio"
+        },
+        {
+          "id": "B",
+          "text": "Vector CANalyzer"
+        },
+        {
+          "id": "C",
+          "text": "Polyspace Code Prover"
+        },
+        {
+          "id": "D",
+          "text": "Green Hills MULTI"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "EB tresos Studio dùng để configure và deliver complete BSW stack.",
+      "relatedFlashcardIds": [
+        "autosar-tools-eb-tresos-005"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "BSW Config"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-quiz-004",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "What does RTE Generation produce from AUTOSAR ARXML?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rte_*.c and Rte_*.h"
+        },
+        {
+          "id": "B",
+          "text": "CAN bus cables"
+        },
+        {
+          "id": "C",
+          "text": "DTC memory only"
+        },
+        {
+          "id": "D",
+          "text": "Compiler hardware"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTE Generation sử dụng ARXML để generate các file Rte_*.c và Rte_*.h.",
+      "relatedFlashcardIds": [
+        "autosar-tools-rte-generation-006"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "RTE Generation"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-quiz-005",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "questionType": "single_choice",
+      "questionEn": "Which tool is used for CAN, LIN, and Ethernet traffic analysis and ECU simulation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vector CANoe"
+        },
+        {
+          "id": "B",
+          "text": "Polyspace Bug Finder"
+        },
+        {
+          "id": "C",
+          "text": "IAR Embedded Workbench"
+        },
+        {
+          "id": "D",
+          "text": "LDRA TBvision"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CANoe dùng để phân tích traffic CAN/LIN/Ethernet và mô phỏng ECU.",
+      "relatedFlashcardIds": [
+        "autosar-tools-canoe-canalyzer-009"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "CAN Analysis"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "questionType": "single_choice",
+      "questionEn": "What scheduling principle is used by AUTOSAR OS in the source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Priority-based preemptive scheduling"
+        },
+        {
+          "id": "B",
+          "text": "Random scheduling"
+        },
+        {
+          "id": "C",
+          "text": "FIFO-only scheduling"
+        },
+        {
+          "id": "D",
+          "text": "Round-robin-only scheduling"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "AUTOSAR OS dùng priority-based preemptive scheduling: task ưu tiên cao có thể preempt task ưu tiên thấp.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR OS task scheduling"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "questionType": "single_choice",
+      "questionEn": "What is the main purpose of an AUTOSAR Schedule Table?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Provide deterministic task activation"
+        },
+        {
+          "id": "B",
+          "text": "Store calibration data permanently"
+        },
+        {
+          "id": "C",
+          "text": "Decode UDS requests"
+        },
+        {
+          "id": "D",
+          "text": "Compile C++ applications"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Schedule Table giúp lập lịch activation task theo các expiry point một cách deterministic.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "OSEK vs AUTOSAR"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "questionType": "single_choice",
+      "questionEn": "Which AUTOSAR Scalability Class adds memory protection with MPU integration?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SC1"
+        },
+        {
+          "id": "B",
+          "text": "SC2"
+        },
+        {
+          "id": "C",
+          "text": "SC3"
+        },
+        {
+          "id": "D",
+          "text": "SC4"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Theo source, SC3 và SC4 có Memory Protection với MPU integration.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Memory Protection"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-quiz-004",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "questionType": "single_choice",
+      "questionEn": "Which task has the highest priority in the given example?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Task_2ms"
+        },
+        {
+          "id": "B",
+          "text": "Task_10ms"
+        },
+        {
+          "id": "C",
+          "text": "Task_100ms"
+        },
+        {
+          "id": "D",
+          "text": "MainScheduleTable"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Task_2ms có priority 100, cao hơn Task_10ms priority 50 và Task_100ms priority 10.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Task examples"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-quiz-005",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "questionType": "single_choice",
+      "questionEn": "In the example, what does 100 counter ticks represent in MainScheduleTable?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100 ms"
+        },
+        {
+          "id": "B",
+          "text": "10 ms"
+        },
+        {
+          "id": "C",
+          "text": "2 ms"
+        },
+        {
+          "id": "D",
+          "text": "1 second"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Trong ví dụ, LENGTH 100 tương ứng 100 counter ticks = 100 ms.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "MainScheduleTable"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "questionType": "single_choice",
+      "questionEn": "What is the main role of NvM?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Manage read and write access to non-volatile memory"
+        },
+        {
+          "id": "B",
+          "text": "Schedule OS tasks"
+        },
+        {
+          "id": "C",
+          "text": "Decode Ethernet packets"
+        },
+        {
+          "id": "D",
+          "text": "Generate C++ source code"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "NvM là BSW module quản lý việc đọc/ghi dữ liệu trên EEPROM và Flash.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM — Non-volatile Memory Management"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "questionType": "single_choice",
+      "questionEn": "Which NvM API reads one configured block?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NvM_ReadBlock()"
+        },
+        {
+          "id": "B",
+          "text": "NvM_ReadAll()"
+        },
+        {
+          "id": "C",
+          "text": "NvM_WriteAll()"
+        },
+        {
+          "id": "D",
+          "text": "NvM_SetRamBlockStatus()"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "NvM_ReadBlock() dùng để đọc một block; NvM_ReadAll() đọc toàn bộ block được cấu hình.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM APIs"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "questionType": "single_choice",
+      "questionEn": "Which NvM API writes all modified configured blocks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NvM_WriteAll()"
+        },
+        {
+          "id": "B",
+          "text": "NvM_WriteBlock()"
+        },
+        {
+          "id": "C",
+          "text": "NvM_ReadAll()"
+        },
+        {
+          "id": "D",
+          "text": "NvM_GetErrorStatus()"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "NvM_WriteAll() ghi các block đã modified, thường được gọi trong quá trình EcuM shutdown.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM APIs"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-quiz-004",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "questionType": "single_choice",
+      "questionEn": "What does NvM_SetRamBlockStatus(..., TRUE) indicate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The RAM block is dirty and should be considered modified"
+        },
+        {
+          "id": "B",
+          "text": "The ECU must reset immediately"
+        },
+        {
+          "id": "C",
+          "text": "The block has been deleted"
+        },
+        {
+          "id": "D",
+          "text": "The CAN bus is offline"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "TRUE đánh dấu RAM block là dirty/modified để NvM_WriteAll() có thể lưu dữ liệu.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM APIs"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-dcm-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "questionType": "single_choice",
+      "questionEn": "What is the main role of DCM?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Handle diagnostic requests from external testers"
+        },
+        {
+          "id": "B",
+          "text": "Compile AUTOSAR applications"
+        },
+        {
+          "id": "C",
+          "text": "Schedule all OS tasks"
+        },
+        {
+          "id": "D",
+          "text": "Store all application source code"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "DCM xử lý các UDS request từ tester bên ngoài như CANoe, ETAS INCA hoặc scanner.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-dcm-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "questionType": "single_choice",
+      "questionEn": "Which UDS service uses SID 0x10?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DiagnosticSessionControl"
+        },
+        {
+          "id": "B",
+          "text": "ECUReset"
+        },
+        {
+          "id": "C",
+          "text": "SecurityAccess"
+        },
+        {
+          "id": "D",
+          "text": "RoutineControl"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "0x10 là DiagnosticSessionControl, dùng để chuyển Default, Programming hoặc Extended session.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "UDS services"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-dcm-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "questionType": "single_choice",
+      "questionEn": "Which UDS service is used to read data by identifier, such as VIN?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ReadDataByIdentifier (0x22)"
+        },
+        {
+          "id": "B",
+          "text": "WriteDataByIdentifier (0x2E)"
+        },
+        {
+          "id": "C",
+          "text": "ClearDiagnosticInformation (0x14)"
+        },
+        {
+          "id": "D",
+          "text": "ECUReset (0x11)"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "0x22 dùng để đọc dữ liệu theo DID; ví dụ 22 F1 90 để đọc VIN.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "UDS services"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-dcm-quiz-004",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "questionType": "single_choice",
+      "questionEn": "Which UDS service is used to clear diagnostic trouble codes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ClearDiagnosticInformation (0x14)"
+        },
+        {
+          "id": "B",
+          "text": "ReadDTCInformation (0x19)"
+        },
+        {
+          "id": "C",
+          "text": "RequestDownload (0x34)"
+        },
+        {
+          "id": "D",
+          "text": "DiagnosticSessionControl (0x10)"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "0x14 dùng để clear DTC; source đưa ví dụ 14 FF FF FF để clear all.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "UDS services"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-dcm-quiz-005",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "questionType": "single_choice",
+      "questionEn": "Which UDS service uses a seed/key mechanism to unlock protected services?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SecurityAccess (0x27)"
+        },
+        {
+          "id": "B",
+          "text": "ECUReset (0x11)"
+        },
+        {
+          "id": "C",
+          "text": "ReadDataByIdentifier (0x22)"
+        },
+        {
+          "id": "D",
+          "text": "RoutineControl (0x31)"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SecurityAccess 0x27 dùng cơ chế seed/key để unlock các service được bảo vệ.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "UDS services"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-adaptive-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "questionType": "single_choice",
+      "questionEn": "What type of ECU is AUTOSAR Adaptive designed for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "High-performance ECUs for ADAS and autonomous driving"
+        },
+        {
+          "id": "B",
+          "text": "Only simple 8-bit body controllers"
+        },
+        {
+          "id": "C",
+          "text": "Only legacy CAN transceivers"
+        },
+        {
+          "id": "D",
+          "text": "Only EEPROM controllers"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Adaptive hướng tới high-performance ECU như ADAS, autonomous driving và central compute.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Adaptive"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-adaptive-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "questionType": "single_choice",
+      "questionEn": "Which operating-system model is associated with AUTOSAR Adaptive in the source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "POSIX-based systems such as Linux, QNX, or Integrity"
+        },
+        {
+          "id": "B",
+          "text": "Only OSEK OS"
+        },
+        {
+          "id": "C",
+          "text": "Only bare-metal firmware"
+        },
+        {
+          "id": "D",
+          "text": "Only DOS"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Source mô tả Adaptive dùng POSIX, với các hệ như Linux, QNX hoặc Integrity.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Classic vs Adaptive"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-adaptive-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "questionType": "single_choice",
+      "questionEn": "Which communication approach is associated with AUTOSAR Adaptive?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Service-oriented communication using ara::com and SOME/IP"
+        },
+        {
+          "id": "B",
+          "text": "Only signal-based Com"
+        },
+        {
+          "id": "C",
+          "text": "Only direct GPIO communication"
+        },
+        {
+          "id": "D",
+          "text": "Only EEPROM messaging"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Adaptive dùng service-oriented communication với ara::com và SOME/IP, khác signal-based Com của Classic.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Communication"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-adaptive-quiz-004",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "questionType": "single_choice",
+      "questionEn": "Which statement describes Adaptive memory usage in the source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dynamic memory allocation is allowed"
+        },
+        {
+          "id": "B",
+          "text": "Only static allocation is allowed"
+        },
+        {
+          "id": "C",
+          "text": "Memory is not used"
+        },
+        {
+          "id": "D",
+          "text": "Only EEPROM memory is allowed"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Source so sánh Adaptive cho phép dynamic memory, trong khi Classic chủ yếu dùng static allocation.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Memory"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-adaptive-quiz-005",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "questionType": "single_choice",
+      "questionEn": "Which update approach is associated with AUTOSAR Adaptive?",
+      "options": [
+        {
+          "id": "A",
+          "text": "OTA update per application"
+        },
+        {
+          "id": "B",
+          "text": "Only complete ECU flashing"
+        },
+        {
+          "id": "C",
+          "text": "No software update"
+        },
+        {
+          "id": "D",
+          "text": "Only manual ROM replacement"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Source mô tả Adaptive hỗ trợ OTA per Application, trong khi Classic thường full ECU flash.",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Update"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

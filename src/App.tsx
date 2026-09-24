@@ -44,7 +44,13 @@ function App() {
         setTopics(topicsData)
         setFlashcards(flashcardsData)
         setQuizzes(quizzesData)
-        setSelectedTopicId((current) => current || topicsData[0]?.id || '')
+        setSelectedTopicId((current) => {
+          if (current && topicsData.some((topic) => topic.id === current)) {
+            return current
+          }
+
+          return topicsData[0]?.id ?? ''
+        })
         setProgress(getFlashcardProgress())
       })
       .catch(() => {

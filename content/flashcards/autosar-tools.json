@@ -1,0 +1,890 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "autosar-tools-ecosystem-001",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "concept",
+      "term": "AUTOSAR Tools Ecosystem",
+      "definitionEn": "A toolchain covering AUTOSAR authoring, BSW configuration, RTE generation, compilation, analysis, static analysis, and coverage.",
+      "explanationVi": "Hệ sinh thái công cụ phục vụ toàn bộ flow: thiết kế → cấu hình → generate → compile → phân tích → kiểm tra → coverage.",
+      "questionEn": "What does the AUTOSAR Tools Ecosystem cover?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-da-vinci-developer-002",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "DaVinci Developer",
+      "definitionEn": "Vector AUTOSAR authoring tool for designing SWCs, defining ports and runnables, and generating ARXML.",
+      "explanationVi": "Tool của Vector để thiết kế SWC, define ports, runnables và generate ARXML.",
+      "questionEn": "What is DaVinci Developer used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-etas-studio-003",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "ETAS Studio (ISOLAR-A)",
+      "definitionEn": "An AUTOSAR authoring tool similar to DaVinci, with focus on BSW configuration.",
+      "explanationVi": "Tool authoring tương tự DaVinci, tập trung vào cấu hình BSW.",
+      "questionEn": "What is ETAS Studio (ISOLAR-A) used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-davinci-configurator-004",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "DaVinci Configurator Pro",
+      "definitionEn": "Vector tool for configuring AUTOSAR BSW modules such as OS, Com, NvM, and DEM.",
+      "explanationVi": "Tool Vector dùng để cấu hình các BSW module như OS, Com, NvM và DEM.",
+      "questionEn": "What does DaVinci Configurator Pro configure?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-eb-tresos-005",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "EB tresos Studio",
+      "definitionEn": "Elektrobit tool for configuring and delivering a complete BSW stack.",
+      "explanationVi": "Tool của Elektrobit để configure và deliver complete BSW stack.",
+      "questionEn": "What is EB tresos Studio used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-rte-generation-006",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "concept",
+      "term": "RTE Generation",
+      "definitionEn": "Generation of Rte_*.c and Rte_*.h files from AUTOSAR ARXML, integrated into authoring tools.",
+      "explanationVi": "Generate các file Rte_*.c/.h từ ARXML, được tích hợp trong authoring tool.",
+      "questionEn": "What does RTE Generation produce?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-multi-ide-007",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "MULTI IDE",
+      "definitionEn": "Green Hills compiler and development environment for compiling AUTOSAR C code for embedded targets.",
+      "explanationVi": "IDE/compiler của Green Hills để compile AUTOSAR C code cho embedded targets.",
+      "questionEn": "What is Green Hills MULTI IDE used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-iar-008",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "Embedded Workbench",
+      "definitionEn": "IAR development environment popular for RH850 and ARM cores.",
+      "explanationVi": "Môi trường phát triển của IAR, phổ biến cho RH850 và ARM cores.",
+      "questionEn": "Which cores is IAR Embedded Workbench popular for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-canoe-canalyzer-009",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "comparison",
+      "term": "CANoe / CANalyzer",
+      "definitionEn": "Vector tools for analyzing CAN, LIN, and Ethernet traffic and simulating an ECU.",
+      "explanationVi": "Tool Vector để phân tích traffic CAN/LIN/Ethernet và simulate ECU.",
+      "questionEn": "What are CANoe and CANalyzer used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-polyspace-010",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "Polyspace Bug Finder / Code Prover",
+      "definitionEn": "Static analysis tools for MISRA C checking and runtime error detection.",
+      "explanationVi": "Tool static analysis để kiểm tra MISRA C và phát hiện runtime errors.",
+      "questionEn": "What does Polyspace check?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-tools-ldra-tbvision-011",
+      "topicId": "autosar",
+      "sectionId": "tools-ecosystem",
+      "cardType": "technical_term",
+      "term": "LDRA TBvision",
+      "definitionEn": "A tool for measuring code coverage for ASIL.",
+      "explanationVi": "Tool dùng để đo code coverage cho ASIL.",
+      "questionEn": "What is LDRA TBvision used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR Tools Ecosystem",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-scheduling-012",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "concept",
+      "term": "Priority-based preemptive scheduling",
+      "definitionEn": "A higher-priority task can preempt a lower-priority task.",
+      "explanationVi": "Task có priority cao hơn có thể preempt task có priority thấp hơn.",
+      "questionEn": "How does AUTOSAR OS scheduling prioritize tasks?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR OS — Chi tiết Task Scheduling",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-osek-013",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "comparison",
+      "term": "AUTOSAR OS and OSEK OS",
+      "definitionEn": "AUTOSAR OS is based on OSEK OS with automotive extensions.",
+      "explanationVi": "AUTOSAR OS dựa trên OSEK OS và bổ sung các extension cho automotive.",
+      "questionEn": "What is the relationship between AUTOSAR OS and OSEK OS?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR OS — Chi tiết Task Scheduling",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-task-types-014",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "comparison",
+      "term": "Basic + Extended Tasks",
+      "definitionEn": "AUTOSAR OS retains Basic and Extended task types from the OSEK-based model.",
+      "explanationVi": "AUTOSAR OS vẫn có Basic Task và Extended Task tương tự OSEK OS.",
+      "questionEn": "What task types does AUTOSAR OS use?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR OS — Chi tiết Task Scheduling",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-schedule-tables-015",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "technical_term",
+      "term": "Schedule Tables",
+      "definitionEn": "A deterministic and synchronized timing mechanism extending software-counter-based alarms.",
+      "explanationVi": "Cơ chế timing deterministic và synchronized, dùng các expiry points thay cho cách chỉ dựa trên Alarms.",
+      "questionEn": "What is a key timing extension in AUTOSAR OS?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR OS — Chi tiết Task Scheduling",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-memory-protection-016",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "technical_term",
+      "term": "Memory Protection",
+      "definitionEn": "AUTOSAR OS SC3 and SC4 provide Memory Protection with MPU integration.",
+      "explanationVi": "SC3 và SC4 có Memory Protection với tích hợp MPU.",
+      "questionEn": "Which AUTOSAR OS scalability classes provide Memory Protection?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR OS — Chi tiết Task Scheduling",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-timing-protection-017",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "technical_term",
+      "term": "Timing Protection",
+      "definitionEn": "AUTOSAR OS SC2 and SC4 provide timing protection using budget and inter-arrival time concepts.",
+      "explanationVi": "SC2 và SC4 có Timing Protection với budget và inter-arrival time.",
+      "questionEn": "Which AUTOSAR OS classes provide Timing Protection?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR OS — Chi tiết Task Scheduling",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-scalability-classes-018",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "concept",
+      "term": "Scalability Classes",
+      "definitionEn": "AUTOSAR OS classes ranging from SC1 basic functionality to SC4 full protection.",
+      "explanationVi": "Các lớp AUTOSAR OS từ SC1 cơ bản đến SC4 full protection.",
+      "questionEn": "What is the range of AUTOSAR OS Scalability Classes?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "AUTOSAR OS — Chi tiết Task Scheduling",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-task-2ms-019",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "concept",
+      "term": "Task_2ms",
+      "definitionEn": "A highest-priority example task with priority 100 for engine control.",
+      "explanationVi": "Task ví dụ priority cao nhất 100, dùng cho engine control và chạy theo chu kỳ 2ms.",
+      "questionEn": "What is Task_2ms used for in the example?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Ví dụ OS configuration thực tế",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-task-10ms-020",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "concept",
+      "term": "Task_10ms",
+      "definitionEn": "An example normal-priority task with priority 50 for cruise control, ABS, and vehicle speed.",
+      "explanationVi": "Task ví dụ priority 50 cho CruiseCtrl, ABS và VehicleSpeed, chu kỳ 10ms.",
+      "questionEn": "What functions are assigned to Task_10ms?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Ví dụ OS configuration thực tế",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-task-100ms-021",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "concept",
+      "term": "Task_100ms",
+      "definitionEn": "An example low-priority task with priority 10 for diagnostics and NvM.",
+      "explanationVi": "Task ví dụ priority thấp 10 cho diagnostics và NvM, chu kỳ 100ms.",
+      "questionEn": "What functions are assigned to Task_100ms?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Ví dụ OS configuration thực tế",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-full-schedule-022",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "technical_term",
+      "term": "SCHEDULE = FULL",
+      "definitionEn": "The example task configuration marks the task as fully preemptible.",
+      "explanationVi": "Trong ví dụ, task được cấu hình là fully preemptible.",
+      "questionEn": "What does SCHEDULE = FULL mean in the example?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Ví dụ OS configuration thực tế",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-os-expiry-point-023",
+      "topicId": "autosar",
+      "sectionId": "os-scheduling",
+      "cardType": "technical_term",
+      "term": "Expiry Point",
+      "definitionEn": "A point in a Schedule Table where a configured action, such as task activation, occurs.",
+      "explanationVi": "Mốc thời gian trong Schedule Table tại đó thực hiện action đã cấu hình, ví dụ activate task.",
+      "questionEn": "What happens at an Expiry Point?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Ví dụ OS configuration thực tế",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-024",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "cardType": "abbreviation",
+      "term": "NvM",
+      "definitionEn": "Non-volatile Memory Management, a BSW module managing EEPROM and Flash read/write operations.",
+      "explanationVi": "Non-volatile Memory Management, BSW module quản lý đọc/ghi EEPROM và Flash.",
+      "questionEn": "What does NvM stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM — Non-volatile Memory Management",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-readblock-025",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "cardType": "technical_term",
+      "term": "NvM_ReadBlock()",
+      "definitionEn": "An asynchronous request to read one configured block from EEPROM or Flash.",
+      "explanationVi": "API async yêu cầu đọc một block từ EEPROM hoặc Flash.",
+      "questionEn": "What does NvM_ReadBlock() do?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM — Non-volatile Memory Management",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-writeblock-026",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "cardType": "technical_term",
+      "term": "NvM_WriteBlock()",
+      "definitionEn": "An asynchronous request to write one block to EEPROM or Flash.",
+      "explanationVi": "API async yêu cầu ghi một block vào EEPROM hoặc Flash.",
+      "questionEn": "What does NvM_WriteBlock() do?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM — Non-volatile Memory Management",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-readall-027",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "cardType": "technical_term",
+      "term": "NvM_ReadAll()",
+      "definitionEn": "An asynchronous request to read all configured blocks during startup.",
+      "explanationVi": "API async đọc tất cả configured blocks, thường dùng trong EcuM startup phase.",
+      "questionEn": "When is NvM_ReadAll() used?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM — Non-volatile Memory Management",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-writeall-028",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "cardType": "technical_term",
+      "term": "NvM_WriteAll()",
+      "definitionEn": "An asynchronous request to write all modified blocks during shutdown.",
+      "explanationVi": "API async ghi các configured blocks đã modified, thường dùng trong EcuM shutdown phase.",
+      "questionEn": "When is NvM_WriteAll() used?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM — Non-volatile Memory Management",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-geterrorstatus-029",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "cardType": "technical_term",
+      "term": "NvM_GetErrorStatus()",
+      "definitionEn": "A synchronous API that gets the status of the last block operation.",
+      "explanationVi": "API sync lấy status của block sau khi job đã hoàn thành.",
+      "questionEn": "What does NvM_GetErrorStatus() provide?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM — Non-volatile Memory Management",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-setramblockstatus-030",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "cardType": "technical_term",
+      "term": "NvM_SetRamBlockStatus()",
+      "definitionEn": "A synchronous API used to mark a RAM block as changed or dirty.",
+      "explanationVi": "API sync đánh dấu RAM block đã thay đổi, tức dirty, trước NvM_WriteAll().",
+      "questionEn": "What does NvM_SetRamBlockStatus() mark?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM — Non-volatile Memory Management",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-async-api-031",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "cardType": "concept",
+      "term": "NvM Async API",
+      "definitionEn": "Read and write requests are asynchronous; completion and status are handled after the job finishes.",
+      "explanationVi": "Read/Write gửi yêu cầu async; kết quả được xử lý sau khi job hoàn thành.",
+      "questionEn": "Why are NvM Read/Write APIs important to understand as asynchronous?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM — Non-volatile Memory Management",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-ram-mirror-032",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "cardType": "technical_term",
+      "term": "RAM Mirror",
+      "definitionEn": "RAM storage used by the application for NvM-managed block data.",
+      "explanationVi": "Vùng RAM chứa dữ liệu block để application sử dụng và NvM đọc/ghi theo cấu hình.",
+      "questionEn": "What is the RAM mirror used for in the NvM example?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM Usage Example",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-nvm-dirty-033",
+      "topicId": "autosar",
+      "sectionId": "nvm",
+      "cardType": "technical_term",
+      "term": "Dirty Block",
+      "definitionEn": "A RAM block marked as changed so NvM_WriteAll() can process it for storage.",
+      "explanationVi": "Block trong RAM đã thay đổi và được đánh dấu dirty để NvM_WriteAll() xử lý ghi.",
+      "questionEn": "Why is a RAM block marked dirty?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "NvM Usage Example",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-dcm-034",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "cardType": "abbreviation",
+      "term": "DCM",
+      "definitionEn": "Diagnostic Communication Manager, the AUTOSAR component handling UDS requests from external testers.",
+      "explanationVi": "Diagnostic Communication Manager, thành phần xử lý các yêu cầu UDS từ tester bên ngoài.",
+      "questionEn": "What does DCM stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-uds-session-control-035",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "cardType": "technical_term",
+      "term": "DiagnosticSessionControl (0x10)",
+      "definitionEn": "UDS service used to switch between diagnostic sessions such as Default, Programming, and Extended.",
+      "explanationVi": "Service UDS 0x10 dùng để chuyển diagnostic session như Default, Programming và Extended.",
+      "questionEn": "What does UDS service 0x10 do?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-uds-ecu-reset-036",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "cardType": "technical_term",
+      "term": "ECUReset (0x11)",
+      "definitionEn": "UDS service used to reset the ECU, including hard, soft, or power-off reset types.",
+      "explanationVi": "Service UDS 0x11 dùng để reset ECU, gồm hard, soft hoặc power-off reset.",
+      "questionEn": "What does UDS service 0x11 do?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-uds-read-did-037",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "cardType": "technical_term",
+      "term": "ReadDataByIdentifier (0x22)",
+      "definitionEn": "UDS service used to read data identified by a DID, such as sensor values or parameters.",
+      "explanationVi": "Service UDS 0x22 đọc dữ liệu theo DID, ví dụ sensor values hoặc parameters.",
+      "questionEn": "What does UDS service 0x22 read?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-uds-write-did-038",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "cardType": "technical_term",
+      "term": "WriteDataByIdentifier (0x2E)",
+      "definitionEn": "UDS service used to write data identified by a DID, such as calibration or configuration.",
+      "explanationVi": "Service UDS 0x2E ghi dữ liệu theo DID, ví dụ calibration hoặc configuration.",
+      "questionEn": "What does UDS service 0x2E write?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-uds-read-dtc-039",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "cardType": "technical_term",
+      "term": "ReadDTCInformation (0x19)",
+      "definitionEn": "UDS service used to read Diagnostic Trouble Codes.",
+      "explanationVi": "Service UDS 0x19 dùng để đọc Diagnostic Trouble Codes (DTCs).",
+      "questionEn": "What does UDS service 0x19 provide?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-uds-clear-dtc-040",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "cardType": "technical_term",
+      "term": "ClearDiagnosticInformation (0x14)",
+      "definitionEn": "UDS service used to clear Diagnostic Trouble Codes.",
+      "explanationVi": "Service UDS 0x14 dùng để xóa thông tin DTC.",
+      "questionEn": "What does UDS service 0x14 do?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-uds-routine-control-041",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "cardType": "technical_term",
+      "term": "RoutineControl (0x31)",
+      "definitionEn": "UDS service used to start, stop, or obtain the result of a routine.",
+      "explanationVi": "Service UDS 0x31 dùng để start, stop hoặc lấy kết quả của một routine.",
+      "questionEn": "What can UDS service 0x31 control?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-uds-request-download-042",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "cardType": "technical_term",
+      "term": "RequestDownload (0x34)",
+      "definitionEn": "UDS service used to begin a flash programming download sequence.",
+      "explanationVi": "Service UDS 0x34 dùng để bắt đầu flash programming sequence.",
+      "questionEn": "What is UDS service 0x34 used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-uds-security-access-043",
+      "topicId": "autosar",
+      "sectionId": "dcm-uds",
+      "cardType": "technical_term",
+      "term": "SecurityAccess (0x27)",
+      "definitionEn": "UDS service used to unlock protected services using a seed/key mechanism.",
+      "explanationVi": "Service UDS 0x27 dùng seed/key để unlock các protected services.",
+      "questionEn": "What is UDS service 0x27 used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "DCM — Diagnostic Communication Manager",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-adaptive-044",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "cardType": "concept",
+      "term": "AUTOSAR Adaptive",
+      "definitionEn": "An AUTOSAR platform designed for high-performance ECUs in ADAS, autonomous driving, and central compute platforms.",
+      "explanationVi": "Nền tảng AUTOSAR cho High-Performance ECU, ADAS, Autonomous Driving và central compute.",
+      "questionEn": "What is AUTOSAR Adaptive designed for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Kiến trúc AUTOSAR Adaptive — Tương lai",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-classic-adaptive-os-045",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "cardType": "comparison",
+      "term": "Classic vs Adaptive OS",
+      "definitionEn": "Classic uses AUTOSAR OS based on OSEK; Adaptive uses POSIX systems such as Linux, QNX, or Integrity.",
+      "explanationVi": "Classic dùng AUTOSAR OS/OSEK; Adaptive dùng POSIX như Linux, QNX hoặc Integrity.",
+      "questionEn": "How do Classic and Adaptive differ in OS?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Kiến trúc AUTOSAR Adaptive — Tương lai",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-classic-adaptive-language-046",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "cardType": "comparison",
+      "term": "Classic C vs Adaptive C++14/17",
+      "definitionEn": "Classic primarily uses C, while Adaptive uses C++14/17 according to the source comparison.",
+      "explanationVi": "Classic dùng C; Adaptive dùng C++14/17 theo bảng so sánh trong tài liệu.",
+      "questionEn": "What languages are associated with Classic and Adaptive?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Kiến trúc AUTOSAR Adaptive — Tương lai",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-classic-adaptive-communication-047",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "cardType": "comparison",
+      "term": "Signal-based vs Service-oriented",
+      "definitionEn": "Classic uses signal-based communication with Com; Adaptive uses service-oriented communication with ara::com and SOME/IP.",
+      "explanationVi": "Classic giao tiếp signal-based qua Com; Adaptive hướng service-oriented qua ara::com và SOME/IP.",
+      "questionEn": "How does communication differ between Classic and Adaptive?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Kiến trúc AUTOSAR Adaptive — Tương lai",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-static-dynamic-architecture-048",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "cardType": "comparison",
+      "term": "Static vs Dynamic Architecture",
+      "definitionEn": "Classic is mainly static at compile time; Adaptive supports dynamic runtime service discovery.",
+      "explanationVi": "Classic chủ yếu static ở compile-time; Adaptive hỗ trợ dynamic runtime service discovery.",
+      "questionEn": "How do Classic and Adaptive differ in architecture?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Kiến trúc AUTOSAR Adaptive — Tương lai",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-static-dynamic-memory-049",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "cardType": "comparison",
+      "term": "Static vs Dynamic Memory",
+      "definitionEn": "Classic mainly uses static allocation; Adaptive permits dynamic memory according to the source.",
+      "explanationVi": "Classic chủ yếu static allocation; Adaptive cho phép dynamic memory.",
+      "questionEn": "How does memory allocation differ between Classic and Adaptive?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Kiến trúc AUTOSAR Adaptive — Tương lai",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-classic-adaptive-update-050",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "cardType": "comparison",
+      "term": "ECU Flash vs OTA Application Update",
+      "definitionEn": "Classic uses full ECU flash updates; Adaptive supports OTA updates of individual applications.",
+      "explanationVi": "Classic cập nhật bằng full ECU flash; Adaptive hỗ trợ OTA update từng Application.",
+      "questionEn": "How does software update differ between Classic and Adaptive?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Kiến trúc AUTOSAR Adaptive — Tương lai",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-adaptive-use-cases-051",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "cardType": "concept",
+      "term": "When to use Adaptive",
+      "definitionEn": "Use Adaptive when high processing power, flexible OTA, service-oriented architecture, or Linux is needed.",
+      "explanationVi": "Dùng Adaptive khi cần processing power lớn, OTA linh hoạt, SOA hoặc ECU chạy Linux.",
+      "questionEn": "When does the source recommend considering Adaptive?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Kiến trúc AUTOSAR Adaptive — Tương lai",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-classic-use-cases-052",
+      "topicId": "autosar",
+      "sectionId": "adaptive",
+      "cardType": "concept",
+      "term": "When to keep Classic",
+      "definitionEn": "Keep Classic when strict hard real-time deadlines, ASIL D requirements, resource constraints, or legacy integration dominate.",
+      "explanationVi": "Giữ Classic khi cần hard real-time nghiêm ngặt, ASIL D, tài nguyên hạn chế hoặc legacy integration.",
+      "questionEn": "When does the source recommend keeping Classic?",
+      "source": {
+        "type": "technical_document",
+        "document": "Tools & BSW nâng cao",
+        "section": "Kiến trúc AUTOSAR Adaptive — Tương lai",
+        "reference": "content-source/AUTOSAR/Tools-BSW-nang-cao.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

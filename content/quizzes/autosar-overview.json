@@ -1,0 +1,556 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "autosar-overview-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "overview",
+      "questionType": "single_choice",
+      "questionEn": "What does AUTOSAR stand for?",
+      "options": [
+        { "id": "A", "text": "AUTomotive Open System ARchitecture" },
+        { "id": "B", "text": "AUTomotive Operating Software Architecture" },
+        { "id": "C", "text": "Advanced Unified Technology System Architecture" },
+        { "id": "D", "text": "Automotive Universal Software Application Runtime" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "AUTOSAR là viết tắt của AUTomotive Open System ARchitecture.",
+      "relatedFlashcardIds": ["autosar-overview-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "AUTOSAR là gì?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-overview-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "history",
+      "questionType": "single_choice",
+      "questionEn": "Why was the AUTOSAR consortium formed?",
+      "options": [
+        { "id": "A", "text": "To standardize automotive software and reduce repeated development" },
+        { "id": "B", "text": "To replace all automotive hardware" },
+        { "id": "C", "text": "To create a new programming language" },
+        { "id": "D", "text": "To standardize vehicle mechanical components" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "AUTOSAR ra đời để chuẩn hóa SW và giảm việc viết lại OS, memory management và communication stack cho từng project.",
+      "relatedFlashcardIds": ["autosar-overview-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Câu chuyện thực tế"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-overview-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "problems-solved",
+      "questionType": "single_choice",
+      "questionEn": "How does AUTOSAR reduce hardware dependency of an SWC?",
+      "options": [
+        { "id": "A", "text": "By using the RTE between the SWC and hardware-related software" },
+        { "id": "B", "text": "By making every SWC access MCU registers directly" },
+        { "id": "C", "text": "By removing the BSW" },
+        { "id": "D", "text": "By requiring one MCU for every SWC" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTE tách SWC khỏi HW, giúp SWC có thể tái sử dụng trên nhiều MCU.",
+      "relatedFlashcardIds": ["autosar-overview-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Vấn đề mà AUTOSAR giải quyết"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-architecture-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "architecture",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence correctly represents the AUTOSAR software-to-hardware flow?",
+      "options": [
+        { "id": "A", "text": "SWC → RTE → BSW → MCAL → HW" },
+        { "id": "B", "text": "SWC → MCAL → RTE → BSW → HW" },
+        { "id": "C", "text": "HW → SWC → RTE → MCAL → BSW" },
+        { "id": "D", "text": "RTE → SWC → HW → BSW → MCAL" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Chuỗi chính cần nhớ là SWC → RTE → BSW → MCAL → HW.",
+      "relatedFlashcardIds": ["autosar-overview-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Các khái niệm cơ bản"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-swc-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "swc",
+      "questionType": "single_choice",
+      "questionEn": "What is the main role of an SWC?",
+      "options": [
+        { "id": "A", "text": "Contain application logic" },
+        { "id": "B", "text": "Directly manage MCU registers" },
+        { "id": "C", "text": "Replace the MCAL" },
+        { "id": "D", "text": "Generate ARXML manually" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWC là đơn vị phát triển cơ bản của AUTOSAR và chứa application logic.",
+      "relatedFlashcardIds": ["autosar-swc-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "SWC — Software Component"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-ports-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "ports",
+      "questionType": "single_choice",
+      "questionEn": "What does a P-Port provide?",
+      "options": [
+        { "id": "A", "text": "Data or services to the outside" },
+        { "id": "B", "text": "Hardware registers" },
+        { "id": "C", "text": "MCU clock signals" },
+        { "id": "D", "text": "Only diagnostic error codes" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "P-Port là Provided Port, dùng để SWC cung cấp data hoặc service cho bên ngoài.",
+      "relatedFlashcardIds": ["autosar-port-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Port — Giao diện của SWC"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-ports-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "ports",
+      "questionType": "single_choice",
+      "questionEn": "What does an R-Port represent?",
+      "options": [
+        { "id": "A", "text": "A requirement for data or services" },
+        { "id": "B", "text": "A hardware abstraction driver" },
+        { "id": "C", "text": "A provided software service" },
+        { "id": "D", "text": "An operating system task" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "R-Port là Required Port, thể hiện data hoặc service mà SWC yêu cầu từ bên ngoài.",
+      "relatedFlashcardIds": ["autosar-port-002", "autosar-port-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Port — Giao diện của SWC"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-runnable-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "runnable",
+      "questionType": "single_choice",
+      "questionEn": "What is a Runnable?",
+      "options": [
+        { "id": "A", "text": "A C function in an SWC scheduled by the OS" },
+        { "id": "B", "text": "A hardware register" },
+        { "id": "C", "text": "A type of MCU" },
+        { "id": "D", "text": "An ARXML file" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Runnable là hàm C trong SWC được OS schedule.",
+      "relatedFlashcardIds": ["autosar-runnable-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Runnable — Hàm thực thi được schedule"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-runnable-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "runnable",
+      "questionType": "single_choice",
+      "questionEn": "Which statement about Runnable and Task is correct?",
+      "options": [
+        { "id": "A", "text": "A Runnable is not the same as a Task; multiple Runnables can run in one Task" },
+        { "id": "B", "text": "Every Runnable must be a separate Task" },
+        { "id": "C", "text": "A Task is always inside a Runnable" },
+        { "id": "D", "text": "Runnables cannot have different periods" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Runnable không phải Task; nhiều Runnable có thể chạy trong cùng một Task.",
+      "relatedFlashcardIds": ["autosar-runnable-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Runnable — Hàm thực thi được schedule"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "rte",
+      "questionType": "single_choice",
+      "questionEn": "What is the role of the RTE?",
+      "options": [
+        { "id": "A", "text": "Act as an intermediary between SWC and BSW" },
+        { "id": "B", "text": "Directly replace the MCU" },
+        { "id": "C", "text": "Store only ARXML files" },
+        { "id": "D", "text": "Write all application logic" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTE là trung gian giữa SWC và BSW.",
+      "relatedFlashcardIds": ["autosar-rte-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "RTE — Runtime Environment"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "rte",
+      "questionType": "single_choice",
+      "questionEn": "How is the RTE normally created?",
+      "options": [
+        { "id": "A", "text": "Automatically by an RTE Generator based on ARXML" },
+        { "id": "B", "text": "Manually by writing every RTE function" },
+        { "id": "C", "text": "Directly by the MCU vendor" },
+        { "id": "D", "text": "By modifying the hardware registers" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTE không viết tay; RTE Generator generate tự động dựa trên ARXML.",
+      "relatedFlashcardIds": ["autosar-rte-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "RTE — Runtime Environment"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-bsw-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "bsw",
+      "questionType": "single_choice",
+      "questionEn": "Which set contains examples of BSW modules?",
+      "options": [
+        { "id": "A", "text": "OS, communication stack, memory management, diagnostics" },
+        { "id": "B", "text": "Only application SWCs" },
+        { "id": "C", "text": "Only MCU registers and timers" },
+        { "id": "D", "text": "Only ARXML files" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "BSW bao gồm OS, communication stack, memory management và diagnostics.",
+      "relatedFlashcardIds": ["autosar-bsw-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "BSW — Basic Software"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-bsw-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "bsw",
+      "questionType": "single_choice",
+      "questionEn": "What does a developer mainly do with BSW?",
+      "options": [
+        { "id": "A", "text": "Configure it rather than write BSW code from scratch" },
+        { "id": "B", "text": "Rewrite the entire BSW for every project" },
+        { "id": "C", "text": "Modify all MCU registers manually" },
+        { "id": "D", "text": "Replace the RTE Generator" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "BSW là thư viện; developer chủ yếu configure thay vì tự viết code BSW.",
+      "relatedFlashcardIds": ["autosar-bsw-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "BSW — Basic Software"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-mcal-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "mcal",
+      "questionType": "single_choice",
+      "questionEn": "What is MCAL?",
+      "options": [
+        { "id": "A", "text": "The lowest BSW layer providing hardware access APIs" },
+        { "id": "B", "text": "The application logic layer" },
+        { "id": "C", "text": "The AUTOSAR XML format" },
+        { "id": "D", "text": "The software component interface" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MCAL là tầng thấp nhất của BSW và cung cấp API để truy cập hardware.",
+      "relatedFlashcardIds": ["autosar-mcal-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "MCAL — Microcontroller Abstraction Layer"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-mcal-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "mcal",
+      "questionType": "single_choice",
+      "questionEn": "What is the key rule for MCAL?",
+      "options": [
+        { "id": "A", "text": "Do not rewrite or modify MCAL" },
+        { "id": "B", "text": "Rewrite MCAL for every SWC" },
+        { "id": "C", "text": "Call MCU registers directly from every SWC" },
+        { "id": "D", "text": "Remove MCAL from BSW" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo tài liệu, tuyệt đối không viết lại hoặc sửa MCAL; đây là domain của chip vendor.",
+      "relatedFlashcardIds": ["autosar-mcal-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "MCAL — Microcontroller Abstraction Layer"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-arxml-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "arxml",
+      "questionType": "single_choice",
+      "questionEn": "What is ARXML used for?",
+      "options": [
+        { "id": "A", "text": "Describing AUTOSAR systems and configurations" },
+        { "id": "B", "text": "Programming MCU registers directly" },
+        { "id": "C", "text": "Replacing the operating system" },
+        { "id": "D", "text": "Executing SWC logic" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ARXML là format chuẩn để mô tả system, SWC interfaces, port connections và configurations.",
+      "relatedFlashcardIds": ["autosar-arxml-001", "autosar-arxml-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "ARXML — AUTOSAR XML"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-arxml-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "arxml",
+      "questionType": "single_choice",
+      "questionEn": "Which tools are listed as AUTOSAR tools that read or write ARXML?",
+      "options": [
+        { "id": "A", "text": "DaVinci Developer, SystemDesk, and ETAS Studio" },
+        { "id": "B", "text": "Only a C compiler" },
+        { "id": "C", "text": "Only an MCU debugger" },
+        { "id": "D", "text": "Only a CAN analyzer" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tài liệu nêu DaVinci Developer, SystemDesk và ETAS Studio là các tool đọc/viết ARXML.",
+      "relatedFlashcardIds": ["autosar-arxml-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "ARXML — AUTOSAR XML"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-classic-adaptive-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "classic-vs-adaptive",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly describes AUTOSAR Classic?",
+      "options": [
+        { "id": "A", "text": "C, MCU-based, hard real-time and deterministic" },
+        { "id": "B", "text": "C++17, SoC-based, soft real-time and service-oriented" },
+        { "id": "C", "text": "Python, GPU-based and cloud-oriented" },
+        { "id": "D", "text": "Java, SoC-based and OTA-only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Classic dùng C, MCU, hard real-time và deterministic.",
+      "relatedFlashcardIds": ["autosar-classic-adaptive-001", "autosar-classic-adaptive-003", "autosar-classic-adaptive-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Classic vs Adaptive — Chọn cái nào?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-classic-adaptive-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "classic-vs-adaptive",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly describes AUTOSAR Adaptive?",
+      "options": [
+        { "id": "A", "text": "C++17, high-compute SoC, soft real-time and service-oriented" },
+        { "id": "B", "text": "C, 8-bit MCU and hard real-time only" },
+        { "id": "C", "text": "Assembly, MCU and deterministic control only" },
+        { "id": "D", "text": "C, no operating system and no services" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Adaptive dùng C++17, SoC hiệu năng cao, soft real-time và service-oriented.",
+      "relatedFlashcardIds": ["autosar-classic-adaptive-002", "autosar-classic-adaptive-003", "autosar-classic-adaptive-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Classic vs Adaptive — Chọn cái nào?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-classic-adaptive-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "classic-vs-adaptive",
+      "questionType": "single_choice",
+      "questionEn": "Which use case is associated with AUTOSAR Adaptive?",
+      "options": [
+        { "id": "A", "text": "ADAS, infotainment, and central compute" },
+        { "id": "B", "text": "Only body control" },
+        { "id": "C", "text": "Only powertrain control" },
+        { "id": "D", "text": "Only safety ECUs" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Adaptive hướng tới ADAS, infotainment và central compute.",
+      "relatedFlashcardIds": ["autosar-classic-adaptive-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Classic vs Adaptive — Chọn cái nào?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-classic-adaptive-quiz-004",
+      "topicId": "autosar",
+      "sectionId": "classic-vs-adaptive",
+      "questionType": "single_choice",
+      "questionEn": "How does software updating differ between Classic and Adaptive?",
+      "options": [
+        { "id": "A", "text": "Classic flashes the whole software; Adaptive can update individual services via OTA" },
+        { "id": "B", "text": "Both always flash the whole vehicle" },
+        { "id": "C", "text": "Classic uses OTA per service; Adaptive has no software update" },
+        { "id": "D", "text": "Neither platform supports software updates" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Classic flash toàn bộ; Adaptive hỗ trợ OTA từng service.",
+      "relatedFlashcardIds": ["autosar-classic-adaptive-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "Classic vs Adaptive — Chọn cái nào?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-analogy-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "analogy",
+      "questionType": "single_choice",
+      "questionEn": "In the Android analogy, what does an SWC represent?",
+      "options": [
+        { "id": "A", "text": "An application" },
+        { "id": "B", "text": "The MCU hardware" },
+        { "id": "C", "text": "The MCAL driver" },
+        { "id": "D", "text": "The physical CAN bus" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Trong phép ví dụ Android, SWC giống như App chạy trên nền tảng.",
+      "relatedFlashcardIds": ["autosar-android-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "AUTOSAR giống Android OS cho điện thoại"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-members-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "consortium-members",
+      "questionType": "single_choice",
+      "questionEn": "What is the main role of Core Partners?",
+      "options": [
+        { "id": "A", "text": "Strategic direction and specification work" },
+        { "id": "B", "text": "Only software prototyping" },
+        { "id": "C", "text": "Only implementing commercial tools" },
+        { "id": "D", "text": "Only developing MCU hardware" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Core Partners chịu trách nhiệm định hướng chiến lược và viết specification.",
+      "relatedFlashcardIds": ["autosar-members-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "AUTOSAR Consortium Members"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-members-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "consortium-members",
+      "questionType": "single_choice",
+      "questionEn": "Which member category implements AUTOSAR stacks and tools?",
+      "options": [
+        { "id": "A", "text": "Associate Partners" },
+        { "id": "B", "text": "Development Partners" },
+        { "id": "C", "text": "Core Partners" },
+        { "id": "D", "text": "Premium Partners" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Associate Partners có vai trò implement AUTOSAR stack và tools.",
+      "relatedFlashcardIds": ["autosar-members-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "AUTOSAR Consortium Members"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-members-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "consortium-members",
+      "questionType": "single_choice",
+      "questionEn": "Which category includes universities and research institutes?",
+      "options": [
+        { "id": "A", "text": "Development Partners" },
+        { "id": "B", "text": "Core Partners" },
+        { "id": "C", "text": "Premium Partners" },
+        { "id": "D", "text": "Associate Partners" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Development Partners gồm universities và research institutes, tập trung research và prototyping.",
+      "relatedFlashcardIds": ["autosar-members-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR là gì?",
+        "section": "AUTOSAR Consortium Members"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

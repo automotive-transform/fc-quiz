@@ -1,0 +1,569 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "autosar-com-stack-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "What is the correct CAN receive flow from Hardware to SWC?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CAN HW → CanDrv → CanIf → PduR → Com → RTE → SWC"
+        },
+        {
+          "id": "B",
+          "text": "CAN HW → Com → CanIf → CanDrv → RTE → PduR → SWC"
+        },
+        {
+          "id": "C",
+          "text": "CAN HW → PduR → CanDrv → Com → CanIf → RTE → SWC"
+        },
+        {
+          "id": "D",
+          "text": "CAN HW → RTE → Com → PduR → CanIf → CanDrv → SWC"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Luồng chuẩn trong tài liệu là CAN HW → CanDrv → CanIf → PduR → Com → RTE → SWC.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-001",
+        "autosar-com-stack-014"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "CAN Signal Flow: Hardware to SWC",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "Where does the CAN Hardware place a received CAN frame?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RX mailbox"
+        },
+        {
+          "id": "B",
+          "text": "RTE R-Port"
+        },
+        {
+          "id": "C",
+          "text": "Com signal buffer"
+        },
+        {
+          "id": "D",
+          "text": "PduR routing table"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN Hardware nhận CAN frame và đưa frame vào RX mailbox để CanDrv đọc.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-012"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 1",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "What does CanDrv do after reading a frame from the mailbox?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Calls CanIf_RxIndication() with the raw frame data"
+        },
+        {
+          "id": "B",
+          "text": "Extracts signals and applies scale and offset"
+        },
+        {
+          "id": "C",
+          "text": "Routes the signal directly to the SWC"
+        },
+        {
+          "id": "D",
+          "text": "Creates the RTE from ARXML"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CanDrv đọc frame từ mailbox và gọi CanIf_RxIndication() với raw frame data.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-002"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 2",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-004",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "Which task belongs to CanIf?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Map Controller ID to PDU ID and filter"
+        },
+        {
+          "id": "B",
+          "text": "Extract signals from the PDU payload"
+        },
+        {
+          "id": "C",
+          "text": "Read the Com signal buffer into the SWC"
+        },
+        {
+          "id": "D",
+          "text": "Receive the physical CAN frame in the RX mailbox"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CanIf thực hiện mapping Controller ID → PDU ID, filter và gọi PduR_CanIfRxIndication().",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-003"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 3",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-005",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "What is the main responsibility of PduR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Route the PDU to the correct upper module"
+        },
+        {
+          "id": "B",
+          "text": "Configure the CAN baudrate"
+        },
+        {
+          "id": "C",
+          "text": "Extract signal bits from the payload"
+        },
+        {
+          "id": "D",
+          "text": "Provide the SWC application logic"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PduR là PDU Router, có nhiệm vụ route PDU đến đúng module, trong luồng này là Com.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-004",
+        "autosar-com-stack-013"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 4",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-006",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "Which module extracts signals from the PDU payload?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Com"
+        },
+        {
+          "id": "B",
+          "text": "CanDrv"
+        },
+        {
+          "id": "C",
+          "text": "PduR"
+        },
+        {
+          "id": "D",
+          "text": "RTE"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Com tách signals từ PDU payload, xử lý byte order, scale, offset và lưu vào signal buffer.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-005"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 5",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-007",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "Which configuration belongs to the Com signal layout?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Start bit, length, byte order, factor, and offset"
+        },
+        {
+          "id": "B",
+          "text": "CAN baudrate and mailbox assignment only"
+        },
+        {
+          "id": "C",
+          "text": "Controller ID and CPU core frequency"
+        },
+        {
+          "id": "D",
+          "text": "R-Port name and SWC source file"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Signal layout của Com gồm start bit, length, byte order, factor và offset.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-006"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Bước 5 — Com",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-008",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "What is the role of RTE in this CAN signal flow?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Read the Com buffer and route the signal to the SWC R-Port"
+        },
+        {
+          "id": "B",
+          "text": "Read the CAN RX mailbox directly"
+        },
+        {
+          "id": "C",
+          "text": "Map Controller ID to PDU ID"
+        },
+        {
+          "id": "D",
+          "text": "Route PDU between CAN channels"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTE đọc signal từ Com buffer và route đến SWC R-Port; theo tài liệu, RTE chỉ forward, không conversion.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-007",
+        "autosar-com-stack-008"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 6",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-009",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "Which API does the SWC use to read vehicle speed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rte_Read_pVehicleSpeed_vehicleSpeed_kmh()"
+        },
+        {
+          "id": "B",
+          "text": "CanIf_RxIndication()"
+        },
+        {
+          "id": "C",
+          "text": "PduR_CanIfRxIndication()"
+        },
+        {
+          "id": "D",
+          "text": "Com_RxIndication()"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWC gọi Rte_Read_pVehicleSpeed_vehicleSpeed_kmh() để nhận giá trị vehicleSpeed_kmh.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-009"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 7",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-010",
+      "topicId": "autosar",
+      "sectionId": "com-stack-debug",
+      "questionType": "single_choice",
+      "questionEn": "What should be checked first when an SWC receives an incorrect CAN value?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Use CANoe to check whether the raw CAN frame is correct"
+        },
+        {
+          "id": "B",
+          "text": "Edit the generated RTE code"
+        },
+        {
+          "id": "C",
+          "text": "Change the SWC application logic"
+        },
+        {
+          "id": "D",
+          "text": "Change the PduR routing table immediately"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo debug tip, bước đầu tiên là dùng CANoe kiểm tra raw CAN frame có đúng hay không.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-015"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Debug tip",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-011",
+      "topicId": "autosar",
+      "sectionId": "com-stack-debug",
+      "questionType": "single_choice",
+      "questionEn": "Which Com settings should be checked when a CAN signal is decoded incorrectly?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Start bit, length, byte order, factor, and offset"
+        },
+        {
+          "id": "B",
+          "text": "Only CAN baudrate"
+        },
+        {
+          "id": "C",
+          "text": "Only mailbox assignment"
+        },
+        {
+          "id": "D",
+          "text": "Only the SWC R-Port name"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Com config cần kiểm tra start bit, length, byte order, factor và offset khi signal bị decode sai.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-006",
+        "autosar-com-stack-015"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Debug tip",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-012",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly compares CanIf and PduR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CanIf maps and filters; PduR routes the PDU"
+        },
+        {
+          "id": "B",
+          "text": "CanIf extracts signals; PduR applies scale and offset"
+        },
+        {
+          "id": "C",
+          "text": "CanIf reads the RTE buffer; PduR calls the SWC"
+        },
+        {
+          "id": "D",
+          "text": "CanIf is the application layer; PduR is the CAN hardware"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CanIf phụ trách mapping và filter; PduR phụ trách route PDU đến module đích.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-003",
+        "autosar-com-stack-004",
+        "autosar-com-stack-011"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-013",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly compares Com and RTE?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Com extracts and processes signals; RTE routes them to the SWC"
+        },
+        {
+          "id": "B",
+          "text": "Com receives physical CAN frames; RTE filters CAN frames"
+        },
+        {
+          "id": "C",
+          "text": "Com maps Controller IDs; RTE routes PDU between CAN buses"
+        },
+        {
+          "id": "D",
+          "text": "Com executes SWC logic; RTE configures CAN baudrate"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Com xử lý và lưu signal; RTE cung cấp signal đến R-Port của SWC.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-005",
+        "autosar-com-stack-007",
+        "autosar-com-stack-010"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-014",
+      "topicId": "autosar",
+      "sectionId": "com-stack-debug",
+      "questionType": "single_choice",
+      "questionEn": "According to the source, where are most CAN signal errors found?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Incorrect Com configuration"
+        },
+        {
+          "id": "B",
+          "text": "Incorrect SWC source code"
+        },
+        {
+          "id": "C",
+          "text": "Incorrect RTE generated code"
+        },
+        {
+          "id": "D",
+          "text": "Incorrect CAN Hardware voltage"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nguồn nêu rằng 80% lỗi nằm ở Com config sai; đây là debug tip của tài liệu.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-015"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Debug tip",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-quiz-015",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "questionType": "single_choice",
+      "questionEn": "Which configuration is associated with CanIf?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CAN channel mapping and PDU ID assignment"
+        },
+        {
+          "id": "B",
+          "text": "Signal start bit and factor only"
+        },
+        {
+          "id": "C",
+          "text": "SWC application source code"
+        },
+        {
+          "id": "D",
+          "text": "Vehicle speed physical value"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CanIf cần cấu hình CAN channel mapping và PDU ID assignment.",
+      "relatedFlashcardIds": [
+        "autosar-com-stack-003"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 3",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

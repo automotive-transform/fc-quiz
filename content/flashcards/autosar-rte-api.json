@@ -1,0 +1,471 @@
+{
+  "filename": "autosar-rte-api.json",
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "autosar-rte-api-001",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "technical_term",
+      "term": "RTE API",
+      "definitionEn": "APIs used by SWC developers to communicate through the AUTOSAR Runtime Environment.",
+      "explanationVi": "Các hàm mà developer dùng trong SWC code để giao tiếp qua RTE. Tất cả được generate tự động dựa trên ARXML description.",
+      "questionEn": "What is the purpose of the RTE API?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "RTE API"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-002",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "concept",
+      "term": "Rte_Read()",
+      "definitionEn": "Reads data from an R-Port using sender-receiver communication.",
+      "explanationVi": "Đọc data từ R-Port, ví dụ đọc sensor value hoặc signal từ SWC khác.",
+      "questionEn": "When is Rte_Read() used?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Read"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-003",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "concept",
+      "term": "Rte_Write()",
+      "definitionEn": "Writes data to a P-Port using sender-receiver communication.",
+      "explanationVi": "Ghi data ra P-Port, thường dùng để xuất kết quả tính toán cho SWC khác.",
+      "questionEn": "When is Rte_Write() used?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Write"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-004",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "concept",
+      "term": "Rte_Send()",
+      "definitionEn": "Sends data through queued sender-receiver communication.",
+      "explanationVi": "Gửi data, event hoặc command vào queue buffer.",
+      "questionEn": "When is Rte_Send() used?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Send / Rte_Receive"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-005",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "concept",
+      "term": "Rte_Receive()",
+      "definitionEn": "Receives data from a queued R-Port.",
+      "explanationVi": "Nhận event hoặc data từ queue ở phía receiver.",
+      "questionEn": "When is Rte_Receive() used?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Send / Rte_Receive"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-006",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "concept",
+      "term": "Rte_Call()",
+      "definitionEn": "Calls a client-server operation, commonly synchronously.",
+      "explanationVi": "Gọi operation của service như DEM hoặc NvM. Với synchronous call, Rte_Call block đến khi server function return.",
+      "questionEn": "What does Rte_Call() do?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Call"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-007",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "concept",
+      "term": "Rte_Result()",
+      "definitionEn": "Gets the result of an asynchronous client-server call.",
+      "explanationVi": "Lấy kết quả sau khi thực hiện Rte_Call theo cơ chế asynchronous.",
+      "questionEn": "When is Rte_Result() used?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Result"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-008",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "concept",
+      "term": "Rte_Switch()",
+      "definitionEn": "Switches the operating mode through a Mode Manager Port.",
+      "explanationVi": "Chuyển operating mode của system và gửi notification đến các mode users theo cấu hình.",
+      "questionEn": "What does Rte_Switch() do?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Switch"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-009",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "concept",
+      "term": "Rte_Mode()",
+      "definitionEn": "Reads the current operating mode.",
+      "explanationVi": "Đọc mode hiện tại để kiểm tra operating mode trước khi thực hiện action.",
+      "questionEn": "What does Rte_Mode() return?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Mode"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-010",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "concept",
+      "term": "Rte_IRead()",
+      "definitionEn": "Implicitly reads a value from the RTE internal buffer.",
+      "explanationVi": "Implicit read: đọc trực tiếp value từ RTE internal buffer khi dùng implicit communication.",
+      "questionEn": "What is Rte_IRead() used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_IRead / Rte_IWrite"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-011",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "concept",
+      "term": "Rte_IWrite()",
+      "definitionEn": "Implicitly writes a value to the RTE internal buffer.",
+      "explanationVi": "Implicit write: ghi value vào RTE internal buffer khi dùng implicit communication.",
+      "questionEn": "What is Rte_IWrite() used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_IRead / Rte_IWrite"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-012",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "comparison",
+      "term": "Rte_Read() vs Rte_Write()",
+      "definitionEn": "Rte_Read() reads from an R-Port; Rte_Write() writes to a P-Port.",
+      "explanationVi": "Read là lấy data vào SWC; Write là đưa data ra P-Port cho SWC khác.",
+      "questionEn": "What is the difference between Rte_Read() and Rte_Write()?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Read / Rte_Write"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-013",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "comparison",
+      "term": "Rte_Send() vs Rte_Receive()",
+      "definitionEn": "Rte_Send() puts data into queued communication; Rte_Receive() gets data from the queue.",
+      "explanationVi": "Send là gửi event/data vào queue; Receive là nhận event/data từ queue.",
+      "questionEn": "How do Rte_Send() and Rte_Receive() differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Send / Rte_Receive"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-014",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "comparison",
+      "term": "Rte_Call() vs Rte_Result()",
+      "definitionEn": "Rte_Call() invokes a client-server operation; Rte_Result() gets an asynchronous call result.",
+      "explanationVi": "Call dùng để gọi service/operation; Result dùng để lấy kết quả của async client-server call.",
+      "questionEn": "What is the difference between Rte_Call() and Rte_Result()?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Call / Rte_Result"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-015",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "comparison",
+      "term": "Rte_Switch() vs Rte_Mode()",
+      "definitionEn": "Rte_Switch() changes the mode; Rte_Mode() reads the current mode.",
+      "explanationVi": "Switch dùng để chuyển mode; Mode dùng để đọc và kiểm tra mode hiện tại.",
+      "questionEn": "How do Rte_Switch() and Rte_Mode() differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Switch / Rte_Mode"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-016",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "cardType": "comparison",
+      "term": "Rte_Read() vs Rte_IRead()",
+      "definitionEn": "Rte_Read() performs explicit reading; Rte_IRead() reads from the RTE internal buffer implicitly.",
+      "explanationVi": "Read là explicit communication; IRead là implicit read từ RTE internal buffer.",
+      "questionEn": "What is the difference between Rte_Read() and Rte_IRead()?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_IRead / Rte_IWrite"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-017",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "cardType": "abbreviation",
+      "term": "Std_ReturnType",
+      "definitionEn": "The return type used by the listed RTE APIs to report operation status.",
+      "explanationVi": "Kiểu return dùng cho nhiều RTE API để báo trạng thái thực hiện, như thành công hoặc lỗi.",
+      "questionEn": "What is Std_ReturnType used for in RTE APIs?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-018",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "cardType": "technical_term",
+      "term": "RTE_E_OK",
+      "definitionEn": "Return code indicating successful operation.",
+      "explanationVi": "Mã return cho biết operation thực hiện thành công. Giá trị trong tài liệu là 0.",
+      "questionEn": "What does RTE_E_OK indicate?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-019",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "cardType": "technical_term",
+      "term": "RTE_E_NO_DATA",
+      "definitionEn": "Indicates that no new data has been received since the previous read.",
+      "explanationVi": "Không có dữ liệu mới kể từ lần đọc trước. Tài liệu đề xuất dùng data cũ hoặc default.",
+      "questionEn": "What does RTE_E_NO_DATA mean?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-020",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "cardType": "technical_term",
+      "term": "RTE_E_NEVER_RECEIVED",
+      "definitionEn": "Indicates that data has never been received.",
+      "explanationVi": "Chưa bao giờ nhận được data. Tài liệu đề xuất dùng default value.",
+      "questionEn": "What does RTE_E_NEVER_RECEIVED mean?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-021",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "cardType": "technical_term",
+      "term": "RTE_E_TRANSMIT_ACK",
+      "definitionEn": "Indicates that a queued send operation succeeded.",
+      "explanationVi": "Cho biết việc gửi data vào queue thành công.",
+      "questionEn": "What does RTE_E_TRANSMIT_ACK indicate?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-022",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "cardType": "technical_term",
+      "term": "RTE_E_LIMIT",
+      "definitionEn": "Indicates that the queue is full and data is lost.",
+      "explanationVi": "Queue đầy nên data bị mất. Tài liệu đề xuất log lỗi và tăng queue size.",
+      "questionEn": "What does RTE_E_LIMIT mean?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-023",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "cardType": "technical_term",
+      "term": "RTE_E_MAX_AGE_EXCEEDED",
+      "definitionEn": "Indicates that data is too old and has exceeded its maximum age.",
+      "explanationVi": "Data quá cũ, vượt max age. Tài liệu yêu cầu treat as error và dùng default.",
+      "questionEn": "What does RTE_E_MAX_AGE_EXCEEDED mean?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-024",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "cardType": "technical_term",
+      "term": "RTE_E_COMMS_ERROR",
+      "definitionEn": "Indicates a communication error.",
+      "explanationVi": "Có lỗi truyền thông. Tài liệu đề xuất report DEM event.",
+      "questionEn": "What does RTE_E_COMMS_ERROR indicate?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-025",
+      "topicId": "autosar",
+      "sectionId": "rte-communication",
+      "cardType": "concept",
+      "term": "Sender-Receiver Communication",
+      "definitionEn": "Communication in which a sender provides data and a receiver reads it through RTE.",
+      "explanationVi": "Cơ chế giao tiếp để một SWC cung cấp data và SWC khác đọc data qua RTE.",
+      "questionEn": "What communication pattern uses Rte_Read() and Rte_Write()?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "RTE API"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-026",
+      "topicId": "autosar",
+      "sectionId": "rte-communication",
+      "cardType": "concept",
+      "term": "Queued Sender-Receiver",
+      "definitionEn": "Sender-receiver communication that uses a queue buffer for data or events.",
+      "explanationVi": "Sender-receiver có queue buffer để lưu event/data chờ receiver xử lý.",
+      "questionEn": "What distinguishes queued sender-receiver communication?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Send / Rte_Receive"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-027",
+      "topicId": "autosar",
+      "sectionId": "rte-communication",
+      "cardType": "concept",
+      "term": "Client-Server Communication",
+      "definitionEn": "Communication in which a client calls an operation provided by a server.",
+      "explanationVi": "Client gọi operation do server cung cấp, ví dụ gọi service DEM hoặc NvM qua Rte_Call().",
+      "questionEn": "What communication pattern uses Rte_Call()?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Call"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-028",
+      "topicId": "autosar",
+      "sectionId": "rte-communication",
+      "cardType": "concept",
+      "term": "Implicit Communication",
+      "definitionEn": "Communication using RTE internal buffers through implicit read and write APIs.",
+      "explanationVi": "Cơ chế communication sử dụng RTE internal buffer, tiêu biểu là Rte_IRead() và Rte_IWrite().",
+      "questionEn": "What is implicit communication in RTE?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_IRead / Rte_IWrite"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-029",
+      "topicId": "autosar",
+      "sectionId": "rte-mode",
+      "cardType": "concept",
+      "term": "Mode Management",
+      "definitionEn": "RTE communication for switching and reading the operating mode of a system.",
+      "explanationVi": "Cơ chế quản lý operating mode. Rte_Switch() dùng để chuyển mode, Rte_Mode() dùng để đọc mode.",
+      "questionEn": "Which RTE APIs are used for mode management?",
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Switch / Rte_Mode"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

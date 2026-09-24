@@ -1,0 +1,1362 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "can-physical-quiz-001",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "questionType": "single_choice",
+      "questionEn": "Why does CAN use a twisted-pair cable?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To improve immunity to electromagnetic noise"
+        },
+        {
+          "id": "B",
+          "text": "To eliminate the need for termination resistors"
+        },
+        {
+          "id": "C",
+          "text": "To increase the CAN ID range"
+        },
+        {
+          "id": "D",
+          "text": "To provide a separate clock signal"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Twisted pair giúp nhiễu tác động tương tự lên cả hai dây, nên điện áp vi sai ít bị thay đổi và CAN có khả năng chống nhiễu cao.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-quiz-002",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "questionType": "single_choice",
+      "questionEn": "What is the typical CANH/CANL voltage in the recessive state?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CANH = 2.5 V and CANL = 2.5 V"
+        },
+        {
+          "id": "B",
+          "text": "CANH = 3.5 V and CANL = 1.5 V"
+        },
+        {
+          "id": "C",
+          "text": "CANH = 1.5 V and CANL = 3.5 V"
+        },
+        {
+          "id": "D",
+          "text": "CANH = 5 V and CANL = 0 V"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ở trạng thái recessive, CANH và CANL đều khoảng 2.5 V nên điện áp vi sai Vdiff bằng 0 V.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-quiz-003",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "questionType": "single_choice",
+      "questionEn": "Which CAN logic state corresponds to a dominant bus?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Logic 0"
+        },
+        {
+          "id": "B",
+          "text": "Logic 1"
+        },
+        {
+          "id": "C",
+          "text": "Both 0 and 1"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Dominant tương ứng logic 0. Khi có node phát dominant, bus sẽ ở trạng thái dominant.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-quiz-004",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "questionType": "single_choice",
+      "questionEn": "What happens when one CAN node sends recessive 1 while another sends dominant 0?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The bus becomes dominant 0"
+        },
+        {
+          "id": "B",
+          "text": "The bus becomes recessive 1"
+        },
+        {
+          "id": "C",
+          "text": "The bus enters Bus-Off"
+        },
+        {
+          "id": "D",
+          "text": "Both nodes stop immediately"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN có đặc tính wired-AND: dominant 0 thắng recessive 1. Đây là nền tảng của cơ chế arbitration.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-quiz-005",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "questionType": "single_choice",
+      "questionEn": "What is the typical value of each CAN termination resistor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "120 ohms"
+        },
+        {
+          "id": "B",
+          "text": "60 ohms"
+        },
+        {
+          "id": "C",
+          "text": "10 ohms"
+        },
+        {
+          "id": "D",
+          "text": "1 kohm"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN dùng một điện trở 120 Ω ở mỗi đầu bus. Hai điện trở mắc song song tạo ra tổng trở đo được khoảng 60 Ω.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-001",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "How many bits are in a Standard CAN identifier?",
+      "options": [
+        {
+          "id": "A",
+          "text": "11 bits"
+        },
+        {
+          "id": "B",
+          "text": "8 bits"
+        },
+        {
+          "id": "C",
+          "text": "16 bits"
+        },
+        {
+          "id": "D",
+          "text": "29 bits only"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Standard CAN frame sử dụng CAN ID 11 bit. Extended CAN sử dụng ID 29 bit.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-002",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "What does the CAN ID primarily identify?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The message type"
+        },
+        {
+          "id": "B",
+          "text": "The physical address of the receiver"
+        },
+        {
+          "id": "C",
+          "text": "The ECU software version"
+        },
+        {
+          "id": "D",
+          "text": "The cable termination"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN ID không phải địa chỉ nguồn hoặc đích. Nó xác định loại message và đồng thời quyết định priority khi arbitration.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-003",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "Which CAN ID has the highest priority?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0x000"
+        },
+        {
+          "id": "B",
+          "text": "0x100"
+        },
+        {
+          "id": "C",
+          "text": "0x200"
+        },
+        {
+          "id": "D",
+          "text": "0x7FF"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN dùng arbitration theo ID. ID càng thấp thì priority càng cao; 0x000 có tất cả bit ID là dominant.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-004",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of the SOF field?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Start the frame and synchronize node clocks"
+        },
+        {
+          "id": "B",
+          "text": "Store the message payload"
+        },
+        {
+          "id": "C",
+          "text": "Confirm the receiver address"
+        },
+        {
+          "id": "D",
+          "text": "Store the CRC result"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SOF là một dominant bit ở đầu frame. Cạnh falling của SOF giúp các node đồng bộ clock nội bộ.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-005",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "What does RTR = 0 indicate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data Frame"
+        },
+        {
+          "id": "B",
+          "text": "Remote Frame"
+        },
+        {
+          "id": "C",
+          "text": "Extended Frame"
+        },
+        {
+          "id": "D",
+          "text": "Error Frame"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTR = 0 biểu thị Data Frame. RTR = 1 biểu thị Remote Frame, dùng để yêu cầu node khác gửi dữ liệu tương ứng.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-006",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "What does IDE = 1 indicate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Extended Frame with a 29-bit identifier"
+        },
+        {
+          "id": "B",
+          "text": "Standard Frame with an 11-bit identifier"
+        },
+        {
+          "id": "C",
+          "text": "Remote Frame"
+        },
+        {
+          "id": "D",
+          "text": "CAN-FD data phase"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "IDE = 1 chỉ Extended Frame, sử dụng CAN ID 29 bit. IDE = 0 là Standard Frame 11 bit.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-007",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "How many data bytes can a Classic CAN frame carry?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0 to 8 bytes"
+        },
+        {
+          "id": "B",
+          "text": "0 to 16 bytes"
+        },
+        {
+          "id": "C",
+          "text": "0 to 32 bytes"
+        },
+        {
+          "id": "D",
+          "text": "0 to 64 bytes"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Classic CAN có Data Field từ 0 đến 8 byte. CAN-FD mở rộng payload lên tối đa 64 byte.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-008",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "Which DLC value maps to 64 data bytes in CAN-FD?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DLC 15"
+        },
+        {
+          "id": "B",
+          "text": "DLC 8"
+        },
+        {
+          "id": "C",
+          "text": "DLC 10"
+        },
+        {
+          "id": "D",
+          "text": "DLC 12"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Trong CAN-FD, DLC 15 tương ứng payload 64 byte.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-009",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of the CRC field?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Detect transmission errors"
+        },
+        {
+          "id": "B",
+          "text": "Select the highest-priority ECU"
+        },
+        {
+          "id": "C",
+          "text": "Identify the physical cable"
+        },
+        {
+          "id": "D",
+          "text": "Define the message payload length"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CRC giúp receiver kiểm tra tính toàn vẹn của frame. Nếu CRC không khớp, xảy ra CRC Error và frame được truyền lại.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-010",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "What does a dominant ACK Slot mean to the CAN sender?",
+      "options": [
+        {
+          "id": "A",
+          "text": "At least one node received the frame successfully"
+        },
+        {
+          "id": "B",
+          "text": "No node received the frame"
+        },
+        {
+          "id": "C",
+          "text": "The sender lost arbitration"
+        },
+        {
+          "id": "D",
+          "text": "The frame contains a CRC error"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Sender phát recessive tại ACK Slot. Nếu receiver nhận frame hợp lệ, nó kéo ACK Slot thành dominant.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-011",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "How many consecutive recessive bits form the CAN EOF field?",
+      "options": [
+        {
+          "id": "A",
+          "text": "7 bits"
+        },
+        {
+          "id": "B",
+          "text": "5 bits"
+        },
+        {
+          "id": "C",
+          "text": "8 bits"
+        },
+        {
+          "id": "D",
+          "text": "15 bits"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "EOF gồm 7 recessive bits liên tiếp và đánh dấu kết thúc frame.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-quiz-012",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "questionType": "single_choice",
+      "questionEn": "What happens after five consecutive bits of the same polarity?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An opposite-polarity bit is inserted"
+        },
+        {
+          "id": "B",
+          "text": "The frame immediately ends"
+        },
+        {
+          "id": "C",
+          "text": "The node enters Bus-Off"
+        },
+        {
+          "id": "D",
+          "text": "The CAN ID is retransmitted"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Bit stuffing chèn một bit ngược polarity sau 5 bit giống nhau để tránh chuỗi quá dài và hỗ trợ đồng bộ.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-arbitration-quiz-001",
+      "topicId": "can",
+      "sectionId": "arbitration",
+      "questionType": "single_choice",
+      "questionEn": "What type of bus architecture allows any CAN node to start transmitting?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Multi-master"
+        },
+        {
+          "id": "B",
+          "text": "Master-slave only"
+        },
+        {
+          "id": "C",
+          "text": "Point-to-point only"
+        },
+        {
+          "id": "D",
+          "text": "Token-ring"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN là multi-master bus: bất kỳ node nào cũng có thể bắt đầu truyền khi bus đang idle.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Arbitration",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-arbitration-quiz-002",
+      "topicId": "can",
+      "sectionId": "arbitration",
+      "questionType": "single_choice",
+      "questionEn": "Why is CAN arbitration called non-destructive?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The winning frame continues without being corrupted"
+        },
+        {
+          "id": "B",
+          "text": "All nodes transmit at different times"
+        },
+        {
+          "id": "C",
+          "text": "The losing node destroys its own data"
+        },
+        {
+          "id": "D",
+          "text": "CAN never allows simultaneous transmission"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Arbitration xảy ra ngay trên bus. Node thua dừng truyền, còn frame của node thắng tiếp tục mà không bị phá hỏng.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Arbitration",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-arbitration-quiz-003",
+      "topicId": "can",
+      "sectionId": "arbitration",
+      "questionType": "single_choice",
+      "questionEn": "Two nodes transmit IDs 0x100 and 0x0FF. Which node wins arbitration?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The node transmitting 0x0FF"
+        },
+        {
+          "id": "B",
+          "text": "The node transmitting 0x100"
+        },
+        {
+          "id": "C",
+          "text": "Both nodes lose"
+        },
+        {
+          "id": "D",
+          "text": "The node with the higher numerical ID"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "0x0FF nhỏ hơn 0x100 nên có priority cao hơn. Dominant 0 thắng recessive 1 trong quá trình arbitration.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Arbitration",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-arbitration-quiz-004",
+      "topicId": "can",
+      "sectionId": "arbitration",
+      "questionType": "single_choice",
+      "questionEn": "What does a node do after losing CAN arbitration?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stops transmitting and becomes a receiver"
+        },
+        {
+          "id": "B",
+          "text": "Forces the bus dominant"
+        },
+        {
+          "id": "C",
+          "text": "Enters Bus-Off immediately"
+        },
+        {
+          "id": "D",
+          "text": "Resets the entire CAN network"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Node phát recessive nhưng đọc thấy dominant sẽ phát hiện mình thua arbitration, dừng truyền và chuyển sang nhận.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Arbitration",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-quiz-001",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "questionType": "single_choice",
+      "questionEn": "Which error occurs when a transmitter reads a different bit than it sent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bit Error"
+        },
+        {
+          "id": "B",
+          "text": "CRC Error"
+        },
+        {
+          "id": "C",
+          "text": "ACK Error"
+        },
+        {
+          "id": "D",
+          "text": "Form Error"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Bit Error xảy ra khi node phát một giá trị nhưng đọc lại trên bus thấy giá trị khác.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-quiz-002",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "questionType": "single_choice",
+      "questionEn": "What does a CRC Error indicate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The received CRC does not match the calculated CRC"
+        },
+        {
+          "id": "B",
+          "text": "The bus has no termination resistor"
+        },
+        {
+          "id": "C",
+          "text": "The node has the lowest CAN ID"
+        },
+        {
+          "id": "D",
+          "text": "The ACK Slot is dominant"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Receiver tự tính CRC và so sánh với CRC nhận được. Không khớp thì phát hiện CRC Error.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-quiz-003",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "questionType": "single_choice",
+      "questionEn": "What is an ACK Error?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The ACK Slot remains recessive after transmission"
+        },
+        {
+          "id": "B",
+          "text": "The CAN ID is extended to 29 bits"
+        },
+        {
+          "id": "C",
+          "text": "The receiver sends dominant during SOF"
+        },
+        {
+          "id": "D",
+          "text": "The CRC field contains 15 bits"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Sender mong đợi receiver kéo ACK Slot thành dominant. Nếu vẫn recessive thì xảy ra ACK Error.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-quiz-004",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "questionType": "single_choice",
+      "questionEn": "What is a Stuff Error?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Six or more consecutive bits have the same polarity"
+        },
+        {
+          "id": "B",
+          "text": "The CAN ID is zero"
+        },
+        {
+          "id": "C",
+          "text": "The payload contains exactly 8 bytes"
+        },
+        {
+          "id": "D",
+          "text": "The ACK Slot is dominant"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Sau 5 bit cùng polarity phải có bit đảo được chèn. Nếu xuất hiện 6 bit liên tiếp cùng polarity thì đó là Stuff Error.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-quiz-005",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "questionType": "single_choice",
+      "questionEn": "What does a CAN node transmit when it detects an error?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An Error Frame"
+        },
+        {
+          "id": "B",
+          "text": "A Remote Frame"
+        },
+        {
+          "id": "C",
+          "text": "A DBC file"
+        },
+        {
+          "id": "D",
+          "text": "A termination frame"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Khi phát hiện lỗi, node gửi Error Frame gồm 6 dominant bits liên tiếp để báo lỗi trên bus.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-quiz-006",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "questionType": "single_choice",
+      "questionEn": "What happens when TEC exceeds 255?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The node enters Bus-Off"
+        },
+        {
+          "id": "B",
+          "text": "The node becomes the bus master"
+        },
+        {
+          "id": "C",
+          "text": "The node increases its CAN ID priority"
+        },
+        {
+          "id": "D",
+          "text": "The node disables CRC checking"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Khi Transmit Error Counter (TEC) vượt 255, node vào trạng thái Bus-Off và tự ngắt khỏi bus để bảo vệ mạng.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-quiz-001",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "questionType": "single_choice",
+      "questionEn": "What is the maximum payload of CAN-FD?",
+      "options": [
+        {
+          "id": "A",
+          "text": "64 bytes"
+        },
+        {
+          "id": "B",
+          "text": "8 bytes"
+        },
+        {
+          "id": "C",
+          "text": "16 bytes"
+        },
+        {
+          "id": "D",
+          "text": "32 bytes"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN-FD mở rộng Data Field lên tối đa 64 byte, trong khi Classic CAN tối đa 8 byte.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN-FD vs CAN Classic",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-quiz-002",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "questionType": "single_choice",
+      "questionEn": "What is the maximum data-phase bitrate stated for CAN-FD?",
+      "options": [
+        {
+          "id": "A",
+          "text": "8 Mbps"
+        },
+        {
+          "id": "B",
+          "text": "1 Mbps"
+        },
+        {
+          "id": "C",
+          "text": "2 Mbps"
+        },
+        {
+          "id": "D",
+          "text": "64 Mbps"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo tài liệu, CAN-FD có data-phase bitrate tối đa 8 Mbps, cao hơn mức 1 Mbps của Classic CAN.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN-FD vs CAN Classic",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-quiz-003",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "questionType": "single_choice",
+      "questionEn": "Which statement about CAN-FD compatibility is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A CAN-FD node can read a Classic CAN frame"
+        },
+        {
+          "id": "B",
+          "text": "Classic CAN can read every CAN-FD frame"
+        },
+        {
+          "id": "C",
+          "text": "Classic CAN always supports 64-byte payloads"
+        },
+        {
+          "id": "D",
+          "text": "CAN-FD cannot use Classic CAN frames"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN-FD có thể đọc CAN frame thông thường, nhưng Classic CAN không thể đọc CAN-FD frame.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN-FD vs CAN Classic",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-quiz-004",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "questionType": "single_choice",
+      "questionEn": "Which CRC options are used by CAN-FD according to the source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CRC-17 or CRC-21"
+        },
+        {
+          "id": "B",
+          "text": "CRC-8 only"
+        },
+        {
+          "id": "C",
+          "text": "CRC-12 only"
+        },
+        {
+          "id": "D",
+          "text": "CRC-32 only"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tài liệu nêu Classic CAN dùng CRC-15, còn CAN-FD dùng CRC-17 hoặc CRC-21.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN-FD vs CAN Classic",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-quiz-001",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "questionType": "single_choice",
+      "questionEn": "What is the primary purpose of a DBC file?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Decode raw CAN data into meaningful messages and signals"
+        },
+        {
+          "id": "B",
+          "text": "Configure CAN termination resistors"
+        },
+        {
+          "id": "C",
+          "text": "Replace the CAN transceiver"
+        },
+        {
+          "id": "D",
+          "text": "Increase CAN bus bitrate"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "DBC là dạng text database mô tả message và signal, giúp chuyển dữ liệu CAN raw thành giá trị có ý nghĩa.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC File Format",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-quiz-002",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "questionType": "single_choice",
+      "questionEn": "In a DBC file, what does BO_ define?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A CAN message"
+        },
+        {
+          "id": "B",
+          "text": "A CAN signal only"
+        },
+        {
+          "id": "C",
+          "text": "A termination resistor"
+        },
+        {
+          "id": "D",
+          "text": "A CRC polynomial"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Trong DBC, BO_ khai báo một CAN message cùng CAN ID, tên message, độ dài và sender.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC File Format",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-quiz-003",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "questionType": "single_choice",
+      "questionEn": "In a DBC file, what does SG_ define?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A signal within a CAN message"
+        },
+        {
+          "id": "B",
+          "text": "A CAN node hardware address"
+        },
+        {
+          "id": "C",
+          "text": "A termination resistor"
+        },
+        {
+          "id": "D",
+          "text": "A CAN controller clock"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SG_ dùng để định nghĩa signal: vị trí bit, độ dài, byte order, signedness, factor, offset, range, unit và receiver.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Signal Definition",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-quiz-004",
+      "topicId": "can",
+      "sectionId": "dbc-signal",
+      "questionType": "single_choice",
+      "questionEn": "In the signal definition 0|16@1+, what does 16 represent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Signal length of 16 bits"
+        },
+        {
+          "id": "B",
+          "text": "CAN ID 16"
+        },
+        {
+          "id": "C",
+          "text": "A factor of 16"
+        },
+        {
+          "id": "D",
+          "text": "16 receiving ECUs"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Trong SG_ VehicleSpeed : 0|16@1+, số 16 là độ dài signal, tức signal chiếm 16 bit.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Signal Definition",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-quiz-005",
+      "topicId": "can",
+      "sectionId": "dbc-signal",
+      "questionType": "single_choice",
+      "questionEn": "In a DBC signal, what does @1 indicate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Intel little-endian byte order"
+        },
+        {
+          "id": "B",
+          "text": "Motorola big-endian byte order"
+        },
+        {
+          "id": "C",
+          "text": "Signed two's complement"
+        },
+        {
+          "id": "D",
+          "text": "Unsigned data"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "@1 biểu thị Intel little-endian, tức LSB first. @0 biểu thị Motorola big-endian.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Signal Definition",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-quiz-006",
+      "topicId": "can",
+      "sectionId": "dbc-signal",
+      "questionType": "single_choice",
+      "questionEn": "In a DBC signal, what does the + sign indicate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Unsigned signal"
+        },
+        {
+          "id": "B",
+          "text": "Signed two's-complement signal"
+        },
+        {
+          "id": "C",
+          "text": "Big-endian signal"
+        },
+        {
+          "id": "D",
+          "text": "A positive offset"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Dấu + chỉ signal unsigned. Dấu - chỉ signal signed theo two's complement.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Signal Definition",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-quiz-007",
+      "topicId": "can",
+      "sectionId": "dbc-signal",
+      "questionType": "single_choice",
+      "questionEn": "For VehicleSpeed with factor 0.01 and offset 0, what is the physical value of raw 32000?",
+      "options": [
+        {
+          "id": "A",
+          "text": "320.00 km/h"
+        },
+        {
+          "id": "B",
+          "text": "32.00 km/h"
+        },
+        {
+          "id": "C",
+          "text": "3.20 km/h"
+        },
+        {
+          "id": "D",
+          "text": "3200 km/h"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Công thức Physical = Raw × Factor + Offset. 32000 × 0.01 + 0 = 320.00 km/h.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Signal Definition",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-quiz-008",
+      "topicId": "can",
+      "sectionId": "dbc-signal",
+      "questionType": "single_choice",
+      "questionEn": "What does [0|320] represent in the VehicleSpeed signal definition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The physical minimum and maximum values"
+        },
+        {
+          "id": "B",
+          "text": "The start bit and signal length"
+        },
+        {
+          "id": "C",
+          "text": "The CAN ID range"
+        },
+        {
+          "id": "D",
+          "text": "The CRC range"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "[0|320] là physical minimum và maximum của VehicleSpeed, tương ứng 0 đến 320 km/h.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Signal Definition",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-quiz-009",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "questionType": "single_choice",
+      "questionEn": "What does VAL_ define in the provided DBC example?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Enumeration values for signals"
+        },
+        {
+          "id": "B",
+          "text": "CAN termination values"
+        },
+        {
+          "id": "C",
+          "text": "CRC polynomial values"
+        },
+        {
+          "id": "D",
+          "text": "CAN bus voltage values"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "VAL_ ánh xạ giá trị số của signal sang tên dễ hiểu, ví dụ 0 = OFF và 2 = ON cho IgnitionStatus.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC File Format",
+        "reference": "conversation-source/CAN-Protocol"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

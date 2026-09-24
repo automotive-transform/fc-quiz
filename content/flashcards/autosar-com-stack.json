@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "autosar-com-stack-001",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "concept",
+      "term": "CAN Signal Flow",
+      "definitionEn": "The path a CAN signal follows from CAN Hardware to the SWC.",
+      "explanationVi": "Luồng dữ liệu đi từ CAN HW → CanDrv → CanIf → PduR → Com → RTE → SWC.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "COM Stack — Hành trình của một CAN Signal",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-002",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "abbreviation",
+      "term": "CanDrv",
+      "definitionEn": "The MCAL CAN driver that reads frames from the CAN RX mailbox.",
+      "explanationVi": "CanDrv thuộc MCAL, đọc CAN frame từ mailbox và gọi CanIf_RxIndication().",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 2",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-003",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "technical_term",
+      "term": "CanIf",
+      "definitionEn": "The ECU Abstraction module that maps Controller ID to PDU ID and filters frames.",
+      "explanationVi": "CanIf thực hiện mapping Controller ID → PDU ID, filter và chuyển PDU lên PduR.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 3",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-004",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "technical_term",
+      "term": "PduR",
+      "definitionEn": "The PDU Router that routes a PDU to the correct upper module.",
+      "explanationVi": "PduR route PDU đến đúng module, trong luồng này là Com; có thể gateway sang bus khác.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 4",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-005",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "technical_term",
+      "term": "Com",
+      "definitionEn": "The module that extracts signals from PDU payload and applies byte order, scale, and offset.",
+      "explanationVi": "Com tách signal từ PDU, xử lý byte order, scale, offset rồi lưu vào signal buffer.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 5",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-006",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "concept",
+      "term": "Signal Layout",
+      "definitionEn": "The configuration defining a signal's start bit, length, byte order, factor, and offset.",
+      "explanationVi": "Signal layout gồm start bit, length, byte order, factor và offset để giải mã signal.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Bước 5 — Com",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-007",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "technical_term",
+      "term": "RTE",
+      "definitionEn": "The Runtime Environment that routes the signal from the Com buffer to the SWC R-Port.",
+      "explanationVi": "RTE đọc signal từ Com buffer và route đến SWC R-Port; theo nguồn, RTE chỉ forward.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 6",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-008",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "technical_term",
+      "term": "R-Port",
+      "definitionEn": "The SWC port through which the RTE provides the received signal.",
+      "explanationVi": "R-Port là cổng của SWC nhận dữ liệu do RTE route từ Com.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 6",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-009",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "technical_term",
+      "term": "Rte_Read_pVehicleSpeed_vehicleSpeed_kmh()",
+      "definitionEn": "The RTE API used by the SWC to read the vehicle speed value.",
+      "explanationVi": "SWC gọi API này để nhận giá trị vehicleSpeed_kmh dạng float32.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 7",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-010",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "comparison",
+      "term": "Com vs RTE",
+      "definitionEn": "Com decodes signals; RTE routes the signal to the SWC.",
+      "explanationVi": "Com tách và xử lý signal; RTE đọc buffer và forward dữ liệu đến R-Port của SWC.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-011",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "comparison",
+      "term": "CanIf vs PduR",
+      "definitionEn": "CanIf maps and filters CAN PDUs; PduR routes PDUs to the destination module.",
+      "explanationVi": "CanIf làm mapping và filter; PduR quyết định PDU được route đến module nào.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-012",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "concept",
+      "term": "RX Mailbox",
+      "definitionEn": "The CAN Hardware buffer where a received CAN frame is placed for the driver.",
+      "explanationVi": "RX mailbox là nơi CAN Hardware nhận và lưu CAN frame để CanDrv đọc.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 1",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-013",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "technical_term",
+      "term": "Routing Table",
+      "definitionEn": "The PduR configuration that maps a CanIf PDU to a Com PDU.",
+      "explanationVi": "Routing table xác định PDU từ CanIf được route đến Com PDU nào.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Đi sâu từng bước — Bước 4",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-014",
+      "topicId": "autosar",
+      "sectionId": "com-stack",
+      "cardType": "phrase",
+      "term": "CAN HW → CanDrv → CanIf → PduR → Com → RTE → SWC",
+      "definitionEn": "The seven-step CAN receive path from hardware to the software component.",
+      "explanationVi": "Chuỗi cần thuộc: nhận → đọc → mapping → route → tách → forward → SWC đọc.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "CAN Signal Flow: Hardware to SWC",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-com-stack-015",
+      "topicId": "autosar",
+      "sectionId": "com-stack-debug",
+      "cardType": "concept",
+      "term": "COM Stack Debug Order",
+      "definitionEn": "Check raw CAN frame, Com config, PduR routing, then CanIf mapping.",
+      "explanationVi": "Debug theo thứ tự: CANoe raw frame → Com config → PduR routing → CanIf mapping.",
+      "source": {
+        "type": "technical_document",
+        "document": "COM Stack",
+        "section": "Debug tip",
+        "reference": "content-source/AUTOSAR/COM-Stack.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

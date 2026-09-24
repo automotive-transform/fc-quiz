@@ -1,0 +1,750 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "can-overview-quiz-001",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "questionType": "single_choice",
+      "questionEn": "Why is a modern vehicle often described as a mobile computer network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because it contains many ECUs that communicate and exchange data"
+        },
+        {
+          "id": "B",
+          "text": "Because every vehicle uses only one central CPU"
+        },
+        {
+          "id": "C",
+          "text": "Because all vehicle functions are controlled mechanically"
+        },
+        {
+          "id": "D",
+          "text": "Because the vehicle does not need communication networks"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Xe hiện đại có hàng chục đến hơn 100 ECU, mỗi ECU có CPU, memory và software, đồng thời trao đổi dữ liệu qua mạng xe.",
+      "relatedFlashcardIds": [
+        "can-overview-001",
+        "can-overview-002"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "ECU network",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-002",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "questionType": "single_choice",
+      "questionEn": "What is the main function of the ECM?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Control engine functions such as fuel injection and ignition"
+        },
+        {
+          "id": "B",
+          "text": "Control only the vehicle windows"
+        },
+        {
+          "id": "C",
+          "text": "Manage GPS and cellular communication only"
+        },
+        {
+          "id": "D",
+          "text": "Control airbag deployment only"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ECM (Engine Control Module) điều khiển động cơ, bao gồm phun nhiên liệu, đánh lửa và các chức năng liên quan đến emissions.",
+      "relatedFlashcardIds": [
+        "can-overview-003"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "ECU network",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-003",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "questionType": "single_choice",
+      "questionEn": "Which ECU monitors wheel speeds and controls braking independently?",
+      "options": [
+        {
+          "id": "A",
+          "text": "BCM"
+        },
+        {
+          "id": "B",
+          "text": "ABS/ESC"
+        },
+        {
+          "id": "C",
+          "text": "TCU"
+        },
+        {
+          "id": "D",
+          "text": "BMS"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "ABS/ESC đọc tốc độ của 4 bánh xe và có thể điều khiển phanh độc lập để hỗ trợ chống bó cứng và ổn định xe.",
+      "relatedFlashcardIds": [
+        "can-overview-005"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "ECU network",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-004",
+      "topicId": "can",
+      "sectionId": "network-motivation",
+      "questionType": "single_choice",
+      "questionEn": "What is a major problem with point-to-point wiring between many ECUs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It requires too many separate communication cables"
+        },
+        {
+          "id": "B",
+          "text": "It makes every ECU wireless"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates all communication between ECUs"
+        },
+        {
+          "id": "D",
+          "text": "It reduces the number of ECUs automatically"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Khi nhiều ECU cần trao đổi dữ liệu trực tiếp, số lượng dây tăng rất nhanh, làm hệ thống trở nên nặng, phức tạp và tốn chi phí.",
+      "relatedFlashcardIds": [
+        "can-overview-013",
+        "can-overview-014"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Network motivation",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-005",
+      "topicId": "can",
+      "sectionId": "network-motivation",
+      "questionType": "single_choice",
+      "questionEn": "In the example with 100 ECUs, each sharing data with an average of 20 other ECUs, how many point-to-point cables are required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100"
+        },
+        {
+          "id": "B",
+          "text": "500"
+        },
+        {
+          "id": "C",
+          "text": "1000"
+        },
+        {
+          "id": "D",
+          "text": "2000"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Theo ví dụ nguồn: 100 × 20 / 2 = 1000 dây. Chia 2 vì mỗi kết nối giữa hai ECU được tính từ cả hai phía.",
+      "relatedFlashcardIds": [
+        "can-overview-014"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Network motivation",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-006",
+      "topicId": "can",
+      "sectionId": "history",
+      "questionType": "single_choice",
+      "questionEn": "When did Robert Bosch GmbH introduce CAN at an SAE conference?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1986"
+        },
+        {
+          "id": "B",
+          "text": "1991"
+        },
+        {
+          "id": "C",
+          "text": "1993"
+        },
+        {
+          "id": "D",
+          "text": "2011"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Năm 1986, Robert Bosch GmbH giới thiệu CAN tại hội nghị SAE với mục tiêu ban đầu là giảm độ phức tạp của hệ thống dây điện.",
+      "relatedFlashcardIds": [
+        "can-overview-015"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "History",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-007",
+      "topicId": "can",
+      "sectionId": "history",
+      "questionType": "single_choice",
+      "questionEn": "Which vehicle is identified in the source as the first mass-produced vehicle with CAN bus?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mercedes-Benz 500E"
+        },
+        {
+          "id": "B",
+          "text": "Toyota Camry"
+        },
+        {
+          "id": "C",
+          "text": "BMW 7 Series"
+        },
+        {
+          "id": "D",
+          "text": "Tesla Model S"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo tài liệu nguồn, Mercedes-Benz 500E năm 1991 là xe sản xuất hàng loạt đầu tiên sử dụng CAN bus.",
+      "relatedFlashcardIds": [
+        "can-overview-016"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "History",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-008",
+      "topicId": "can",
+      "sectionId": "history",
+      "questionType": "single_choice",
+      "questionEn": "Which standard standardized CAN in 1993?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ISO 11898"
+        },
+        {
+          "id": "B",
+          "text": "ISO 26262"
+        },
+        {
+          "id": "C",
+          "text": "ISO 21434"
+        },
+        {
+          "id": "D",
+          "text": "ISO 15765"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Năm 1993, CAN được tiêu chuẩn hóa theo ISO 11898, giúp CAN được áp dụng rộng rãi hơn.",
+      "relatedFlashcardIds": [
+        "can-overview-017"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "History",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-009",
+      "topicId": "can",
+      "sectionId": "history",
+      "questionType": "single_choice",
+      "questionEn": "What major improvement did CAN-FD introduce compared with Classic CAN?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Higher data-phase bandwidth and payload up to 64 bytes"
+        },
+        {
+          "id": "B",
+          "text": "Single-wire communication only"
+        },
+        {
+          "id": "C",
+          "text": "Removal of all ECUs from the vehicle"
+        },
+        {
+          "id": "D",
+          "text": "Replacement of CAN with LIN"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo nguồn, CAN-FD tăng bandwidth từ 1 Mbps lên 8 Mbps và payload từ 8 lên 64 bytes.",
+      "relatedFlashcardIds": [
+        "can-overview-018"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "History",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-010",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "questionType": "single_choice",
+      "questionEn": "Which network is characterized by low cost, low speed, and a single wire?",
+      "options": [
+        {
+          "id": "A",
+          "text": "LIN"
+        },
+        {
+          "id": "B",
+          "text": "CAN-FD"
+        },
+        {
+          "id": "C",
+          "text": "FlexRay"
+        },
+        {
+          "id": "D",
+          "text": "Automotive Ethernet"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "LIN có tốc độ khoảng 20 kbps, tối đa 16 node theo bảng nguồn, chi phí thấp và dùng một dây.",
+      "relatedFlashcardIds": [
+        "can-overview-019"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Vehicle network types",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-011",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "questionType": "single_choice",
+      "questionEn": "Which network is described as the backbone of the vehicle network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "LIN"
+        },
+        {
+          "id": "B",
+          "text": "Classic CAN"
+        },
+        {
+          "id": "C",
+          "text": "MOST"
+        },
+        {
+          "id": "D",
+          "text": "FlexRay"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Classic CAN được mô tả là 'xương sống' của mạng xe, dùng rộng rãi cho powertrain, body và chassis.",
+      "relatedFlashcardIds": [
+        "can-overview-020"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Vehicle network types",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-012",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "questionType": "single_choice",
+      "questionEn": "Which network is associated with deterministic timing and X-by-wire applications?",
+      "options": [
+        {
+          "id": "A",
+          "text": "LIN"
+        },
+        {
+          "id": "B",
+          "text": "FlexRay"
+        },
+        {
+          "id": "C",
+          "text": "MOST"
+        },
+        {
+          "id": "D",
+          "text": "Classic CAN"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "FlexRay có tốc độ 10 Mbps, timing deterministic và được dùng cho các ứng dụng X-by-wire như steer-by-wire hoặc brake-by-wire.",
+      "relatedFlashcardIds": [
+        "can-overview-021"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Vehicle network types",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-013",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "questionType": "single_choice",
+      "questionEn": "Which network was designed primarily for infotainment and audio-video streaming?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MOST"
+        },
+        {
+          "id": "B",
+          "text": "LIN"
+        },
+        {
+          "id": "C",
+          "text": "CAN"
+        },
+        {
+          "id": "D",
+          "text": "FlexRay"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MOST được dùng cho infotainment và streaming audio-video, với topology dạng ring theo bảng nguồn.",
+      "relatedFlashcardIds": [
+        "can-overview-022"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Vehicle network types",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-014",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "questionType": "single_choice",
+      "questionEn": "Which network is associated with cameras, radar, ADAS, OTA, and centralized compute?",
+      "options": [
+        {
+          "id": "A",
+          "text": "LIN"
+        },
+        {
+          "id": "B",
+          "text": "Automotive Ethernet"
+        },
+        {
+          "id": "C",
+          "text": "MOST"
+        },
+        {
+          "id": "D",
+          "text": "Classic CAN"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Automotive Ethernet có bandwidth cao và được dùng cho camera, radar, ADAS, OTA, gateway và kiến trúc centralized compute.",
+      "relatedFlashcardIds": [
+        "can-overview-023"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Vehicle network types",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-015",
+      "topicId": "can",
+      "sectionId": "topology",
+      "questionType": "single_choice",
+      "questionEn": "What is the termination resistance specified at both ends of the CAN high-speed bus in the source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "60 Ω"
+        },
+        {
+          "id": "B",
+          "text": "120 Ω"
+        },
+        {
+          "id": "C",
+          "text": "240 Ω"
+        },
+        {
+          "id": "D",
+          "text": "1 kΩ"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "CAN high-speed bus trong sơ đồ nguồn có điện trở termination 120 Ω ở hai đầu bus.",
+      "relatedFlashcardIds": [
+        "can-overview-024"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "ECU network topology",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-016",
+      "topicId": "can",
+      "sectionId": "gateway",
+      "questionType": "single_choice",
+      "questionEn": "What is the key role of the Gateway ECU?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Translate and route communication between different vehicle networks"
+        },
+        {
+          "id": "B",
+          "text": "Only display vehicle speed to the driver"
+        },
+        {
+          "id": "C",
+          "text": "Only control the engine fuel injectors"
+        },
+        {
+          "id": "D",
+          "text": "Replace every ECU in the vehicle"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Gateway ECU là 'bộ dịch' quan trọng, kết nối các CAN bus, LIN và Ethernet, đồng thời định tuyến message phù hợp.",
+      "relatedFlashcardIds": [
+        "can-overview-025",
+        "can-overview-026"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Gateway ECU",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-017",
+      "topicId": "can",
+      "sectionId": "multiple-buses",
+      "questionType": "single_choice",
+      "questionEn": "Why is the entire vehicle usually not placed on a single CAN bus?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bandwidth, safety isolation, and timing requirements differ"
+        },
+        {
+          "id": "B",
+          "text": "CAN cannot connect more than two ECUs"
+        },
+        {
+          "id": "C",
+          "text": "CAN works only with infotainment systems"
+        },
+        {
+          "id": "D",
+          "text": "CAN requires a separate wire for every ECU pair"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nguồn nêu ba lý do chính để chia bus: Bandwidth, Isolation và Timing, viết tắt là B-I-T.",
+      "relatedFlashcardIds": [
+        "can-overview-027",
+        "can-overview-031"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Multiple CAN buses",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-018",
+      "topicId": "can",
+      "sectionId": "multiple-buses",
+      "questionType": "single_choice",
+      "questionEn": "According to the source example, what is the calculated CAN bus utilization if 100 ECUs each transmit every 10 ms and each frame takes about 111 µs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "11.1%"
+        },
+        {
+          "id": "B",
+          "text": "50%"
+        },
+        {
+          "id": "C",
+          "text": "100%"
+        },
+        {
+          "id": "D",
+          "text": "111%"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Theo ví dụ nguồn: 100 × 111 µs / 10,000 µs = 111%, nghĩa là bus bị quá tải.",
+      "relatedFlashcardIds": [
+        "can-overview-029"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Multiple CAN buses",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-019",
+      "topicId": "can",
+      "sectionId": "multiple-buses",
+      "questionType": "single_choice",
+      "questionEn": "Which concept describes preventing a fault on one vehicle network from unnecessarily affecting another network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fault containment"
+        },
+        {
+          "id": "B",
+          "text": "Payload expansion"
+        },
+        {
+          "id": "C",
+          "text": "Audio streaming"
+        },
+        {
+          "id": "D",
+          "text": "Centralized display"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Chia các bus giúp cô lập lỗi. Ví dụ, lỗi trên Body CAN không nên làm ảnh hưởng đến Powertrain CAN.",
+      "relatedFlashcardIds": [
+        "can-overview-028"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Multiple CAN buses",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-quiz-020",
+      "topicId": "can",
+      "sectionId": "multiple-buses",
+      "questionType": "single_choice",
+      "questionEn": "Why should ABS traffic not simply share the same timing requirements as BCM traffic?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ABS requires much lower latency than typical BCM functions"
+        },
+        {
+          "id": "B",
+          "text": "BCM cannot communicate over CAN"
+        },
+        {
+          "id": "C",
+          "text": "ABS only uses Ethernet"
+        },
+        {
+          "id": "D",
+          "text": "BCM always requires 1 ms timing"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo nguồn, ABS cần latency dưới 1 ms trong khi BCM có thể chờ khoảng 100 ms, nên yêu cầu timing rất khác nhau.",
+      "relatedFlashcardIds": [
+        "can-overview-030"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Multiple CAN buses",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

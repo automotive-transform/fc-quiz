@@ -1,0 +1,621 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "can-ethernet-bandwidth-001",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "cardType": "concept",
+      "term": "Automotive Ethernet",
+      "definitionEn": "High-bandwidth automotive networking used for data-heavy use cases.",
+      "explanationVi": "Mạng tốc độ cao cho ô tô, dùng cho camera, LIDAR, OTA và video.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Tại sao Automotive Ethernet được cần?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-ethernet-bandwidth-002",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "cardType": "comparison",
+      "term": "CAN vs Automotive Ethernet",
+      "definitionEn": "CAN suits powertrain and body; Ethernet supports much higher bandwidth.",
+      "explanationVi": "CAN phù hợp powertrain/body; Ethernet phù hợp dữ liệu lớn như camera, LIDAR.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Tại sao Automotive Ethernet được cần?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-ethernet-bandwidth-003",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "cardType": "technical_term",
+      "term": "100BASE-T1",
+      "definitionEn": "100 Mbps full-duplex Ethernet using one twisted-pair cable.",
+      "explanationVi": "Ethernet ô tô 100 Mbps full-duplex, dùng 1 đôi dây twisted pair.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Automotive Ethernet Standards"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-ethernet-bandwidth-004",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "cardType": "technical_term",
+      "term": "1000BASE-T1",
+      "definitionEn": "1 Gbps full-duplex Ethernet using one twisted-pair cable.",
+      "explanationVi": "Ethernet ô tô 1 Gbps full-duplex, dùng 1 đôi dây twisted pair.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Automotive Ethernet Standards"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-ethernet-bandwidth-005",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "cardType": "technical_term",
+      "term": "Multi-Gig",
+      "definitionEn": "Automotive Ethernet speeds from 2.5 to 10 Gbps.",
+      "explanationVi": "Ethernet tốc độ 2.5–10 Gbps, hướng tới autonomous driving compute.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Automotive Ethernet Standards"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-ethernet-bandwidth-006",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "cardType": "concept",
+      "term": "Echo cancellation",
+      "definitionEn": "A technique enabling full-duplex communication over one twisted pair.",
+      "explanationVi": "Kỹ thuật loại bỏ echo để truyền và nhận đồng thời trên 1 đôi dây.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Automotive Ethernet Standards"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-001",
+      "topicId": "can",
+      "sectionId": "someip",
+      "cardType": "abbreviation",
+      "term": "SOME/IP",
+      "definitionEn": "Scalable service-Oriented Middleware over IP.",
+      "explanationVi": "Middleware hướng service, chạy trên IP và mang SOA vào ô tô.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP — Scalable service-Oriented Middleware over IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-002",
+      "topicId": "can",
+      "sectionId": "someip",
+      "cardType": "concept",
+      "term": "SOME/IP transport",
+      "definitionEn": "SOME/IP runs over UDP or TCP on Automotive Ethernet.",
+      "explanationVi": "SOME/IP chạy trên UDP hoặc TCP, bên trên Automotive Ethernet.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP — Scalable service-Oriented Middleware over IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-003",
+      "topicId": "can",
+      "sectionId": "someip-services",
+      "cardType": "concept",
+      "term": "Service",
+      "definitionEn": "A SOME/IP service identified by a unique Service ID.",
+      "explanationVi": "Dịch vụ SOME/IP có Service ID duy nhất và cung cấp Methods, Events, Fields.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Concept cốt lõi: Services"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-004",
+      "topicId": "can",
+      "sectionId": "someip-services",
+      "cardType": "comparison",
+      "term": "Methods vs Events vs Fields",
+      "definitionEn": "Methods call/return; Events publish/subscribe; Fields provide getter/setter/notifier.",
+      "explanationVi": "Method = gọi/trả lời; Event = publish/subscribe; Field = getter/setter/notifier.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Concept cốt lõi: Services"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-005",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "cardType": "concept",
+      "term": "SOME/IP Message Header",
+      "definitionEn": "A 16-byte header containing identifiers, length, versions, type, and return code.",
+      "explanationVi": "Header SOME/IP dài 16 bytes, chứa ID, Length, version, Msg Type và Return Code.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-006",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "cardType": "technical_term",
+      "term": "Service ID",
+      "definitionEn": "A 2-byte identifier for the SOME/IP service, from 0x0000 to 0xFFFD.",
+      "explanationVi": "ID 2 bytes dùng để xác định Service; phạm vi 0x0000–0xFFFD.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-007",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "cardType": "technical_term",
+      "term": "Method/Event ID",
+      "definitionEn": "A 2-byte identifier; methods are below 0x8000 and events are 0x8000 or higher.",
+      "explanationVi": "ID 2 bytes; Method < 0x8000, Event ≥ 0x8000.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-008",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "cardType": "technical_term",
+      "term": "Length",
+      "definitionEn": "A 4-byte field equal to payload length plus 8 bytes of header.",
+      "explanationVi": "Length = payload length + 8 bytes header, không phải toàn bộ 16-byte header.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-009",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "cardType": "technical_term",
+      "term": "Client ID",
+      "definitionEn": "A 2-byte field identifying the client.",
+      "explanationVi": "Trường 2 bytes dùng để xác định client gửi message.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-010",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "cardType": "technical_term",
+      "term": "Session ID",
+      "definitionEn": "A 2-byte field identifying the session.",
+      "explanationVi": "Trường 2 bytes dùng để xác định session trong giao tiếp.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-011",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "cardType": "technical_term",
+      "term": "Protocol Version",
+      "definitionEn": "The SOME/IP protocol version; the source specifies 0x01.",
+      "explanationVi": "Phiên bản protocol SOME/IP; tài liệu cho giá trị 0x01.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-012",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "cardType": "technical_term",
+      "term": "Interface Version",
+      "definitionEn": "The version of the service interface.",
+      "explanationVi": "Phiên bản của interface mà service cung cấp.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-013",
+      "topicId": "can",
+      "sectionId": "someip-message-types",
+      "cardType": "technical_term",
+      "term": "REQUEST",
+      "definitionEn": "0x00: client calls a method and expects a response.",
+      "explanationVi": "0x00: client gọi method và mong đợi server trả lời.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Message Types trong SOME/IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-014",
+      "topicId": "can",
+      "sectionId": "someip-message-types",
+      "cardType": "technical_term",
+      "term": "REQUEST_NO_RETURN",
+      "definitionEn": "0x01: client calls a method without requiring a response.",
+      "explanationVi": "0x01: gọi method nhưng không cần response; fire-and-forget.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Message Types trong SOME/IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-015",
+      "topicId": "can",
+      "sectionId": "someip-message-types",
+      "cardType": "technical_term",
+      "term": "NOTIFICATION",
+      "definitionEn": "0x02: server sends an event notification to subscribers.",
+      "explanationVi": "0x02: server gửi event notification cho các subscriber.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Message Types trong SOME/IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-016",
+      "topicId": "can",
+      "sectionId": "someip-message-types",
+      "cardType": "technical_term",
+      "term": "RESPONSE",
+      "definitionEn": "0x80: server responds to a REQUEST.",
+      "explanationVi": "0x80: server trả lời REQUEST từ client.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Message Types trong SOME/IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-017",
+      "topicId": "can",
+      "sectionId": "someip-message-types",
+      "cardType": "technical_term",
+      "term": "ERROR",
+      "definitionEn": "0x81: server reports an error while processing a REQUEST.",
+      "explanationVi": "0x81: server báo lỗi khi xử lý REQUEST.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Message Types trong SOME/IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-sd-001",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "cardType": "technical_term",
+      "term": "SOME/IP-SD",
+      "definitionEn": "Service Discovery for dynamically finding and subscribing to services.",
+      "explanationVi": "Cơ chế tìm service và subscribe/unsubscribe dynamic, không cần cấu hình IP cứng.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD — Service Discovery"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-sd-002",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "cardType": "phrase",
+      "term": "Find – Offer – Subscribe – Notify",
+      "definitionEn": "The core SOME/IP-SD service discovery flow.",
+      "explanationVi": "Luồng nhớ nhanh: Tìm → Cung cấp → Đăng ký → Thông báo.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD Flow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-sd-003",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "cardType": "technical_term",
+      "term": "FindService",
+      "definitionEn": "The client searches for a service using multicast UDP.",
+      "explanationVi": "Client tìm service bằng multicast UDP.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD Flow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-sd-004",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "cardType": "technical_term",
+      "term": "OfferService",
+      "definitionEn": "The server offers a service and provides IP, port, and UDP transport information.",
+      "explanationVi": "Server cung cấp service cùng thông tin IP, port và transport UDP.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD Flow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-sd-005",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "cardType": "technical_term",
+      "term": "SubscribeEventgroup",
+      "definitionEn": "The client subscribes to an event group.",
+      "explanationVi": "Client đăng ký nhận các event thuộc event group.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD Flow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-sd-006",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "cardType": "technical_term",
+      "term": "SubscribeEventgroupAck",
+      "definitionEn": "The server acknowledges the event-group subscription.",
+      "explanationVi": "Server xác nhận việc client đăng ký event group.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD Flow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-sd-007",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "cardType": "concept",
+      "term": "NOTIFICATION timing",
+      "definitionEn": "Notifications can be sent on data change or periodically.",
+      "explanationVi": "Server có thể notify khi dữ liệu thay đổi hoặc theo chu kỳ.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD Flow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-can-001",
+      "topicId": "can",
+      "sectionId": "someip-vs-can",
+      "cardType": "comparison",
+      "term": "CAN vs SOME/IP communication model",
+      "definitionEn": "CAN broadcasts messages; SOME/IP uses service-oriented publish/subscribe.",
+      "explanationVi": "CAN broadcast: node nghe message; SOME/IP: subscriber đăng ký service cần dùng.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP vs CAN"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-can-002",
+      "topicId": "can",
+      "sectionId": "someip-vs-can",
+      "cardType": "concept",
+      "term": "CAN use case",
+      "definitionEn": "CAN fits very low latency, hard real-time, simple, low-cost communication.",
+      "explanationVi": "CAN phù hợp latency cực thấp, hard real-time, đơn giản và chi phí thấp.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP vs CAN"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-can-003",
+      "topicId": "can",
+      "sectionId": "someip-vs-can",
+      "cardType": "concept",
+      "term": "SOME/IP use case",
+      "definitionEn": "SOME/IP suits systems with a very large number of services.",
+      "explanationVi": "SOME/IP phù hợp khi hệ thống có số lượng service rất lớn.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP vs CAN"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-serialization-001",
+      "topicId": "can",
+      "sectionId": "someip-serialization",
+      "cardType": "concept",
+      "term": "SOME/IP Serialization",
+      "definitionEn": "The binary serialization format used for SOME/IP payload data.",
+      "explanationVi": "Định dạng serialize dữ liệu payload SOME/IP thành dữ liệu nhị phân để truyền.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Serialization"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-serialization-002",
+      "topicId": "can",
+      "sectionId": "someip-serialization",
+      "cardType": "comparison",
+      "term": "SOME/IP binary format",
+      "definitionEn": "A compact binary format designed to be fast to parse.",
+      "explanationVi": "Định dạng nhị phân compact, dễ parse nhanh; khác với Protocol Buffers hoặc JSON.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Serialization"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-serialization-003",
+      "topicId": "can",
+      "sectionId": "someip-serialization",
+      "cardType": "technical_term",
+      "term": "Big-endian",
+      "definitionEn": "The default byte order specified for SOME/IP serialized data.",
+      "explanationVi": "Thứ tự byte mặc định trong serialization SOME/IP theo tài liệu.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Serialization"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-serialization-004",
+      "topicId": "can",
+      "sectionId": "someip-serialization",
+      "cardType": "technical_term",
+      "term": "Length-value encoding",
+      "definitionEn": "Dynamic arrays use a 4-byte length prefix followed by the data.",
+      "explanationVi": "Dynamic array: 4 bytes length prefix + data.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Serialization"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-autosar-001",
+      "topicId": "can",
+      "sectionId": "autosar-ap",
+      "cardType": "technical_term",
+      "term": "ara::com",
+      "definitionEn": "The AUTOSAR Adaptive communication API used with SOME/IP.",
+      "explanationVi": "API giao tiếp của AUTOSAR Adaptive Platform, dùng SOME/IP.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP trên AUTOSAR Adaptive Platform"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-autosar-002",
+      "topicId": "can",
+      "sectionId": "autosar-ap",
+      "cardType": "comparison",
+      "term": "AUTOSAR Adaptive vs Classic",
+      "definitionEn": "Adaptive is high-performance/Linux-based with SOME/IP; Classic is real-time with CAN/LIN.",
+      "explanationVi": "AP = high-performance, Linux, SOME/IP; CP = real-time, CAN/LIN.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP trên AUTOSAR Adaptive Platform"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-autosar-003",
+      "topicId": "can",
+      "sectionId": "autosar-ap",
+      "cardType": "concept",
+      "term": "Gateway",
+      "definitionEn": "A bridge connecting AUTOSAR Classic and Adaptive communication worlds.",
+      "explanationVi": "Gateway làm cầu nối giữa thế giới CP với CAN/LIN và AP với SOME/IP.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Gateway bridge 2 thế giới"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-memory-001",
+      "topicId": "can",
+      "sectionId": "memory-aid",
+      "cardType": "phrase",
+      "term": "Bandwidth → Ethernet → SOME/IP → SD → AP/CP",
+      "definitionEn": "The learning chain from bandwidth needs to service communication and AUTOSAR platforms.",
+      "explanationVi": "Nhớ mạch: dữ liệu lớn → Ethernet → Service → Discovery → AP/CP qua Gateway.",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Kết nối toàn bộ kiến thức"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

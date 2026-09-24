@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "autosar-rules-001",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "technical_term",
+      "term": "Rte_* APIs",
+      "definitionEn": "APIs used by SWCs to communicate through the AUTOSAR RTE.",
+      "explanationVi": "SWC nên chỉ gọi Rte_* APIs, không gọi trực tiếp HW hoặc BSW.",
+      "questionEn": "What APIs should an SWC use instead of direct HW APIs?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 1: Gọi API HW trực tiếp từ SWC",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-002",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "concept",
+      "term": "Generated code",
+      "definitionEn": "Code produced automatically from AUTOSAR configuration.",
+      "explanationVi": "Không sửa trực tiếp Rte_*.c hoặc Rte_*.h vì sẽ bị overwrite khi generate lại.",
+      "questionEn": "Why should generated AUTOSAR code not be edited directly?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 2: Sửa code trong Rte_*.c",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-003",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "technical_term",
+      "term": "ExclusiveArea",
+      "definitionEn": "A configured mechanism used to protect shared data from concurrent access.",
+      "explanationVi": "Dùng ExclusiveArea khi nhiều runnable cùng truy cập dữ liệu dùng chung để tránh race condition.",
+      "questionEn": "What should protect shared data between runnables?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 3: Share global variable giữa 2 runnables",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-004",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "technical_term",
+      "term": "RTE_E_NEVER_RECEIVED",
+      "definitionEn": "A return status indicating that the expected data has never been received.",
+      "explanationVi": "Cho biết dữ liệu chưa từng được nhận; không được coi giá trị hiện tại là dữ liệu hợp lệ.",
+      "questionEn": "What does RTE_E_NEVER_RECEIVED indicate?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 4: Không kiểm tra return code của Rte_Read()",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-005",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "technical_term",
+      "term": "RTE_E_MAX_AGE_EXCEEDED",
+      "definitionEn": "A return status indicating that received data exceeded its allowed maximum age.",
+      "explanationVi": "Dữ liệu đã quá cũ; cần dùng giá trị default hoặc fallback theo thiết kế.",
+      "questionEn": "What should be done when Rte_Read() returns RTE_E_MAX_AGE_EXCEEDED?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 4: Không kiểm tra return code của Rte_Read()",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-006",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "comparison",
+      "term": "Motorola vs Intel",
+      "definitionEn": "Motorola represents big-endian byte order; Intel represents little-endian byte order.",
+      "explanationVi": "CAN signal phải cấu hình đúng byte order: Motorola = big-endian, Intel = little-endian.",
+      "questionEn": "How do Motorola and Intel byte orders differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 5: COM Signal config sai byte order",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-007",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "concept",
+      "term": "Task budget",
+      "definitionEn": "The execution-time budget allocated to a task.",
+      "explanationVi": "Runnable không được vượt task budget; cần profile execution time trên target HW.",
+      "questionEn": "What should be done before setting a task budget?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 6: Task budget bị vượt",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-008",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "abbreviation",
+      "term": "WdgM",
+      "definitionEn": "Watchdog Manager used to supervise configured software execution behavior.",
+      "explanationVi": "WdgM giám sát runnable hoặc supervised entity theo cấu hình như alive và deadline supervision.",
+      "questionEn": "What is WdgM used for in an AUTOSAR safety context?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 7: Không configure WdgM cho ASIL runnable",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-009",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "comparison",
+      "term": "P-Port vs R-Port",
+      "definitionEn": "A P-Port provides an interface, while an R-Port requires an interface.",
+      "explanationVi": "Trong kết nối Sender-Receiver, P-Port cần kết nối với R-Port tương thích.",
+      "questionEn": "What is the basic relationship between P-Port and R-Port?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 8: Port connection sai trong ARXML",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-010",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "technical_term",
+      "term": "Symbolic DEM Event ID",
+      "definitionEn": "A generated symbolic identifier used to reference a DEM event.",
+      "explanationVi": "Dùng symbolic name như DEM_EVENT_ID_MY_ERROR thay vì hardcode số Event ID.",
+      "questionEn": "Why should DEM Event IDs use symbolic names?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 9: DEM Event ID sai",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-011",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "technical_term",
+      "term": "NvM_WriteAll()",
+      "definitionEn": "An asynchronous NvM operation used to write configured non-volatile data.",
+      "explanationVi": "Gọi NvM_WriteAll() không có nghĩa là dữ liệu đã ghi xong ngay.",
+      "questionEn": "Does NvM_WriteAll() mean the write operation is immediately complete?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 10: Lỗi trong NvM callback không được handle",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-012",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "technical_term",
+      "term": "NvM_JobEndNotification()",
+      "definitionEn": "A callback used to notify completion of an NvM job.",
+      "explanationVi": "Dùng callback để biết NvM job đã hoàn thành trước khi xử lý power-down theo thiết kế.",
+      "questionEn": "What callback can notify completion of an NvM job?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 10: Lỗi trong NvM callback không được handle",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-013",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "technical_term",
+      "term": "Freedom From Interference",
+      "definitionEn": "A principle preventing unacceptable interference between software elements.",
+      "explanationVi": "FFI giúp ngăn SWC QM gây ảnh hưởng không chấp nhận được đến SWC ASIL D.",
+      "questionEn": "What does Freedom From Interference aim to prevent?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 11: Freedom From Interference bị vi phạm",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-014",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "abbreviation",
+      "term": "MPU",
+      "definitionEn": "A hardware Memory Protection Unit used to enforce memory access permissions.",
+      "explanationVi": "MPU giúp thực thi bảo vệ vùng nhớ, hỗ trợ ngăn truy cập trái phép giữa các software components.",
+      "questionEn": "What hardware mechanism can enforce memory protection?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 11: Freedom From Interference bị vi phạm",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-015",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "cardType": "technical_term",
+      "term": "Reentrant",
+      "definitionEn": "Able to be invoked again before a previous invocation finishes without data corruption.",
+      "explanationVi": "Runnable không reentrant có thể lỗi khi bị gọi từ nhiều context hoặc bị preempt.",
+      "questionEn": "What issue can occur when a non-reentrant runnable runs in multiple contexts?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 12: Runnable không reentrant",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-016",
+      "topicId": "autosar",
+      "sectionId": "golden-rules",
+      "cardType": "concept",
+      "term": "No dynamic memory allocation",
+      "definitionEn": "Avoid dynamic memory allocation to support determinism and coding constraints.",
+      "explanationVi": "Không dùng dynamic memory allocation theo quy tắc tài liệu để hỗ trợ MISRA C và determinism.",
+      "questionEn": "Why should dynamic memory allocation be avoided?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Quy tắc vàng khi làm việc với AUTOSAR",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-017",
+      "topicId": "autosar",
+      "sectionId": "golden-rules",
+      "cardType": "concept",
+      "term": "Profile execution time",
+      "definitionEn": "Measure runnable execution time before configuring a task budget.",
+      "explanationVi": "Đo execution time trước khi đặt task budget để tránh vượt giới hạn timing.",
+      "questionEn": "Why profile execution time before setting a task budget?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Quy tắc vàng khi làm việc với AUTOSAR",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-018",
+      "topicId": "autosar",
+      "sectionId": "golden-rules",
+      "cardType": "concept",
+      "term": "RTE abstraction",
+      "definitionEn": "Using RTE interfaces to separate application software from hardware and BSW.",
+      "explanationVi": "RTE tạo lớp trung gian giúp SWC độc lập hơn với HW và BSW.",
+      "questionEn": "What is the main architectural benefit of using RTE APIs?",
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Quy tắc vàng khi làm việc với AUTOSAR",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

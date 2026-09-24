@@ -1,0 +1,351 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "autosar-rules-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "What should an SWC use instead of calling a hardware API such as Adc_Read() directly?",
+      "options": [
+        { "id": "A", "text": "Rte_* APIs" },
+        { "id": "B", "text": "Direct MCU registers" },
+        { "id": "C", "text": "DEM Event IDs" },
+        { "id": "D", "text": "NvM callbacks" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWC phải giao tiếp thông qua Rte_* APIs. Nếu cần ADC value, có thể định nghĩa R-Port nhận dữ liệu từ IoHwAb SWC.",
+      "relatedFlashcardIds": ["autosar-rules-001", "autosar-rules-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 1: Gọi API HW trực tiếp từ SWC",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "Where should a configuration problem in generated Rte_*.c code normally be fixed?",
+      "options": [
+        { "id": "A", "text": "Directly inside Rte_*.c" },
+        { "id": "B", "text": "In the ARXML configuration" },
+        { "id": "C", "text": "Inside an ISR" },
+        { "id": "D", "text": "Inside the CAN frame" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Generated files có thể bị overwrite khi generate lại. Cần sửa vấn đề trong ARXML hoặc configuration rồi generate lại.",
+      "relatedFlashcardIds": ["autosar-rules-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 2: Sửa code trong Rte_*.c",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "What should be used when two runnables share a global variable?",
+      "options": [
+        { "id": "A", "text": "ExclusiveArea protection" },
+        { "id": "B", "text": "A hardcoded DEM Event ID" },
+        { "id": "C", "text": "A CAN byte-order change" },
+        { "id": "D", "text": "NvM_WriteAll() only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Khi nhiều runnable cùng truy cập dữ liệu dùng chung, cần ExclusiveArea để tránh race condition.",
+      "relatedFlashcardIds": ["autosar-rules-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 3: Share global variable giữa 2 runnables",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-004",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "What should a developer do after calling Rte_Read()?",
+      "options": [
+        { "id": "A", "text": "Always ignore the return code" },
+        { "id": "B", "text": "Check the return code" },
+        { "id": "C", "text": "Reset the ECU immediately" },
+        { "id": "D", "text": "Rewrite the RTE generator" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Phải kiểm tra return code của Rte_Read(). Nếu dữ liệu chưa nhận hoặc quá cũ, cần dùng default hoặc fallback value.",
+      "relatedFlashcardIds": ["autosar-rules-004", "autosar-rules-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 4: Không kiểm tra return code của Rte_Read()",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-005",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "What can happen if a CAN signal has the wrong byte-order configuration?",
+      "options": [
+        { "id": "A", "text": "The received value can be decoded incorrectly" },
+        { "id": "B", "text": "The ECU automatically fixes the configuration" },
+        { "id": "C", "text": "The RTE is always regenerated correctly" },
+        { "id": "D", "text": "The signal becomes an NvM block" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nếu little-endian và big-endian bị cấu hình sai, giá trị CAN signal có thể được giải mã hoàn toàn sai.",
+      "relatedFlashcardIds": ["autosar-rules-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 5: COM Signal config sai byte order",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-006",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "What should be done before assigning a runnable to a task with a specific execution-time budget?",
+      "options": [
+        { "id": "A", "text": "Profile the runnable execution time on target HW" },
+        { "id": "B", "text": "Hardcode a DEM Event ID" },
+        { "id": "C", "text": "Disable all timing protection" },
+        { "id": "D", "text": "Change the CAN byte order" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Cần profile execution time của runnable trên target HW để chọn task budget phù hợp và tránh vượt budget.",
+      "relatedFlashcardIds": ["autosar-rules-007", "autosar-rules-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 6: Task budget bị vượt",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-007",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of a WdgM supervised entity for a safety-related runnable?",
+      "options": [
+        { "id": "A", "text": "To supervise configured execution behavior" },
+        { "id": "B", "text": "To configure CAN byte order" },
+        { "id": "C", "text": "To replace the RTE" },
+        { "id": "D", "text": "To allocate dynamic memory" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "WdgM supervised entity giúp giám sát runnable theo cấu hình, chẳng hạn alive hoặc deadline supervision.",
+      "relatedFlashcardIds": ["autosar-rules-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 7: Không configure WdgM cho ASIL runnable",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-008",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "Which port connection is correct for a typical Sender-Receiver connection?",
+      "options": [
+        { "id": "A", "text": "P-Port to P-Port" },
+        { "id": "B", "text": "R-Port to R-Port" },
+        { "id": "C", "text": "P-Port to R-Port" },
+        { "id": "D", "text": "P-Port to hardware register" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "P-Port cung cấp interface và R-Port yêu cầu interface; kết nối cần có interface tương thích.",
+      "relatedFlashcardIds": ["autosar-rules-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 8: Port connection sai trong ARXML",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-009",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "How should a DEM Event ID normally be referenced in application code?",
+      "options": [
+        { "id": "A", "text": "By a hardcoded numeric value" },
+        { "id": "B", "text": "By a generated symbolic name" },
+        { "id": "C", "text": "By the CAN signal value" },
+        { "id": "D", "text": "By the task budget" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Nên dùng symbolic name như DEM_EVENT_ID_MY_ERROR thay vì hardcode giá trị số có thể thay đổi khi configuration thay đổi.",
+      "relatedFlashcardIds": ["autosar-rules-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 9: DEM Event ID sai",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-010",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "Why should NvM_WriteAll() not be treated as immediately complete?",
+      "options": [
+        { "id": "A", "text": "It is asynchronous" },
+        { "id": "B", "text": "It only changes CAN byte order" },
+        { "id": "C", "text": "It directly edits ARXML" },
+        { "id": "D", "text": "It disables the MPU" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "NvM_WriteAll() được gọi bất đồng bộ. Developer phải xử lý completion notification thay vì giả sử dữ liệu đã ghi xong ngay.",
+      "relatedFlashcardIds": ["autosar-rules-011", "autosar-rules-012"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 10: Lỗi trong NvM callback không được handle",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-011",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "Which mechanism is mentioned for protecting memory between QM and ASIL software?",
+      "options": [
+        { "id": "A", "text": "AUTOSAR OS Memory Protection with MPU" },
+        { "id": "B", "text": "CAN byte-order conversion" },
+        { "id": "C", "text": "DEM Event ID hardcoding" },
+        { "id": "D", "text": "Rte_Read() return-code removal" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tài liệu đề xuất AUTOSAR OS Memory Protection, phân vùng RAM và enable MPU để hỗ trợ Freedom From Interference.",
+      "relatedFlashcardIds": ["autosar-rules-013", "autosar-rules-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 11: Freedom From Interference bị vi phạm",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-012",
+      "topicId": "autosar",
+      "sectionId": "common-errors",
+      "questionType": "single_choice",
+      "questionEn": "What can cause data corruption when a non-reentrant runnable is triggered from multiple contexts?",
+      "options": [
+        { "id": "A", "text": "Shared static or global state being accessed concurrently" },
+        { "id": "B", "text": "Correct P-Port to R-Port connection" },
+        { "id": "C", "text": "Using a symbolic DEM Event ID" },
+        { "id": "D", "text": "Checking the Rte_Read() return code" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ISR có thể preempt task và gọi cùng runnable, làm nhiều context truy cập static hoặc global data và gây data corruption.",
+      "relatedFlashcardIds": ["autosar-rules-015"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Lỗi 12: Runnable không reentrant nhưng được gọi từ nhiều contexts",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-013",
+      "topicId": "autosar",
+      "sectionId": "golden-rules",
+      "questionType": "single_choice",
+      "questionEn": "Which statement matches the AUTOSAR golden rules from the source?",
+      "options": [
+        { "id": "A", "text": "SWC should call BSW directly for portability" },
+        { "id": "B", "text": "Generated RTE code should be edited after every generation" },
+        { "id": "C", "text": "SWC should use Rte_* APIs rather than direct BSW calls" },
+        { "id": "D", "text": "Rte_Read() return codes should always be ignored" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Quy tắc vàng số 1: chỉ gọi Rte_* từ SWC, không gọi BSW trực tiếp để tăng portability và independence.",
+      "relatedFlashcardIds": ["autosar-rules-001", "autosar-rules-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Quy tắc vàng khi làm việc với AUTOSAR",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-014",
+      "topicId": "autosar",
+      "sectionId": "golden-rules",
+      "questionType": "single_choice",
+      "questionEn": "Why should dynamic memory allocation be avoided according to the source?",
+      "options": [
+        { "id": "A", "text": "Because of MISRA C and determinism considerations" },
+        { "id": "B", "text": "Because CAN requires big-endian signals" },
+        { "id": "C", "text": "Because P-Ports cannot provide data" },
+        { "id": "D", "text": "Because NvM_WriteAll() is synchronous" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Quy tắc vàng nêu tránh dynamic memory allocation vì các yêu cầu liên quan MISRA C và determinism.",
+      "relatedFlashcardIds": ["autosar-rules-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Quy tắc vàng khi làm việc với AUTOSAR",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rules-quiz-015",
+      "topicId": "autosar",
+      "sectionId": "golden-rules",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence best represents the recommended CAN signal verification process?",
+      "options": [
+        { "id": "A", "text": "Change generated RTE code and skip testing" },
+        { "id": "B", "text": "Verify byte order, send a test frame, then verify the SWC value" },
+        { "id": "C", "text": "Hardcode the DEM Event ID and restart the ECU" },
+        { "id": "D", "text": "Disable WdgM before sending the frame" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Cần verify byte order bằng CANdb++ hoặc CANoe, gửi test frame với giá trị cụ thể và kiểm tra SWC nhận đúng.",
+      "relatedFlashcardIds": ["autosar-rules-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "AUTOSAR - Quy tắc & Lỗi",
+        "section": "Quy tắc vàng khi làm việc với AUTOSAR",
+        "reference": "content-source/AUTOSAR/Quy-tac-va-Loi.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

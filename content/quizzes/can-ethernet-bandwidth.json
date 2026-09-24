@@ -1,0 +1,666 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "can-someip-quiz-001",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "questionType": "single_choice",
+      "questionEn": "Why is Automotive Ethernet needed in modern vehicles?",
+      "options": [
+        { "id": "A", "text": "To support use cases requiring much higher bandwidth" },
+        { "id": "B", "text": "To replace all CAN communication" },
+        { "id": "C", "text": "To reduce all ECU processing requirements" },
+        { "id": "D", "text": "To eliminate the need for IP networking" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Camera, LIDAR, OTA và video cần bandwidth lớn hơn nhiều so với CAN/CAN-FD.",
+      "relatedFlashcardIds": ["can-ethernet-bandwidth-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Tại sao Automotive Ethernet được cần?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-002",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "questionType": "single_choice",
+      "questionEn": "What is the speed of 100BASE-T1?",
+      "options": [
+        { "id": "A", "text": "10 Mbps full-duplex" },
+        { "id": "B", "text": "100 Mbps full-duplex" },
+        { "id": "C", "text": "1 Gbps full-duplex" },
+        { "id": "D", "text": "10 Gbps full-duplex" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "100BASE-T1 cung cấp 100 Mbps full-duplex và dùng 1 đôi dây twisted pair.",
+      "relatedFlashcardIds": ["can-ethernet-bandwidth-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Automotive Ethernet Standards"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-003",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "questionType": "single_choice",
+      "questionEn": "What is the key wiring characteristic of 100BASE-T1 and 1000BASE-T1?",
+      "options": [
+        { "id": "A", "text": "They use four pairs of RJ45 wires" },
+        { "id": "B", "text": "They use one twisted pair" },
+        { "id": "C", "text": "They require coaxial cable" },
+        { "id": "D", "text": "They use optical fiber only" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Khác Ethernet thông thường, cả 100BASE-T1 và 1000BASE-T1 chỉ dùng 1 đôi dây twisted pair.",
+      "relatedFlashcardIds": ["can-ethernet-bandwidth-003", "can-ethernet-bandwidth-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Automotive Ethernet Standards"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-004",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "questionType": "single_choice",
+      "questionEn": "What enables full-duplex communication over one twisted pair?",
+      "options": [
+        { "id": "A", "text": "CAN arbitration" },
+        { "id": "B", "text": "Echo cancellation" },
+        { "id": "C", "text": "Service Discovery" },
+        { "id": "D", "text": "JSON serialization" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Echo cancellation giúp loại bỏ ảnh hưởng của tín hiệu echo để truyền và nhận đồng thời trên 1 đôi dây.",
+      "relatedFlashcardIds": ["can-ethernet-bandwidth-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Automotive Ethernet Standards"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-005",
+      "topicId": "can",
+      "sectionId": "someip",
+      "questionType": "single_choice",
+      "questionEn": "What does SOME/IP stand for?",
+      "options": [
+        { "id": "A", "text": "Scalable service-Oriented Middleware over IP" },
+        { "id": "B", "text": "Standard Operating Message Ethernet over IP" },
+        { "id": "C", "text": "Service Management over Industrial Protocol" },
+        { "id": "D", "text": "Scalable Object Message Interface Protocol" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SOME/IP là viết tắt của Scalable service-Oriented Middleware over IP.",
+      "relatedFlashcardIds": ["can-someip-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP — Scalable service-Oriented Middleware over IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-006",
+      "topicId": "can",
+      "sectionId": "someip",
+      "questionType": "single_choice",
+      "questionEn": "How does SOME/IP run according to the source?",
+      "options": [
+        { "id": "A", "text": "Only directly over CAN" },
+        { "id": "B", "text": "Over UDP or TCP on Automotive Ethernet" },
+        { "id": "C", "text": "Only over LIN" },
+        { "id": "D", "text": "Only over FlexRay" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "SOME/IP chạy trên UDP hoặc TCP, over Automotive Ethernet.",
+      "relatedFlashcardIds": ["can-someip-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP — Scalable service-Oriented Middleware over IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-007",
+      "topicId": "can",
+      "sectionId": "someip-services",
+      "questionType": "single_choice",
+      "questionEn": "Which three elements are provided by a SOME/IP Service?",
+      "options": [
+        { "id": "A", "text": "Methods, Events, and Fields" },
+        { "id": "B", "text": "Frames, Bits, and Signals" },
+        { "id": "C", "text": "Nodes, Buses, and Arbitration" },
+        { "id": "D", "text": "Ports, Cables, and Connectors" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Service SOME/IP cung cấp Methods, Events và Fields.",
+      "relatedFlashcardIds": ["can-someip-003", "can-someip-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Concept cốt lõi: Services"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-008",
+      "topicId": "can",
+      "sectionId": "someip-services",
+      "questionType": "single_choice",
+      "questionEn": "What is the communication model of SOME/IP Events?",
+      "options": [
+        { "id": "A", "text": "Call and return" },
+        { "id": "B", "text": "Publish and subscribe" },
+        { "id": "C", "text": "Broadcast without services" },
+        { "id": "D", "text": "Getter and setter only" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Events sử dụng mô hình publish/subscribe: server publish và client subscribe.",
+      "relatedFlashcardIds": ["can-someip-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Concept cốt lõi: Services"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-009",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "questionType": "single_choice",
+      "questionEn": "How large is the SOME/IP Message Header?",
+      "options": [
+        { "id": "A", "text": "8 bytes" },
+        { "id": "B", "text": "12 bytes" },
+        { "id": "C", "text": "16 bytes" },
+        { "id": "D", "text": "32 bytes" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Theo tài liệu, SOME/IP Message Header có tổng cộng 16 bytes.",
+      "relatedFlashcardIds": ["can-someip-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-010",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "questionType": "single_choice",
+      "questionEn": "What is the size of the SOME/IP Service ID?",
+      "options": [
+        { "id": "A", "text": "1 byte" },
+        { "id": "B", "text": "2 bytes" },
+        { "id": "C", "text": "4 bytes" },
+        { "id": "D", "text": "8 bytes" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Service ID có kích thước 2 bytes và dùng để xác định Service.",
+      "relatedFlashcardIds": ["can-someip-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-011",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "questionType": "single_choice",
+      "questionEn": "How are Method/Event IDs distinguished in the source?",
+      "options": [
+        { "id": "A", "text": "Method < 0x8000; Event >= 0x8000" },
+        { "id": "B", "text": "Method >= 0x8000; Event < 0x8000" },
+        { "id": "C", "text": "Both always use 0x0000" },
+        { "id": "D", "text": "Only the Service ID distinguishes them" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo tài liệu, Method có ID < 0x8000, còn Event có ID >= 0x8000.",
+      "relatedFlashcardIds": ["can-someip-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-012",
+      "topicId": "can",
+      "sectionId": "someip-header",
+      "questionType": "single_choice",
+      "questionEn": "How is the SOME/IP Length field defined in the source?",
+      "options": [
+        { "id": "A", "text": "Payload length only" },
+        { "id": "B", "text": "Payload length plus 8 bytes of header" },
+        { "id": "C", "text": "Payload length plus the full 16-byte header" },
+        { "id": "D", "text": "Always 16 bytes" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Length = payload length + 8 bytes header, không phải toàn bộ 16-byte header.",
+      "relatedFlashcardIds": ["can-someip-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Header — Byte-by-byte breakdown"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-013",
+      "topicId": "can",
+      "sectionId": "someip-message-types",
+      "questionType": "single_choice",
+      "questionEn": "Which SOME/IP message type is 0x00?",
+      "options": [
+        { "id": "A", "text": "REQUEST" },
+        { "id": "B", "text": "RESPONSE" },
+        { "id": "C", "text": "NOTIFICATION" },
+        { "id": "D", "text": "ERROR" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "REQUEST có mã 0x00 và được client dùng để gọi method, mong đợi response.",
+      "relatedFlashcardIds": ["can-someip-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Message Types trong SOME/IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-014",
+      "topicId": "can",
+      "sectionId": "someip-message-types",
+      "questionType": "single_choice",
+      "questionEn": "Which message type represents fire-and-forget?",
+      "options": [
+        { "id": "A", "text": "REQUEST" },
+        { "id": "B", "text": "REQUEST_NO_RETURN" },
+        { "id": "C", "text": "RESPONSE" },
+        { "id": "D", "text": "ERROR" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "REQUEST_NO_RETURN có mã 0x01; client gọi method nhưng không cần response.",
+      "relatedFlashcardIds": ["can-someip-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Message Types trong SOME/IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-015",
+      "topicId": "can",
+      "sectionId": "someip-message-types",
+      "questionType": "single_choice",
+      "questionEn": "Which message type does a server use to notify subscribers about an event?",
+      "options": [
+        { "id": "A", "text": "REQUEST" },
+        { "id": "B", "text": "RESPONSE" },
+        { "id": "C", "text": "NOTIFICATION" },
+        { "id": "D", "text": "ERROR" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "NOTIFICATION có mã 0x02 và server dùng để gửi event notification cho subscriber.",
+      "relatedFlashcardIds": ["can-someip-015"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Message Types trong SOME/IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-016",
+      "topicId": "can",
+      "sectionId": "someip-message-types",
+      "questionType": "single_choice",
+      "questionEn": "Which message type is used when the server returns an answer to a REQUEST?",
+      "options": [
+        { "id": "A", "text": "NOTIFICATION" },
+        { "id": "B", "text": "RESPONSE" },
+        { "id": "C", "text": "REQUEST_NO_RETURN" },
+        { "id": "D", "text": "ERROR" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "RESPONSE có mã 0x80 và được server dùng để trả lời REQUEST.",
+      "relatedFlashcardIds": ["can-someip-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Message Types trong SOME/IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-017",
+      "topicId": "can",
+      "sectionId": "someip-message-types",
+      "questionType": "single_choice",
+      "questionEn": "Which message type reports an error while processing a REQUEST?",
+      "options": [
+        { "id": "A", "text": "ERROR" },
+        { "id": "B", "text": "NOTIFICATION" },
+        { "id": "C", "text": "REQUEST" },
+        { "id": "D", "text": "RESPONSE" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ERROR có mã 0x81 và server dùng để báo lỗi khi xử lý REQUEST.",
+      "relatedFlashcardIds": ["can-someip-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Message Types trong SOME/IP"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-018",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "questionType": "single_choice",
+      "questionEn": "What is the main purpose of SOME/IP-SD?",
+      "options": [
+        { "id": "A", "text": "Dynamic service discovery and subscription" },
+        { "id": "B", "text": "CAN bus arbitration" },
+        { "id": "C", "text": "Ethernet cable manufacturing" },
+        { "id": "D", "text": "Payload encryption only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SOME/IP-SD cho phép ECU tìm service và subscribe/unsubscribe dynamic mà không cần cấu hình IP cứng.",
+      "relatedFlashcardIds": ["can-someip-sd-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD — Service Discovery"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-019",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "questionType": "single_choice",
+      "questionEn": "What is the core SOME/IP-SD flow?",
+      "options": [
+        { "id": "A", "text": "Find → Offer → Subscribe → Notify" },
+        { "id": "B", "text": "Offer → Find → Notify → Subscribe" },
+        { "id": "C", "text": "Subscribe → Find → Offer → Notify" },
+        { "id": "D", "text": "Notify → Offer → Find → Subscribe" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Luồng cốt lõi là Find – Offer – Subscribe – Notify; có SubscribeEventgroupAck trong flow chi tiết.",
+      "relatedFlashcardIds": ["can-someip-sd-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD Flow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-020",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "questionType": "single_choice",
+      "questionEn": "Which transport is used by FindService in the source?",
+      "options": [
+        { "id": "A", "text": "Multicast UDP" },
+        { "id": "B", "text": "CAN FD" },
+        { "id": "C", "text": "LIN" },
+        { "id": "D", "text": "Multicast TCP" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Client gửi FindService bằng multicast UDP để tìm service.",
+      "relatedFlashcardIds": ["can-someip-sd-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD Flow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-021",
+      "topicId": "can",
+      "sectionId": "someip-sd",
+      "questionType": "single_choice",
+      "questionEn": "What does the client do after receiving an offered service?",
+      "options": [
+        { "id": "A", "text": "Subscribe to the event group" },
+        { "id": "B", "text": "Restart the server" },
+        { "id": "C", "text": "Change the CAN bitrate" },
+        { "id": "D", "text": "Disable IP communication" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Sau OfferService, client có thể gửi SubscribeEventgroup để đăng ký nhận event.",
+      "relatedFlashcardIds": ["can-someip-sd-004", "can-someip-sd-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP-SD Flow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-022",
+      "topicId": "can",
+      "sectionId": "someip-vs-can",
+      "questionType": "single_choice",
+      "questionEn": "How does SOME/IP differ from CAN in the source?",
+      "options": [
+        { "id": "A", "text": "SOME/IP uses subscribe-based services; CAN broadcasts messages" },
+        { "id": "B", "text": "SOME/IP is only for body ECUs; CAN is only for cameras" },
+        { "id": "C", "text": "Both use exactly the same communication model" },
+        { "id": "D", "text": "CAN uses publish/subscribe while SOME/IP uses only broadcast" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CAN được mô tả là broadcast; SOME/IP là service-oriented publish/subscribe.",
+      "relatedFlashcardIds": ["can-someip-can-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP vs CAN"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-023",
+      "topicId": "can",
+      "sectionId": "someip-serialization",
+      "questionType": "single_choice",
+      "questionEn": "Which byte order is specified by default for SOME/IP serialization in the source?",
+      "options": [
+        { "id": "A", "text": "Little-endian" },
+        { "id": "B", "text": "Big-endian" },
+        { "id": "C", "text": "No byte order" },
+        { "id": "D", "text": "ASCII order" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Theo tài liệu, dữ liệu SOME/IP serialization dùng big-endian theo mặc định.",
+      "relatedFlashcardIds": ["can-someip-serialization-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Serialization"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-024",
+      "topicId": "can",
+      "sectionId": "someip-serialization",
+      "questionType": "single_choice",
+      "questionEn": "How is a dynamic array encoded according to the source?",
+      "options": [
+        { "id": "A", "text": "4-byte length prefix followed by data" },
+        { "id": "B", "text": "Data followed by a 4-byte length" },
+        { "id": "C", "text": "Only a fixed 8-byte payload" },
+        { "id": "D", "text": "As JSON text" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Dynamic array dùng length-value encoding: 4 bytes length prefix + data.",
+      "relatedFlashcardIds": ["can-someip-serialization-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP Serialization"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-025",
+      "topicId": "can",
+      "sectionId": "autosar-ap",
+      "questionType": "single_choice",
+      "questionEn": "Which API is used for SOME/IP communication on AUTOSAR Adaptive Platform?",
+      "options": [
+        { "id": "A", "text": "ara::com" },
+        { "id": "B", "text": "CanIf" },
+        { "id": "C", "text": "LinIf" },
+        { "id": "D", "text": "NvM" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "AUTOSAR Adaptive Platform dùng ara::com API cho giao tiếp SOME/IP.",
+      "relatedFlashcardIds": ["can-someip-autosar-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP trên AUTOSAR Adaptive Platform"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-026",
+      "topicId": "can",
+      "sectionId": "autosar-ap",
+      "questionType": "single_choice",
+      "questionEn": "Which combination matches AUTOSAR Adaptive in the source?",
+      "options": [
+        { "id": "A", "text": "High-performance, Linux-based, SOME/IP" },
+        { "id": "B", "text": "Real-time, bare-metal RTOS, CAN/LIN only" },
+        { "id": "C", "text": "Low-speed, LIN-based, no IP" },
+        { "id": "D", "text": "Body-only, CAN-only communication" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "AUTOSAR Adaptive được mô tả là high-performance, Linux-based và dùng SOME/IP.",
+      "relatedFlashcardIds": ["can-someip-autosar-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "SOME/IP trên AUTOSAR Adaptive Platform"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-027",
+      "topicId": "can",
+      "sectionId": "autosar-ap",
+      "questionType": "single_choice",
+      "questionEn": "What communication technologies does the source associate with AUTOSAR Classic?",
+      "options": [
+        { "id": "A", "text": "CAN/LIN" },
+        { "id": "B", "text": "SOME/IP only" },
+        { "id": "C", "text": "Multi-Gig Ethernet only" },
+        { "id": "D", "text": "JSON over TCP only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ECU AUTOSAR Classic tiếp tục dùng CAN/LIN theo tài liệu.",
+      "relatedFlashcardIds": ["can-someip-autosar-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "AUTOSAR Classic Platform"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-028",
+      "topicId": "can",
+      "sectionId": "autosar-ap",
+      "questionType": "single_choice",
+      "questionEn": "What is the role of a gateway between AUTOSAR Classic and Adaptive?",
+      "options": [
+        { "id": "A", "text": "Bridge the two communication worlds" },
+        { "id": "B", "text": "Replace every ECU with one ECU" },
+        { "id": "C", "text": "Convert all Ethernet into LIN only" },
+        { "id": "D", "text": "Remove all service communication" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Gateway làm cầu nối giữa thế giới Classic với CAN/LIN và Adaptive với SOME/IP.",
+      "relatedFlashcardIds": ["can-someip-autosar-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Gateway bridge 2 thế giới"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-029",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "questionType": "single_choice",
+      "questionEn": "Which use case is listed as requiring about 700 Mbps to 1 Gbps?",
+      "options": [
+        { "id": "A", "text": "LIDAR raw data" },
+        { "id": "B", "text": "Body lighting control" },
+        { "id": "C", "text": "Simple CAN diagnostics" },
+        { "id": "D", "text": "Door lock control" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "LIDAR raw data trong tài liệu cần khoảng 700 Mbps–1 Gbps.",
+      "relatedFlashcardIds": ["can-ethernet-bandwidth-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Tại sao Automotive Ethernet được cần?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-someip-quiz-030",
+      "topicId": "can",
+      "sectionId": "automotive-ethernet",
+      "questionType": "single_choice",
+      "questionEn": "Which Automotive Ethernet standard is specified at 1 Gbps full-duplex?",
+      "options": [
+        { "id": "A", "text": "100BASE-T1" },
+        { "id": "B", "text": "1000BASE-T1" },
+        { "id": "C", "text": "CAN-FD" },
+        { "id": "D", "text": "Multi-Gig 10 Mbps" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "1000BASE-T1 có tốc độ 1 Gbps full-duplex và dùng 1 đôi dây twisted pair.",
+      "relatedFlashcardIds": ["can-ethernet-bandwidth-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- SOME/IP & Ethernet",
+        "section": "Automotive Ethernet Standards"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

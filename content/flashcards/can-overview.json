@@ -1,0 +1,601 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "can-overview-001",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "abbreviation",
+      "term": "ECU",
+      "definitionEn": "Electronic Control Unit.",
+      "explanationVi": "Bộ điều khiển điện tử; mỗi ECU có CPU, RAM, flash và phần mềm riêng.",
+      "questionEn": "What does ECU stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Xe hơi hiện đại — Một mạng lưới máy tính di động",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-002",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "concept",
+      "term": "Modern vehicle network",
+      "definitionEn": "A modern vehicle is a mobile network of many ECUs.",
+      "explanationVi": "Xe hiện đại là một mạng lưới máy tính di động gồm nhiều ECU phối hợp với nhau.",
+      "questionEn": "Why can a modern car be viewed as a mobile computer network?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Xe hơi hiện đại — Một mạng lưới máy tính di động",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-003",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "abbreviation",
+      "term": "ECM",
+      "definitionEn": "Engine Control Module.",
+      "explanationVi": "ECU điều khiển động cơ: phun nhiên liệu, đánh lửa, khí thải và đọc O2, MAF, MAP.",
+      "questionEn": "What does ECM control?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các ECU phổ biến trong xe hơi hiện đại",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-004",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "abbreviation",
+      "term": "TCM",
+      "definitionEn": "Transmission Control Module.",
+      "explanationVi": "ECU điều khiển hộp số tự động: chọn số, thời điểm sang số và torque converter lock-up.",
+      "questionEn": "What does TCM control?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các ECU phổ biến trong xe hơi hiện đại",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-005",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "abbreviation",
+      "term": "ABS/ESC",
+      "definitionEn": "Anti-lock Braking System and Electronic Stability Control.",
+      "explanationVi": "Hệ thống chống bó cứng phanh và cân bằng điện tử; đọc tốc độ 4 bánh và điều khiển phanh.",
+      "questionEn": "What are the main functions of ABS/ESC?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các ECU phổ biến trong xe hơi hiện đại",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-006",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "abbreviation",
+      "term": "ACM",
+      "definitionEn": "Airbag Control Module.",
+      "explanationVi": "ECU túi khí; đọc gia tốc kế và quyết định kích nổ airbag trong thời gian rất ngắn khi va chạm.",
+      "questionEn": "What does the ACM control?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các ECU phổ biến trong xe hơi hiện đại",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-007",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "abbreviation",
+      "term": "BCM",
+      "definitionEn": "Body Control Module.",
+      "explanationVi": "ECU điều khiển thân xe như đèn, còi, khóa cửa, cửa sổ điện, gạt mưa và điều hòa.",
+      "questionEn": "What does BCM control?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các ECU phổ biến trong xe hơi hiện đại",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-008",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "abbreviation",
+      "term": "PSCU",
+      "definitionEn": "Power Steering Control Unit.",
+      "explanationVi": "ECU điều khiển trợ lực lái điện tử dựa trên tốc độ xe và lực tay lái.",
+      "questionEn": "What does PSCU control?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các ECU phổ biến trong xe hơi hiện đại",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-009",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "technical_term",
+      "term": "Instrument Cluster",
+      "definitionEn": "The dashboard system that displays vehicle information.",
+      "explanationVi": "Bảng đồng hồ hiển thị tốc độ, vòng tua, nhiên liệu và cảnh báo.",
+      "questionEn": "What information does the Instrument Cluster display?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các ECU phổ biến trong xe hơi hiện đại",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-010",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "abbreviation",
+      "term": "TCU",
+      "definitionEn": "Telematics Control Unit.",
+      "explanationVi": "ECU phụ trách GPS, 4G/5G, emergency call (eCall) và OTA update.",
+      "questionEn": "What functions does the TCU provide?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các ECU phổ biến trong xe hơi hiện đại",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-011",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "abbreviation",
+      "term": "ADAS",
+      "definitionEn": "Advanced Driver Assistance.",
+      "explanationVi": "Hệ thống hỗ trợ lái nâng cao dùng camera, radar, lidar cho lane keeping, ACC và AEB.",
+      "questionEn": "What is ADAS used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các ECU phổ biến trong xe hơi hiện đại",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-012",
+      "topicId": "can",
+      "sectionId": "ecu-network",
+      "cardType": "abbreviation",
+      "term": "BMS",
+      "definitionEn": "Battery Management System.",
+      "explanationVi": "Hệ thống quản lý pin: giám sát cell, nhiệt độ, SoC, SoH và cân bằng cell.",
+      "questionEn": "What does BMS manage?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các ECU phổ biến trong xe hơi hiện đại",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-013",
+      "topicId": "can",
+      "sectionId": "network-motivation",
+      "cardType": "comparison",
+      "term": "Point-to-point vs CAN bus",
+      "definitionEn": "Point-to-point uses separate connections; CAN lets many ECUs share a bus.",
+      "explanationVi": "Point-to-point cần nhiều cáp riêng; CAN cho nhiều ECU dùng chung một bus.",
+      "questionEn": "Why is CAN preferred over many point-to-point connections?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Tại sao cần mạng nội bộ?",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-014",
+      "topicId": "can",
+      "sectionId": "network-motivation",
+      "cardType": "concept",
+      "term": "1000 cable example",
+      "definitionEn": "100 ECUs sharing with 20 others gives 100 × 20 / 2 = 1000 connections.",
+      "explanationVi": "Với 100 ECU và trung bình 20 kết nối, công thức trong tài liệu cho 1000 cáp.",
+      "questionEn": "How does the source calculate 1000 cable connections?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Tại sao cần mạng nội bộ?",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-015",
+      "topicId": "can",
+      "sectionId": "history",
+      "cardType": "concept",
+      "term": "1986 CAN",
+      "definitionEn": "Bosch introduced Controller Area Network at an SAE conference.",
+      "explanationVi": "Năm 1986, Bosch giới thiệu CAN nhằm giảm độ phức tạp dây điện trong xe.",
+      "questionEn": "What happened to CAN in 1986?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Lịch sử ra đời của mạng ô tô",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-016",
+      "topicId": "can",
+      "sectionId": "history",
+      "cardType": "concept",
+      "term": "1991 Mercedes-Benz 500E",
+      "definitionEn": "The source identifies it as the first mass-produced vehicle with CAN bus.",
+      "explanationVi": "Theo tài liệu, Mercedes-Benz 500E là xe sản xuất đại trà đầu tiên có CAN bus.",
+      "questionEn": "What is significant about the 1991 Mercedes-Benz 500E?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Lịch sử ra đời của mạng ô tô",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-017",
+      "topicId": "can",
+      "sectionId": "history",
+      "cardType": "technical_term",
+      "term": "ISO 11898",
+      "definitionEn": "The ISO standardization of CAN mentioned in the source.",
+      "explanationVi": "Năm 1993, CAN được ISO tiêu chuẩn hóa thành ISO 11898.",
+      "questionEn": "Which ISO standard standardized CAN in 1993?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Lịch sử ra đời của mạng ô tô",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-018",
+      "topicId": "can",
+      "sectionId": "history",
+      "cardType": "technical_term",
+      "term": "CAN-FD",
+      "definitionEn": "CAN Flexible Data-rate with higher data rate and larger payload.",
+      "explanationVi": "CAN-FD tăng bandwidth từ 1 Mbps lên 8 Mbps và payload từ 8 lên 64 bytes theo tài liệu.",
+      "questionEn": "What improvements did CAN-FD introduce?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Lịch sử ra đời của mạng ô tô",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-019",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "cardType": "comparison",
+      "term": "LIN",
+      "definitionEn": "A low-cost, low-speed automotive network rated at 20 kbps in the source.",
+      "explanationVi": "LIN rất rẻ, dùng 1 dây đơn, phù hợp ghế điện, kính điện, cảm biến mưa và nút bấm.",
+      "questionEn": "What is LIN mainly used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các loại mạng trong xe hơi",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-020",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "cardType": "comparison",
+      "term": "CAN Classic",
+      "definitionEn": "A 1 Mbps CAN network used for powertrain, body and chassis.",
+      "explanationVi": "CAN Classic là xương sống mạng xe theo tài liệu, tốc độ tối đa 1 Mbps và dùng 2 dây twisted pair.",
+      "questionEn": "What are the main CAN Classic use cases?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các loại mạng trong xe hơi",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-021",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "cardType": "comparison",
+      "term": "CAN-FD",
+      "definitionEn": "A CAN variant with up to 8 Mbps data phase and 64-byte payload in the source.",
+      "explanationVi": "CAN-FD dành cho powertrain hiện đại cần băng thông cao hơn, với payload lớn hơn CAN Classic.",
+      "questionEn": "Why is CAN-FD used?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các loại mạng trong xe hơi",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-022",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "cardType": "comparison",
+      "term": "FlexRay",
+      "definitionEn": "A 10 Mbps automotive network used for deterministic timing and X-by-wire.",
+      "explanationVi": "FlexRay dùng cho steer-by-wire và brake-by-wire, nơi timing xác định là quan trọng.",
+      "questionEn": "What is FlexRay mainly used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các loại mạng trong xe hơi",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-023",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "cardType": "comparison",
+      "term": "MOST",
+      "definitionEn": "A 150 Mbps network for infotainment and audio/video streaming.",
+      "explanationVi": "MOST dùng cho infotainment, audio/video streaming, có ring topology và đang bị Ethernet thay thế.",
+      "questionEn": "What is MOST mainly used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các loại mạng trong xe hơi",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-024",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "cardType": "comparison",
+      "term": "Automotive Ethernet",
+      "definitionEn": "A high-bandwidth automotive network used for camera, radar, ADAS and infotainment.",
+      "explanationVi": "Ethernet dùng cho camera, radar, ADAS, OTA, central gateway và infotainment hiện đại.",
+      "questionEn": "What are major Automotive Ethernet use cases?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các loại mạng trong xe hơi",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-025",
+      "topicId": "can",
+      "sectionId": "topology",
+      "cardType": "technical_term",
+      "term": "CAN HIGH-SPEED BUS",
+      "definitionEn": "The 500 kbps CAN bus shown in the source topology.",
+      "explanationVi": "Bus CAN tốc độ cao trong sơ đồ, kết nối các ECU như ECM, TCM, ABS/ESC, Airbag, BCM và Cluster.",
+      "questionEn": "What bitrate does the CAN HIGH-SPEED BUS use in the source topology?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Kiến trúc mạng ECU trong xe",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-026",
+      "topicId": "can",
+      "sectionId": "topology",
+      "cardType": "technical_term",
+      "term": "120Ω termination",
+      "definitionEn": "Two 120-ohm termination resistors are shown at the ends of the CAN bus.",
+      "explanationVi": "Sơ đồ có 120Ω ở hai đầu CAN bus, giúp kết thúc đường truyền đúng kiểu bus.",
+      "questionEn": "Where are the 120Ω resistors placed in the CAN topology?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Kiến trúc mạng ECU trong xe",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-027",
+      "topicId": "can",
+      "sectionId": "gateway",
+      "cardType": "technical_term",
+      "term": "Gateway ECU",
+      "definitionEn": "A network gateway connecting CAN, LIN and Ethernet domains.",
+      "explanationVi": "Gateway là bộ dịch kết nối nhiều CAN bus và bridge sang Ethernet, đồng thời routing message.",
+      "questionEn": "What is the main role of a Gateway ECU?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Gateway ECU",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-028",
+      "topicId": "can",
+      "sectionId": "gateway",
+      "cardType": "concept",
+      "term": "Fault containment",
+      "definitionEn": "Containing faults so a problem in one network domain does not unnecessarily affect another.",
+      "explanationVi": "Giới hạn phạm vi ảnh hưởng của lỗi; ví dụ lỗi Body CAN không nên mặc nhiên ảnh hưởng Powertrain CAN.",
+      "questionEn": "Why is fault containment important in vehicle networks?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Vì sao không dùng một CAN bus duy nhất",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-029",
+      "topicId": "can",
+      "sectionId": "multiple-buses",
+      "cardType": "concept",
+      "term": "Bandwidth",
+      "definitionEn": "The available communication capacity of a shared CAN bus.",
+      "explanationVi": "Băng thông là lý do chính để không đặt toàn bộ ECU lên một CAN bus duy nhất.",
+      "questionEn": "Why does bandwidth matter when designing multiple CAN buses?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Vì sao không dùng một CAN bus duy nhất",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-030",
+      "topicId": "can",
+      "sectionId": "multiple-buses",
+      "cardType": "concept",
+      "term": "111% bus utilization",
+      "definitionEn": "The source example calculates 111% utilization for 100 ECUs sending every 10 ms.",
+      "explanationVi": "Ví dụ: 100 ECU × 111 μs / 10000 μs = 111%, vượt khả năng bus trong giả định đó.",
+      "questionEn": "What does the 111% CAN bus utilization example show?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Vì sao không dùng một CAN bus duy nhất",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-031",
+      "topicId": "can",
+      "sectionId": "multiple-buses",
+      "cardType": "concept",
+      "term": "Timing",
+      "definitionEn": "Different ECUs have different latency and timing requirements.",
+      "explanationVi": "ABS cần latency rất thấp, trong khi BCM có thể chờ lâu hơn; vì vậy cần thiết kế mạng phù hợp.",
+      "questionEn": "Why is timing a reason to use multiple CAN buses?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Vì sao không dùng một CAN bus duy nhất",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-032",
+      "topicId": "can",
+      "sectionId": "multiple-buses",
+      "cardType": "phrase",
+      "term": "Bandwidth – Isolation – Timing",
+      "definitionEn": "The three main reasons given for separating vehicle networks.",
+      "explanationVi": "Ba từ khóa nhớ nhanh: Băng thông – Cô lập lỗi – Thời gian đáp ứng.",
+      "questionEn": "What are the three key reasons for multiple vehicle buses?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Vì sao không dùng một CAN bus duy nhất",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-033",
+      "topicId": "can",
+      "sectionId": "history",
+      "cardType": "concept",
+      "term": "Centralized Compute",
+      "definitionEn": "A vehicle architecture using centralized high-performance computing connected through Ethernet.",
+      "explanationVi": "Kiến trúc tập trung dùng HPC nối qua Gigabit Ethernet; CAN/LIN vẫn phục vụ legacy subsystems theo tài liệu.",
+      "questionEn": "What characterizes centralized compute in the source?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Lịch sử ra đời của mạng ô tô",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-034",
+      "topicId": "can",
+      "sectionId": "topology",
+      "cardType": "technical_term",
+      "term": "OBD-II Port",
+      "definitionEn": "The diagnostic access point shown in the vehicle network topology.",
+      "explanationVi": "Cổng truy cập chẩn đoán được thể hiện trong sơ đồ mạng ECU.",
+      "questionEn": "What is the OBD-II Port used for in the source topology?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Kiến trúc mạng ECU trong xe",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-overview-035",
+      "topicId": "can",
+      "sectionId": "protocols",
+      "cardType": "comparison",
+      "term": "Protocol memory chain",
+      "definitionEn": "LIN = low cost, CAN = backbone, CAN-FD = higher bandwidth, FlexRay = timing, MOST = media, Ethernet = high bandwidth.",
+      "explanationVi": "Mẹo nhớ: LIN rẻ → CAN xương sống → FD nhanh → FlexRay timing → MOST media → Ethernet bandwidth cao.",
+      "questionEn": "How can the six vehicle network protocols be remembered quickly?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Overview",
+        "section": "Các loại mạng trong xe hơi",
+        "reference": "content-source/CAN/CAN-overview.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "filename": "autosar-rte-api-quiz.json",
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "autosar-rte-api-quiz-001",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "questionType": "single_choice",
+      "questionEn": "How are RTE APIs generated?",
+      "options": [
+        { "id": "A", "text": "Automatically based on ARXML descriptions" },
+        { "id": "B", "text": "Manually by every SWC developer" },
+        { "id": "C", "text": "Only by the CAN driver" },
+        { "id": "D", "text": "Only during ECU runtime" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTE APIs được generate tự động dựa trên ARXML description.",
+      "relatedFlashcardIds": ["autosar-rte-api-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "RTE API"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-002",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "questionType": "single_choice",
+      "questionEn": "Which RTE API reads data from an R-Port using sender-receiver communication?",
+      "options": [
+        { "id": "A", "text": "Rte_Write()" },
+        { "id": "B", "text": "Rte_Read()" },
+        { "id": "C", "text": "Rte_Call()" },
+        { "id": "D", "text": "Rte_Mode()" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Rte_Read() dùng để đọc data từ R-Port trong sender-receiver communication.",
+      "relatedFlashcardIds": ["autosar-rte-api-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Read"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-003",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "questionType": "single_choice",
+      "questionEn": "Which RTE API writes data to a P-Port?",
+      "options": [
+        { "id": "A", "text": "Rte_Write()" },
+        { "id": "B", "text": "Rte_Read()" },
+        { "id": "C", "text": "Rte_Receive()" },
+        { "id": "D", "text": "Rte_Result()" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rte_Write() ghi data ra P-Port để xuất kết quả cho SWC khác.",
+      "relatedFlashcardIds": ["autosar-rte-api-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Write"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-004",
+      "topicId": "autosar",
+      "sectionId": "rte-communication",
+      "questionType": "single_choice",
+      "questionEn": "Which API is used to send data through queued sender-receiver communication?",
+      "options": [
+        { "id": "A", "text": "Rte_Send()" },
+        { "id": "B", "text": "Rte_Write()" },
+        { "id": "C", "text": "Rte_Mode()" },
+        { "id": "D", "text": "Rte_Result()" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rte_Send() gửi data, event hoặc command qua queued sender-receiver communication.",
+      "relatedFlashcardIds": ["autosar-rte-api-004", "autosar-rte-api-026"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Send / Rte_Receive"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-005",
+      "topicId": "autosar",
+      "sectionId": "rte-communication",
+      "questionType": "single_choice",
+      "questionEn": "Which API receives data from a queued R-Port?",
+      "options": [
+        { "id": "A", "text": "Rte_Read()" },
+        { "id": "B", "text": "Rte_Receive()" },
+        { "id": "C", "text": "Rte_Call()" },
+        { "id": "D", "text": "Rte_Switch()" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Rte_Receive() nhận data hoặc event từ queue ở phía receiver.",
+      "relatedFlashcardIds": ["autosar-rte-api-005", "autosar-rte-api-026"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Send / Rte_Receive"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-006",
+      "topicId": "autosar",
+      "sectionId": "rte-communication",
+      "questionType": "single_choice",
+      "questionEn": "Which RTE API calls a client-server operation such as a DEM service?",
+      "options": [
+        { "id": "A", "text": "Rte_Call()" },
+        { "id": "B", "text": "Rte_Write()" },
+        { "id": "C", "text": "Rte_Receive()" },
+        { "id": "D", "text": "Rte_IRead()" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rte_Call() dùng để gọi client-server operation, ví dụ service của DEM hoặc NvM.",
+      "relatedFlashcardIds": ["autosar-rte-api-006", "autosar-rte-api-027"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Call"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-007",
+      "topicId": "autosar",
+      "sectionId": "rte-communication",
+      "questionType": "single_choice",
+      "questionEn": "What is Rte_Result() used for?",
+      "options": [
+        { "id": "A", "text": "Reading the current operating mode" },
+        { "id": "B", "text": "Getting the result of an asynchronous client-server call" },
+        { "id": "C", "text": "Writing data to a P-Port" },
+        { "id": "D", "text": "Sending data into a queue" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Rte_Result() dùng để lấy kết quả của asynchronous client-server call.",
+      "relatedFlashcardIds": ["autosar-rte-api-007", "autosar-rte-api-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Result"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-008",
+      "topicId": "autosar",
+      "sectionId": "rte-mode",
+      "questionType": "single_choice",
+      "questionEn": "Which API switches the operating mode through a Mode Manager Port?",
+      "options": [
+        { "id": "A", "text": "Rte_Mode()" },
+        { "id": "B", "text": "Rte_Switch()" },
+        { "id": "C", "text": "Rte_Read()" },
+        { "id": "D", "text": "Rte_Result()" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Rte_Switch() dùng để chuyển operating mode của system qua Mode Manager Port.",
+      "relatedFlashcardIds": ["autosar-rte-api-008", "autosar-rte-api-029"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Switch"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-009",
+      "topicId": "autosar",
+      "sectionId": "rte-mode",
+      "questionType": "single_choice",
+      "questionEn": "Which API reads the current operating mode?",
+      "options": [
+        { "id": "A", "text": "Rte_Switch()" },
+        { "id": "B", "text": "Rte_Mode()" },
+        { "id": "C", "text": "Rte_Call()" },
+        { "id": "D", "text": "Rte_Send()" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Rte_Mode() đọc mode hiện tại để kiểm tra operating mode trước khi action.",
+      "relatedFlashcardIds": ["autosar-rte-api-009", "autosar-rte-api-029"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Mode"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-010",
+      "topicId": "autosar",
+      "sectionId": "rte-communication",
+      "questionType": "single_choice",
+      "questionEn": "What does the 'I' in Rte_IRead() and Rte_IWrite() indicate?",
+      "options": [
+        { "id": "A", "text": "Internal diagnostic communication" },
+        { "id": "B", "text": "Implicit communication" },
+        { "id": "C", "text": "Interrupt communication" },
+        { "id": "D", "text": "Internet communication" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Chữ I là Implicit: IRead đọc và IWrite ghi qua RTE internal buffer.",
+      "relatedFlashcardIds": ["autosar-rte-api-010", "autosar-rte-api-011", "autosar-rte-api-028"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_IRead / Rte_IWrite"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-011",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "questionType": "single_choice",
+      "questionEn": "What does RTE_E_OK indicate?",
+      "options": [
+        { "id": "A", "text": "Queue is full" },
+        { "id": "B", "text": "Communication error" },
+        { "id": "C", "text": "Operation succeeded" },
+        { "id": "D", "text": "Data was never received" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "RTE_E_OK có value 0 và cho biết operation thực hiện thành công.",
+      "relatedFlashcardIds": ["autosar-rte-api-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-012",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "questionType": "single_choice",
+      "questionEn": "What does RTE_E_NO_DATA mean?",
+      "options": [
+        { "id": "A", "text": "No new data has been received since the previous read" },
+        { "id": "B", "text": "The queue is full" },
+        { "id": "C", "text": "The mode was switched successfully" },
+        { "id": "D", "text": "The server function returned successfully" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTE_E_NO_DATA nghĩa là không có dữ liệu mới kể từ lần đọc trước.",
+      "relatedFlashcardIds": ["autosar-rte-api-019"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-013",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "questionType": "single_choice",
+      "questionEn": "What does RTE_E_NEVER_RECEIVED indicate?",
+      "options": [
+        { "id": "A", "text": "Data has never been received" },
+        { "id": "B", "text": "Queue send succeeded" },
+        { "id": "C", "text": "Data exceeded its maximum age" },
+        { "id": "D", "text": "The mode is currently overspeed" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTE_E_NEVER_RECEIVED cho biết data chưa bao giờ được nhận. Tài liệu đề xuất dùng default value.",
+      "relatedFlashcardIds": ["autosar-rte-api-020"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-014",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "questionType": "single_choice",
+      "questionEn": "What does RTE_E_TRANSMIT_ACK indicate?",
+      "options": [
+        { "id": "A", "text": "The queue is full" },
+        { "id": "B", "text": "Queued send succeeded" },
+        { "id": "C", "text": "No data was ever received" },
+        { "id": "D", "text": "A communication error occurred" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "RTE_E_TRANSMIT_ACK cho biết queue send thành công.",
+      "relatedFlashcardIds": ["autosar-rte-api-021"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-015",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "questionType": "single_choice",
+      "questionEn": "What does RTE_E_LIMIT indicate in the provided RTE example?",
+      "options": [
+        { "id": "A", "text": "The queue is full and data is lost" },
+        { "id": "B", "text": "The operation succeeded" },
+        { "id": "C", "text": "The current mode is valid" },
+        { "id": "D", "text": "New data was received" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTE_E_LIMIT nghĩa là queue đầy và data bị mất. Tài liệu đề xuất log lỗi và tăng queue size.",
+      "relatedFlashcardIds": ["autosar-rte-api-022"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-016",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "questionType": "single_choice",
+      "questionEn": "What does RTE_E_MAX_AGE_EXCEEDED indicate?",
+      "options": [
+        { "id": "A", "text": "Data is too old and exceeded its maximum age" },
+        { "id": "B", "text": "The queue send succeeded" },
+        { "id": "C", "text": "The server operation was called" },
+        { "id": "D", "text": "The mode was switched" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Data quá cũ, vượt max age. Theo tài liệu, treat as error và dùng default.",
+      "relatedFlashcardIds": ["autosar-rte-api-023"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-017",
+      "topicId": "autosar",
+      "sectionId": "rte-return-codes",
+      "questionType": "single_choice",
+      "questionEn": "What does RTE_E_COMMS_ERROR indicate?",
+      "options": [
+        { "id": "A", "text": "A communication error occurred" },
+        { "id": "B", "text": "The queue send succeeded" },
+        { "id": "C", "text": "No new data exists" },
+        { "id": "D", "text": "The mode is overspeed" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "RTE_E_COMMS_ERROR cho biết có lỗi truyền thông. Tài liệu đề xuất report DEM event.",
+      "relatedFlashcardIds": ["autosar-rte-api-024"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Return Codes của RTE"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-018",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "questionType": "single_choice",
+      "questionEn": "Which API is associated with implicit read from the RTE internal buffer?",
+      "options": [
+        { "id": "A", "text": "Rte_IRead()" },
+        { "id": "B", "text": "Rte_Read()" },
+        { "id": "C", "text": "Rte_Receive()" },
+        { "id": "D", "text": "Rte_Call()" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rte_IRead() là implicit read, đọc value từ RTE internal buffer.",
+      "relatedFlashcardIds": ["autosar-rte-api-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_IRead / Rte_IWrite"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-019",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "questionType": "single_choice",
+      "questionEn": "Which API is associated with implicit write to the RTE internal buffer?",
+      "options": [
+        { "id": "A", "text": "Rte_IWrite()" },
+        { "id": "B", "text": "Rte_Write()" },
+        { "id": "C", "text": "Rte_Send()" },
+        { "id": "D", "text": "Rte_Switch()" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rte_IWrite() là implicit write, ghi value vào RTE internal buffer và có return type void theo tài liệu.",
+      "relatedFlashcardIds": ["autosar-rte-api-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_IRead / Rte_IWrite"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "autosar-rte-api-quiz-020",
+      "topicId": "autosar",
+      "sectionId": "rte-api",
+      "questionType": "single_choice",
+      "questionEn": "Which RTE API is used to report or call a service such as DEM?",
+      "options": [
+        { "id": "A", "text": "Rte_Call()" },
+        { "id": "B", "text": "Rte_Write()" },
+        { "id": "C", "text": "Rte_Mode()" },
+        { "id": "D", "text": "Rte_IRead()" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rte_Call() dùng để gọi client-server operation, ví dụ SetEventStatus của DEM.",
+      "relatedFlashcardIds": ["autosar-rte-api-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "RTE API Reference",
+        "section": "Rte_Call"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

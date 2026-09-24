@@ -77,10 +77,21 @@ export async function loadFlashcards(): Promise<Flashcard[]> {
 
 export async function loadQuizzes(): Promise<QuizQuestion[]> {
   const quizzes = loadDiscoveredJson<QuizQuestion>('quizzes')
-  return normalizeCollection(quizzes).map((quiz) => ({
-    ...quiz,
-    questionType: quiz.questionType === 'single_choice' ? 'single_choice' : 'single-choice',
-  }))
+
+  return normalizeCollection(quizzes).map((quiz) => {
+    const normalizedCorrectOptionIds = Array.isArray((quiz as QuizQuestion & { correctOptionId?: string }).correctOptionIds)
+      ? (quiz as QuizQuestion & { correctOptionIds: string[] }).correctOptionIds
+      : typeof (quiz as QuizQuestion & { correctOptionId?: string }).correctOptionId === 'string'
+        ? [(quiz as QuizQuestion & { correctOptionId?: string }).correctOptionId as string]
+        : []
+
+    return {
+      ...quiz,
+      correctOptionIds: normalizedCorrectOptionIds,
+      correctOptionId: normalizedCorrectOptionIds[0],
+      questionType: quiz.questionType === 'single_choice' ? 'single_choice' : 'single-choice',
+    }
+  })
 }
 
 export function filterByTopic<T extends { topicId: string }>(items: T[], topicId: string) {

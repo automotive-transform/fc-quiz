@@ -2,9 +2,11 @@ import type { QuizAnswerRecord, QuizQuestion } from '../types'
 
 export function isSingleChoiceCorrect(
   selectedOptionId: string,
-  correctOptionIds: string[],
+  correctOptionIds: string[] = [],
 ): boolean {
-  return correctOptionIds.length === 1 && selectedOptionId === correctOptionIds[0]
+  return Array.isArray(correctOptionIds)
+    && correctOptionIds.length === 1
+    && selectedOptionId === correctOptionIds[0]
 }
 
 export function calculateQuizScore(

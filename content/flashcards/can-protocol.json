@@ -1,0 +1,1281 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "can-physical-single-word-001",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "cardType": "single_word",
+      "term": "CANH",
+      "definitionEn": "The CAN High wire in the CAN differential pair.",
+      "explanationVi": "Dây CAN High, đi cùng CANL để truyền tín hiệu vi sai trên CAN bus.",
+      "questionEn": "What is CANH?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer — Tín hiệu điện trong CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-single-word-002",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "cardType": "single_word",
+      "term": "CANL",
+      "definitionEn": "The CAN Low wire in the CAN differential pair.",
+      "explanationVi": "Dây CAN Low, đi cùng CANH để tạo tín hiệu vi sai.",
+      "questionEn": "What is CANL?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer — Tín hiệu điện trong CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-concept-003",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "cardType": "concept",
+      "term": "Twisted pair",
+      "definitionEn": "A pair of twisted CANH and CANL wires used for differential signaling.",
+      "explanationVi": "Hai dây CANH và CANL được xoắn lại để nhiễu EMI tác động tương tự lên cả hai dây, giúp chống nhiễu.",
+      "questionEn": "Why does CAN use twisted-pair wiring?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer — Tín hiệu điện trong CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-concept-004",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "cardType": "concept",
+      "term": "Differential voltage",
+      "definitionEn": "The voltage difference between CANH and CANL.",
+      "explanationVi": "Điện áp vi sai là chênh lệch điện áp giữa CANH và CANL; nó giúp CAN chống nhiễu.",
+      "questionEn": "What does CAN differential voltage represent?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer — Tín hiệu điện trong CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-comparison-005",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "cardType": "comparison",
+      "term": "Recessive vs Dominant",
+      "definitionEn": "Recessive is logic 1; dominant is logic 0.",
+      "explanationVi": "Recessive: CANH≈2.5V, CANL≈2.5V, Vdiff≈0V. Dominant: CANH≈3.5V, CANL≈1.5V, Vdiff≈2V.",
+      "questionEn": "How do CAN recessive and dominant states differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer — Tín hiệu điện trong CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-concept-006",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "cardType": "concept",
+      "term": "Wired-AND",
+      "definitionEn": "A bus rule where dominant overrides recessive.",
+      "explanationVi": "Nếu một node gửi 1 và node khác gửi 0 thì bus có kết quả 0 dominant.",
+      "questionEn": "What is the CAN wired-AND rule?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer — Tín hiệu điện trong CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-concept-007",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "cardType": "concept",
+      "term": "Dominant wins",
+      "definitionEn": "A dominant 0 overrides a simultaneous recessive 1 on the bus.",
+      "explanationVi": "Trong cạnh tranh trên CAN bus, dominant 0 thắng recessive 1.",
+      "questionEn": "What happens when dominant and recessive are sent together?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer — Tín hiệu điện trong CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-technical-term-008",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "cardType": "technical_term",
+      "term": "Termination resistor",
+      "definitionEn": "A 120 Ω resistor connected between CANH and CANL at each bus end.",
+      "explanationVi": "Mỗi đầu CAN bus dùng một điện trở 120Ω giữa CANH và CANL để triệt tiêu phản xạ tín hiệu.",
+      "questionEn": "Why are 120 Ω termination resistors used?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer — Tín hiệu điện trong CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-single-word-009",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "cardType": "single_word",
+      "term": "120Ω",
+      "definitionEn": "The nominal termination resistance used at each end of the CAN bus.",
+      "explanationVi": "Mỗi đầu bus CAN có một điện trở termination 120Ω.",
+      "questionEn": "What is the termination resistance at each CAN bus end?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer — Tín hiệu điện trong CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-physical-single-word-010",
+      "topicId": "can",
+      "sectionId": "physical-layer",
+      "cardType": "single_word",
+      "term": "60Ω",
+      "definitionEn": "The equivalent resistance of two 120 Ω CAN terminations in parallel.",
+      "explanationVi": "Hai điện trở 120Ω mắc song song tạo thành 60Ω, phù hợp với impedance matching của hệ thống CAN.",
+      "questionEn": "What resistance results from two 120 Ω terminations in parallel?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Physical Layer — Tín hiệu điện trong CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-abbreviation-011",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "abbreviation",
+      "term": "SOF",
+      "definitionEn": "Start of Frame; a 1-bit dominant field marking frame start.",
+      "explanationVi": "SOF là bit dominant 0 báo bắt đầu frame và cung cấp cạnh xuống để đồng bộ.",
+      "questionEn": "What does SOF mean in a CAN frame?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — Giải phẫu một frame CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-abbreviation-012",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "abbreviation",
+      "term": "RTR",
+      "definitionEn": "Remote Transmission Request; distinguishes data and remote frames.",
+      "explanationVi": "RTR=0 là Data Frame; RTR=1 là Remote Frame yêu cầu dữ liệu với ID tương ứng.",
+      "questionEn": "What does RTR indicate?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — Giải phẫu một frame CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-abbreviation-013",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "abbreviation",
+      "term": "IDE",
+      "definitionEn": "Identifier Extension bit distinguishing standard and extended CAN frames.",
+      "explanationVi": "IDE=0: Standard Frame với ID 11-bit. IDE=1: Extended Frame với ID 29-bit.",
+      "questionEn": "What does IDE distinguish in CAN?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — Giải phẫu một frame CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-abbreviation-014",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "abbreviation",
+      "term": "DLC",
+      "definitionEn": "Data Length Code; a 4-bit field indicating CAN payload length.",
+      "explanationVi": "DLC là 4 bit chỉ độ dài Data field; CAN Classic dùng 0–8 bytes.",
+      "questionEn": "What does DLC specify?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — Giải phẫu một frame CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-abbreviation-015",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "abbreviation",
+      "term": "CRC",
+      "definitionEn": "Cyclic Redundancy Check used to detect transmission errors.",
+      "explanationVi": "CRC dùng để kiểm tra tính toàn vẹn của frame bằng cách so sánh CRC tính lại với CRC nhận được.",
+      "questionEn": "What is CRC used for in CAN?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — Giải phẫu một frame CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-abbreviation-016",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "abbreviation",
+      "term": "ACK",
+      "definitionEn": "Acknowledgment field where a valid receiver drives the ACK slot dominant.",
+      "explanationVi": "Sender gửi ACK slot recessive; node nhận frame hợp lệ kéo ACK slot xuống dominant.",
+      "questionEn": "How does CAN ACK work?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — Giải phẫu một frame CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-abbreviation-017",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "abbreviation",
+      "term": "EOF",
+      "definitionEn": "End of Frame; seven recessive bits marking the end of a CAN frame.",
+      "explanationVi": "EOF gồm 7 bit recessive liên tiếp để kết thúc frame.",
+      "questionEn": "What does EOF indicate?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — Giải phẫu một frame CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-comparison-018",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "comparison",
+      "term": "Standard vs Extended Frame",
+      "definitionEn": "Standard CAN uses an 11-bit identifier; extended CAN uses a 29-bit identifier.",
+      "explanationVi": "Standard Frame dùng ID 11-bit; Extended Frame dùng ID 29-bit.",
+      "questionEn": "How do standard and extended CAN identifiers differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — Giải phẫu một frame CAN",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-concept-019",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "concept",
+      "term": "CAN ID",
+      "definitionEn": "A message identifier, not a source or destination address.",
+      "explanationVi": "CAN ID định danh loại message, không phải địa chỉ nguồn hay đích.",
+      "questionEn": "What does a CAN ID identify?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — CAN ID",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-concept-020",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "concept",
+      "term": "Broadcast architecture",
+      "definitionEn": "All CAN nodes can hear messages and decide whether to process them by ID.",
+      "explanationVi": "Các node đều nghe message trên bus và tự quyết định xử lý dựa trên CAN ID.",
+      "questionEn": "What is CAN's broadcast architecture?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — CAN ID",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-arbitration-concept-021",
+      "topicId": "can",
+      "sectionId": "arbitration",
+      "cardType": "concept",
+      "term": "Multi-master bus",
+      "definitionEn": "A CAN bus where any node can start transmitting when the bus is idle.",
+      "explanationVi": "CAN là multi-master: bất kỳ node nào cũng có thể bắt đầu truyền khi bus idle.",
+      "questionEn": "What does multi-master mean in CAN?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Arbitration — Cách các ECU tranh giành bus",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-arbitration-concept-022",
+      "topicId": "can",
+      "sectionId": "arbitration",
+      "cardType": "concept",
+      "term": "Non-destructive arbitration",
+      "definitionEn": "Arbitration where the winning frame continues without being destroyed by collision.",
+      "explanationVi": "Node thắng tiếp tục truyền; node thua không mất data và sẽ retry khi bus free.",
+      "questionEn": "What makes CAN arbitration non-destructive?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Arbitration — Cách các ECU tranh giành bus",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-arbitration-concept-023",
+      "topicId": "can",
+      "sectionId": "arbitration",
+      "cardType": "concept",
+      "term": "Priority",
+      "definitionEn": "A lower CAN identifier has higher arbitration priority.",
+      "explanationVi": "CAN ID càng nhỏ thì ưu tiên arbitration càng cao; ID 0x000 có ưu tiên cao nhất.",
+      "questionEn": "How is CAN message priority determined?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Arbitration — Cách các ECU tranh giành bus",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-arbitration-phrase-024",
+      "topicId": "can",
+      "sectionId": "arbitration",
+      "cardType": "phrase",
+      "term": "Send 1, read 0",
+      "definitionEn": "A node loses arbitration when it sends recessive 1 but reads dominant 0.",
+      "explanationVi": "Nếu node gửi 1 nhưng đọc bus là 0, nó biết mình thua arbitration và dừng truyền.",
+      "questionEn": "When does a CAN node lose arbitration?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Arbitration — Cách các ECU tranh giành bus",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-arbitration-comparison-025",
+      "topicId": "can",
+      "sectionId": "arbitration",
+      "cardType": "comparison",
+      "term": "0x0FF vs 0x100",
+      "definitionEn": "0x0FF wins arbitration because it is lower than 0x100 at the first differing bit.",
+      "explanationVi": "Node B với ID 0x0FF gửi dominant tại bit khác nhau, thắng Node A có ID 0x100.",
+      "questionEn": "Which message wins between CAN IDs 0x0FF and 0x100?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Arbitration — Ví dụ Node A và Node B",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-abbreviation-026",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "cardType": "abbreviation",
+      "term": "TEC",
+      "definitionEn": "Transmit Error Counter used for CAN error confinement.",
+      "explanationVi": "TEC là bộ đếm lỗi khi truyền của node CAN.",
+      "questionEn": "What does TEC count?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling — CAN chống lỗi như thế nào",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-abbreviation-027",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "cardType": "abbreviation",
+      "term": "REC",
+      "definitionEn": "Receive Error Counter used for CAN error confinement.",
+      "explanationVi": "REC là bộ đếm lỗi khi nhận của node CAN.",
+      "questionEn": "What does REC count?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling — CAN chống lỗi như thế nào",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-concept-028",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "cardType": "concept",
+      "term": "Bit Error",
+      "definitionEn": "An error detected when a transmitted bit differs from the bit read back by the node.",
+      "explanationVi": "Node gửi bit X nhưng đọc lại thấy khác X; có thể liên quan transceiver, short circuit hoặc grounding.",
+      "questionEn": "What is a CAN Bit Error?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling — CAN chống lỗi như thế nào",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-concept-029",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "cardType": "concept",
+      "term": "CRC Error",
+      "definitionEn": "An error detected when the receiver's calculated CRC does not match the received CRC.",
+      "explanationVi": "Receiver tính CRC không khớp CRC nhận được, cho thấy frame có thể đã bị lỗi.",
+      "questionEn": "What causes a CAN CRC Error?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling — CAN chống lỗi như thế nào",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-concept-030",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "cardType": "concept",
+      "term": "Form Error",
+      "definitionEn": "An error caused by an invalid value in a fixed-form CAN field.",
+      "explanationVi": "Xảy ra khi một fixed-form field có giá trị sai quy định của frame.",
+      "questionEn": "What is a CAN Form Error?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling — CAN chống lỗi như thế nào",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-concept-031",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "cardType": "concept",
+      "term": "ACK Error",
+      "definitionEn": "An error detected when the ACK slot remains recessive.",
+      "explanationVi": "ACK slot vẫn recessive nghĩa là không có node nào xác nhận frame hợp lệ.",
+      "questionEn": "When does CAN report an ACK Error?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling — CAN chống lỗi như thế nào",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-concept-032",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "cardType": "concept",
+      "term": "Stuff Error",
+      "definitionEn": "An error caused by violation of the CAN bit-stuffing rule.",
+      "explanationVi": "Lỗi xảy ra khi vi phạm quy tắc bit stuffing, ví dụ chuỗi bit không tuân thủ quy tắc chèn bit.",
+      "questionEn": "What is a CAN Stuff Error?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling — CAN chống lỗi như thế nào",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-concept-033",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "cardType": "concept",
+      "term": "Error Frame",
+      "definitionEn": "A CAN error indication containing an active error flag of six dominant bits.",
+      "explanationVi": "Node phát hiện lỗi có thể gửi Error Frame với 6 dominant bits liên tiếp để báo lỗi.",
+      "questionEn": "What does a CAN Error Frame indicate?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling — CAN chống lỗi như thế nào",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-concept-034",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "cardType": "concept",
+      "term": "Bus-Off",
+      "definitionEn": "A CAN node state in which the node disconnects itself from the bus after excessive errors.",
+      "explanationVi": "Node bị lỗi quá nhiều sẽ vào Bus-Off và tự ngắt khỏi bus để bảo vệ mạng.",
+      "questionEn": "What happens when a CAN node enters Bus-Off?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling — CAN chống lỗi như thế nào",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-error-single-word-035",
+      "topicId": "can",
+      "sectionId": "error-handling",
+      "cardType": "single_word",
+      "term": "255",
+      "definitionEn": "The TEC threshold stated in the source for entering Bus-Off.",
+      "explanationVi": "Theo tài liệu nguồn: khi TEC > 255, node chuyển sang Bus-Off.",
+      "questionEn": "What TEC threshold is stated for Bus-Off?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Error Handling — CAN chống lỗi như thế nào",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-stuffing-concept-036",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "concept",
+      "term": "Bit stuffing",
+      "definitionEn": "After five consecutive bits of the same polarity, CAN inserts one opposite bit.",
+      "explanationVi": "Sau 5 bit liên tiếp cùng polarity, CAN chèn 1 bit ngược để hỗ trợ đồng bộ.",
+      "questionEn": "What is the CAN bit-stuffing rule?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — EOF và Bit stuffing",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-comparison-037",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "cardType": "comparison",
+      "term": "CAN Classic vs CAN-FD",
+      "definitionEn": "Classic CAN supports up to 8-byte payloads; CAN-FD supports up to 64 bytes.",
+      "explanationVi": "CAN Classic tối đa 8 bytes; CAN-FD tối đa 64 bytes.",
+      "questionEn": "How does CAN-FD payload capacity differ from Classic CAN?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN-FD vs CAN Classic",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-comparison-038",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "cardType": "comparison",
+      "term": "CAN-FD data phase bitrate",
+      "definitionEn": "CAN-FD can use up to 8 Mbps in the data phase according to the source.",
+      "explanationVi": "Theo tài liệu, CAN-FD có thể đạt 8 Mbps ở data phase, cao hơn arbitration phase.",
+      "questionEn": "What data-phase bitrate is stated for CAN-FD?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN-FD vs CAN Classic",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-comparison-039",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "cardType": "comparison",
+      "term": "CRC-15 vs CRC-17/CRC-21",
+      "definitionEn": "Classic CAN uses CRC-15; CAN-FD uses CRC-17 or CRC-21.",
+      "explanationVi": "CAN Classic dùng CRC-15; CAN-FD dùng CRC-17 hoặc CRC-21.",
+      "questionEn": "Which CRC schemes are used by Classic CAN and CAN-FD?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN-FD vs CAN Classic",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-concept-040",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "cardType": "concept",
+      "term": "CAN-FD",
+      "definitionEn": "CAN with Flexible Data-rate, supporting larger payloads and a faster data phase.",
+      "explanationVi": "CAN-FD mở rộng payload lên tối đa 64 bytes và cho phép data phase chạy nhanh hơn.",
+      "questionEn": "What is CAN-FD?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN-FD vs CAN Classic",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-single-word-041",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "cardType": "single_word",
+      "term": "64 bytes",
+      "definitionEn": "The maximum payload size stated for CAN-FD.",
+      "explanationVi": "CAN-FD hỗ trợ Data field tối đa 64 bytes theo tài liệu.",
+      "questionEn": "What is the maximum CAN-FD payload?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN-FD vs CAN Classic",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-concept-042",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "cardType": "concept",
+      "term": "DLC mapping in CAN-FD",
+      "definitionEn": "CAN-FD maps DLC 9–15 to payloads of 12, 16, 20, 24, 32, 48 and 64 bytes.",
+      "explanationVi": "DLC 9→12, 10→16, 11→20, 12→24, 13→32, 14→48, 15→64 bytes.",
+      "questionEn": "How does CAN-FD map DLC 9–15?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure — DLC",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-abbreviation-043",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "abbreviation",
+      "term": "DBC",
+      "definitionEn": "Database CAN; a text database defining messages and signals on a CAN bus.",
+      "explanationVi": "DBC là file text định nghĩa messages và signals, dùng như từ điển để decode raw CAN data.",
+      "questionEn": "What is a DBC file?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC File Format — Database định nghĩa signals",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-abbreviation-044",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "abbreviation",
+      "term": "BU_",
+      "definitionEn": "DBC keyword used to define network nodes or ECUs.",
+      "explanationVi": "BU_ khai báo các network nodes/ECUs trong DBC.",
+      "questionEn": "What does BU_ define in a DBC file?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC File Format — Network Nodes",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-abbreviation-045",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "abbreviation",
+      "term": "BO_",
+      "definitionEn": "DBC keyword used to define a CAN message.",
+      "explanationVi": "BO_ định nghĩa message: CAN ID, tên message, độ dài và sender.",
+      "questionEn": "What does BO_ define in a DBC file?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC File Format — Message Definition",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-abbreviation-046",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "abbreviation",
+      "term": "SG_",
+      "definitionEn": "DBC keyword used to define a signal inside a message.",
+      "explanationVi": "SG_ định nghĩa signal: start bit, length, byte order, sign, factor, offset, range, unit và receivers.",
+      "questionEn": "What does SG_ define in a DBC file?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC File Format — Signal Definition",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-abbreviation-047",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "abbreviation",
+      "term": "VAL_",
+      "definitionEn": "DBC keyword used to define value-to-enum mappings.",
+      "explanationVi": "VAL_ ánh xạ raw numeric values thành trạng thái có ý nghĩa như OFF, ON hoặc START.",
+      "questionEn": "What does VAL_ define in a DBC file?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC File Format — Value enum definitions",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-concept-048",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "concept",
+      "term": "Raw value",
+      "definitionEn": "The numeric value extracted from the signal bits before scaling and offset.",
+      "explanationVi": "Raw là giá trị thô lấy từ các bit của signal trước khi áp dụng factor và offset.",
+      "questionEn": "What is a raw CAN signal value?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-concept-049",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "concept",
+      "term": "Physical value",
+      "definitionEn": "The engineering value obtained from raw value using factor and offset.",
+      "explanationVi": "Physical value là giá trị thực tế như km/h, rpm hoặc °C sau khi scale raw data.",
+      "questionEn": "How is a physical CAN signal value obtained?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-phrase-050",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "phrase",
+      "term": "Physical = Raw × Factor + Offset",
+      "definitionEn": "The conversion formula from a DBC raw signal value to its physical value.",
+      "explanationVi": "Công thức cốt lõi để đổi raw value sang physical value: Raw × Factor + Offset.",
+      "questionEn": "What is the DBC raw-to-physical conversion formula?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition — Factor và Offset",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-concept-051",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "concept",
+      "term": "Factor",
+      "definitionEn": "The scaling multiplier applied to a raw signal value.",
+      "explanationVi": "Factor là hệ số scale; raw value được nhân với factor trước khi cộng offset.",
+      "questionEn": "What does factor mean in a DBC signal?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition — Factor và Offset",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-concept-052",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "concept",
+      "term": "Offset",
+      "definitionEn": "The value added after scaling the raw signal value.",
+      "explanationVi": "Offset là giá trị được cộng sau khi raw value đã nhân với factor.",
+      "questionEn": "What does offset mean in a DBC signal?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition — Factor và Offset",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-comparison-053",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "comparison",
+      "term": "@1 vs @0",
+      "definitionEn": "@1 represents Intel little-endian; @0 represents Motorola big-endian.",
+      "explanationVi": "Theo tài liệu: @1 là Intel/little-endian, LSB trước; @0 là Motorola/big-endian, MSB trước.",
+      "questionEn": "What do @1 and @0 mean in a DBC signal?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition — Byte order",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-comparison-054",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "comparison",
+      "term": "+ vs -",
+      "definitionEn": "In the DBC signal syntax, + means unsigned and - means signed.",
+      "explanationVi": "Dấu + biểu thị unsigned; dấu - biểu thị signed, thường dùng two's complement.",
+      "questionEn": "What do + and - mean in DBC signal definitions?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition — Sign",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-concept-055",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "concept",
+      "term": "Start bit",
+      "definitionEn": "The bit position where a DBC signal begins in the CAN data field.",
+      "explanationVi": "Start bit xác định vị trí bắt đầu của signal trong Data field.",
+      "questionEn": "What does start bit specify in a DBC signal?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition — Start bit",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-concept-056",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "concept",
+      "term": "Signal length",
+      "definitionEn": "The number of bits occupied by a signal in the CAN data field.",
+      "explanationVi": "Length cho biết signal chiếm bao nhiêu bit; ví dụ 16 bits tương ứng 2 bytes.",
+      "questionEn": "What does signal length specify?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition — Length",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-concept-057",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "concept",
+      "term": "Range",
+      "definitionEn": "The minimum and maximum physical values defined for a DBC signal.",
+      "explanationVi": "Range xác định giá trị vật lý min và max được khai báo cho signal.",
+      "questionEn": "What does the DBC signal range specify?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition — Min/Max",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-single-word-058",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "single_word",
+      "term": "VehicleSpeed",
+      "definitionEn": "A 16-bit unsigned signal scaled by 0.01 with a 0–320 km/h physical range.",
+      "explanationVi": "VehicleSpeed bắt đầu tại bit 0, dài 16 bit, factor 0.01, offset 0, range 0–320 km/h.",
+      "questionEn": "How is VehicleSpeed defined in the example DBC?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Example — VehicleSpeed",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-single-word-059",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "single_word",
+      "term": "EngineRPM",
+      "definitionEn": "A 16-bit unsigned signal with factor 1, offset 0, and range 0–8000 rpm.",
+      "explanationVi": "EngineRPM bắt đầu tại bit 16, dài 16 bit, factor 1, offset 0, range 0–8000 rpm.",
+      "questionEn": "How is EngineRPM defined in the example DBC?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Example — EngineRPM",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-single-word-060",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "single_word",
+      "term": "EngineTemp",
+      "definitionEn": "An 8-bit unsigned signal with factor 1 and offset -40 °C.",
+      "explanationVi": "EngineTemp bắt đầu tại bit 32, dài 8 bit, factor 1, offset -40, range -40–215°C.",
+      "questionEn": "How is EngineTemp defined in the example DBC?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Example — EngineTemp",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-single-word-061",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "single_word",
+      "term": "IgnitionStatus",
+      "definitionEn": "A 2-bit unsigned signal with values mapped to OFF, ACC, ON and START.",
+      "explanationVi": "IgnitionStatus dài 2 bit; raw 0=OFF, 1=ACC, 2=ON, 3=START.",
+      "questionEn": "What values can IgnitionStatus represent?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Example — Value enum definitions",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-single-word-062",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "single_word",
+      "term": "MILStatus",
+      "definitionEn": "A 1-bit unsigned signal mapped to Normal or MIL_ON.",
+      "explanationVi": "MILStatus dài 1 bit; raw 0=Normal và raw 1=MIL_ON.",
+      "questionEn": "What values can MILStatus represent?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Example — Value enum definitions",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-concept-063",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "concept",
+      "term": "EngineStatus",
+      "definitionEn": "An 8-byte CAN message with ID 256 (0x100) sent by ECU_Engine.",
+      "explanationVi": "EngineStatus có CAN ID decimal 256 = 0x100, dài 8 bytes và được ECU_Engine gửi.",
+      "questionEn": "What is the EngineStatus message in the example DBC?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC Example — Message Definition",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-concept-064",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "concept",
+      "term": "DBC signal decoding",
+      "definitionEn": "Using DBC definitions to convert raw CAN data into meaningful physical signals.",
+      "explanationVi": "DBC giúp biết bit nào là signal nào và áp dụng scale, offset, unit để đổi raw thành giá trị có nghĩa.",
+      "questionEn": "What does DBC signal decoding accomplish?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC File Format — Database định nghĩa signals",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-concept-065",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "concept",
+      "term": "SOF synchronization",
+      "definitionEn": "Nodes synchronize their internal clocks from the falling edge of the SOF bit.",
+      "explanationVi": "Cạnh xuống của SOF giúp các node đồng bộ internal clock mà không cần clock line riêng.",
+      "questionEn": "Why does CAN not need a separate clock line?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "SOF — Start of Frame",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-comparison-066",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "comparison",
+      "term": "Data Frame vs Remote Frame",
+      "definitionEn": "RTR=0 identifies a data frame; RTR=1 identifies a remote request frame.",
+      "explanationVi": "Data Frame dùng để gửi data; Remote Frame dùng để yêu cầu node khác gửi data với ID tương ứng.",
+      "questionEn": "How do CAN Data and Remote Frames differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "RTR — Remote Transmission Request",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-concept-067",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "concept",
+      "term": "Data Field",
+      "definitionEn": "The CAN frame field carrying the actual application data and packed signals.",
+      "explanationVi": "Data Field chứa actual data; các signal như VehicleSpeed, EngineRPM được packed theo DBC.",
+      "questionEn": "Where are application signals carried in a CAN frame?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Data Field",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-concept-068",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "concept",
+      "term": "ACK Slot",
+      "definitionEn": "The CAN ACK bit position where receivers can overwrite recessive with dominant.",
+      "explanationVi": "Sender phát ACK Slot recessive; receiver hợp lệ kéo slot xuống dominant để xác nhận đã nhận frame.",
+      "questionEn": "What happens in the CAN ACK Slot?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "ACK — Acknowledgment",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-frame-concept-069",
+      "topicId": "can",
+      "sectionId": "frame-structure",
+      "cardType": "concept",
+      "term": "CRC delimiter",
+      "definitionEn": "The delimiter bit following the 15-bit CRC in a Classic CAN frame.",
+      "explanationVi": "CRC delimiter là 1 bit đi sau CRC-15; phần CRC được trình bày là 15+1 bits.",
+      "questionEn": "What follows the 15-bit CRC in the Classic CAN frame?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CRC — Cyclic Redundancy Check",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-fd-comparison-070",
+      "topicId": "can",
+      "sectionId": "can-fd",
+      "cardType": "comparison",
+      "term": "Arbitration phase vs Data phase",
+      "definitionEn": "CAN-FD keeps the arbitration phase at the stated bus rate and can accelerate the data phase.",
+      "explanationVi": "CAN-FD theo tài liệu: arbitration tối đa 1 Mbps, data phase tối đa 8 Mbps.",
+      "questionEn": "Why is CAN-FD faster than Classic CAN?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN-FD vs CAN Classic",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-single-word-071",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "single_word",
+      "term": "32000",
+      "definitionEn": "The example raw VehicleSpeed value that converts to 320.00 km/h.",
+      "explanationVi": "Với factor 0.01 và offset 0, raw 32000 cho VehicleSpeed = 320.00 km/h.",
+      "questionEn": "What physical VehicleSpeed results from raw 32000?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition — VehicleSpeed",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-dbc-single-word-072",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "cardType": "single_word",
+      "term": "100",
+      "definitionEn": "An example EngineTemp raw value that converts to 60 °C with offset -40.",
+      "explanationVi": "EngineTemp = 100 × 1 + (-40) = 60°C trong ví dụ.",
+      "questionEn": "What temperature results from EngineTemp raw value 100?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Signal Definition — EngineTemp",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-summary-phrase-073",
+      "topicId": "can",
+      "sectionId": "summary",
+      "cardType": "phrase",
+      "term": "SOF → ID → RTR → CTRL → DATA → CRC → ACK → EOF",
+      "definitionEn": "The main sequence of fields in the CAN frame described in the source.",
+      "explanationVi": "Nhớ thứ tự frame bằng chuỗi: bắt đầu, ID, yêu cầu, điều khiển, dữ liệu, kiểm tra, xác nhận, kết thúc.",
+      "questionEn": "What is the main CAN frame field sequence?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "CAN Frame Structure",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-summary-phrase-074",
+      "topicId": "can",
+      "sectionId": "summary",
+      "cardType": "phrase",
+      "term": "BU_ → BO_ → SG_ → VAL_",
+      "definitionEn": "A simple sequence for reading the main DBC definitions.",
+      "explanationVi": "Nhớ DBC: BU_ là ECU, BO_ là Message, SG_ là Signal, VAL_ là bảng giá trị.",
+      "questionEn": "What is the simple order for reading the DBC example?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "DBC File Format",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-summary-phrase-075",
+      "topicId": "can",
+      "sectionId": "summary",
+      "cardType": "phrase",
+      "term": "Dominant 0 beats Recessive 1",
+      "definitionEn": "The key electrical rule behind CAN arbitration.",
+      "explanationVi": "Câu nhớ nhanh: dominant = 0 thắng recessive = 1, nên ID thấp hơn có ưu tiên cao hơn.",
+      "questionEn": "What key rule explains CAN arbitration?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN Protocol",
+        "section": "Arbitration",
+        "reference": "content-source/CAN/CAN-Protocol.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}
