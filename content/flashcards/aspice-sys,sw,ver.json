@@ -191,7 +191,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-012",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "traceability",
       "cardType": "technical_term",
       "term": "Orphan Requirement",
@@ -276,7 +276,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-017",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "sw-traceability",
       "cardType": "comparison",
       "term": "SYS-to-SWE Trace",
@@ -310,7 +310,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-019",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "verification-validation",
       "cardType": "comparison",
       "term": "Verification vs Validation",
@@ -429,7 +429,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-026",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "test-strategy",
       "cardType": "concept",
       "term": "V&V Strategy",
@@ -446,7 +446,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-027",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "test-evidence",
       "cardType": "phrase",
       "term": "REQ → TEST → RESULT → CONFIG",
@@ -463,7 +463,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-028",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "test-configuration",
       "cardType": "technical_term",
       "term": "Test Configuration",
@@ -480,7 +480,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-029",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "anomaly-management",
       "cardType": "technical_term",
       "term": "Anomaly",
@@ -497,7 +497,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-030",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "regression",
       "cardType": "technical_term",
       "term": "Regression Test",
@@ -514,7 +514,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-031",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "test-management",
       "cardType": "technical_term",
       "term": "Exit Criteria",
@@ -531,7 +531,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-032",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "test-summary",
       "cardType": "technical_term",
       "term": "Test Summary Report",

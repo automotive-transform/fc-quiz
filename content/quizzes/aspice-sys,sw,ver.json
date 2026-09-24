@@ -156,7 +156,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-005",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "traceability",
       "questionType": "single_choice",
       "questionEn": "What does bidirectional traceability allow a project to demonstrate?",
@@ -193,7 +193,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-006",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "traceability",
       "questionType": "single_choice",
       "questionEn": "What is an orphan requirement?",
@@ -380,7 +380,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-011",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "verification-validation",
       "questionType": "single_choice",
       "questionEn": "What is the main difference between verification and validation?",
@@ -417,7 +417,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-012",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "software-verification",
       "questionType": "single_choice",
       "questionEn": "What does SWE.4 focus on?",
@@ -454,7 +454,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-013",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "software-verification",
       "questionType": "single_choice",
       "questionEn": "What is the primary focus of SWE.5?",
@@ -491,7 +491,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-014",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "software-verification",
       "questionType": "single_choice",
       "questionEn": "What is the test basis for SWE.6?",
@@ -528,7 +528,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-015",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "system-verification",
       "questionType": "single_choice",
       "questionEn": "What is the primary focus of SYS.4?",
@@ -565,7 +565,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-016",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "system-verification",
       "questionType": "single_choice",
       "questionEn": "What is the test basis for SYS.5?",
@@ -641,7 +641,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-018",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "test-strategy",
       "questionType": "single_choice",
       "questionEn": "Which set best describes what a V&V strategy should define?",
@@ -678,7 +678,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-019",
-      "topicId": "traceability",
+      "topicId": "aspice",
       "sectionId": "test-evidence",
       "questionType": "single_choice",
       "questionEn": "Which chain best represents traceable test evidence?",
@@ -715,7 +715,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-020",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "test-configuration",
       "questionType": "single_choice",
       "questionEn": "Why should the test configuration be recorded?",
@@ -752,7 +752,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-021",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "anomaly-management",
       "questionType": "single_choice",
       "questionEn": "What should happen when a verification test produces an unexpected result?",
@@ -789,7 +789,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-022",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "regression",
       "questionType": "single_choice",
       "questionEn": "Why is regression testing performed after a change?",
@@ -826,7 +826,7 @@
     },
     {
       "id": "aspice-sys-swe-vv-quiz-023",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "test-management",
       "questionType": "single_choice",
       "questionEn": "What are test exit criteria?",

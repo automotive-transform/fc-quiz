@@ -395,7 +395,7 @@
     },
     {
       "id": "aspice-tools-001",
-      "topicId": "tools",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "concept",
       "term": "Requirements Management Tools",
@@ -412,7 +412,7 @@
     },
     {
       "id": "aspice-tools-002",
-      "topicId": "tools",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "technical_term",
       "term": "IBM DOORS",
@@ -429,7 +429,7 @@
     },
     {
       "id": "aspice-tools-003",
-      "topicId": "tools",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "concept",
       "term": "Architecture Design Tools",
@@ -446,7 +446,7 @@
     },
     {
       "id": "aspice-tools-004",
-      "topicId": "tools",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "technical_term",
       "term": "Enterprise Architect",
@@ -463,7 +463,7 @@
     },
     {
       "id": "aspice-tools-005",
-      "topicId": "misra-c",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "concept",
       "term": "MISRA Check Tools",
@@ -480,7 +480,7 @@
     },
     {
       "id": "aspice-tools-006",
-      "topicId": "misra-c",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "technical_term",
       "term": "cppcheck",
@@ -497,7 +497,7 @@
     },
     {
       "id": "aspice-tools-007",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "concept",
       "term": "Unit Testing Tools",
@@ -514,7 +514,7 @@
     },
     {
       "id": "aspice-tools-008",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "technical_term",
       "term": "Unity",
@@ -531,7 +531,7 @@
     },
     {
       "id": "aspice-tools-009",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "concept",
       "term": "Coverage Tools",
@@ -548,7 +548,7 @@
     },
     {
       "id": "aspice-tools-010",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "technical_term",
       "term": "lcov/gcov",
@@ -565,7 +565,7 @@
     },
     {
       "id": "aspice-tools-011",
-      "topicId": "can",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "concept",
       "term": "CAN Testing Tools",
@@ -582,7 +582,7 @@
     },
     {
       "id": "aspice-tools-012",
-      "topicId": "can",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "technical_term",
       "term": "CANoe",
@@ -599,7 +599,7 @@
     },
     {
       "id": "aspice-tools-013",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "concept",
       "term": "HIL Simulation Tools",
@@ -616,7 +616,7 @@
     },
     {
       "id": "aspice-tools-014",
-      "topicId": "testing",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "technical_term",
       "term": "dSPACE",
@@ -633,7 +633,7 @@
     },
     {
       "id": "aspice-tools-015",
-      "topicId": "tools",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "concept",
       "term": "Version Control Tools",
@@ -650,7 +650,7 @@
     },
     {
       "id": "aspice-tools-016",
-      "topicId": "tools",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "technical_term",
       "term": "Git + Gerrit",
@@ -667,7 +667,7 @@
     },
     {
       "id": "aspice-tools-017",
-      "topicId": "tools",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "concept",
       "term": "Defect Tracking Tools",
@@ -684,7 +684,7 @@
     },
     {
       "id": "aspice-tools-018",
-      "topicId": "tools",
+      "topicId": "aspice",
       "sectionId": "aspice-tools-ecosystem",
       "cardType": "technical_term",
       "term": "Jira",
