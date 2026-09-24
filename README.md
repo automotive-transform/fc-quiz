@@ -1,5 +1,51 @@
 # Automotive Transform Flashcard App
 
+## Create Flashcard and Quiz JSON Files
+
+Content files are discovered automatically from the `content/` directory. Use the
+following folders:
+
+- `content/flashcards/` for flashcard JSON files.
+- `content/quizzes/` for quiz JSON files.
+- `content/topic-metadata.json` for optional topic names, descriptions, and ordering.
+
+### Create a Flashcard File
+
+1. Create a `.json` file under `content/flashcards/`.
+2. Set the top-level `contentType` to `flashcards` and store entries in `items`.
+3. Give every item a unique `id` and a lowercase `topicId`.
+4. Include the supported `cardType`, English definition, Vietnamese explanation, and
+  source metadata when available.
+5. Set `reviewStatus` to `draft` until the content has been reviewed.
+
+Example filename: `content/flashcards/can-physical-layer.json`.
+The complete schemas, AI prompts, review checklist, and JSON examples are maintained
+in [04_AI_JSON_GENERATION_PROMPTS.md](04_AI_JSON_GENERATION_PROMPTS.md).
+
+### Create a Quiz File
+
+1. Create a `.json` file under `content/quizzes/`.
+2. Set the top-level `contentType` to `quizzes` and store questions in `items`.
+3. Give every question a unique `id` and a lowercase `topicId`.
+4. Use `questionType: "single_choice"`, at least two options, and exactly one
+  `correctOptionId`.
+5. Add `relatedFlashcardIds` when a question should link to a flashcard.
+6. Set `reviewStatus` to `draft` until the content has been reviewed.
+
+The complete schemas, AI prompts, review checklist, and JSON examples are maintained
+in [04_AI_JSON_GENERATION_PROMPTS.md](04_AI_JSON_GENERATION_PROMPTS.md).
+
+After adding or changing content, run:
+
+```bash
+npm run validate:content
+npm test
+npm run build
+```
+
+The build automatically discovers new JSON files. No React code or manual topic
+registration is required.
+
 A React + TypeScript + Vite app for automotive learning. The app teaches flashcards and quiz questions from JSON content files in the repository and auto-discovers content by folder and metadata.
 
 ## Current architecture
@@ -9,11 +55,10 @@ This project uses a content-first discovery model instead of the older hardcoded
 ```text
 automotive-transform-flashcards/
 ├── README.md
-├── 01_REQUIREMENTS.md
-├── 02_ARCHITECTURE_DESIGN.md
-├── 03_DETAIL_DESIGN.md
 ├── 04_AI_JSON_GENERATION_PROMPTS.md
-├── 05_REQUIREMENTS_ADVANCED_SHARED_WORKSPACE.md
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── content/
 │   ├── topic-metadata.json
 │   ├── flashcards/
@@ -23,6 +68,15 @@ automotive-transform-flashcards/
 │       ├── can-quiz-set.json
 │       └── other-topics.json
 ├── content-source/
+├── designs/
+│   ├── 02_ARCHITECTURE_DESIGN.md
+│   └── 03_DETAIL_DESIGN.md
+├── docs/
+│   ├── 04_AI_JSON_GENERATION_PROMPTS.md
+│   └── CONTRIBUTING.md
+├── requirements/
+│   ├── 01_REQUIREMENTS.md
+│   └── 05_REQUIREMENTS_ADVANCED_SHARED_WORKSPACE.md
 ├── scripts/
 │   └── validate-content.mjs
 ├── src/
@@ -31,10 +85,13 @@ automotive-transform-flashcards/
 │   ├── utils/
 │   └── types/
 ├── package.json
+├── package-lock.json
 ├── vite.config.ts
 ├── tsconfig.json
-├── dist/
-└── public/
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── public/
+└── dist/
 ```
 
 ## Content model
