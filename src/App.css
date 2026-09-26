@@ -158,6 +158,45 @@ button {
   margin-bottom: 18px;
 }
 
+.study-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.study-mode-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.study-toolbar .mode-switch {
+  padding: 3px;
+}
+
+.study-toolbar .mode-switch button {
+  padding: 8px 12px;
+  font-size: 0.82rem;
+}
+
+.progress-counter {
+  color: #f8fafc;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.quiz-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+
 .tap-hint {
   color: #a5f3fc;
   font-size: 0.78rem;
@@ -210,9 +249,18 @@ button:disabled {
   .topbar,
   .topbar-actions,
   .topic-header,
-  .section-heading {
+  .section-heading,
+  .study-toolbar {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .study-mode-control {
+    justify-content: space-between;
+  }
+
+  .progress-counter {
+    text-align: center;
   }
 
   .topbar {
