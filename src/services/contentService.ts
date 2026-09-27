@@ -62,12 +62,14 @@ export async function loadTopics(): Promise<Topic[]> {
     .map((topicId) => normalizeTopicId(topicId))
     .filter((topicId, index, list) => list.indexOf(topicId) === index)
 
-  return discoveredTopics.map((topicId, index) => ({
-    id: topicId,
-    title: topicMap[topicId]?.title ?? normalizeTopicDisplayName(topicId),
-    description: topicMap[topicId]?.description ?? '',
-    order: topicMap[topicId]?.order ?? index + 1,
-  }))
+  return discoveredTopics
+    .map((topicId, index) => ({
+      id: topicId,
+      title: topicMap[topicId]?.title ?? normalizeTopicDisplayName(topicId),
+      description: topicMap[topicId]?.description ?? '',
+      order: topicMap[topicId]?.order ?? index + 1,
+    }))
+    .sort((left, right) => (left.order ?? 0) - (right.order ?? 0))
 }
 
 export async function loadFlashcards(): Promise<Flashcard[]> {

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import './App.css'
 import { loadFlashcards, loadQuizzes, loadTopics, filterByTopic } from './services/contentService'
 import { calculateQuizScore, isSingleChoiceCorrect } from './services/quizService'
@@ -34,11 +34,50 @@ function App() {
   const [flashcards, setFlashcards] = useState<Flashcard[]>([])
   const [quizzes, setQuizzes] = useState<QuizQuestion[]>([])
   const [contentLoaded, setContentLoaded] = useState(false)
-  const [selectedTopicId, setSelectedTopicId] = useState(savedSelection?.topicId ?? 'can')
+  const [selectedTopicId, setSelectedTopicId] = useState(savedSelection?.topicId ?? '')
   const [contentMode, setContentMode] = useState<ContentMode>(savedSelection?.feature ?? 'flashcards')
   const [progress, setProgress] = useState<Record<string, FlashcardProgress>>({})
   const [cardFlipped, setCardFlipped] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const flashcardRef = useRef<HTMLDivElement>(null)
+  const swipeStartRef = useRef<{ x: number; y: number } | null>(null)
+  const ignoreTapUntilRef = useRef(0)
+
+  useEffect(() => {
+    const flashcardElement = flashcardRef.current
+    if (!flashcardElement) return
+
+    const preventVerticalScrollForHorizontalSwipe = (event: TouchEvent) => {
+      const start = swipeStartRef.current
+      const touch = event.touches[0]
+      if (!start || !touch) return
+
+      const deltaX = touch.clientX - start.x
+      const deltaY = touch.clientY - start.y
+      const horizontalIntent = Math.abs(deltaX) > 3 && Math.abs(deltaX) > Math.abs(deltaY) * 0.65
+      if (horizontalIntent) {
+        event.preventDefault()
+        return
+      }
+
+      if (Math.abs(deltaY) > 3) {
+        const target = event.target instanceof Element ? event.target : null
+        const face = target?.closest<HTMLElement>('.flashcard-face')
+        if (!face) {
+          event.preventDefault()
+          return
+        }
+
+        const canScrollFace = deltaY < 0
+          ? face.scrollTop + face.clientHeight < face.scrollHeight
+          : face.scrollTop > 0
+        if (!canScrollFace) event.preventDefault()
+      }
+    }
+
+    flashcardElement.addEventListener('touchmove', preventVerticalScrollForHorizontalSwipe, { passive: false })
+    return () => flashcardElement.removeEventListener('touchmove', preventVerticalScrollForHorizontalSwipe)
+  }, [])
 
   useEffect(() => {
    Promise.all([loadTopics(), loadFlashcards(), loadQuizzes()])
@@ -49,10 +88,6 @@ function App() {
         setSelectedTopicId((current) => {
           if (current && topicsData.some((topic) => topic.id === current)) {
             return current
-          }
-
-          if (savedSelection?.topicId && topicsData.some((topic) => topic.id === savedSelection.topicId)) {
-            return savedSelection.topicId
           }
 
           return topicsData[0]?.id ?? ''
@@ -211,6 +246,13 @@ function App() {
     setCardFlipped(false)
   }
 
+  const moveFlashcard = (offset: -1 | 1) => {
+    const nextIndex = activeStudyState.currentIndex + offset
+    if (nextIndex < 0 || nextIndex >= orderedFlashcards.length) return
+    storeStudyState({ ...activeStudyState, currentIndex: nextIndex })
+    setCardFlipped(false)
+  }
+
   const openRelatedFlashcard = (relatedFlashcardIds?: string[]) => {
     const targetId = relatedFlashcardIds?.[0]
     if (!targetId) return
@@ -325,8 +367,31 @@ function App() {
                 {currentFlashcard ? (
                   <>
                     <div
+                      ref={flashcardRef}
                       className={`flashcard ${cardFlipped ? 'flipped' : ''}`}
-                      onClick={() => setCardFlipped((value) => !value)}
+                      onTouchStart={(event) => {
+                        const touch = event.touches[0]
+                        if (touch) swipeStartRef.current = { x: touch.clientX, y: touch.clientY }
+                      }}
+                      onTouchEnd={(event) => {
+                        const start = swipeStartRef.current
+                        const touch = event.changedTouches[0]
+                        swipeStartRef.current = null
+                        if (!start || !touch) return
+
+                        const deltaX = touch.clientX - start.x
+                        const deltaY = touch.clientY - start.y
+                        if (Math.abs(deltaX) < 48 || Math.abs(deltaX) <= Math.abs(deltaY)) return
+
+                        ignoreTapUntilRef.current = Date.now() + 500
+                        if (deltaX > 0) moveFlashcard(1)
+                        else previousItem()
+                      }}
+                      onTouchCancel={() => { swipeStartRef.current = null }}
+                      onClick={() => {
+                        if (Date.now() < ignoreTapUntilRef.current) return
+                        setCardFlipped((value) => !value)
+                      }}
                       onKeyDown={(event) => {
                         if (event.key === 'Enter' || event.key === ' ') {
                           event.preventDefault()
@@ -356,16 +421,13 @@ function App() {
                     </div>
 
                     <div className="flashcard-actions">
-                      <button type="button" onClick={previousItem} disabled={activeStudyState.currentIndex === 0}>
+                      <button type="button" onClick={() => moveFlashcard(-1)} disabled={activeStudyState.currentIndex === 0}>
                         Previous
                       </button>
                       <button
                         type="button"
                         disabled={activeStudyState.currentIndex >= orderedFlashcards.length - 1}
-                        onClick={() => {
-                          storeStudyState({ ...activeStudyState, currentIndex: activeStudyState.currentIndex + 1 })
-                          setCardFlipped(false)
-                        }}
+                        onClick={() => moveFlashcard(1)}
                       >
                         Next
                       </button>

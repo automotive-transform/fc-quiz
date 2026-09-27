@@ -229,8 +229,11 @@ button:disabled {
 }
 
 .flashcard {
+  position: relative;
   cursor: pointer;
-  touch-action: manipulation;
+  touch-action: pan-y;
+  background-color: #111827;
+  border-radius: 18px;
 }
 
 .flashcard-inner {
@@ -301,6 +304,7 @@ button:disabled {
 }
 
 .flashcard {
+  -webkit-perspective: 1200px;
   perspective: 1200px;
   margin-bottom: 18px;
 }
@@ -309,8 +313,10 @@ button:disabled {
   position: relative;
   width: 100%;
   min-height: 280px;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: transform 0.7s ease;
+  will-change: transform;
 }
 
 .flashcard.flipped .flashcard-inner {
@@ -320,14 +326,16 @@ button:disabled {
 .flashcard-face {
   position: absolute;
   inset: 0;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border: 1px solid rgba(148, 163, 184, 0.24);
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(39, 55, 70, 0.95), rgba(120, 72, 36, 0.92));
+  background: linear-gradient(135deg, #0f172a, #273746 54%, #784824);
   padding: 22px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: safe center;
+  align-items: center;
   gap: 12px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -338,6 +346,7 @@ button:disabled {
   scrollbar-gutter: stable both-edges;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
+  text-align: center;
 }
 
 .flashcard-face::-webkit-scrollbar {
@@ -356,6 +365,7 @@ button:disabled {
 }
 
 .flashcard-face.back {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -382,11 +392,12 @@ button:disabled {
 .flashcard-face ul {
   margin: 0;
   padding-left: 18px;
+  text-align: left;
 }
 
 .pill {
   display: inline-flex;
-  align-self: flex-start;
+  align-self: center;
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 0.7rem;
@@ -528,6 +539,30 @@ button:disabled {
   border-color: rgba(248, 113, 113, 0.7);
   color: #fecaca;
   margin-bottom: 18px;
+}
+
+@media (max-width: 640px) {
+  .flashcard {
+    touch-action: none;
+  }
+
+  .flashcard-inner {
+    display: grid;
+    grid-template-rows: minmax(0, 1fr);
+    height: 420px;
+    min-height: 420px;
+  }
+
+  .flashcard-face {
+    position: relative;
+    grid-area: 1 / 1;
+    inset: auto;
+    max-height: none;
+    min-height: 0;
+    overflow: hidden;
+    scrollbar-gutter: auto;
+    overscroll-behavior: auto;
+  }
 }
 
 @media (max-width: 820px) {
