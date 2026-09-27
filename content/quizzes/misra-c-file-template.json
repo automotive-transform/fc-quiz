@@ -1,0 +1,696 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "misra-c-file-template-quiz-001",
+      "topicId": "misra-c",
+      "sectionId": "file-structure",
+      "questionType": "single_choice",
+      "questionEn": "What is the main purpose of a MISRA-Compliant C File Template?",
+      "options": [
+        { "id": "A", "text": "Standardize C file organization for automotive embedded software" },
+        { "id": "B", "text": "Replace all project coding guidelines" },
+        { "id": "C", "text": "Eliminate the need for header files" },
+        { "id": "D", "text": "Automatically generate all ECU software" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Template giúp chuẩn hóa cấu trúc file C để code Automotive dễ đọc, kiểm tra và bảo trì.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "Overview",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-001"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-002",
+      "topicId": "misra-c",
+      "sectionId": "file-structure",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence matches the template's main C file sections?",
+      "options": [
+        { "id": "A", "text": "Header → Includes → Macros → Types → Variables → Prototypes → Local → Public" },
+        { "id": "B", "text": "Variables → Header → Public → Includes → Types → Macros" },
+        { "id": "C", "text": "Public → Local → Variables → Header → Includes → Types" },
+        { "id": "D", "text": "Macros → Header → Variables → Includes → Public → Local" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Thứ tự trong template: Header, Includes, Local Macros, Local Types, Local Variables, Local Function Prototypes, Local Functions rồi Public Functions.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "File structure",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-001"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-003",
+      "topicId": "misra-c",
+      "sectionId": "file-header",
+      "questionType": "single_choice",
+      "questionEn": "Which information is included in the file header?",
+      "options": [
+        { "id": "A", "text": "File, module, description, author, creation date, version, deviations, and copyright" },
+        { "id": "B", "text": "Only function parameters" },
+        { "id": "C", "text": "Only compiler warnings" },
+        { "id": "D", "text": "Only CAN message definitions" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "File header ghi thông tin nhận diện file/module, mô tả, author, ngày tạo, version, deviation và copyright.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "FILE HEADER",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-002"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-004",
+      "topicId": "misra-c",
+      "sectionId": "deviation-record",
+      "questionType": "single_choice",
+      "questionEn": "What information does a MISRA Deviation Record contain?",
+      "options": [
+        { "id": "A", "text": "Rule, description, justification, and approval" },
+        { "id": "B", "text": "Only the compiler version" },
+        { "id": "C", "text": "Only the author's name" },
+        { "id": "D", "text": "Only the function return value" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Deviation Record ghi DR-ID, Rule, Description, Justification và Approved để ghi nhận ngoại lệ MISRA.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "MISRA DEVIATION RECORD",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-003"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-005",
+      "topicId": "misra-c",
+      "sectionId": "includes",
+      "questionType": "single_choice",
+      "questionEn": "What include order is specified by the template?",
+      "options": [
+        { "id": "A", "text": "Standard, system, project, local" },
+        { "id": "B", "text": "Local, project, system, standard" },
+        { "id": "C", "text": "Project, local, standard, system" },
+        { "id": "D", "text": "System, local, project, standard" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Template quy định thứ tự include là standard → system → project → local.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "INCLUDES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-004"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-006",
+      "topicId": "misra-c",
+      "sectionId": "includes",
+      "questionType": "single_choice",
+      "questionEn": "Which header provides fixed-width integer types such as uint16_t?",
+      "options": [
+        { "id": "A", "text": "<stdint.h>" },
+        { "id": "B", "text": "<stdbool.h>" },
+        { "id": "C", "text": "<stddef.h>" },
+        { "id": "D", "text": "Sensor_Driver.h" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "<stdint.h> cung cấp các kiểu số nguyên có độ rộng xác định như uint8_t, uint16_t và int16_t.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "INCLUDES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": [],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-007",
+      "topicId": "misra-c",
+      "sectionId": "includes",
+      "questionType": "single_choice",
+      "questionEn": "What does MISRA Directive 4.10 address in the template?",
+      "options": [
+        { "id": "A", "text": "Header files should have inclusion guards" },
+        { "id": "B", "text": "Unused macros should be removed" },
+        { "id": "C", "text": "Functions must return E_OK" },
+        { "id": "D", "text": "All variables must be global" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Directive 4.10 yêu cầu header files có cơ chế inclusion guards để tránh include lặp lại.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "INCLUDES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-019"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-008",
+      "topicId": "misra-c",
+      "sectionId": "local-macros",
+      "questionType": "single_choice",
+      "questionEn": "What is the maximum engine RPM defined by the template?",
+      "options": [
+        { "id": "A", "text": "8000 RPM" },
+        { "id": "B", "text": "800 RPM" },
+        { "id": "C", "text": "150 RPM" },
+        { "id": "D", "text": "3 RPM" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ECM_ENGINE_RPM_MAX được định nghĩa là 8000u, tức giới hạn RPM tối đa trong template.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-005"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-009",
+      "topicId": "misra-c",
+      "sectionId": "local-macros",
+      "questionType": "single_choice",
+      "questionEn": "Which macro represents the maximum engine temperature?",
+      "options": [
+        { "id": "A", "text": "ECM_ENGINE_TEMP_MAX (150)" },
+        { "id": "B", "text": "ECM_ENGINE_TEMP_MIN (-40)" },
+        { "id": "C", "text": "ECM_IDLE_RPM_THRESHOLD (800u)" },
+        { "id": "D", "text": "ECM_MAX_RETRIES (3u)" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ECM_ENGINE_TEMP_MAX được định nghĩa là 150°C; ECM_ENGINE_TEMP_MIN là -40°C.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-005"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-010",
+      "topicId": "misra-c",
+      "sectionId": "local-macros",
+      "questionType": "single_choice",
+      "questionEn": "What does ECM_FLAG_OVERHEAT represent?",
+      "options": [
+        { "id": "A", "text": "The overheat status flag" },
+        { "id": "B", "text": "The running status flag" },
+        { "id": "C", "text": "The error status flag" },
+        { "id": "D", "text": "The initialization guard" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ECM_FLAG_OVERHEAT = 0x04u, dùng để biểu diễn cờ trạng thái quá nhiệt.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-025"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-011",
+      "topicId": "misra-c",
+      "sectionId": "local-types",
+      "questionType": "single_choice",
+      "questionEn": "Which type represents the ECM state machine?",
+      "options": [
+        { "id": "A", "text": "Ecm_StateType" },
+        { "id": "B", "text": "Ecm_DataType" },
+        { "id": "C", "text": "Std_ReturnType" },
+        { "id": "D", "text": "uint16_t" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ecm_StateType là enum chứa các trạng thái UNINIT, IDLE, RUNNING, FAULT và SHUTDOWN.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL TYPES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-006"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-012",
+      "topicId": "misra-c",
+      "sectionId": "local-types",
+      "questionType": "single_choice",
+      "questionEn": "Which field stores the current engine RPM in Ecm_DataType?",
+      "options": [
+        { "id": "A", "text": "rpm" },
+        { "id": "B", "text": "state" },
+        { "id": "C", "text": "status_flags" },
+        { "id": "D", "text": "initialized" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Field rpm có kiểu uint16_t và lưu giá trị RPM hiện tại của động cơ.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL TYPES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-007"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-013",
+      "topicId": "misra-c",
+      "sectionId": "local-variables",
+      "questionType": "single_choice",
+      "questionEn": "Why is s_ecm_data declared static?",
+      "options": [
+        { "id": "A", "text": "To give the file-scope object internal linkage" },
+        { "id": "B", "text": "To make it a constant" },
+        { "id": "C", "text": "To make it accessible from every file" },
+        { "id": "D", "text": "To force it to be a Boolean" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "static ở file scope tạo internal linkage, giới hạn object trong translation unit hiện tại.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL VARIABLES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-008", "misra-c-file-template-013"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-014",
+      "topicId": "misra-c",
+      "sectionId": "local-variables",
+      "questionType": "single_choice",
+      "questionEn": "What naming prefix is used for static module variables in the template?",
+      "options": [
+        { "id": "A", "text": "s_" },
+        { "id": "B", "text": "g_" },
+        { "id": "C", "text": "p_" },
+        { "id": "D", "text": "m_" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Template dùng prefix s_ cho static module variables, ví dụ s_ecm_data và s_init_done.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL VARIABLES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-008"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-015",
+      "topicId": "misra-c",
+      "sectionId": "function-prototypes",
+      "questionType": "single_choice",
+      "questionEn": "Which function checks whether engine temperature is valid?",
+      "options": [
+        { "id": "A", "text": "Ecm_IsTempValid" },
+        { "id": "B", "text": "Ecm_IsRpmValid" },
+        { "id": "C", "text": "Ecm_UpdateState" },
+        { "id": "D", "text": "Ecm_HandleFault" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ecm_IsTempValid nhận int16_t temp và kiểm tra nhiệt độ trong range -40 đến 150°C.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL FUNCTION PROTOTYPES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-009", "misra-c-file-template-011"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-016",
+      "topicId": "misra-c",
+      "sectionId": "function-prototypes",
+      "questionType": "single_choice",
+      "questionEn": "What does MISRA Rule 8.2 require for a function declaration?",
+      "options": [
+        { "id": "A", "text": "It must be compatible with the function definition" },
+        { "id": "B", "text": "It must always return E_OK" },
+        { "id": "C", "text": "It must use global variables" },
+        { "id": "D", "text": "It must contain a state machine" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 8.2 trong tài liệu yêu cầu declaration/prototype phải tương thích với definition.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL FUNCTION PROTOTYPES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-016"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-017",
+      "topicId": "misra-c",
+      "sectionId": "function-prototypes",
+      "questionType": "single_choice",
+      "questionEn": "What does MISRA Rule 17.3 prevent?",
+      "options": [
+        { "id": "A", "text": "Implicit function declarations" },
+        { "id": "B", "text": "Static variables" },
+        { "id": "C", "text": "Enum definitions" },
+        { "id": "D", "text": "Header inclusion guards" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 17.3 trong tài liệu yêu cầu function không được được declare một cách implicit.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL FUNCTION PROTOTYPES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-017"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-018",
+      "topicId": "misra-c",
+      "sectionId": "local-functions",
+      "questionType": "single_choice",
+      "questionEn": "What RPM range does Ecm_IsRpmValid check?",
+      "options": [
+        { "id": "A", "text": "0 to 8000 RPM" },
+        { "id": "B", "text": "-40 to 150 RPM" },
+        { "id": "C", "text": "800 to 8000 RPM" },
+        { "id": "D", "text": "0 to 150 RPM" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Hàm so sánh RPM với ECM_ENGINE_RPM_MIN = 0u và ECM_ENGINE_RPM_MAX = 8000u.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "Ecm_IsRpmValid",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-010"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-019",
+      "topicId": "misra-c",
+      "sectionId": "local-functions",
+      "questionType": "single_choice",
+      "questionEn": "What temperature range does Ecm_IsTempValid accept?",
+      "options": [
+        { "id": "A", "text": "-40 to 150 degrees Celsius" },
+        { "id": "B", "text": "0 to 8000 degrees Celsius" },
+        { "id": "C", "text": "25 to 150 degrees Celsius" },
+        { "id": "D", "text": "0 to 800 degrees Celsius" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Hàm dùng điều kiện temp >= -40 và temp <= 150, nên hai giá trị biên đều hợp lệ.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "Ecm_IsTempValid",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-011"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-020",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does MISRA Rule 2.5 require regarding unused macros?",
+      "options": [
+        { "id": "A", "text": "Unused macros should be removed" },
+        { "id": "B", "text": "Unused macros should become global variables" },
+        { "id": "C", "text": "Unused macros must use lowercase names" },
+        { "id": "D", "text": "Unused macros must be placed in a struct" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 2.5 trong tài liệu yêu cầu loại bỏ macro không được sử dụng.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-014"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-021",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does MISRA Rule 20.4 restrict?",
+      "options": [
+        { "id": "A", "text": "Macro names conflicting with C keywords" },
+        { "id": "B", "text": "Use of uint16_t" },
+        { "id": "C", "text": "Use of static functions" },
+        { "id": "D", "text": "Use of Boolean values" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tên macro không được trùng với keyword của ngôn ngữ C; template dùng convention ALL_CAPS_WITH_UNDERSCORE.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-021"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-022",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does MISRA Rule 20.10 concern?",
+      "options": [
+        { "id": "A", "text": "Use of # and ## preprocessing operators" },
+        { "id": "B", "text": "Use of static variables" },
+        { "id": "C", "text": "Function return values" },
+        { "id": "D", "text": "Temperature limits" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 20.10 trong tài liệu quy định # và ## chỉ được dùng trong các trường hợp cụ thể.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-022"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-023",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does MISRA Rule 14.4 concern?",
+      "options": [
+        { "id": "A", "text": "Controlling expressions should have essentially Boolean type" },
+        { "id": "B", "text": "Unused macros must be removed" },
+        { "id": "C", "text": "Header files need inclusion guards" },
+        { "id": "D", "text": "Functions must use external linkage" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 14.4 liên quan đến kiểu Boolean của biểu thức điều khiển như điều kiện if.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-015"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-024",
+      "topicId": "misra-c",
+      "sectionId": "public-functions",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of Ecm_Init?",
+      "options": [
+        { "id": "A", "text": "Initialize the ECM and sensor driver" },
+        { "id": "B", "text": "Only validate engine RPM" },
+        { "id": "C", "text": "Only update the state machine" },
+        { "id": "D", "text": "Only handle CAN transmission" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ecm_Init thiết lập dữ liệu mặc định và gọi Sensor_Init; thành công thì ECM chuyển sang IDLE.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-012"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-025",
+      "topicId": "misra-c",
+      "sectionId": "public-functions",
+      "questionType": "single_choice",
+      "questionEn": "What is ret_val initialized to at the start of Ecm_Init?",
+      "options": [
+        { "id": "A", "text": "E_NOT_OK" },
+        { "id": "B", "text": "E_OK" },
+        { "id": "C", "text": "0u" },
+        { "id": "D", "text": "true" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ret_val được khởi tạo mặc định là E_NOT_OK; chỉ đổi thành E_OK khi initialization thành công.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-023", "misra-c-file-template-026"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-026",
+      "topicId": "misra-c",
+      "sectionId": "public-functions",
+      "questionType": "single_choice",
+      "questionEn": "What happens if Sensor_Init fails in Ecm_Init?",
+      "options": [
+        { "id": "A", "text": "Ecm_HandleFault is called and ret_val remains E_NOT_OK" },
+        { "id": "B", "text": "The ECM immediately enters IDLE" },
+        { "id": "C", "text": "s_init_done becomes true" },
+        { "id": "D", "text": "ret_val changes to E_OK" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nếu Sensor_Init khác E_OK, Ecm_HandleFault được gọi và ret_val vẫn giữ E_NOT_OK.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-027"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-027",
+      "topicId": "misra-c",
+      "sectionId": "public-functions",
+      "questionType": "single_choice",
+      "questionEn": "What state does the ECM enter after successful Sensor_Init?",
+      "options": [
+        { "id": "A", "text": "ECM_STATE_IDLE" },
+        { "id": "B", "text": "ECM_STATE_FAULT" },
+        { "id": "C", "text": "ECM_STATE_UNINIT" },
+        { "id": "D", "text": "ECM_STATE_SHUTDOWN" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Khi Sensor_Init trả về E_OK, s_ecm_data.state được đặt thành ECM_STATE_IDLE.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-028"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-028",
+      "topicId": "misra-c",
+      "sectionId": "public-functions",
+      "questionType": "single_choice",
+      "questionEn": "Which condition causes Ecm_Init to return E_OK immediately?",
+      "options": [
+        { "id": "A", "text": "s_init_done is already true" },
+        { "id": "B", "text": "s_error_count is greater than zero" },
+        { "id": "C", "text": "Sensor_Init has not been called" },
+        { "id": "D", "text": "The state is ECM_STATE_FAULT" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nếu s_init_done khác false, module đã được khởi tạo nên ret_val được đặt thành E_OK.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-024"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-029",
+      "topicId": "misra-c",
+      "sectionId": "public-functions",
+      "questionType": "single_choice",
+      "questionEn": "Which statement describes the successful Ecm_Init path?",
+      "options": [
+        { "id": "A", "text": "Set state to IDLE, initialized true, s_init_done true, and return E_OK" },
+        { "id": "B", "text": "Set state to FAULT and return E_NOT_OK" },
+        { "id": "C", "text": "Keep state UNINIT and return E_OK" },
+        { "id": "D", "text": "Set s_init_done false and return E_NOT_OK" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Sensor_Init thành công dẫn đến state IDLE, initialized true, s_init_done true và ret_val E_OK.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-028"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-quiz-030",
+      "topicId": "misra-c",
+      "sectionId": "public-functions",
+      "questionType": "single_choice",
+      "questionEn": "How does Ecm_Init implement the single-exit approach shown in the template?",
+      "options": [
+        { "id": "A", "text": "It stores the result in ret_val and returns ret_val at the end" },
+        { "id": "B", "text": "It returns E_OK from every branch" },
+        { "id": "C", "text": "It uses multiple return statements in every branch" },
+        { "id": "D", "text": "It never returns a value" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Template dùng ret_val để lưu kết quả trong các nhánh và chỉ return ret_val ở cuối Ecm_Init.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "relatedFlashcardIds": ["misra-c-file-template-023", "misra-c-file-template-028"],
+      "reviewStatus": "draft"
+    }
+  ]
+}

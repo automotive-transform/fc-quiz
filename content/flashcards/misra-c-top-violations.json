@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "misra-c-top-violations-001",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "Rule 10.1",
+      "definitionEn": "Operands shall not be of an inappropriate essential type.",
+      "explanationVi": "Toán tử phải dùng đúng essential type: logical như &&, ||, ! dùng Boolean; bitwise như &, |, ^, ~ dùng essentially unsigned integer.",
+      "questionEn": "What does MISRA-C Rule 10.1 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 1: Rule 10.1 — Implicit operand type mismatch",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-002",
+      "topicId": "misra-c",
+      "cardType": "comparison",
+      "term": "Logical AND vs Bitwise AND",
+      "definitionEn": "&& performs logical AND on Boolean conditions; & performs bitwise AND on integer bits.",
+      "explanationVi": "&& kiểm tra hai điều kiện cùng đúng; & so sánh từng bit. Không được nhầm hai phép toán này.",
+      "questionEn": "What is the difference between && and &?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 1: Rule 10.1 — Implicit operand type mismatch",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-003",
+      "topicId": "misra-c",
+      "cardType": "concept",
+      "term": "Explicit Boolean conversion",
+      "definitionEn": "Convert an integer flag explicitly to Boolean before using logical operators.",
+      "explanationVi": "Chuyển flag về Boolean bằng phép so sánh như (flag_a != 0u), sau đó dùng && hoặc ||.",
+      "questionEn": "How should integer flags be used with logical operators?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 1: Rule 10.1 — Implicit operand type mismatch",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-004",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "Rule 10.3",
+      "definitionEn": "Addresses narrowing assignments that can cause data loss.",
+      "explanationVi": "Không nên gán trực tiếp giá trị kiểu lớn vào kiểu nhỏ vì có thể mất dữ liệu, như 300 thành 44 khi lưu vào uint8_t.",
+      "questionEn": "What problem does MISRA-C Rule 10.3 address?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 2: Rule 10.3 — Narrowing assignment",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-005",
+      "topicId": "misra-c",
+      "cardType": "phrase",
+      "term": "Calculate wide, check range, then cast",
+      "definitionEn": "Use a sufficiently wide type for calculation, check the range, then cast safely.",
+      "explanationVi": "Cách nhớ Rule 10.3: tính bằng kiểu đủ lớn → kiểm tra range → chỉ cast về kiểu nhỏ sau khi an toàn.",
+      "questionEn": "What is the safe pattern for a narrowing assignment?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 2: Rule 10.3 — Narrowing assignment",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-006",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "Rule 11.3",
+      "definitionEn": "Addresses casts between integer values and pointers.",
+      "explanationVi": "Đặc biệt quan trọng khi truy cập hardware register bằng địa chỉ bộ nhớ; pointer và integer cần được kiểm soát đúng cách.",
+      "questionEn": "What does MISRA-C Rule 11.3 address?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 3: Rule 11.3 — Pointer-integer cast",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-007",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "volatile",
+      "definitionEn": "Qualifies memory accesses that may change outside normal program flow.",
+      "explanationVi": "volatile thường dùng với hardware register để compiler không loại bỏ hoặc tối ưu hóa sai các truy cập cần thiết.",
+      "questionEn": "Why is volatile used for hardware registers?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 3: Rule 11.3 — Pointer-integer cast",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-008",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "Rule 12.1",
+      "definitionEn": "Requires the precedence of operators to be clear in expressions.",
+      "explanationVi": "Dùng ngoặc đơn để làm rõ thứ tự thực hiện, đặc biệt khi kết hợp bitwise operator với comparison operator.",
+      "questionEn": "What is the key practice for MISRA-C Rule 12.1?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 4: Rule 12.1 — Operator precedence không rõ ràng",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-009",
+      "topicId": "misra-c",
+      "cardType": "phrase",
+      "term": "(status & FLAG_ERROR) != 0u",
+      "definitionEn": "Explicitly masks a status value and then checks whether the masked bits are non-zero.",
+      "explanationVi": "Mẫu rõ ràng để kiểm tra bit: thực hiện & trước, sau đó mới so sánh kết quả với 0u.",
+      "questionEn": "How should a masked status bit be explicitly checked?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 4: Rule 12.1 — Operator precedence không rõ ràng",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-010",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "Rule 14.4",
+      "definitionEn": "Controlling expressions should use an essentially Boolean type.",
+      "explanationVi": "Điều kiện if hoặc while cần thể hiện rõ Boolean, ví dụ ptr != NULL hoặc error_count > 0u.",
+      "questionEn": "What does MISRA-C Rule 14.4 require for controlling expressions?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 5: Rule 14.4 — Non-Boolean controlling expression",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-011",
+      "topicId": "misra-c",
+      "cardType": "comparison",
+      "term": "Explicit condition comparison",
+      "definitionEn": "Use explicit comparisons such as ptr != NULL and error_count > 0u.",
+      "explanationVi": "Thay vì if(ptr) hoặc while(error_count), viết rõ điều kiện để thể hiện đúng ý định.",
+      "questionEn": "How can a non-Boolean condition be made explicit?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 5: Rule 14.4 — Non-Boolean controlling expression",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-012",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "Rule 15.5",
+      "definitionEn": "Addresses multiple returns in a function and favors a single exit point.",
+      "explanationVi": "Một điểm kết thúc giúp dễ trace và đảm bảo cleanup trước khi return.",
+      "questionEn": "What is the main idea of MISRA-C Rule 15.5?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 6: Rule 15.5 — Multiple return trong function",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-013",
+      "topicId": "misra-c",
+      "cardType": "phrase",
+      "term": "Single exit point",
+      "definitionEn": "Use one return point so cleanup can be performed before returning.",
+      "explanationVi": "Cách nhớ Rule 15.5: một đường ra; cleanup luôn được thực hiện trước return duy nhất.",
+      "questionEn": "Why is a single exit point useful?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 6: Rule 15.5 — Multiple return trong function",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-014",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "Rule 16.4",
+      "definitionEn": "A switch statement should include a default case.",
+      "explanationVi": "switch cần default để xử lý giá trị enum không mong đợi hoặc state bị corrupt.",
+      "questionEn": "What is required for a switch statement by Rule 16.4?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 7: Rule 16.4 — Switch không có default",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-015",
+      "topicId": "misra-c",
+      "cardType": "comparison",
+      "term": "case vs default",
+      "definitionEn": "case handles expected values; default handles unexpected or unhandled values.",
+      "explanationVi": "case xử lý trạng thái đã biết; default xử lý trạng thái không mong đợi hoặc giá trị bị corrupt.",
+      "questionEn": "What is the purpose of default in a switch?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 7: Rule 16.4 — Switch không có default",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-016",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "Rule 17.7",
+      "definitionEn": "Return values from functions should not be ignored.",
+      "explanationVi": "Không chỉ gọi hàm; cần xem và xử lý return value, đặc biệt khi nó báo lỗi hoặc truncation.",
+      "questionEn": "What does MISRA-C Rule 17.7 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 8: Rule 17.7 — Ignore return value",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-017",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "snprintf return value",
+      "definitionEn": "Its return value can indicate formatting errors or output truncation.",
+      "explanationVi": "Kiểm tra giá trị trả về của snprintf để phát hiện lỗi formatting hoặc output không vừa buffer.",
+      "questionEn": "Why should snprintf return value be checked?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 8: Rule 17.7 — Ignore return value",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-018",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "Rule 21.3",
+      "definitionEn": "Addresses the use of dynamic memory allocation functions such as malloc and free.",
+      "explanationVi": "Trong tài liệu, malloc/free trên embedded ECU bị xem là vi phạm; ưu tiên static allocation để deterministic.",
+      "questionEn": "What does MISRA-C Rule 21.3 address?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 9: Rule 21.3 — Dynamic memory allocation",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-019",
+      "topicId": "misra-c",
+      "cardType": "comparison",
+      "term": "Dynamic vs Static allocation",
+      "definitionEn": "Dynamic allocation uses heap memory; static allocation provides predetermined storage for deterministic use.",
+      "explanationVi": "Dynamic memory có nguy cơ fragmentation, leak và khó dự đoán; static allocation xác định trước và deterministic hơn.",
+      "questionEn": "Why is static allocation preferred in the provided ECU example?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 9: Rule 21.3 — Dynamic memory allocation",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-020",
+      "topicId": "misra-c",
+      "cardType": "technical_term",
+      "term": "Directive 4.7",
+      "definitionEn": "The return value of a non-void function should be checked.",
+      "explanationVi": "Luôn kiểm tra return value của hàm non-void để phát hiện và xử lý lỗi.",
+      "questionEn": "What is the key requirement of Directive 4.7?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 10: Dir 4.7 — Return value của non-void function không được kiểm tra",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-021",
+      "topicId": "misra-c",
+      "cardType": "abbreviation",
+      "term": "Std_ReturnType",
+      "definitionEn": "A return type used in the provided automotive example to represent function status.",
+      "explanationVi": "Ví dụ dùng Std_ReturnType với E_OK và E_NOT_OK để biểu diễn kết quả thành công hoặc lỗi.",
+      "questionEn": "What does Std_ReturnType represent in the provided example?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 10: Dir 4.7 — Return value của non-void function không được kiểm tra",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-022",
+      "topicId": "misra-c",
+      "cardType": "comparison",
+      "term": "E_OK vs E_NOT_OK",
+      "definitionEn": "E_OK represents success; E_NOT_OK represents a failed operation in the provided example.",
+      "explanationVi": "E_OK = thao tác thành công; E_NOT_OK = thao tác không thành công và cần xử lý lỗi.",
+      "questionEn": "What do E_OK and E_NOT_OK represent?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 10: Dir 4.7 — Return value của non-void function không được kiểm tra",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-023",
+      "topicId": "misra-c",
+      "cardType": "concept",
+      "term": "Fallback strategy",
+      "definitionEn": "A predefined alternative action used when an operation fails.",
+      "explanationVi": "Khi ReadSensor thất bại, ví dụ dùng use_last_valid_value() và report_fault() làm chiến lược dự phòng.",
+      "questionEn": "What fallback strategy is shown when ReadSensor fails?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 10: Dir 4.7 — Return value của non-void function không được kiểm tra",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-024",
+      "topicId": "misra-c",
+      "cardType": "concept",
+      "term": "Return value checking",
+      "definitionEn": "Check function status and apply an appropriate error response.",
+      "explanationVi": "Mẫu nhớ: gọi hàm → nhận return → kiểm tra E_OK → nếu lỗi thì fallback, retry hoặc report fault.",
+      "questionEn": "What is the basic pattern for handling a function return value?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 10: Dir 4.7 — Return value của non-void function không được kiểm tra",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

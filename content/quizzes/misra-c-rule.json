@@ -1,0 +1,857 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "misra-c-rule-categories-quiz-001",
+      "topicId": "misra-c",
+      "sectionId": "rule-categories",
+      "questionType": "single_choice",
+      "questionEn": "How many MISRA-C:2012 Mandatory rules are listed in the source?",
+      "options": [
+        { "id": "A", "text": "16" },
+        { "id": "B", "text": "30" },
+        { "id": "C", "text": "97" },
+        { "id": "D", "text": "143" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo tài liệu, MISRA-C:2012 có 16 Mandatory Rules.",
+      "flashcardIds": ["misra-c-rule-categories-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Rule Categories",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-002",
+      "topicId": "misra-c",
+      "sectionId": "rule-categories",
+      "questionType": "single_choice",
+      "questionEn": "Which MISRA-C rule category can have a documented deviation?",
+      "options": [
+        { "id": "A", "text": "Mandatory" },
+        { "id": "B", "text": "Required" },
+        { "id": "C", "text": "Advisory only" },
+        { "id": "D", "text": "None" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Required bắt buộc nhưng có thể có documented deviation với lý do hợp lệ và review.",
+      "flashcardIds": ["misra-c-rule-categories-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Rule Categories",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-003",
+      "topicId": "misra-c",
+      "sectionId": "rule-categories",
+      "questionType": "single_choice",
+      "questionEn": "Which category is described as recommended and non-mandatory?",
+      "options": [
+        { "id": "A", "text": "Mandatory" },
+        { "id": "B", "text": "Required" },
+        { "id": "C", "text": "Advisory" },
+        { "id": "D", "text": "Deviation" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Advisory là khuyến nghị, không bắt buộc và không block product ship theo tài liệu.",
+      "flashcardIds": ["misra-c-rule-categories-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Rule Categories",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-004",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does Directive 4.1 require?",
+      "options": [
+        { "id": "A", "text": "Run-time failures shall be minimized" },
+        { "id": "B", "text": "Every switch shall have a default" },
+        { "id": "C", "text": "All functions shall have one exit point" },
+        { "id": "D", "text": "Dynamic memory shall always be used" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Dir 4.1 yêu cầu giảm thiểu run-time failures và có run-time protection.",
+      "flashcardIds": ["misra-c-rule-categories-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-005",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does Directive 4.3 require for Assembly language?",
+      "options": [
+        { "id": "A", "text": "It shall be encapsulated and isolated" },
+        { "id": "B", "text": "It shall replace all C code" },
+        { "id": "C", "text": "It shall be used in every ECU" },
+        { "id": "D", "text": "It shall be placed in application logic" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Assembly phụ thuộc platform nên phải được encapsulated và isolated để dễ kiểm soát và port.",
+      "flashcardIds": ["misra-c-rule-categories-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-006",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 1.3 prohibit?",
+      "options": [
+        { "id": "A", "text": "Undefined or critical unspecified behaviour" },
+        { "id": "B", "text": "All pointer usage" },
+        { "id": "C", "text": "All switch statements" },
+        { "id": "D", "text": "All function declarations" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 1.3 cấm occurrence of undefined hoặc critical unspecified behaviour.",
+      "flashcardIds": ["misra-c-rule-categories-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-007",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "Which rule prohibits unreachable code?",
+      "options": [
+        { "id": "A", "text": "Rule 2.1" },
+        { "id": "B", "text": "Rule 2.2" },
+        { "id": "C", "text": "Rule 14.3" },
+        { "id": "D", "text": "Rule 17.4" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 2.1 yêu cầu project không chứa unreachable code.",
+      "flashcardIds": ["misra-c-rule-categories-008", "misra-c-rule-categories-039"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-008",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "Which rule prohibits dead code?",
+      "options": [
+        { "id": "A", "text": "Rule 1.3" },
+        { "id": "B", "text": "Rule 2.1" },
+        { "id": "C", "text": "Rule 2.2" },
+        { "id": "D", "text": "Rule 8.4" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Rule 2.2 quy định không được có dead code.",
+      "flashcardIds": ["misra-c-rule-categories-009", "misra-c-rule-categories-039"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-009",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 8.4 ensure?",
+      "options": [
+        { "id": "A", "text": "Compatible declarations are visible for external-linkage definitions" },
+        { "id": "B", "text": "All functions have one exit" },
+        { "id": "C", "text": "All macros use reserved identifiers" },
+        { "id": "D", "text": "All memory is dynamically allocated" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 8.4 giúp bảo đảm declaration tương thích và type consistency giữa các file .c và .h.",
+      "flashcardIds": ["misra-c-rule-categories-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-010",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What is prohibited in the operand of sizeof by Rule 13.6?",
+      "options": [
+        { "id": "A", "text": "Potential side effects" },
+        { "id": "B", "text": "Integer constants" },
+        { "id": "C", "text": "Type names" },
+        { "id": "D", "text": "Object types" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Operand của sizeof không được chứa expression có potential side effects.",
+      "flashcardIds": ["misra-c-rule-categories-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-011",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "Which controlling expression violates Rule 14.3?",
+      "options": [
+        { "id": "A", "text": "if (speed > limit)" },
+        { "id": "B", "text": "if (1)" },
+        { "id": "C", "text": "if (valid != 0U)" },
+        { "id": "D", "text": "while (count != 0U)" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Rule 14.3 cấm controlling expression invariant, ví dụ if(1) luôn đúng.",
+      "flashcardIds": ["misra-c-rule-categories-012", "misra-c-rule-categories-040"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-012",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 17.3 prohibit?",
+      "options": [
+        { "id": "A", "text": "Implicitly declared functions" },
+        { "id": "B", "text": "Functions with parameters" },
+        { "id": "C", "text": "Functions with return values" },
+        { "id": "D", "text": "Static functions" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Function không được declared implicitly; phải có declaration rõ ràng.",
+      "flashcardIds": ["misra-c-rule-categories-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-013",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What must all exit paths of a non-void function have?",
+      "options": [
+        { "id": "A", "text": "An explicit return" },
+        { "id": "B", "text": "A switch statement" },
+        { "id": "C", "text": "A dynamic allocation" },
+        { "id": "D", "text": "A macro" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 17.4 yêu cầu mọi exit path của non-void function phải có explicit return.",
+      "flashcardIds": ["misra-c-rule-categories-014", "misra-c-rule-categories-041"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-014",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What may be passed to a ctype.h function under Rule 21.13?",
+      "options": [
+        { "id": "A", "text": "Any negative int" },
+        { "id": "B", "text": "unsigned char or EOF-representable value" },
+        { "id": "C", "text": "Only floating-point values" },
+        { "id": "D", "text": "Only pointers" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Giá trị truyền vào ctype.h phải representable as unsigned char hoặc EOF.",
+      "flashcardIds": ["misra-c-rule-categories-015"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-015",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What is the key concern of Rule 21.17?",
+      "options": [
+        { "id": "A", "text": "String or memory operations without proper bounds" },
+        { "id": "B", "text": "Too many switch statements" },
+        { "id": "C", "text": "Missing function declarations" },
+        { "id": "D", "text": "Invariant conditions only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 21.17 yêu cầu proper bounds để tránh các vấn đề như classic buffer overflow.",
+      "flashcardIds": ["misra-c-rule-categories-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-016",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What size argument is prohibited by Rule 21.18?",
+      "options": [
+        { "id": "A", "text": "0" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "128" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 21.18 quy định size argument của string/memory functions không được bằng 0.",
+      "flashcardIds": ["misra-c-rule-categories-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-017",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 21.19 prohibit?",
+      "options": [
+        { "id": "A", "text": "Modifying pointers returned by localeconv, getenv, etc." },
+        { "id": "B", "text": "Calling any library function" },
+        { "id": "C", "text": "Using static variables" },
+        { "id": "D", "text": "Using const objects" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Không được modify vùng nhớ thông qua các pointer trả về từ localeconv, getenv và các hàm tương tự.",
+      "flashcardIds": ["misra-c-rule-categories-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-018",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "Why should localtime and gmtime return values not be stored across subsequent calls?",
+      "options": [
+        { "id": "A", "text": "Their static storage may be reused" },
+        { "id": "B", "text": "They always return integers" },
+        { "id": "C", "text": "They require dynamic allocation" },
+        { "id": "D", "text": "They cannot return pointers" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Vùng nhớ static có thể được reuse ở lần gọi tiếp theo nên pointer cũ có thể bị thay đổi.",
+      "flashcardIds": ["misra-c-rule-categories-019"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-019",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "questionType": "single_choice",
+      "questionEn": "When may a block of memory be freed under Rule 22.2?",
+      "options": [
+        { "id": "A", "text": "Only when allocated by a standard allocation function" },
+        { "id": "B", "text": "Whenever it is a local array" },
+        { "id": "C", "text": "Whenever it is a pointer" },
+        { "id": "D", "text": "Whenever its size is known" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Chỉ được free memory nếu block đó được allocated bởi standard allocation function.",
+      "flashcardIds": ["misra-c-rule-categories-020"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-020",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 10.1 focus on?",
+      "options": [
+        { "id": "A", "text": "Appropriate essential types for operands" },
+        { "id": "B", "text": "Single function exit" },
+        { "id": "C", "text": "Default switch clauses" },
+        { "id": "D", "text": "Memory allocation" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 10.1 kiểm soát inappropriate essential type của operands.",
+      "flashcardIds": ["misra-c-rule-categories-021"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-021",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "What is the main concern of Rule 10.3?",
+      "options": [
+        { "id": "A", "text": "Assigning a composite expression to an inappropriate narrower type" },
+        { "id": "B", "text": "Using a default clause" },
+        { "id": "C", "text": "Using parentheses" },
+        { "id": "D", "text": "Using a function declaration" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 10.3 kiểm soát việc gán composite expression vào kiểu hẹp hơn không phù hợp.",
+      "flashcardIds": ["misra-c-rule-categories-022"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-022",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "Which conversion is prohibited by Rule 11.3?",
+      "options": [
+        { "id": "A", "text": "Cast between an object pointer and an integer" },
+        { "id": "B", "text": "Integer addition" },
+        { "id": "C", "text": "Comparison of two integers" },
+        { "id": "D", "text": "Assignment of equal-width integers" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 11.3 cấm cast giữa pointer to object và pointer/integer representation.",
+      "flashcardIds": ["misra-c-rule-categories-023"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-023",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "Why should parentheses be used for operator precedence?",
+      "options": [
+        { "id": "A", "text": "To avoid relying on implicit precedence knowledge" },
+        { "id": "B", "text": "To make all operators equal" },
+        { "id": "C", "text": "To remove all arithmetic" },
+        { "id": "D", "text": "To avoid function declarations" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 12.1 yêu cầu không dựa vào kiến thức ngầm về precedence; parentheses làm ý định rõ ràng.",
+      "flashcardIds": ["misra-c-rule-categories-024"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-024",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "Which condition best follows Rule 14.4?",
+      "options": [
+        { "id": "A", "text": "if (pointer)" },
+        { "id": "B", "text": "if (count)" },
+        { "id": "C", "text": "if (pointer != NULL)" },
+        { "id": "D", "text": "if (value)" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Rule 14.4 yêu cầu controlling expression essentially Boolean; pointer != NULL thể hiện điều kiện rõ ràng.",
+      "flashcardIds": ["misra-c-rule-categories-025"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-025",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 15.5 require?",
+      "options": [
+        { "id": "A", "text": "A function shall have a single exit point" },
+        { "id": "B", "text": "Every switch shall have two defaults" },
+        { "id": "C", "text": "Every function shall use malloc" },
+        { "id": "D", "text": "Every function shall be static" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 15.5 yêu cầu function có single exit point để dễ trace flow, review và test.",
+      "flashcardIds": ["misra-c-rule-categories-026"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-026",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "What must every switch statement contain under Rule 16.4?",
+      "options": [
+        { "id": "A", "text": "A default clause" },
+        { "id": "B", "text": "A malloc call" },
+        { "id": "C", "text": "Two return statements" },
+        { "id": "D", "text": "A pointer cast" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 16.4 yêu cầu mọi switch statement phải có default clause.",
+      "flashcardIds": ["misra-c-rule-categories-027"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-027",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "What must be done with the return value of a non-void function under Rule 17.7?",
+      "options": [
+        { "id": "A", "text": "It shall be used" },
+        { "id": "B", "text": "It shall always be ignored" },
+        { "id": "C", "text": "It shall be converted to a pointer" },
+        { "id": "D", "text": "It shall be stored globally" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Return value của non-void function không được bỏ qua; cần được sử dụng hoặc kiểm tra.",
+      "flashcardIds": ["misra-c-rule-categories-028", "misra-c-rule-categories-041"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-028",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "Which macro violates the intent of Rule 20.4?",
+      "options": [
+        { "id": "A", "text": "#define VEHICLE_SPEED_MAX 120U" },
+        { "id": "B", "text": "#define ECU_TIMEOUT_MS 100U" },
+        { "id": "C", "text": "#define int uint32_t" },
+        { "id": "D", "text": "#define BUFFER_SIZE 128U" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Rule 20.4 cấm macro name reuse keyword hoặc reserved identifier; int là C keyword.",
+      "flashcardIds": ["misra-c-rule-categories-029"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-029",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 21.3 prohibit?",
+      "options": [
+        { "id": "A", "text": "Memory allocation functions" },
+        { "id": "B", "text": "Static allocation" },
+        { "id": "C", "text": "Integer arithmetic" },
+        { "id": "D", "text": "Switch statements" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 21.3 cấm memory allocation functions như malloc/free theo tài liệu.",
+      "flashcardIds": ["misra-c-rule-categories-030"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-030",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "questionType": "single_choice",
+      "questionEn": "What is the first step in the Required-rule deviation process?",
+      "options": [
+        { "id": "A", "text": "Identify the rule and reason" },
+        { "id": "B", "text": "Immediately ship the product" },
+        { "id": "C", "text": "Delete the rule from the project" },
+        { "id": "D", "text": "Suppress the lint warning only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Bước 1 là xác định Rule và lý do, đồng thời ghi rõ phạm vi file/function/line.",
+      "flashcardIds": ["misra-c-rule-categories-032", "misra-c-rule-categories-037"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-031",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "questionType": "single_choice",
+      "questionEn": "What should a deviation Risk Assessment evaluate?",
+      "options": [
+        { "id": "A", "text": "Probability, severity, and mitigation measures" },
+        { "id": "B", "text": "Only source-code formatting" },
+        { "id": "C", "text": "Only developer preference" },
+        { "id": "D", "text": "Only the number of lines changed" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Risk Assessment đánh giá xác suất lỗi, severity nếu xảy ra và các biện pháp giảm thiểu.",
+      "flashcardIds": ["misra-c-rule-categories-033", "misra-c-rule-categories-037"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-032",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "questionType": "single_choice",
+      "questionEn": "Who signs off a deviation according to the provided process?",
+      "options": [
+        { "id": "A", "text": "Safety Manager and Lead Engineer" },
+        { "id": "B", "text": "Only the developer" },
+        { "id": "C", "text": "Only the customer" },
+        { "id": "D", "text": "Only the tester" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo tài liệu, Safety Manager và Lead Engineer ký duyệt deviation.",
+      "flashcardIds": ["misra-c-rule-categories-035"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-033",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "questionType": "single_choice",
+      "questionEn": "Which is an example of in-code deviation documentation?",
+      "options": [
+        { "id": "A", "text": "A comment naming the MISRA rule and deviation record ID" },
+        { "id": "B", "text": "Deleting the lint result" },
+        { "id": "C", "text": "Removing the rule from the coding standard" },
+        { "id": "D", "text": "Ignoring the violation without documentation" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "In-code documentation ghi Rule bị deviation, lý do và mã Deviation Record để truy xuất.",
+      "flashcardIds": ["misra-c-rule-categories-036"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-034",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence correctly represents the deviation process?",
+      "options": [
+        { "id": "A", "text": "Rule & Reason → Risk Assessment → Approval → Documentation" },
+        { "id": "B", "text": "Approval → Coding → Rule → Risk Assessment" },
+        { "id": "C", "text": "Documentation → Ship → Risk Assessment → Approval" },
+        { "id": "D", "text": "Risk Assessment → Delete Rule → Approval → Ship" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "4 bước là xác định Rule & lý do → Risk Assessment → Approval → In-code Documentation.",
+      "flashcardIds": ["misra-c-rule-categories-037"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-035",
+      "topicId": "misra-c",
+      "sectionId": "rule-categories",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly distinguishes Mandatory and Required rules?",
+      "options": [
+        { "id": "A", "text": "Mandatory cannot be deviated; Required may have documented deviation" },
+        { "id": "B", "text": "Both are always optional" },
+        { "id": "C", "text": "Mandatory is only a recommendation" },
+        { "id": "D", "text": "Required is never documented" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Mandatory bắt buộc tuyệt đối; Required bắt buộc nhưng có thể deviation hợp lệ theo quy trình.",
+      "flashcardIds": ["misra-c-rule-categories-038"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Rule Categories and Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-036",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "Which mnemonic matches the first five important Required rules?",
+      "options": [
+        { "id": "A", "text": "Type → Narrower → Pointer → Precedence → Boolean" },
+        { "id": "B", "text": "Return → Macro → Memory → Default → Exit" },
+        { "id": "C", "text": "Runtime → Assembly → UB → Dead code → Memory" },
+        { "id": "D", "text": "Default → Return → Type → Macro → Pointer" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Chuỗi nhớ tương ứng Rule 10.1, 10.3, 11.3, 12.1 và 14.4.",
+      "flashcardIds": ["misra-c-rule-categories-043"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-quiz-037",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "questionType": "single_choice",
+      "questionEn": "Which mnemonic matches Rules 15.5, 16.4, 17.7, 20.4, and 21.3?",
+      "options": [
+        { "id": "A", "text": "Single Exit → Default → Return → Macro → Memory" },
+        { "id": "B", "text": "Type → Narrower → Pointer → Precedence → Boolean" },
+        { "id": "C", "text": "Runtime → Assembly → UB → Dead code → Memory" },
+        { "id": "D", "text": "Declaration → sizeof → ctype → locale → time" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "5 từ khóa giúp nhớ Rule 15.5, 16.4, 17.7, 20.4 và 21.3.",
+      "flashcardIds": ["misra-c-rule-categories-044"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

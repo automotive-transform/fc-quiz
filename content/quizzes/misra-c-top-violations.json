@@ -1,0 +1,558 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "misra-c-top-violations-quiz-001",
+      "topicId": "misra-c",
+      "sectionId": "rule-10-1",
+      "questionType": "single_choice",
+      "questionEn": "Which MISRA-C rule addresses implicit operand type mismatch?",
+      "options": [
+        { "id": "A", "text": "Rule 10.1" },
+        { "id": "B", "text": "Rule 10.3" },
+        { "id": "C", "text": "Rule 12.1" },
+        { "id": "D", "text": "Rule 14.4" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 10.1 tập trung vào implicit operand type mismatch, tức toán hạng có kiểu không phù hợp ngầm định.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 1 — Rule 10.1",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-001"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-002",
+      "topicId": "misra-c",
+      "sectionId": "rule-10-1",
+      "questionType": "single_choice",
+      "questionEn": "Which operator is bitwise AND rather than logical AND?",
+      "options": [
+        { "id": "A", "text": "&&" },
+        { "id": "B", "text": "&" },
+        { "id": "C", "text": "||" },
+        { "id": "D", "text": "==" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "`&` là bitwise AND, còn `&&` là logical AND. Nhầm hai toán tử có thể dẫn đến vi phạm Rule 10.1.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 1 — Rule 10.1",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-002"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-003",
+      "topicId": "misra-c",
+      "sectionId": "rule-10-1",
+      "questionType": "single_choice",
+      "questionEn": "What is a suitable way to make a Boolean condition explicit?",
+      "options": [
+        { "id": "A", "text": "Use an explicit comparison or Boolean conversion" },
+        { "id": "B", "text": "Always use a pointer cast" },
+        { "id": "C", "text": "Ignore the operand type" },
+        { "id": "D", "text": "Replace all conditions with bitwise operators" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Có thể làm điều kiện rõ ràng bằng so sánh hoặc chuyển đổi Boolean tường minh.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 1 — Rule 10.1",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-003"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-004",
+      "topicId": "misra-c",
+      "sectionId": "rule-10-3",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 10.3 address?",
+      "options": [
+        { "id": "A", "text": "Switch statements without default" },
+        { "id": "B", "text": "Narrowing assignment" },
+        { "id": "C", "text": "Multiple returns" },
+        { "id": "D", "text": "Dynamic memory allocation" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Rule 10.3 liên quan đến narrowing assignment, tức gán từ kiểu rộng hơn sang kiểu hẹp hơn.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 2 — Rule 10.3",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-004"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-005",
+      "topicId": "misra-c",
+      "sectionId": "rule-10-3",
+      "questionType": "single_choice",
+      "questionEn": "What is the recommended sequence before a narrowing cast?",
+      "options": [
+        { "id": "A", "text": "Calculate, check range, then cast" },
+        { "id": "B", "text": "Cast first, then calculate" },
+        { "id": "C", "text": "Ignore the value range" },
+        { "id": "D", "text": "Use dynamic allocation first" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Cách an toàn trong ví dụ là tính toán ở kiểu rộng, kiểm tra range rồi mới cast sang kiểu hẹp.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 2 — Rule 10.3",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-005"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-006",
+      "topicId": "misra-c",
+      "sectionId": "rule-11-3",
+      "questionType": "single_choice",
+      "questionEn": "What type of conversion does Rule 11.3 specifically address?",
+      "options": [
+        { "id": "A", "text": "Pointer-integer cast" },
+        { "id": "B", "text": "Integer-to-floating conversion only" },
+        { "id": "C", "text": "Boolean comparison" },
+        { "id": "D", "text": "String concatenation" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 11.3 liên quan đến việc cast giữa pointer và integer.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 3 — Rule 11.3",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-006"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-007",
+      "topicId": "misra-c",
+      "sectionId": "rule-11-3",
+      "questionType": "single_choice",
+      "questionEn": "In the provided example, what keyword is used for the memory-mapped register?",
+      "options": [
+        { "id": "A", "text": "static" },
+        { "id": "B", "text": "volatile" },
+        { "id": "C", "text": "const" },
+        { "id": "D", "text": "extern" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Ví dụ dùng `volatile` cho thanh ghi memory-mapped để thể hiện giá trị có thể thay đổi ngoài luồng thực thi thông thường.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 3 — Rule 11.3",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-007"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-008",
+      "topicId": "misra-c",
+      "sectionId": "rule-12-1",
+      "questionType": "single_choice",
+      "questionEn": "What is the main concern of Rule 12.1?",
+      "options": [
+        { "id": "A", "text": "Unclear operator precedence" },
+        { "id": "B", "text": "Dynamic allocation" },
+        { "id": "C", "text": "Ignored return values" },
+        { "id": "D", "text": "Multiple return statements" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 12.1 nhằm tránh biểu thức có precedence không rõ ràng bằng cách dùng ngoặc để thể hiện ý định.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 4 — Rule 12.1",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-008"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-009",
+      "topicId": "misra-c",
+      "sectionId": "rule-12-1",
+      "questionType": "single_choice",
+      "questionEn": "Which expression clearly checks whether FLAG_ERROR is set?",
+      "options": [
+        { "id": "A", "text": "(status & FLAG_ERROR) != 0u" },
+        { "id": "B", "text": "status & FLAG_ERROR" },
+        { "id": "C", "text": "status + FLAG_ERROR" },
+        { "id": "D", "text": "status == FLAG_ERROR" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Thêm `!= 0u` làm điều kiện rõ ràng: kiểm tra kết quả bitwise AND có khác 0 hay không.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 4 — Rule 12.1",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-009"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-010",
+      "topicId": "misra-c",
+      "sectionId": "rule-14-4",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 14.4 address?",
+      "options": [
+        { "id": "A", "text": "Non-Boolean controlling expression" },
+        { "id": "B", "text": "Narrowing assignment" },
+        { "id": "C", "text": "Pointer-integer cast" },
+        { "id": "D", "text": "Switch default case" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 14.4 liên quan đến controlling expression không phải Boolean rõ ràng.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 5 — Rule 14.4",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-010"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-011",
+      "topicId": "misra-c",
+      "sectionId": "rule-14-4",
+      "questionType": "single_choice",
+      "questionEn": "Which condition makes the intended Boolean check explicit?",
+      "options": [
+        { "id": "A", "text": "if (ptr)" },
+        { "id": "B", "text": "if (ptr != NULL)" },
+        { "id": "C", "text": "if (ptr + 1)" },
+        { "id": "D", "text": "if (*ptr)" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "`ptr != NULL` thể hiện rõ rằng điều kiện đang kiểm tra pointer có khác NULL hay không.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 5 — Rule 14.4",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-011"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-012",
+      "topicId": "misra-c",
+      "sectionId": "rule-15-5",
+      "questionType": "single_choice",
+      "questionEn": "What is the main concern illustrated by multiple returns in Rule 15.5?",
+      "options": [
+        { "id": "A", "text": "Cleanup may be skipped" },
+        { "id": "B", "text": "The compiler cannot parse return" },
+        { "id": "C", "text": "Pointers become integers automatically" },
+        { "id": "D", "text": "Switch statements stop working" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ví dụ cho thấy nhiều return có thể làm bỏ qua cleanup, gây vấn đề như resource leak.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 6 — Rule 15.5",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-012"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-013",
+      "topicId": "misra-c",
+      "sectionId": "rule-15-5",
+      "questionType": "single_choice",
+      "questionEn": "What pattern helps ensure cleanup is performed before returning?",
+      "options": [
+        { "id": "A", "text": "Single exit point with centralized cleanup" },
+        { "id": "B", "text": "Return immediately from every branch" },
+        { "id": "C", "text": "Ignore cleanup" },
+        { "id": "D", "text": "Allocate memory dynamically" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Single exit point giúp gom cleanup về một chỗ trước khi function return.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 6 — Rule 15.5",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-013"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-014",
+      "topicId": "misra-c",
+      "sectionId": "rule-16-4",
+      "questionType": "single_choice",
+      "questionEn": "What is the issue addressed by Rule 16.4 in the provided material?",
+      "options": [
+        { "id": "A", "text": "Switch without a default case" },
+        { "id": "B", "text": "Narrowing assignment" },
+        { "id": "C", "text": "Non-Boolean condition" },
+        { "id": "D", "text": "Dynamic memory allocation" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Material nêu Rule 16.4 cho trường hợp switch không có `default`.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 7 — Rule 16.4",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-014"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-015",
+      "topicId": "misra-c",
+      "sectionId": "rule-16-4",
+      "questionType": "single_choice",
+      "questionEn": "What is the role of the default case in the provided switch example?",
+      "options": [
+        { "id": "A", "text": "Handle an unexpected or unmatched value" },
+        { "id": "B", "text": "Allocate memory" },
+        { "id": "C", "text": "Convert a pointer to integer" },
+        { "id": "D", "text": "Check a function return value" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "`default` là nhánh xử lý khi giá trị không khớp với các `case` đã định nghĩa.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 7 — Rule 16.4",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-015"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-016",
+      "topicId": "misra-c",
+      "sectionId": "rule-17-7",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 17.7 address?",
+      "options": [
+        { "id": "A", "text": "Ignoring a function return value" },
+        { "id": "B", "text": "Using a default case" },
+        { "id": "C", "text": "Operator precedence" },
+        { "id": "D", "text": "Pointer-integer conversion" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 17.7 nhấn mạnh không nên bỏ qua return value của function khi giá trị đó cần được kiểm tra.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 8 — Rule 17.7",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-016"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-017",
+      "topicId": "misra-c",
+      "sectionId": "rule-17-7",
+      "questionType": "single_choice",
+      "questionEn": "Why should the return value of snprintf be checked?",
+      "options": [
+        { "id": "A", "text": "To detect the result or possible formatting problem" },
+        { "id": "B", "text": "To force dynamic memory allocation" },
+        { "id": "C", "text": "To make every expression Boolean" },
+        { "id": "D", "text": "To remove the switch statement" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Return value của `snprintf` cần được kiểm tra để không bỏ qua kết quả của function.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 8 — Rule 17.7",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-017"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-018",
+      "topicId": "misra-c",
+      "sectionId": "rule-21-3",
+      "questionType": "single_choice",
+      "questionEn": "What does Rule 21.3 address in the provided material?",
+      "options": [
+        { "id": "A", "text": "Dynamic memory allocation" },
+        { "id": "B", "text": "Switch default handling" },
+        { "id": "C", "text": "Operator precedence" },
+        { "id": "D", "text": "Boolean comparison" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 21.3 liên quan đến dynamic memory allocation như `malloc` và `free`.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 9 — Rule 21.3",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-018"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-019",
+      "topicId": "misra-c",
+      "sectionId": "rule-21-3",
+      "questionType": "single_choice",
+      "questionEn": "Which approach is shown as the preferred alternative to dynamic allocation?",
+      "options": [
+        { "id": "A", "text": "Static allocation" },
+        { "id": "B", "text": "More malloc calls" },
+        { "id": "C", "text": "Pointer-integer casting" },
+        { "id": "D", "text": "Ignoring allocation failure" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Material đưa static allocation như một cách tránh các vấn đề của dynamic allocation trong hệ thống embedded.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 9 — Rule 21.3",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-019"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-020",
+      "topicId": "misra-c",
+      "sectionId": "directive-4-7",
+      "questionType": "single_choice",
+      "questionEn": "What does Directive 4.7 address in the provided material?",
+      "options": [
+        { "id": "A", "text": "Return values of non-void functions should be checked" },
+        { "id": "B", "text": "Every switch must have two defaults" },
+        { "id": "C", "text": "All pointers must be integers" },
+        { "id": "D", "text": "All memory must be dynamically allocated" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Directive 4.7 yêu cầu chú ý kiểm tra return value của các non-void function.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 10 — Directive 4.7",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-020"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-021",
+      "topicId": "misra-c",
+      "sectionId": "directive-4-7",
+      "questionType": "single_choice",
+      "questionEn": "In the provided example, what type is used for the function return status?",
+      "options": [
+        { "id": "A", "text": "Std_ReturnType" },
+        { "id": "B", "text": "float" },
+        { "id": "C", "text": "char*" },
+        { "id": "D", "text": "double" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ví dụ dùng `Std_ReturnType` để biểu diễn status của function.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 10 — Directive 4.7",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-021"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-022",
+      "topicId": "misra-c",
+      "sectionId": "directive-4-7",
+      "questionType": "single_choice",
+      "questionEn": "Which values are used in the provided example to represent success and failure?",
+      "options": [
+        { "id": "A", "text": "E_OK and E_NOT_OK" },
+        { "id": "B", "text": "TRUE and FALSE" },
+        { "id": "C", "text": "HIGH and LOW" },
+        { "id": "D", "text": "ON and OFF" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ví dụ sử dụng `E_OK` cho thành công và `E_NOT_OK` cho lỗi.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 10 — Directive 4.7",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-022"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-023",
+      "topicId": "misra-c",
+      "sectionId": "directive-4-7",
+      "questionType": "single_choice",
+      "questionEn": "What should code do when a checked function call reports failure?",
+      "options": [
+        { "id": "A", "text": "Apply an appropriate fallback or error-handling strategy" },
+        { "id": "B", "text": "Always ignore the result" },
+        { "id": "C", "text": "Always allocate memory dynamically" },
+        { "id": "D", "text": "Remove the return value" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Khi function báo lỗi, code nên có chiến lược fallback hoặc xử lý lỗi phù hợp.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 10 — Directive 4.7",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-023"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-top-violations-quiz-024",
+      "topicId": "misra-c",
+      "sectionId": "directive-4-7",
+      "questionType": "single_choice",
+      "questionEn": "Which statement best summarizes Rule 17.7 and Directive 4.7 in the provided material?",
+      "options": [
+        { "id": "A", "text": "Do not ignore important function return values; check them" },
+        { "id": "B", "text": "Ignore all non-void return values" },
+        { "id": "C", "text": "Only switch statements need return values" },
+        { "id": "D", "text": "Return values should always be converted to pointers" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Cả hai nội dung đều nhấn mạnh việc không bỏ qua return value và cần kiểm tra kết quả function.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Top Violations & Fixes",
+        "section": "Violation 8 — Rule 17.7 and Violation 10 — Directive 4.7",
+        "reference": "content-source/MISRA-C/MISRA-C-Top-Violations-Fixes.md"
+      },
+      "relatedFlashcardIds": ["misra-c-top-violations-016", "misra-c-top-violations-020", "misra-c-top-violations-024"],
+      "reviewStatus": "draft"
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "misra-c-rule-categories-001",
+      "topicId": "misra-c",
+      "sectionId": "rule-categories",
+      "cardType": "comparison",
+      "term": "MISRA-C:2012 Rule Categories",
+      "definitionEn": "MISRA-C:2012 rules are classified as Mandatory, Required, or Advisory.",
+      "explanationVi": "Có 3 cấp độ: Mandatory = bắt buộc tuyệt đối; Required = bắt buộc nhưng có thể deviation có tài liệu; Advisory = khuyến nghị.",
+      "questionEn": "What are the three MISRA-C:2012 rule categories?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Rule Categories",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-002",
+      "topicId": "misra-c",
+      "sectionId": "rule-categories",
+      "cardType": "comparison",
+      "term": "Mandatory",
+      "definitionEn": "A rule that must be followed absolutely with no deviation.",
+      "explanationVi": "Mandatory là bắt buộc tuyệt đối; theo tài liệu, không có ngoại lệ và không thể deviation.",
+      "questionEn": "What does a Mandatory MISRA-C rule mean?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Three levels of MISRA-C:2012 Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-003",
+      "topicId": "misra-c",
+      "sectionId": "rule-categories",
+      "cardType": "comparison",
+      "term": "Required",
+      "definitionEn": "A rule that must be followed but may have a documented, justified deviation.",
+      "explanationVi": "Required vẫn bắt buộc, nhưng có thể deviation nếu có lý do hợp lệ, risk assessment, review và approval.",
+      "questionEn": "What does a Required MISRA-C rule mean?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Three levels of MISRA-C:2012 Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-004",
+      "topicId": "misra-c",
+      "sectionId": "rule-categories",
+      "cardType": "comparison",
+      "term": "Advisory",
+      "definitionEn": "A recommended rule that is not mandatory and does not block product shipment.",
+      "explanationVi": "Advisory là khuyến nghị; không bắt buộc, nên document nếu không follow và không block product ship.",
+      "questionEn": "What does an Advisory MISRA-C rule mean?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Three levels of MISRA-C:2012 Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-005",
+      "topicId": "misra-c",
+      "sectionId": "rule-categories",
+      "cardType": "concept",
+      "term": "Rule 1.3",
+      "definitionEn": "There shall be no occurrence of undefined or critical unspecified behaviour.",
+      "explanationVi": "Không được có undefined hoặc critical unspecified behaviour vì UB có thể tạo ra kết quả không dự đoán được.",
+      "questionEn": "What does MISRA-C Rule 1.3 prohibit?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-006",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Dir 4.1",
+      "definitionEn": "Run-time failures shall be minimized.",
+      "explanationVi": "Phải giảm thiểu lỗi khi chương trình đang chạy và phải có run-time protection.",
+      "questionEn": "What does MISRA-C Directive 4.1 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-007",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Dir 4.3",
+      "definitionEn": "Assembly language shall be encapsulated and isolated.",
+      "explanationVi": "Assembly phải được đóng gói và cô lập vì Assembly phụ thuộc platform và cần dễ port.",
+      "questionEn": "Why must Assembly be encapsulated and isolated?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-008",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 2.1",
+      "definitionEn": "A project shall not contain unreachable code.",
+      "explanationVi": "Không được có code không bao giờ chạy tới; đây có thể là dấu hiệu logic bug hoặc dead code.",
+      "questionEn": "What does MISRA-C Rule 2.1 prohibit?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-009",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 2.2",
+      "definitionEn": "There shall be no dead code.",
+      "explanationVi": "Không được có dead code; code có side-effect nhưng result không được dùng có thể che giấu bug.",
+      "questionEn": "What does MISRA-C Rule 2.2 prohibit?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-010",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 8.4",
+      "definitionEn": "A compatible declaration shall be visible when an external-linkage object or function is defined.",
+      "explanationVi": "Declaration tương thích phải được nhìn thấy để bảo đảm type consistency giữa các file .c và .h.",
+      "questionEn": "What does MISRA-C Rule 8.4 ensure?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-011",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 13.6",
+      "definitionEn": "The operand of sizeof shall not contain an expression with potential side effects.",
+      "explanationVi": "Operand của sizeof không được chứa expression có potential side effects vì có thể tạo bug ẩn và gây hiểu nhầm.",
+      "questionEn": "What does MISRA-C Rule 13.6 prohibit inside sizeof?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-012",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 14.3",
+      "definitionEn": "Controlling expressions shall not be invariant.",
+      "explanationVi": "Điều kiện không được luôn cố định True hoặc False, như if(1) hoặc while(0).",
+      "questionEn": "What does MISRA-C Rule 14.3 prohibit?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-013",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 17.3",
+      "definitionEn": "A function shall not be declared implicitly.",
+      "explanationVi": "Function phải có declaration rõ ràng; implicit declaration có thể gây sai return type hoặc argument assumptions.",
+      "questionEn": "What does MISRA-C Rule 17.3 prohibit?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-014",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 17.4",
+      "definitionEn": "All exit paths from a non-void function shall have an explicit return.",
+      "explanationVi": "Mọi đường thoát của function non-void phải có return rõ ràng; không được rơi khỏi cuối function.",
+      "questionEn": "What must every exit path of a non-void function have?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-015",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 21.13",
+      "definitionEn": "Values passed to ctype.h functions shall be representable as unsigned char or EOF.",
+      "explanationVi": "Hàm ctype.h như isalpha phải nhận giá trị biểu diễn được bằng unsigned char hoặc EOF.",
+      "questionEn": "What values may be passed to ctype.h functions under Rule 21.13?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-016",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 21.17",
+      "definitionEn": "String functions shall be used with proper bounds.",
+      "explanationVi": "Các thao tác string/memory phải có bounds phù hợp để tránh classic buffer overflow.",
+      "questionEn": "What is the key concern of MISRA-C Rule 21.17?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-017",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 21.18",
+      "definitionEn": "The size argument of string or memory functions shall not be 0.",
+      "explanationVi": "Size argument của các hàm string/memory không được bằng 0.",
+      "questionEn": "What size argument is prohibited by MISRA-C Rule 21.18?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-018",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 21.19",
+      "definitionEn": "Pointers returned by localeconv, getenv, etc. shall not be modified.",
+      "explanationVi": "Không được sửa nội dung qua các pointer trả về từ localeconv, getenv và các hàm tương tự.",
+      "questionEn": "What does MISRA-C Rule 21.19 prohibit?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-019",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 21.20",
+      "definitionEn": "Return values of localtime and gmtime shall not be stored across subsequent calls.",
+      "explanationVi": "Không giữ pointer trả về qua các lần gọi tiếp theo vì vùng nhớ static có thể được reuse.",
+      "questionEn": "Why must localtime and gmtime return values not be stored across subsequent calls?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-020",
+      "topicId": "misra-c",
+      "sectionId": "mandatory-rules",
+      "cardType": "concept",
+      "term": "Rule 22.2",
+      "definitionEn": "Memory shall only be freed if allocated by a standard allocation function.",
+      "explanationVi": "Chỉ được free block memory nếu nó được cấp phát bằng standard allocation function.",
+      "questionEn": "When may a block of memory be freed under Rule 22.2?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-021",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "concept",
+      "term": "Rule 10.1",
+      "definitionEn": "Operands shall not be of an inappropriate essential type.",
+      "explanationVi": "Dùng essential type phù hợp với operator; logical và bitwise operator không nên bị dùng lẫn mục đích.",
+      "questionEn": "What does MISRA-C Rule 10.1 control?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-022",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "concept",
+      "term": "Rule 10.3",
+      "definitionEn": "A composite expression shall not be assigned to an inappropriate narrower type.",
+      "explanationVi": "Không gán kết quả tính toán vào kiểu hẹp hơn theo cách có thể gây mất giá trị hoặc overflow.",
+      "questionEn": "What is the key concern of MISRA-C Rule 10.3?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-023",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "concept",
+      "term": "Rule 11.3",
+      "definitionEn": "No cast between a pointer to object and a pointer to integer.",
+      "explanationVi": "Không cast tùy tiện giữa object pointer và integer; cách này có vấn đề về portability và pointer representation.",
+      "questionEn": "What conversion does MISRA-C Rule 11.3 prohibit?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-024",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "concept",
+      "term": "Rule 12.1",
+      "definitionEn": "Operator precedence shall not rely on implicit knowledge.",
+      "explanationVi": "Không dựa vào việc nhớ precedence; dùng parentheses để thể hiện rõ ý định của biểu thức.",
+      "questionEn": "How should Rule 12.1 handle operator precedence?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-025",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "concept",
+      "term": "Rule 14.4",
+      "definitionEn": "Controlling expressions of if and while shall be essentially Boolean.",
+      "explanationVi": "Điều kiện if/while nên thể hiện Boolean rõ ràng, như pointer != NULL hoặc count != 0u.",
+      "questionEn": "What must if and while controlling expressions be under Rule 14.4?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-026",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "concept",
+      "term": "Rule 15.5",
+      "definitionEn": "A function shall have a single exit point.",
+      "explanationVi": "Function nên có một điểm thoát để dễ trace flow, quản lý resource và test coverage.",
+      "questionEn": "What does MISRA-C Rule 15.5 require for function exits?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-027",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "concept",
+      "term": "Rule 16.4",
+      "definitionEn": "Every switch statement shall have a default clause.",
+      "explanationVi": "Mọi switch phải có default để xử lý giá trị chưa được case xử lý, kể cả khi enum được mở rộng.",
+      "questionEn": "What must every switch statement contain under Rule 16.4?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-028",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "concept",
+      "term": "Rule 17.7",
+      "definitionEn": "The return value of a non-void function shall be used.",
+      "explanationVi": "Không được bỏ qua return value của function non-void; cần dùng hoặc kiểm tra kết quả, nhất là error handling.",
+      "questionEn": "What must be done with a non-void function's return value?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-029",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "concept",
+      "term": "Rule 20.4",
+      "definitionEn": "Macro names shall not reuse keywords or reserved identifiers.",
+      "explanationVi": "Không đặt macro trùng keyword hoặc reserved identifier vì có thể thay đổi ngữ nghĩa C một cách ngầm.",
+      "questionEn": "What names must not be reused for macros under Rule 20.4?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-030",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "concept",
+      "term": "Rule 21.3",
+      "definitionEn": "Memory allocation functions shall not be used.",
+      "explanationVi": "Không dùng malloc/free theo Rule; embedded thường ưu tiên static allocation để tránh fragmentation, timing không xác định và OOM.",
+      "questionEn": "What does MISRA-C Rule 21.3 prohibit?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-031",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "cardType": "technical_term",
+      "term": "Deviation",
+      "definitionEn": "A documented exception to a Required rule with a valid justification and review.",
+      "explanationVi": "Deviation là trường hợp không tuân thủ Required Rule nhưng phải có lý do hợp lệ, risk assessment và approval.",
+      "questionEn": "What is a MISRA-C deviation?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-032",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "cardType": "phrase",
+      "term": "Rule and Reason",
+      "definitionEn": "Identify the violated rule, reason, and scope of the deviation.",
+      "explanationVi": "Bước 1: ghi rule bị vi phạm, tại sao không thể tuân thủ và phạm vi file/function/line.",
+      "questionEn": "What is the first step in the deviation process?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-033",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "cardType": "technical_term",
+      "term": "Risk Assessment",
+      "definitionEn": "Assessment of failure probability, severity, and available mitigation measures.",
+      "explanationVi": "Đánh giá xác suất lỗi, severity nếu xảy ra và các biện pháp giảm thiểu như test hoặc review.",
+      "questionEn": "What is assessed during a deviation Risk Assessment?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-034",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "cardType": "technical_term",
+      "term": "Deviation Record",
+      "definitionEn": "A record documenting the rule, reason, risk assessment, scope, and approval.",
+      "explanationVi": "Hồ sơ deviation phải truy được rule, lý do, risk assessment và approval; có thể lưu trong register.",
+      "questionEn": "What information should a Deviation Record capture?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-035",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "cardType": "concept",
+      "term": "Approval",
+      "definitionEn": "Review and authorization of a valid deviation by designated project roles.",
+      "explanationVi": "Theo tài liệu, Safety Manager và Lead Engineer ký duyệt deviation và hồ sơ được lưu trong Deviation Register.",
+      "questionEn": "Who approves a deviation according to the provided process?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-036",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "cardType": "technical_term",
+      "term": "In-code Documentation",
+      "definitionEn": "A code comment that records the MISRA deviation and references its deviation record.",
+      "explanationVi": "Comment trong code phải nêu rule deviation và mã hồ sơ để truy xuất, đồng thời có thể cần suppress pragma cho lint.",
+      "questionEn": "What is the purpose of in-code deviation documentation?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-037",
+      "topicId": "misra-c",
+      "sectionId": "deviation-process",
+      "cardType": "phrase",
+      "term": "Rule → Risk → Approval → Documentation",
+      "definitionEn": "The four main stages of the documented Required-rule deviation process.",
+      "explanationVi": "Nhớ 4 bước: xác định Rule & lý do → Risk Assessment → Approval → In-code Documentation.",
+      "questionEn": "What are the four steps of the deviation process?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-038",
+      "topicId": "misra-c",
+      "sectionId": "rule-categories",
+      "cardType": "comparison",
+      "term": "Mandatory vs Required",
+      "definitionEn": "Mandatory cannot be deviated; Required can have a documented and approved deviation.",
+      "explanationVi": "Mandatory: không thể deviation theo tài liệu. Required: có thể deviation nếu lý do hợp lệ và được kiểm soát.",
+      "questionEn": "What is the key difference between Mandatory and Required rules?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Rule Categories and Deviation Process",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-039",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "comparison",
+      "term": "Rule 2.1 vs Rule 2.2",
+      "definitionEn": "Rule 2.1 concerns unreachable code; Rule 2.2 concerns dead code.",
+      "explanationVi": "Mẹo nhớ: 2.1 = code không thể tới; 2.2 = code không có tác dụng cần thiết.",
+      "questionEn": "How do MISRA-C Rules 2.1 and 2.2 differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "16 Mandatory Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-040",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "comparison",
+      "term": "Rule 14.3 vs Rule 14.4",
+      "definitionEn": "14.3 prohibits invariant controlling expressions; 14.4 requires essentially Boolean controlling expressions.",
+      "explanationVi": "14.3: điều kiện không được luôn True/False. 14.4: điều kiện if/while phải thể hiện Boolean rõ ràng.",
+      "questionEn": "How do Rules 14.3 and 14.4 differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Mandatory and Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-041",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "comparison",
+      "term": "Rule 17.4 vs Rule 17.7",
+      "definitionEn": "17.4 requires explicit returns on all non-void exit paths; 17.7 requires using non-void return values.",
+      "explanationVi": "17.4: function phải return đúng. 17.7: kết quả return của function non-void không được bỏ qua.",
+      "questionEn": "How do Rules 17.4 and 17.7 differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Mandatory and Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-042",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "comparison",
+      "term": "Rule 21.3 vs Rule 22.2",
+      "definitionEn": "21.3 prohibits memory allocation functions; 22.2 restricts what memory may be freed.",
+      "explanationVi": "21.3: không dùng memory allocation functions. 22.2: chỉ free memory được cấp phát bởi standard allocation function.",
+      "questionEn": "How do Rules 21.3 and 22.2 differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Mandatory and Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-043",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "phrase",
+      "term": "Type → Narrower → Pointer → Precedence → Boolean",
+      "definitionEn": "A memory aid for the first five important Required rules.",
+      "explanationVi": "Chuỗi nhớ Rule 10.1, 10.3, 11.3, 12.1, 14.4 theo thứ tự: kiểu, kiểu hẹp, pointer, precedence, Boolean.",
+      "questionEn": "What mnemonic helps remember Required Rules 10.1 through 14.4?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-rule-categories-044",
+      "topicId": "misra-c",
+      "sectionId": "required-rules",
+      "cardType": "phrase",
+      "term": "Single Exit → Default → Return → Macro → Memory",
+      "definitionEn": "A memory aid for Required Rules 15.5, 16.4, 17.7, 20.4, and 21.3.",
+      "explanationVi": "Nhớ 5 Rule cuối: một cửa ra, switch có default, dùng return value, không reuse tên cấm, không dynamic allocation.",
+      "questionEn": "What mnemonic helps remember the last five important Required rules?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Rule Categories",
+        "section": "Top 10 Required Rules",
+        "reference": "content-source/MISRA-C/MISRA-C-Rule-Categories.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

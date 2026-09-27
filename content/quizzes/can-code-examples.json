@@ -1,0 +1,558 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "can-code-quiz-001",
+      "topicId": "can",
+      "sectionId": "read-can",
+      "questionType": "single_choice",
+      "questionEn": "Which Python library is used for direct CAN bus communication?",
+      "options": [
+        { "id": "A", "text": "python-can" },
+        { "id": "B", "text": "cantools" },
+        { "id": "C", "text": "udsoncan" },
+        { "id": "D", "text": "isotp" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "python-can dùng để giao tiếp trực tiếp với CAN bus.",
+      "relatedFlashcardIds": ["can-code-examples-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Đọc CAN bus cơ bản với python-can",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-002",
+      "topicId": "can",
+      "sectionId": "read-can",
+      "questionType": "single_choice",
+      "questionEn": "What does bus.recv(timeout=1.0) do?",
+      "options": [
+        { "id": "A", "text": "Sends a CAN message every second" },
+        { "id": "B", "text": "Waits up to one second to receive a CAN message" },
+        { "id": "C", "text": "Reads exactly one byte" },
+        { "id": "D", "text": "Shuts down the CAN bus" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "recv(timeout=1.0) chờ tối đa 1 giây để nhận một CAN message; nếu không có thì trả về None.",
+      "relatedFlashcardIds": ["can-code-examples-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Đọc CAN bus cơ bản với python-can",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-003",
+      "topicId": "can",
+      "sectionId": "read-can",
+      "questionType": "single_choice",
+      "questionEn": "Which field contains the CAN message payload?",
+      "options": [
+        { "id": "A", "text": "msg.timestamp" },
+        { "id": "B", "text": "msg.dlc" },
+        { "id": "C", "text": "msg.data" },
+        { "id": "D", "text": "msg.arbitration_id" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "msg.data là bytearray chứa payload của CAN message.",
+      "relatedFlashcardIds": ["can-code-examples-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Đọc CAN bus cơ bản với python-can",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-004",
+      "topicId": "can",
+      "sectionId": "read-can",
+      "questionType": "single_choice",
+      "questionEn": "What does bus.shutdown() do?",
+      "options": [
+        { "id": "A", "text": "Decodes a DBC file" },
+        { "id": "B", "text": "Closes the CAN bus interface" },
+        { "id": "C", "text": "Filters CAN IDs" },
+        { "id": "D", "text": "Sends a diagnostic request" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "bus.shutdown() đóng CAN bus interface khi chương trình hoàn thành.",
+      "relatedFlashcardIds": ["can-code-examples-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Đọc CAN bus cơ bản với python-can",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-005",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "questionType": "single_choice",
+      "questionEn": "What is cantools mainly used for in these examples?",
+      "options": [
+        { "id": "A", "text": "Parsing DBC and encoding or decoding CAN messages" },
+        { "id": "B", "text": "Replacing the CAN physical layer" },
+        { "id": "C", "text": "Providing ECU power" },
+        { "id": "D", "text": "Creating Ethernet cables" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "cantools đọc DBC và dùng các định nghĩa message/signal để decode hoặc encode CAN message.",
+      "relatedFlashcardIds": ["can-code-examples-002", "can-code-examples-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Decode CAN message với DBC file",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-006",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "questionType": "single_choice",
+      "questionEn": "What does db.decode_message(raw_msg.arbitration_id, raw_msg.data) do?",
+      "options": [
+        { "id": "A", "text": "Sends the message to the ECU" },
+        { "id": "B", "text": "Finds the message by ID and decodes its signals" },
+        { "id": "C", "text": "Clears all DTCs" },
+        { "id": "D", "text": "Creates a CAN filter" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "cantools tìm message theo CAN ID rồi decode toàn bộ signal từ raw data.",
+      "relatedFlashcardIds": ["can-code-examples-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Decode CAN message với DBC file",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-007",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "questionType": "single_choice",
+      "questionEn": "What is the direction of CAN decoding?",
+      "options": [
+        { "id": "A", "text": "Signal values → DBC → raw CAN" },
+        { "id": "B", "text": "Raw CAN → DBC → signal values" },
+        { "id": "C", "text": "UDS → DBC → CAN hardware" },
+        { "id": "D", "text": "CAN filter → signal → DBC" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Decode là quá trình chuyển raw CAN data thành các giá trị signal theo DBC.",
+      "relatedFlashcardIds": ["can-code-examples-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Decode CAN message với DBC file",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-008",
+      "topicId": "can",
+      "sectionId": "dbc",
+      "questionType": "single_choice",
+      "questionEn": "What is the direction of CAN encoding?",
+      "options": [
+        { "id": "A", "text": "Raw CAN → DBC → signal values" },
+        { "id": "B", "text": "Signal values → DBC → raw CAN data" },
+        { "id": "C", "text": "DTC → VIN → raw CAN" },
+        { "id": "D", "text": "CAN ID → filter → signal definition" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Encode lấy signal values, dùng DBC để tạo raw CAN data rồi có thể gửi message.",
+      "relatedFlashcardIds": ["can-code-examples-008", "can-code-examples-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Gửi CAN message (Encode từ DBC)",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-009",
+      "topicId": "can",
+      "sectionId": "send-can",
+      "questionType": "single_choice",
+      "questionEn": "What does is_extended_id=False select?",
+      "options": [
+        { "id": "A", "text": "Standard 11-bit CAN ID" },
+        { "id": "B", "text": "Extended 29-bit CAN ID" },
+        { "id": "C", "text": "ISO-TP addressing" },
+        { "id": "D", "text": "A DBC signal" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "is_extended_id=False nghĩa là sử dụng Standard 11-bit CAN ID.",
+      "relatedFlashcardIds": ["can-code-examples-012"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Gửi CAN message (Encode từ DBC)",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-010",
+      "topicId": "can",
+      "sectionId": "send-can",
+      "questionType": "single_choice",
+      "questionEn": "Which function sends a CAN message with python-can?",
+      "options": [
+        { "id": "A", "text": "bus.recv()" },
+        { "id": "B", "text": "bus.send()" },
+        { "id": "C", "text": "bus.shutdown()" },
+        { "id": "D", "text": "db.decode_message()" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "bus.send(msg) được dùng để gửi CAN message.",
+      "relatedFlashcardIds": ["can-code-examples-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Gửi CAN message (Encode từ DBC)",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-011",
+      "topicId": "can",
+      "sectionId": "filter",
+      "questionType": "single_choice",
+      "questionEn": "What is the CAN filter matching rule in the example?",
+      "options": [
+        { "id": "A", "text": "(message.id OR mask) == (can_id OR mask)" },
+        { "id": "B", "text": "(message.id AND mask) == (can_id AND mask)" },
+        { "id": "C", "text": "message.id == mask" },
+        { "id": "D", "text": "message.id + mask == can_id" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "CAN filter match khi (message.id AND mask) bằng (can_id AND mask).",
+      "relatedFlashcardIds": ["can-code-examples-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "CAN Filter — Chỉ nhận message quan tâm",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-012",
+      "topicId": "can",
+      "sectionId": "filter",
+      "questionType": "single_choice",
+      "questionEn": "Which mask is used to match exactly CAN ID 0x100?",
+      "options": [
+        { "id": "A", "text": "0x100" },
+        { "id": "B", "text": "0x700" },
+        { "id": "C", "text": "0x7FF" },
+        { "id": "D", "text": "0x7E8" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Mask 0x7FF được dùng cùng can_id 0x100 để match chính xác ID 0x100.",
+      "relatedFlashcardIds": ["can-code-examples-015"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "CAN Filter — Chỉ nhận message quan tâm",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-013",
+      "topicId": "can",
+      "sectionId": "filter",
+      "questionType": "single_choice",
+      "questionEn": "What CAN ID range is selected by can_id=0x100 and can_mask=0x700?",
+      "options": [
+        { "id": "A", "text": "Only 0x100" },
+        { "id": "B", "text": "0x100 through 0x1FF" },
+        { "id": "C", "text": "0x200 through 0x2FF" },
+        { "id": "D", "text": "All CAN IDs" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Mask 0x700 với can_id 0x100 cho phép nhận block ID từ 0x100 đến 0x1FF.",
+      "relatedFlashcardIds": ["can-code-examples-015"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "CAN Filter — Chỉ nhận message quan tâm",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-014",
+      "topicId": "can",
+      "sectionId": "filter",
+      "questionType": "single_choice",
+      "questionEn": "What does a multiple-filter example receive?",
+      "options": [
+        { "id": "A", "text": "Only 0x100" },
+        { "id": "B", "text": "Only 0x200" },
+        { "id": "C", "text": "0x100 and 0x200" },
+        { "id": "D", "text": "0x100 through 0x1FF" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Hai filter riêng biệt với mask 0x7FF cho phép nhận chính xác 0x100 và 0x200.",
+      "relatedFlashcardIds": ["can-code-examples-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "CAN Filter — Chỉ nhận message quan tâm",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-015",
+      "topicId": "can",
+      "sectionId": "uds",
+      "questionType": "single_choice",
+      "questionEn": "Which library is used for UDS diagnostics in the example?",
+      "options": [
+        { "id": "A", "text": "udsoncan" },
+        { "id": "B", "text": "cantools" },
+        { "id": "C", "text": "python-can only" },
+        { "id": "D", "text": "SocketCAN" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "udsoncan là thư viện được dùng để thực hiện UDS Diagnostic trong ví dụ.",
+      "relatedFlashcardIds": ["can-code-examples-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "UDS Diagnostic với python-udsoncan",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-016",
+      "topicId": "can",
+      "sectionId": "uds",
+      "questionType": "single_choice",
+      "questionEn": "Which ISO standard is used for ISO-TP in the example?",
+      "options": [
+        { "id": "A", "text": "ISO 14229" },
+        { "id": "B", "text": "ISO 15765-2" },
+        { "id": "C", "text": "ISO 11898" },
+        { "id": "D", "text": "ISO 26262" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "ISO-TP trong ví dụ là ISO 15765-2, dùng làm transport trên CAN.",
+      "relatedFlashcardIds": ["can-code-examples-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "UDS Diagnostic với python-udsoncan",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-017",
+      "topicId": "can",
+      "sectionId": "uds",
+      "questionType": "single_choice",
+      "questionEn": "What is TXID=0x7DF used for in the example?",
+      "options": [
+        { "id": "A", "text": "ECU response ID" },
+        { "id": "B", "text": "Tool transmit ID using functional addressing" },
+        { "id": "C", "text": "VIN DID" },
+        { "id": "D", "text": "DTC status mask" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "0x7DF là TXID, tức CAN ID mà tool dùng để gửi bằng functional addressing.",
+      "relatedFlashcardIds": ["can-code-examples-018", "can-code-examples-019"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "TXID và RXID",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-018",
+      "topicId": "can",
+      "sectionId": "uds",
+      "questionType": "single_choice",
+      "questionEn": "What is RXID=0x7E8 used for in the example?",
+      "options": [
+        { "id": "A", "text": "Engine ECU response ID" },
+        { "id": "B", "text": "Tool transmit ID" },
+        { "id": "C", "text": "VIN identifier" },
+        { "id": "D", "text": "CAN filter mask" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "0x7E8 là RXID, CAN ID mà Engine ECU dùng để trả lời.",
+      "relatedFlashcardIds": ["can-code-examples-018", "can-code-examples-020"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "TXID và RXID",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-019",
+      "topicId": "can",
+      "sectionId": "uds",
+      "questionType": "single_choice",
+      "questionEn": "Which DID is used to read the VIN?",
+      "options": [
+        { "id": "A", "text": "0x7DF" },
+        { "id": "B", "text": "0x7E8" },
+        { "id": "C", "text": "0xF190" },
+        { "id": "D", "text": "0xFFFFFF" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "DID 0xF190 được dùng với ReadDataByIdentifier để đọc VIN.",
+      "relatedFlashcardIds": ["can-code-examples-021"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "UDS Service — Đọc VIN",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-020",
+      "topicId": "can",
+      "sectionId": "uds",
+      "questionType": "single_choice",
+      "questionEn": "Which function is used to read DTCs in the example?",
+      "options": [
+        { "id": "A", "text": "read_data_by_identifier()" },
+        { "id": "B", "text": "get_dtc_by_status_mask()" },
+        { "id": "C", "text": "clear_dtc()" },
+        { "id": "D", "text": "decode_message()" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "get_dtc_by_status_mask(0xFF) được dùng để đọc các DTC hiện tại.",
+      "relatedFlashcardIds": ["can-code-examples-022"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "UDS Service — Đọc DTC",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-021",
+      "topicId": "can",
+      "sectionId": "uds",
+      "questionType": "single_choice",
+      "questionEn": "Which value is used to clear all DTCs in the example?",
+      "options": [
+        { "id": "A", "text": "0xFF" },
+        { "id": "B", "text": "0xF190" },
+        { "id": "C", "text": "0x7DF" },
+        { "id": "D", "text": "0xFFFFFF" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "clear_dtc(0xFFFFFF) dùng GroupOfDTC 0xFFFFFF để xóa tất cả DTC trong ví dụ.",
+      "relatedFlashcardIds": ["can-code-examples-023"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "UDS Service — Xóa DTC",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-022",
+      "topicId": "can",
+      "sectionId": "uds",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence correctly describes the UDS communication stack in the example?",
+      "options": [
+        { "id": "A", "text": "UDS → ISO-TP → CAN" },
+        { "id": "B", "text": "CAN → ISO-TP → UDS" },
+        { "id": "C", "text": "DBC → UDS → CAN" },
+        { "id": "D", "text": "CAN → DBC → UDS" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Trong ví dụ, CAN là đường truyền, ISO-TP là transport và UDS là diagnostic protocol.",
+      "relatedFlashcardIds": ["can-code-examples-024"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "UDS Diagnostic với python-udsoncan",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-023",
+      "topicId": "can",
+      "sectionId": "overview",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence summarizes the five CAN code examples?",
+      "options": [
+        { "id": "A", "text": "Read → Filter → Decode → Encode/Send → UDS" },
+        { "id": "B", "text": "UDS → Filter → Read → DBC → Shutdown" },
+        { "id": "C", "text": "Encode → Read → UDS → Filter → Decode" },
+        { "id": "D", "text": "Filter → UDS → Encode → Decode → Read" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Xương sống của bài là: đọc CAN → lọc → decode → encode/gửi → diagnostic bằng UDS.",
+      "relatedFlashcardIds": ["can-code-examples-025"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "Tổng thể các ví dụ",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-code-quiz-024",
+      "topicId": "can",
+      "sectionId": "overview",
+      "questionType": "single_choice",
+      "questionEn": "Which library combination is used for UDS over CAN in the example?",
+      "options": [
+        { "id": "A", "text": "python-can + isotp + udsoncan" },
+        { "id": "B", "text": "cantools only" },
+        { "id": "C", "text": "isotp + cantools only" },
+        { "id": "D", "text": "python-can + cantools only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ví dụ UDS dùng python-can cho CAN, isotp cho ISO-TP và udsoncan cho UDS.",
+      "relatedFlashcardIds": ["can-code-examples-001", "can-code-examples-016", "can-code-examples-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "CAN - Code Examples",
+        "section": "UDS Diagnostic với python-udsoncan",
+        "reference": "content-source/CAN/CAN-Code-Examples.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

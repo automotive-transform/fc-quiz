@@ -1,0 +1,795 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "safety-safety-case-quiz-001",
+      "topicId": "safety",
+      "sectionId": "safety-case",
+      "questionType": "single_choice",
+      "questionEn": "What is a Safety Case?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A single test report"
+        },
+        {
+          "id": "B",
+          "text": "A structured body of documents supporting the complete safety argument"
+        },
+        {
+          "id": "C",
+          "text": "Only the software architecture document"
+        },
+        {
+          "id": "D",
+          "text": "Only the HARA document"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Safety Case không phải một file duy nhất mà là cấu trúc tài liệu trỏ đến toàn bộ Safety Argument để chứng minh sản phẩm đạt mức độ an toàn cần thiết.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-001"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Safety Case"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-002",
+      "topicId": "safety",
+      "sectionId": "safety-case",
+      "questionType": "single_choice",
+      "questionEn": "What is the correct high-level Safety Case sequence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SW → Concept → FSA → System → V&V"
+        },
+        {
+          "id": "B",
+          "text": "Concept → System → SW → V&V → FSA"
+        },
+        {
+          "id": "C",
+          "text": "System → SW → Concept → FSA → V&V"
+        },
+        {
+          "id": "D",
+          "text": "V&V → Concept → System → SW → FSA"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Chuỗi cần nhớ là: Concept → System → Software → Verification & Validation → FSA.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-002"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Safety Case Checklist"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-003",
+      "topicId": "safety",
+      "sectionId": "concept-phase",
+      "questionType": "single_choice",
+      "questionEn": "Who signs off the HARA in the Concept Phase?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Software Developer"
+        },
+        {
+          "id": "B",
+          "text": "Safety Manager"
+        },
+        {
+          "id": "C",
+          "text": "Safety Assessor only"
+        },
+        {
+          "id": "D",
+          "text": "System Integrator"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Theo checklist, HARA phải được thực hiện và sign off bởi Safety Manager.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-003"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 1: Concept Phase (Part 3)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-004",
+      "topicId": "safety",
+      "sectionId": "concept-phase",
+      "questionType": "single_choice",
+      "questionEn": "Which hazardous events must have a Safety Goal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only hazardous events with ASIL D"
+        },
+        {
+          "id": "B",
+          "text": "All hazardous events with ASIL ≥ A"
+        },
+        {
+          "id": "C",
+          "text": "Only hazardous events with ASIL C or D"
+        },
+        {
+          "id": "D",
+          "text": "Only events found during software testing"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Checklist yêu cầu tất cả hazardous events có ASIL ≥ A đều phải có Safety Goal.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-004"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 1: Concept Phase (Part 3)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-005",
+      "topicId": "safety",
+      "sectionId": "concept-phase",
+      "questionType": "single_choice",
+      "questionEn": "What must be clear for each Safety Goal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The programming language only"
+        },
+        {
+          "id": "B",
+          "text": "The ASIL assignment"
+        },
+        {
+          "id": "C",
+          "text": "The supplier name only"
+        },
+        {
+          "id": "D",
+          "text": "The test bench location"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Safety Goals phải có ASIL assignment rõ ràng.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-004"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 1: Concept Phase (Part 3)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-006",
+      "topicId": "safety",
+      "sectionId": "concept-phase",
+      "questionType": "single_choice",
+      "questionEn": "What does FSC stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Functional Safety Concept"
+        },
+        {
+          "id": "B",
+          "text": "Functional Software Control"
+        },
+        {
+          "id": "C",
+          "text": "Failure Safety Check"
+        },
+        {
+          "id": "D",
+          "text": "Functional System Coding"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "FSC là Functional Safety Concept, được xây dựng trong Concept Phase.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-005"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 1: Concept Phase (Part 3)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-007",
+      "topicId": "safety",
+      "sectionId": "system-development",
+      "questionType": "single_choice",
+      "questionEn": "What does TSC stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Technical Safety Concept"
+        },
+        {
+          "id": "B",
+          "text": "Technical Software Code"
+        },
+        {
+          "id": "C",
+          "text": "Test Safety Control"
+        },
+        {
+          "id": "D",
+          "text": "Technical System Coverage"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "TSC là Technical Safety Concept, được xây dựng trong System Development.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-007"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 2: System Development (Part 4)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-008",
+      "topicId": "safety",
+      "sectionId": "system-development",
+      "questionType": "single_choice",
+      "questionEn": "What is required for ASIL decomposition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It only needs to be mentioned verbally"
+        },
+        {
+          "id": "B",
+          "text": "It must be justified and documented"
+        },
+        {
+          "id": "C",
+          "text": "It must always be avoided"
+        },
+        {
+          "id": "D",
+          "text": "It only needs software documentation"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "ASIL decomposition phải được justify và document.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-008"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 2: System Development (Part 4)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-009",
+      "topicId": "safety",
+      "sectionId": "system-development",
+      "questionType": "single_choice",
+      "questionEn": "What does FFI stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Freedom from interference"
+        },
+        {
+          "id": "B",
+          "text": "Functional Fault Identification"
+        },
+        {
+          "id": "C",
+          "text": "Failure Free Integration"
+        },
+        {
+          "id": "D",
+          "text": "Functional Feature Isolation"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "FFI là Freedom from interference và phải được phân tích trong System Development.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-009"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 2: System Development (Part 4)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-010",
+      "topicId": "safety",
+      "sectionId": "system-development",
+      "questionType": "single_choice",
+      "questionEn": "Where are safety requirements allocated?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only to software"
+        },
+        {
+          "id": "B",
+          "text": "Only to hardware"
+        },
+        {
+          "id": "C",
+          "text": "To hardware and software"
+        },
+        {
+          "id": "D",
+          "text": "Only to the Safety Case"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Safety requirements được allocated xuống HW và SW.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-010"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 2: System Development (Part 4)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-011",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "questionType": "single_choice",
+      "questionEn": "What does SWSR stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SW Safety Requirements"
+        },
+        {
+          "id": "B",
+          "text": "System Wide Software Review"
+        },
+        {
+          "id": "C",
+          "text": "Software System Risk"
+        },
+        {
+          "id": "D",
+          "text": "Safety Workflow System Rules"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SWSR là SW Safety Requirements, phải được viết và traceable.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-011"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-012",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "questionType": "single_choice",
+      "questionEn": "What is the required SW safety traceability chain?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Code → Design → SWSR → Test"
+        },
+        {
+          "id": "B",
+          "text": "SWSR → Design → Code → Test"
+        },
+        {
+          "id": "C",
+          "text": "Test → Code → Design → SWSR"
+        },
+        {
+          "id": "D",
+          "text": "Design → Test → SWSR → Code"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Traceability phải nối SWSR → Design → Code → Test.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-012"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-013",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "questionType": "single_choice",
+      "questionEn": "Which coverage measures are listed in the SW checklist?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Statement, branch, and MC/DC"
+        },
+        {
+          "id": "B",
+          "text": "Only statement coverage"
+        },
+        {
+          "id": "C",
+          "text": "Only branch coverage"
+        },
+        {
+          "id": "D",
+          "text": "Memory and timing only"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Code coverage đạt theo ASIL gồm statement, branch và MC/DC.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-015"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-014",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "questionType": "single_choice",
+      "questionEn": "What does dynamic analysis cover in the checklist?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Memory and timing"
+        },
+        {
+          "id": "B",
+          "text": "Only coding style"
+        },
+        {
+          "id": "C",
+          "text": "Only requirements"
+        },
+        {
+          "id": "D",
+          "text": "Only hardware layout"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Dynamic analysis được nêu với hai nội dung: memory và timing.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-016"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-015",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "questionType": "single_choice",
+      "questionEn": "What TCL level is specified for the SW tool qualification item?",
+      "options": [
+        {
+          "id": "A",
+          "text": "TCL ≥ 1"
+        },
+        {
+          "id": "B",
+          "text": "TCL ≥ 2"
+        },
+        {
+          "id": "C",
+          "text": "TCL ≥ 3"
+        },
+        {
+          "id": "D",
+          "text": "TCL = 0"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Checklist ghi rõ SW tool qualification với TCL ≥ 2 phải hoàn thành.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-017"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-016",
+      "topicId": "safety",
+      "sectionId": "verification-validation",
+      "questionType": "single_choice",
+      "questionEn": "Where must module testing be performed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only in simulation"
+        },
+        {
+          "id": "B",
+          "text": "On the HW target"
+        },
+        {
+          "id": "C",
+          "text": "Only through code review"
+        },
+        {
+          "id": "D",
+          "text": "Only on a development PC"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Checklist yêu cầu module testing trên HW target, không chỉ simulation.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-018"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 4: Verification & Validation"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-017",
+      "topicId": "safety",
+      "sectionId": "verification-validation",
+      "questionType": "single_choice",
+      "questionEn": "What must integration testing include?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only normal operation tests"
+        },
+        {
+          "id": "B",
+          "text": "Fault injection"
+        },
+        {
+          "id": "C",
+          "text": "Only code compilation"
+        },
+        {
+          "id": "D",
+          "text": "Only simulation"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Integration test phải bao gồm fault injection.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-019"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 4: Verification & Validation"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-018",
+      "topicId": "safety",
+      "sectionId": "verification-validation",
+      "questionType": "single_choice",
+      "questionEn": "Which validation test is explicitly listed in Phase 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Safety Goal validation test"
+        },
+        {
+          "id": "B",
+          "text": "Only UI validation"
+        },
+        {
+          "id": "C",
+          "text": "Only performance benchmarking"
+        },
+        {
+          "id": "D",
+          "text": "Only compiler validation"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Phase 4 yêu cầu Safety Goal validation test.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-020"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 4: Verification & Validation"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-019",
+      "topicId": "safety",
+      "sectionId": "verification-validation",
+      "questionType": "single_choice",
+      "questionEn": "For which activities is confirmation measure specifically listed as missing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ASIL A/B activities"
+        },
+        {
+          "id": "B",
+          "text": "ASIL C/D activities"
+        },
+        {
+          "id": "C",
+          "text": "Only non-safety activities"
+        },
+        {
+          "id": "D",
+          "text": "Only software coding activities"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Checklist đánh dấu chưa hoàn thành confirmation measure cho các ASIL C/D activities.",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 4: Verification & Validation"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-020",
+      "topicId": "safety",
+      "sectionId": "functional-safety-assessment",
+      "questionType": "single_choice",
+      "questionEn": "What does FSA stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Functional Safety Assessment"
+        },
+        {
+          "id": "B",
+          "text": "Functional Software Analysis"
+        },
+        {
+          "id": "C",
+          "text": "Failure Safety Architecture"
+        },
+        {
+          "id": "D",
+          "text": "Final System Audit"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "FSA là Functional Safety Assessment, được thực hiện khi kết thúc để review toàn bộ Safety Case.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-022"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Functional Safety Assessment (FSA)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-021",
+      "topicId": "safety",
+      "sectionId": "functional-safety-assessment",
+      "questionType": "single_choice",
+      "questionEn": "Who performs the independent review of the entire Safety Case?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Software Developer"
+        },
+        {
+          "id": "B",
+          "text": "The Safety Assessor team"
+        },
+        {
+          "id": "C",
+          "text": "The System Integrator only"
+        },
+        {
+          "id": "D",
+          "text": "The test automation tool"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Khi kết thúc, một đội ngũ độc lập gọi là Safety Assessor review toàn bộ Safety Case.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-023"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Functional Safety Assessment (FSA)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-quiz-022",
+      "topicId": "safety",
+      "sectionId": "functional-safety-assessment",
+      "questionType": "single_choice",
+      "questionEn": "What is the release consequence of not passing FSA?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The product can still be released normally"
+        },
+        {
+          "id": "B",
+          "text": "The product cannot be released"
+        },
+        {
+          "id": "C",
+          "text": "Only documentation is deleted"
+        },
+        {
+          "id": "D",
+          "text": "Only software testing is repeated"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Theo source: không pass FSA = không release sản phẩm. Đây là gate cuối quan trọng.",
+      "relatedFlashcardIds": [
+        "safety-safety-case-024"
+      ],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Functional Safety Assessment (FSA)"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

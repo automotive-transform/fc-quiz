@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "safety-sotif-001",
+      "topicId": "safety",
+      "sectionId": "sotif",
+      "cardType": "abbreviation",
+      "term": "SOTIF",
+      "definitionEn": "Safety Of The Intended Functionality.",
+      "explanationVi": "An toàn của chức năng dự kiến; chức năng đúng nhưng có thể chưa đủ an toàn trong một số scenario.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-002",
+      "topicId": "safety",
+      "sectionId": "sotif",
+      "cardType": "technical_term",
+      "term": "Safety Of The Intended Functionality",
+      "definitionEn": "Safety concern where intended functionality is correct but insufficiently safe in complex scenarios.",
+      "explanationVi": "Chức năng hoạt động đúng nhưng hành vi vẫn không đủ an toàn trong tình huống phức tạp.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-003",
+      "topicId": "safety",
+      "sectionId": "sotif",
+      "cardType": "comparison",
+      "term": "ISO 26262 vs SOTIF",
+      "definitionEn": "ISO 26262 addresses HW/SW failures; SOTIF addresses intended functionality that is not sufficiently safe.",
+      "explanationVi": "ISO 26262 xét lỗi HW/SW; SOTIF xét chức năng đúng nhưng không đủ an toàn.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "ISO 26262 vs SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-004",
+      "topicId": "safety",
+      "sectionId": "sotif-4-field-model",
+      "cardType": "concept",
+      "term": "SOTIF 4-Field Model",
+      "definitionEn": "A model dividing scenarios by known/unknown and safe/unsafe behavior.",
+      "explanationVi": "Mô hình 4 vùng dựa trên hai yếu tố: scenario Known hay Unknown và hành vi Safe hay Unsafe.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF 4-Field Model",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-005",
+      "topicId": "safety",
+      "sectionId": "sotif-4-field-model",
+      "cardType": "concept",
+      "term": "Known + Safe",
+      "definitionEn": "A known scenario in which system behavior is safe.",
+      "explanationVi": "Scenario đã biết và hành vi an toàn; đây là Vùng 1, mục tiêu đã đạt được.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF 4-Field Model — Vùng 1",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-006",
+      "topicId": "safety",
+      "sectionId": "sotif-4-field-model",
+      "cardType": "concept",
+      "term": "Known + Unsafe",
+      "definitionEn": "A known scenario in which system behavior is unsafe.",
+      "explanationVi": "Scenario đã biết nhưng hành vi không an toàn; Vùng 2 và phải fix trước khi release.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF 4-Field Model — Vùng 2",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-007",
+      "topicId": "safety",
+      "sectionId": "sotif-4-field-model",
+      "cardType": "concept",
+      "term": "Unknown + Safe",
+      "definitionEn": "An unknown scenario in which system behavior happens to be safe.",
+      "explanationVi": "Scenario chưa biết nhưng hành vi vẫn an toàn; Vùng 3 và cần coverage testing.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF 4-Field Model — Vùng 3",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-008",
+      "topicId": "safety",
+      "sectionId": "sotif-4-field-model",
+      "cardType": "concept",
+      "term": "Unknown + Unsafe",
+      "definitionEn": "An unknown scenario in which system behavior is unsafe.",
+      "explanationVi": "Scenario chưa biết và hành vi nguy hiểm; Vùng 4, nguy hiểm nhất.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF 4-Field Model — Vùng 4",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-009",
+      "topicId": "safety",
+      "sectionId": "iso-26262-vs-sotif",
+      "cardType": "comparison",
+      "term": "ISO 26262 — Failure Rate",
+      "definitionEn": "The main challenge is proving that the failure rate is sufficiently low.",
+      "explanationVi": "Challenge chính của ISO 26262 là chứng minh failure rate đủ thấp.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "ISO 26262 vs SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-010",
+      "topicId": "safety",
+      "sectionId": "iso-26262-vs-sotif",
+      "cardType": "comparison",
+      "term": "SOTIF — Scenario Coverage",
+      "definitionEn": "The main challenge is proving that scenario coverage is sufficient.",
+      "explanationVi": "Challenge chính của SOTIF là chứng minh scenario coverage đủ.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "ISO 26262 vs SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-011",
+      "topicId": "safety",
+      "sectionId": "sotif-example",
+      "cardType": "concept",
+      "term": "SOTIF Camera Example",
+      "definitionEn": "A camera works correctly but misses a pedestrian in dense fog not covered by the specification.",
+      "explanationVi": "Camera không hỏng nhưng không nhận ra pedestrian trong sương mù dày vì scenario chưa có trong spec.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF example",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-012",
+      "topicId": "safety",
+      "sectionId": "sotif-methods",
+      "cardType": "phrase",
+      "term": "Scenario analysis",
+      "definitionEn": "An approach used by SOTIF to analyze safety across scenarios.",
+      "explanationVi": "Phân tích các scenario để tìm tình huống chức năng có thể không đủ an toàn.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "ISO 26262 vs SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-013",
+      "topicId": "safety",
+      "sectionId": "sotif-methods",
+      "cardType": "phrase",
+      "term": "Field data",
+      "definitionEn": "Real-world data used as a SOTIF analysis method.",
+      "explanationVi": "Dữ liệu thực tế ngoài hiện trường được dùng để hỗ trợ phân tích SOTIF.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "ISO 26262 vs SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-014",
+      "topicId": "safety",
+      "sectionId": "ai-ml",
+      "cardType": "concept",
+      "term": "SOTIF and AI/ML",
+      "definitionEn": "SOTIF becomes increasingly important for ADAS using Deep Learning.",
+      "explanationVi": "Với ADAS dùng Deep Learning, SOTIF ngày càng quan trọng vì vẫn có thể fail trong một số scenario.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF và AI/ML",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-015",
+      "topicId": "safety",
+      "sectionId": "ai-ml",
+      "cardType": "concept",
+      "term": "99.9% Accuracy",
+      "definitionEn": "A neural network can still fail in 0.1% of cases.",
+      "explanationVi": "Neural network đạt 99.9% accuracy vẫn có 0.1% fail; nếu fail ở scenario nguy hiểm thì là SOTIF issue.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF và AI/ML",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-016",
+      "topicId": "safety",
+      "sectionId": "ai-ml",
+      "cardType": "concept",
+      "term": "Pedestrian in Low Light",
+      "definitionEn": "A dangerous scenario where AI failure can become a serious SOTIF issue.",
+      "explanationVi": "Nếu 0.1% fail xảy ra với pedestrian trong ánh sáng yếu, đó có thể là SOTIF issue nghiêm trọng.",
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF và AI/ML",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

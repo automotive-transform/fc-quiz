@@ -1,0 +1,380 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "safety-asil-001",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "cardType": "abbreviation",
+      "term": "ASIL",
+      "definitionEn": "Automotive Safety Integrity Level.",
+      "explanationVi": "Mức độ toàn vẹn an toàn trong automotive, gồm ASIL A, B, C và D.",
+      "questionEn": "What does ASIL stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-002",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "cardType": "concept",
+      "term": "ASIL Determination",
+      "definitionEn": "ASIL is determined from Severity, Controllability, and Exposure.",
+      "explanationVi": "Xác định ASIL dựa trên 3 yếu tố: Severity, Controllability và Exposure.",
+      "questionEn": "Which three factors determine ASIL?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-003",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "cardType": "technical_term",
+      "term": "Severity",
+      "definitionEn": "The severity level of the consequence, from S1 to S3.",
+      "explanationVi": "Mức độ nghiêm trọng của hậu quả, gồm S1, S2 và S3.",
+      "questionEn": "What does Severity represent in ASIL determination?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-004",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "cardType": "technical_term",
+      "term": "Controllability",
+      "definitionEn": "The controllability level of a hazardous situation, from C1 to C3.",
+      "explanationVi": "Khả năng kiểm soát tình huống nguy hiểm, gồm C1, C2 và C3.",
+      "questionEn": "What does Controllability represent in ASIL determination?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-005",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "cardType": "technical_term",
+      "term": "Exposure",
+      "definitionEn": "The exposure level of an operational situation, from E1 to E4.",
+      "explanationVi": "Mức độ phơi nhiễm hoặc thường xuyên xảy ra của tình huống, từ E1 đến E4.",
+      "questionEn": "What does Exposure represent in ASIL determination?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-006",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "cardType": "comparison",
+      "term": "QM → ASIL A → ASIL B → ASIL C → ASIL D",
+      "definitionEn": "The sequence from normal quality management to the highest ASIL level.",
+      "explanationVi": "Thứ tự mức độ: QM, A, B, C, D; ASIL D là mức cao nhất.",
+      "questionEn": "What is the progression from QM to the highest ASIL?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-007",
+      "topicId": "safety",
+      "sectionId": "asil-effort",
+      "cardType": "comparison",
+      "term": "ASIL Effort",
+      "definitionEn": "QM +0 days; ASIL A +1–2 days; B +1 week; C +1 month; D +6 months.",
+      "explanationVi": "Effort tăng theo ASIL: 0 ngày → 1–2 ngày → 1 tuần → 1 tháng → 6 tháng.",
+      "questionEn": "How does the stated effort increase from QM to ASIL D?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL trong thực tế — Effort cần bỏ ra",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-008",
+      "topicId": "safety",
+      "sectionId": "asil-effort",
+      "cardType": "concept",
+      "term": "ASIL A",
+      "definitionEn": "Uses range checks, error counters, safe state, recommended MISRA C, and statement coverage.",
+      "explanationVi": "ASIL A yêu cầu range check, error counter, safe state; MISRA C được khuyến nghị và statement coverage.",
+      "questionEn": "What are the main ASIL A measures in the source?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL trong thực tế — Effort cần bỏ ra",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-009",
+      "topicId": "safety",
+      "sectionId": "asil-effort",
+      "cardType": "concept",
+      "term": "ASIL B",
+      "definitionEn": "Uses independent monitoring, mandatory MISRA C, branch coverage, and one independent reviewer.",
+      "explanationVi": "ASIL B yêu cầu independent monitoring, MISRA C bắt buộc, branch coverage và 1 independent reviewer.",
+      "questionEn": "What are the main ASIL B measures in the source?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL trong thực tế — Effort cần bỏ ra",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-010",
+      "topicId": "safety",
+      "sectionId": "asil-effort",
+      "cardType": "concept",
+      "term": "ASIL C",
+      "definitionEn": "Uses HW redundancy or SW voting, MC/DC, two independent reviewers, and fault injection testing.",
+      "explanationVi": "ASIL C yêu cầu HW redundancy hoặc SW voting, MC/DC, 2 independent reviewers và fault injection testing.",
+      "questionEn": "What are the main ASIL C measures in the source?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL trong thực tế — Effort cần bỏ ra",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-011",
+      "topicId": "safety",
+      "sectionId": "asil-effort",
+      "cardType": "concept",
+      "term": "ASIL D",
+      "definitionEn": "Uses dual-channel HW, two independent teams, mandatory MC/DC, and recommended formal proof.",
+      "explanationVi": "ASIL D yêu cầu dual-channel HW, 2 independent teams, MC/DC bắt buộc và formal proof được khuyến nghị.",
+      "questionEn": "What are the main ASIL D measures in the source?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL trong thực tế — Effort cần bỏ ra",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-012",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "cardType": "technical_term",
+      "term": "ASIL Decomposition",
+      "definitionEn": "Splitting one ASIL module into two independent modules under FFI conditions.",
+      "explanationVi": "Chia một module ASIL thành 2 module độc lập, với điều kiện bắt buộc là FFI.",
+      "questionEn": "What is ASIL Decomposition?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-013",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "cardType": "abbreviation",
+      "term": "FFI",
+      "definitionEn": "Freedom From Interference between decomposed modules.",
+      "explanationVi": "Freedom From Interference: 2 module decomposition phải tránh can thiệp lẫn nhau không được kiểm soát.",
+      "questionEn": "What does FFI stand for in ASIL Decomposition?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-014",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "cardType": "concept",
+      "term": "FFI Conditions",
+      "definitionEn": "Decomposed modules must not share memory or uncontrolled execution time.",
+      "explanationVi": "2 module không được share memory và không được share execution time không kiểm soát.",
+      "questionEn": "What independence conditions are required by FFI?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-015",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "cardType": "comparison",
+      "term": "ASIL B → ASIL A(d) + ASIL A(d)",
+      "definitionEn": "ASIL B can be decomposed into two ASIL A(d) modules.",
+      "explanationVi": "ASIL B được decomposition thành 2 module ASIL A(d), mỗi module là một nhánh decomposition.",
+      "questionEn": "How can ASIL B be decomposed according to the source?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-016",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "cardType": "comparison",
+      "term": "ASIL C → ASIL A(d) + ASIL B(d)",
+      "definitionEn": "ASIL C can be decomposed into one ASIL A(d) and one ASIL B(d) module.",
+      "explanationVi": "ASIL C được decomposition thành 1 module ASIL A(d) và 1 module ASIL B(d).",
+      "questionEn": "How can ASIL C be decomposed according to the source?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-017",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "cardType": "comparison",
+      "term": "ASIL D → ASIL A(d) + ASIL C(d)",
+      "definitionEn": "ASIL D can be decomposed into one ASIL A(d) and one ASIL C(d) module.",
+      "explanationVi": "ASIL D được decomposition thành 1 module ASIL A(d) và 1 module ASIL C(d).",
+      "questionEn": "How can ASIL D be decomposed using A(d) and C(d)?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-018",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "cardType": "comparison",
+      "term": "ASIL D → ASIL B(d) + ASIL B(d)",
+      "definitionEn": "ASIL D can be decomposed into two ASIL B(d) modules.",
+      "explanationVi": "ASIL D được decomposition thành 2 module ASIL B(d).",
+      "questionEn": "How can ASIL D be decomposed using two B(d) modules?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-019",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "cardType": "abbreviation",
+      "term": "(d)",
+      "definitionEn": "Indicates a decomposed ASIL level with potentially reduced requirements.",
+      "explanationVi": "(d) nghĩa là decomposed; khác ASIL thông thường và có requirements được giảm nhẹ theo source.",
+      "questionEn": "What does (d) mean in ASIL A(d), B(d), or C(d)?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-020",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "cardType": "concept",
+      "term": "Decomposition Invalidated",
+      "definitionEn": "Sharing a RAM region between decomposed ASIL A(d) modules invalidates the decomposition.",
+      "explanationVi": "Nếu 2 ASIL A(d) share RAM region, decomposition bị vô hiệu.",
+      "questionEn": "What happens if two decomposed ASIL A(d) modules share a RAM region?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-021",
+      "topicId": "safety",
+      "sectionId": "asil-vs-sil",
+      "cardType": "comparison",
+      "term": "ASIL vs SIL",
+      "definitionEn": "The source maps ASIL A to SIL 1, B to SIL 1, C to SIL 2, and D to SIL 3.",
+      "explanationVi": "Theo source: A ↔ SIL 1; B ↔ SIL 1 (hộ chặt hơn); C ↔ SIL 2; D ↔ SIL 3.",
+      "questionEn": "How does the source compare ASIL with SIL?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL vs SIL (IEC 61508)",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-022",
+      "topicId": "safety",
+      "sectionId": "asil-vs-sil",
+      "cardType": "abbreviation",
+      "term": "PFH",
+      "definitionEn": "Probability of Failure per Hour.",
+      "explanationVi": "Xác suất failure trong mỗi giờ, được biểu diễn với đơn vị /h.",
+      "questionEn": "What does PFH stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL vs SIL (IEC 61508)",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

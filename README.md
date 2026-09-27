@@ -46,6 +46,9 @@ OR
 ```bash
 npm run validate:content && npm test && npm run build
 ```
+```bash
+npm run dev -- --host 0.0.0.0 --port 5173
+```
 
 The build automatically discovers new JSON files. No React code or manual topic
 registration is required.

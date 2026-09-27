@@ -1,0 +1,811 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "safety-fmea-quiz-001",
+      "topicId": "safety",
+      "sectionId": "fmea",
+      "questionType": "single_choice",
+      "questionEn": "What does FMEA stand for?",
+      "options": [
+        { "id": "A", "text": "Failure Mode and Effects Analysis" },
+        { "id": "B", "text": "Fault Mechanism and Error Assessment" },
+        { "id": "C", "text": "Functional Monitoring and Engineering Analysis" },
+        { "id": "D", "text": "Failure Monitoring and Event Assessment" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "FMEA là Failure Mode and Effects Analysis, dùng để xác định failure modes và effects.",
+      "relatedFlashcardIds": ["safety-fmea-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "FMEA trong ISO 26262 — Phân tích chế độ lỗi",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-fmea-quiz-002",
+      "topicId": "safety",
+      "sectionId": "fmea",
+      "questionType": "single_choice",
+      "questionEn": "Where is FMEA primarily used in ISO 26262?",
+      "options": [
+        { "id": "A", "text": "System and hardware levels" },
+        { "id": "B", "text": "Only manufacturing level" },
+        { "id": "C", "text": "Only vehicle testing level" },
+        { "id": "D", "text": "Only network configuration level" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Trong ISO 26262, FMEA chủ yếu được sử dụng ở cấp system và hardware để thực hiện FMEA-based ASIL analysis.",
+      "relatedFlashcardIds": ["safety-fmea-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "FMEA trong ISO 26262 — Phân tích chế độ lỗi",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-fmea-quiz-003",
+      "topicId": "safety",
+      "sectionId": "fmea",
+      "questionType": "single_choice",
+      "questionEn": "What is the main focus of System FMEA?",
+      "options": [
+        { "id": "A", "text": "Manufacturing process failures" },
+        { "id": "B", "text": "Failure modes of the item and subsystem interactions" },
+        { "id": "C", "text": "Only software coding errors" },
+        { "id": "D", "text": "Only supplier quality problems" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "S-FMEA ở system level tập trung vào failure modes của toàn bộ item và interactions giữa các subsystems.",
+      "relatedFlashcardIds": ["safety-fmea-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Ba loại FMEA trong Automotive",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-fmea-quiz-004",
+      "topicId": "safety",
+      "sectionId": "fmea",
+      "questionType": "single_choice",
+      "questionEn": "Which FMEA focuses on manufacturing failures?",
+      "options": [
+        { "id": "A", "text": "S-FMEA" },
+        { "id": "B", "text": "D-FMEA" },
+        { "id": "C", "text": "P-FMEA" },
+        { "id": "D", "text": "H-FMEA" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "P-FMEA là Process FMEA, tập trung vào lỗi trong quá trình sản xuất và manufacturing controls.",
+      "relatedFlashcardIds": ["safety-fmea-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Ba loại FMEA trong Automotive",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-fmea-quiz-005",
+      "topicId": "safety",
+      "sectionId": "fmea",
+      "questionType": "single_choice",
+      "questionEn": "How is RPN calculated in the FMEA example?",
+      "options": [
+        { "id": "A", "text": "Severity + Occurrence + Detection" },
+        { "id": "B", "text": "Severity × Occurrence × Detection" },
+        { "id": "C", "text": "Severity × Occurrence + Detection" },
+        { "id": "D", "text": "Occurrence × Detection only" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "RPN được tính bằng Severity × Occurrence × Detection.",
+      "relatedFlashcardIds": ["safety-fmea-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "FMEA Worksheet — Ví dụ cho Cruise Control Speed Sensor",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-fmea-quiz-006",
+      "topicId": "safety",
+      "sectionId": "fmea",
+      "questionType": "single_choice",
+      "questionEn": "Which action is specified for a stuck-at-zero speed sensor?",
+      "options": [
+        { "id": "A", "text": "Range check" },
+        { "id": "B", "text": "Low-pass filter" },
+        { "id": "C", "text": "Cross-check with wheel speed" },
+        { "id": "D", "text": "Mechanical failsafe" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Với stuck-at-zero, action trong worksheet là cross-check với wheel speed.",
+      "relatedFlashcardIds": ["safety-fmea-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "FMEA Worksheet — Ví dụ cho Cruise Control Speed Sensor",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-fta-quiz-001",
+      "topicId": "safety",
+      "sectionId": "fta",
+      "questionType": "single_choice",
+      "questionEn": "What is the analysis direction of FTA?",
+      "options": [
+        { "id": "A", "text": "Top-down" },
+        { "id": "B", "text": "Bottom-up" },
+        { "id": "C", "text": "Random" },
+        { "id": "D", "text": "Process-only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "FTA là phương pháp top-down, bắt đầu từ undesired event và phân tích xuống các nguyên nhân.",
+      "relatedFlashcardIds": ["safety-fta-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "FTA — Fault Tree Analysis",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-fta-quiz-002",
+      "topicId": "safety",
+      "sectionId": "fta",
+      "questionType": "single_choice",
+      "questionEn": "What does an AND Gate mean in FTA?",
+      "options": [
+        { "id": "A", "text": "Any one input event causes the output" },
+        { "id": "B", "text": "All input events must occur simultaneously" },
+        { "id": "C", "text": "No input event is required" },
+        { "id": "D", "text": "Only the top event is analyzed" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "AND Gate yêu cầu tất cả input events xảy ra đồng thời mới gây output.",
+      "relatedFlashcardIds": ["safety-fta-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "FTA — Fault Tree Analysis",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-fta-quiz-003",
+      "topicId": "safety",
+      "sectionId": "fta",
+      "questionType": "single_choice",
+      "questionEn": "What does an OR Gate mean in FTA?",
+      "options": [
+        { "id": "A", "text": "All inputs must occur simultaneously" },
+        { "id": "B", "text": "Only the basic event can cause output" },
+        { "id": "C", "text": "Any input event can cause the output" },
+        { "id": "D", "text": "The output can never occur" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "OR Gate có nghĩa bất kỳ một input event xảy ra cũng có thể gây output.",
+      "relatedFlashcardIds": ["safety-fta-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "FTA — Fault Tree Analysis",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-fta-quiz-004",
+      "topicId": "safety",
+      "sectionId": "fta",
+      "questionType": "single_choice",
+      "questionEn": "What is the Top Event in FTA?",
+      "options": [
+        { "id": "A", "text": "An undesired event or Safety Goal violation" },
+        { "id": "B", "text": "A manufacturing control" },
+        { "id": "C", "text": "A normal operating condition" },
+        { "id": "D", "text": "A communication sequence counter" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Top Event là undesired event, được mô tả là Safety Goal violation trong nguồn.",
+      "relatedFlashcardIds": ["safety-fta-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "FTA — Fault Tree Analysis",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-ffi-quiz-001",
+      "topicId": "safety",
+      "sectionId": "freedom-from-interference",
+      "questionType": "single_choice",
+      "questionEn": "What are the three types of FFI?",
+      "options": [
+        { "id": "A", "text": "Spatial, Temporal, Information Exchange" },
+        { "id": "B", "text": "Hardware, Software, Process" },
+        { "id": "C", "text": "Local, Remote, Network" },
+        { "id": "D", "text": "Input, Output, Diagnostic" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "FFI có ba loại: Spatial FFI, Temporal FFI và Information Exchange FFI.",
+      "relatedFlashcardIds": ["safety-ffi-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Freedom From Interference (FFI)",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-ffi-quiz-002",
+      "topicId": "safety",
+      "sectionId": "freedom-from-interference",
+      "questionType": "single_choice",
+      "questionEn": "Which mechanism is associated with Spatial FFI?",
+      "options": [
+        { "id": "A", "text": "MPU and AUTOSAR OS Memory Partition" },
+        { "id": "B", "text": "Timeout counter only" },
+        { "id": "C", "text": "WdgM only" },
+        { "id": "D", "text": "DTC management" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Spatial FFI bảo vệ memory; mechanism được nêu là MPU và AUTOSAR OS Memory Partition.",
+      "relatedFlashcardIds": ["safety-ffi-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Freedom From Interference (FFI)",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-ffi-quiz-003",
+      "topicId": "safety",
+      "sectionId": "freedom-from-interference",
+      "questionType": "single_choice",
+      "questionEn": "Which FFI protects CPU time between ASIL modules?",
+      "options": [
+        { "id": "A", "text": "Spatial FFI" },
+        { "id": "B", "text": "Temporal FFI" },
+        { "id": "C", "text": "Information Exchange FFI" },
+        { "id": "D", "text": "Manufacturing FFI" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Temporal FFI ngăn module ASIL thấp chiếm CPU time của module ASIL cao.",
+      "relatedFlashcardIds": ["safety-ffi-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Freedom From Interference (FFI)",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-e2e-quiz-001",
+      "topicId": "safety",
+      "sectionId": "e2e-protection",
+      "questionType": "single_choice",
+      "questionEn": "Which E2E mechanism detects message loss?",
+      "options": [
+        { "id": "A", "text": "CRC" },
+        { "id": "B", "text": "Sequence counter" },
+        { "id": "C", "text": "Data ID only" },
+        { "id": "D", "text": "MPU" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Sequence counter giúp receiver phát hiện message loss bằng cách nhận biết gap.",
+      "relatedFlashcardIds": ["safety-e2e-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "E2E Protection — End-to-End Communication Protection",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-e2e-quiz-002",
+      "topicId": "safety",
+      "sectionId": "e2e-protection",
+      "questionType": "single_choice",
+      "questionEn": "Which E2E mechanism detects data corruption?",
+      "options": [
+        { "id": "A", "text": "CRC" },
+        { "id": "B", "text": "Sequence counter" },
+        { "id": "C", "text": "Timeout counter" },
+        { "id": "D", "text": "Memory Partition" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "CRC 8-bit, 16-bit hoặc 32-bit được dùng để phát hiện data bị thay đổi.",
+      "relatedFlashcardIds": ["safety-e2e-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "E2E Protection — End-to-End Communication Protection",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-e2e-quiz-003",
+      "topicId": "safety",
+      "sectionId": "e2e-protection",
+      "questionType": "single_choice",
+      "questionEn": "Which E2E mechanism addresses message delay?",
+      "options": [
+        { "id": "A", "text": "CRC" },
+        { "id": "B", "text": "Data ID" },
+        { "id": "C", "text": "Timeout counter" },
+        { "id": "D", "text": "MPU" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Timeout counter được dùng để phát hiện message đến trễ.",
+      "relatedFlashcardIds": ["safety-e2e-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "E2E Protection — End-to-End Communication Protection",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-tool-quiz-001",
+      "topicId": "safety",
+      "sectionId": "tool-qualification",
+      "questionType": "single_choice",
+      "questionEn": "What action is required for TCL 2?",
+      "options": [
+        { "id": "A", "text": "No special qualification" },
+        { "id": "B", "text": "Validation using known inputs" },
+        { "id": "C", "text": "Full qualification with test report and safety manual" },
+        { "id": "D", "text": "Manufacturing control only" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "TCL 2 yêu cầu validation, ví dụ test tool với các known inputs.",
+      "relatedFlashcardIds": ["safety-tool-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Tool Qualification — Chứng nhận công cụ",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-tool-quiz-002",
+      "topicId": "safety",
+      "sectionId": "tool-qualification",
+      "questionType": "single_choice",
+      "questionEn": "Which TCL requires full qualification?",
+      "options": [
+        { "id": "A", "text": "TCL 1" },
+        { "id": "B", "text": "TCL 2" },
+        { "id": "C", "text": "TCL 3" },
+        { "id": "D", "text": "All TCL levels equally" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "TCL 3 yêu cầu full qualification, gồm test report và safety manual.",
+      "relatedFlashcardIds": ["safety-tool-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Tool Qualification — Chứng nhận công cụ",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-dfa-quiz-001",
+      "topicId": "safety",
+      "sectionId": "dependent-failure-analysis",
+      "questionType": "single_choice",
+      "questionEn": "What must DFA demonstrate during ASIL decomposition?",
+      "options": [
+        { "id": "A", "text": "Both channels must share the same cause" },
+        { "id": "B", "text": "Two channels do not fail together from the same cause" },
+        { "id": "C", "text": "Only one channel is needed" },
+        { "id": "D", "text": "All channels use identical technology" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "DFA phải chứng minh hai channel không bị lỗi cùng lúc do cùng một nguyên nhân.",
+      "relatedFlashcardIds": ["safety-dfa-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "DIA (Dependent Failure Analysis)",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-dfa-quiz-002",
+      "topicId": "safety",
+      "sectionId": "dependent-failure-analysis",
+      "questionType": "single_choice",
+      "questionEn": "What is a Common Cause Failure (CCF)?",
+      "options": [
+        { "id": "A", "text": "A failure in one channel propagating to another" },
+        { "id": "B", "text": "Two channels failing because of the same cause" },
+        { "id": "C", "text": "A communication delay only" },
+        { "id": "D", "text": "A manufacturing process failure" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "CCF là khi hai channel cùng fail do một nguyên nhân, ví dụ cùng temperature hoặc supply voltage.",
+      "relatedFlashcardIds": ["safety-dfa-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "DIA (Dependent Failure Analysis)",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-dfa-quiz-003",
+      "topicId": "safety",
+      "sectionId": "dependent-failure-analysis",
+      "questionType": "single_choice",
+      "questionEn": "Which is a DFA measure listed in the source?",
+      "options": [
+        { "id": "A", "text": "Physical separation" },
+        { "id": "B", "text": "Removing all monitoring" },
+        { "id": "C", "text": "Using the same supplier only" },
+        { "id": "D", "text": "Disabling safety mechanisms" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Physical separation là một trong các DFA measures, cùng với diverse technology, design và supplier.",
+      "relatedFlashcardIds": ["safety-dfa-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "DIA (Dependent Failure Analysis)",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-autosar-quiz-001",
+      "topicId": "safety",
+      "sectionId": "iso26262-autosar",
+      "questionType": "single_choice",
+      "questionEn": "Which AUTOSAR component provides watchdog supervision?",
+      "options": [
+        { "id": "A", "text": "DEM" },
+        { "id": "B", "text": "WdgM" },
+        { "id": "C", "text": "NvM" },
+        { "id": "D", "text": "RTE" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "WdgM là Watchdog Manager và cung cấp watchdog supervision.",
+      "relatedFlashcardIds": ["safety-autosar-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "ISO 26262 và AUTOSAR — Tích hợp",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-autosar-quiz-002",
+      "topicId": "safety",
+      "sectionId": "iso26262-autosar",
+      "questionType": "single_choice",
+      "questionEn": "Which AUTOSAR component handles error reporting and DTC management?",
+      "options": [
+        { "id": "A", "text": "DEM" },
+        { "id": "B", "text": "WdgM" },
+        { "id": "C", "text": "NvM" },
+        { "id": "D", "text": "ComM" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "DEM là Diagnostic Event Manager, cung cấp error reporting và DTC management.",
+      "relatedFlashcardIds": ["safety-autosar-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "ISO 26262 và AUTOSAR — Tích hợp",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-autosar-quiz-003",
+      "topicId": "safety",
+      "sectionId": "iso26262-autosar",
+      "questionType": "single_choice",
+      "questionEn": "Which AUTOSAR mechanisms support NV data safety?",
+      "options": [
+        { "id": "A", "text": "NvM with CRC, and Fee/Fls with ECC" },
+        { "id": "B", "text": "WdgM with timeout only" },
+        { "id": "C", "text": "DEM with sequence counter" },
+        { "id": "D", "text": "ComM with MPU only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nguồn nêu NvM với CRC và Fee/Fls với ECC cho NV data safety.",
+      "relatedFlashcardIds": ["safety-autosar-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "ISO 26262 và AUTOSAR — Tích hợp",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-abs-quiz-001",
+      "topicId": "safety",
+      "sectionId": "abs-case-study",
+      "questionType": "single_choice",
+      "questionEn": "What components are included in the ABS item?",
+      "options": [
+        { "id": "A", "text": "Four wheel speed sensors, ABS ECU, and HCU" },
+        { "id": "B", "text": "Only ABS ECU" },
+        { "id": "C", "text": "Only four wheel speed sensors" },
+        { "id": "D", "text": "Only HCU and pump motor" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ABS item gồm 4 wheel speed sensors, ABS ECU và HCU với solenoid valves và pump motor.",
+      "relatedFlashcardIds": ["safety-abs-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Item Definition",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-abs-quiz-002",
+      "topicId": "safety",
+      "sectionId": "abs-case-study",
+      "questionType": "single_choice",
+      "questionEn": "What is the ASIL for ABS failure during emergency braking?",
+      "options": [
+        { "id": "A", "text": "ASIL A" },
+        { "id": "B", "text": "ASIL B" },
+        { "id": "C", "text": "ASIL C" },
+        { "id": "D", "text": "ASIL D" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Safety Goal về ABS failure during emergency braking được xác định là ASIL D.",
+      "relatedFlashcardIds": ["safety-abs-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "HARA Result — Safety Goals cho ABS",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-abs-quiz-003",
+      "topicId": "safety",
+      "sectionId": "abs-case-study",
+      "questionType": "single_choice",
+      "questionEn": "What braking force must ABS provide when the ABS ECU fails?",
+      "options": [
+        { "id": "A", "text": "At least 20% of normal braking force" },
+        { "id": "B", "text": "At least 50% of normal braking force" },
+        { "id": "C", "text": "At least 80% of normal braking force" },
+        { "id": "D", "text": "Exactly 100% of normal braking force" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Safety Goal yêu cầu lực phanh ít nhất 80% mức bình thường khi ABS ECU fail.",
+      "relatedFlashcardIds": ["safety-abs-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "HARA Result — Safety Goals cho ABS",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-abs-quiz-004",
+      "topicId": "safety",
+      "sectionId": "abs-case-study",
+      "questionType": "single_choice",
+      "questionEn": "Within what time must ABS detect wheel speed sensor failure?",
+      "options": [
+        { "id": "A", "text": "10 ms" },
+        { "id": "B", "text": "50 ms" },
+        { "id": "C", "text": "100 ms" },
+        { "id": "D", "text": "1 second" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "ABS ECU phải phát hiện wheel speed sensor failure trong vòng 100 ms.",
+      "relatedFlashcardIds": ["safety-abs-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "HARA Result — Safety Goals cho ABS",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-abs-quiz-005",
+      "topicId": "safety",
+      "sectionId": "abs-case-study",
+      "questionType": "single_choice",
+      "questionEn": "How are the four ABS wheel speed sensors checked against each other?",
+      "options": [
+        { "id": "A", "text": "By plausibility check" },
+        { "id": "B", "text": "By manufacturing control" },
+        { "id": "C", "text": "By DTC deletion" },
+        { "id": "D", "text": "By disabling three sensors" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Bốn wheel speed sensors được cross-check lẫn nhau bằng plausibility check.",
+      "relatedFlashcardIds": ["safety-abs-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Safety Mechanism",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-abs-quiz-006",
+      "topicId": "safety",
+      "sectionId": "abs-case-study",
+      "questionType": "single_choice",
+      "questionEn": "What are the roles of the two cores in the ABS ECU?",
+      "options": [
+        { "id": "A", "text": "Both cores only run the same ABS algorithm" },
+        { "id": "B", "text": "One runs the ABS algorithm; the other runs the safety monitor" },
+        { "id": "C", "text": "One controls manufacturing; the other controls diagnostics" },
+        { "id": "D", "text": "One runs CAN; the other runs Ethernet only" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Dual-core ECU: một core chạy ABS algorithm, core còn lại chạy safety monitor.",
+      "relatedFlashcardIds": ["safety-abs-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Safety Mechanism",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-abs-quiz-007",
+      "topicId": "safety",
+      "sectionId": "abs-case-study",
+      "questionType": "single_choice",
+      "questionEn": "What happens to the HCU valve if the ABS ECU is not active?",
+      "options": [
+        { "id": "A", "text": "It moves to the normal position" },
+        { "id": "B", "text": "It permanently locks the brakes" },
+        { "id": "C", "text": "It disables normal braking" },
+        { "id": "D", "text": "It always activates ABS" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Mechanical failsafe đưa valve về vị trí bình thường để duy trì phanh thường khi ECU không active.",
+      "relatedFlashcardIds": ["safety-abs-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Safety Mechanism",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-abs-quiz-008",
+      "topicId": "safety",
+      "sectionId": "abs-case-study",
+      "questionType": "single_choice",
+      "questionEn": "What does WdgM do if the ABS task is not alive?",
+      "options": [
+        { "id": "A", "text": "Increases the task CPU budget" },
+        { "id": "B", "text": "Resets the ECU and moves to a safe state" },
+        { "id": "C", "text": "Disables all wheel speed sensors" },
+        { "id": "D", "text": "Changes the ASIL level" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "WdgM giám sát ABS task; nếu task không alive, WdgM reset ECU và đưa hệ thống về safe state.",
+      "relatedFlashcardIds": ["safety-abs-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Safety Mechanism",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-integration-quiz-001",
+      "topicId": "safety",
+      "sectionId": "concept-comparison",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly distinguishes FMEA and FTA?",
+      "options": [
+        { "id": "A", "text": "FMEA is top-down; FTA is bottom-up" },
+        { "id": "B", "text": "FMEA analyzes failure to effect; FTA analyzes undesired event to causes" },
+        { "id": "C", "text": "Both always start from manufacturing" },
+        { "id": "D", "text": "FTA is only for communication errors" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "FMEA đi từ failure mode đến effect; FTA đi từ undesired event xuống các nguyên nhân.",
+      "relatedFlashcardIds": ["safety-fmea-002", "safety-fta-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "FTA — Fault Tree Analysis",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-integration-quiz-002",
+      "topicId": "safety",
+      "sectionId": "concept-comparison",
+      "questionType": "single_choice",
+      "questionEn": "What is the key purpose of DFA compared with FFI?",
+      "options": [
+        { "id": "A", "text": "DFA addresses dependent failures between channels; FFI prevents interference between modules" },
+        { "id": "B", "text": "DFA calculates RPN; FFI calculates ASIL" },
+        { "id": "C", "text": "DFA handles manufacturing; FFI handles suppliers" },
+        { "id": "D", "text": "DFA replaces E2E protection; FFI replaces FMEA" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "DFA tập trung vào lỗi phụ thuộc giữa channels; FFI ngăn module này gây interference lên module khác.",
+      "relatedFlashcardIds": ["safety-dfa-002", "safety-ffi-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "DIA (Dependent Failure Analysis) và Freedom From Interference (FFI)",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-integration-quiz-003",
+      "topicId": "safety",
+      "sectionId": "abs-case-study",
+      "questionType": "single_choice",
+      "questionEn": "Which set lists the four ABS safety mechanisms from the source?",
+      "options": [
+        { "id": "A", "text": "Plausibility check, dual-core ECU, mechanical failsafe, WdgM" },
+        { "id": "B", "text": "CRC, DEM, NvM, P-FMEA" },
+        { "id": "C", "text": "AND Gate, OR Gate, Basic Event, Top Event" },
+        { "id": "D", "text": "MPU, RTE, Fee, Fls" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Bốn mechanism của ABS là sensor cross-check/plausibility check, dual-core, mechanical failsafe và WdgM.",
+      "relatedFlashcardIds": ["safety-abs-007", "safety-abs-008", "safety-abs-009", "safety-abs-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "FMEA/FTA & Case Study",
+        "section": "Safety Mechanism",
+        "reference": "content-source/safety/FMEA-FTA-case-study.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

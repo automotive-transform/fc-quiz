@@ -1,0 +1,328 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "safety-design-code-quiz-001",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of Safety Design Code?",
+      "options": [
+        { "id": "A", "text": "Implement safety mechanisms in C code" },
+        { "id": "B", "text": "Replace the Safety Goal" },
+        { "id": "C", "text": "Remove the need for ASIL" },
+        { "id": "D", "text": "Only configure CAN messages" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Sau khi có Safety Goal và ASIL, Safety Mechanisms được implement vào C code.",
+      "relatedFlashcardIds": ["safety-design-code-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Safety Design Patterns trong C Code",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-002",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What does the Range Check pattern check first?",
+      "options": [
+        { "id": "A", "text": "Physical hard limits" },
+        { "id": "B", "text": "Diagnostic DTC" },
+        { "id": "C", "text": "Watchdog exit checkpoint" },
+        { "id": "D", "text": "Motor torque limit" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Range Check kiểm tra giới hạn vật lý (hard limit) trước, sau đó mới kiểm tra plausibility.",
+      "relatedFlashcardIds": ["safety-design-code-002", "safety-design-code-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 1: Range Check",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-003",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What does plausibility checking determine?",
+      "options": [
+        { "id": "A", "text": "Whether the value is reasonable" },
+        { "id": "B", "text": "Whether the ECU has restarted" },
+        { "id": "C", "text": "Whether the DTC is stored in NVRAM" },
+        { "id": "D", "text": "Whether the motor is disabled" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Plausibility kiểm tra xem giá trị nằm trong giới hạn hợp lý hay không.",
+      "relatedFlashcardIds": ["safety-design-code-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 1: Range Check",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-004",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What happens when the EPS error count reaches EPS_MAX_ERRORS?",
+      "options": [
+        { "id": "A", "text": "The EPS enters SAFE state" },
+        { "id": "B", "text": "The EPS returns to INIT" },
+        { "id": "C", "text": "The torque limit becomes 100%" },
+        { "id": "D", "text": "The error counter is ignored" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Khi gs_ErrorCount đạt 3 lỗi, EPS chuyển sang SAFE, disable motor, báo DEM FAILED và gửi EPS fault.",
+      "relatedFlashcardIds": ["safety-design-code-004", "safety-design-code-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 2: Safe State Machine",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-005",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What happens when EPS is ACTIVE but errors have not reached the maximum threshold?",
+      "options": [
+        { "id": "A", "text": "It enters DEGRADED and reduces torque limit to 50%" },
+        { "id": "B", "text": "It immediately resets the ECU" },
+        { "id": "C", "text": "It enters SAFE and enables the motor" },
+        { "id": "D", "text": "It returns to INIT" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nếu lỗi chưa đủ 3 lần, EPS chuyển sang DEGRADED và Eps_ReduceTorqueLimit(50U).",
+      "relatedFlashcardIds": ["safety-design-code-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 2: Safe State Machine",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-006",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What happens if the EPS state is corrupted or invalid?",
+      "options": [
+        { "id": "A", "text": "The system enters SAFE state immediately" },
+        { "id": "B", "text": "The system increases torque" },
+        { "id": "C", "text": "The system ignores the state" },
+        { "id": "D", "text": "The system enters ACTIVE" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "State corruption được xử lý trong default case bằng cách vào SAFE state ngay và disable motor.",
+      "relatedFlashcardIds": ["safety-design-code-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 2: Safe State Machine",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-007",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What are the Error Counter thresholds in the example?",
+      "options": [
+        { "id": "A", "text": "10 failures and 5 passes" },
+        { "id": "B", "text": "5 failures and 10 passes" },
+        { "id": "C", "text": "3 failures and 3 passes" },
+        { "id": "D", "text": "255 failures and 255 passes" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ERR_THRESHOLD_UP = 10 và ERR_THRESHOLD_DOWN = 5.",
+      "relatedFlashcardIds": ["safety-design-code-006", "safety-design-code-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 3: Error Counter (Debounce)",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-008",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "Why does the Error Counter use both failCounter and passCounter?",
+      "options": [
+        { "id": "A", "text": "To debounce failures before changing the state" },
+        { "id": "B", "text": "To calculate CAN baud rate" },
+        { "id": "C", "text": "To convert ADC values to temperature" },
+        { "id": "D", "text": "To configure the watchdog timer" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Error Counter debounce lỗi trước khi phản ứng, giúp trạng thái chỉ đổi sau đủ số lần FAIL hoặc PASS.",
+      "relatedFlashcardIds": ["safety-design-code-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 3: Error Counter (Debounce)",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-009",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What is the basic sequence for Watchdog Alive Supervision?",
+      "options": [
+        { "id": "A", "text": "ENTRY → RUN → EXIT" },
+        { "id": "B", "text": "EXIT → RUN → ENTRY" },
+        { "id": "C", "text": "FAIL → PASS → RESET" },
+        { "id": "D", "text": "INIT → SAFE → ACTIVE" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Runnable báo ENTRY khi bắt đầu, chạy logic chính, rồi báo EXIT khi hoàn thành.",
+      "relatedFlashcardIds": ["safety-design-code-008", "safety-design-code-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 4: Watchdog Alive Supervision",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-010",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What happens if the runnable does not reach the exit checkpoint within 10 ms?",
+      "options": [
+        { "id": "A", "text": "The ECU is reset" },
+        { "id": "B", "text": "The ECU enters DEGRADED only" },
+        { "id": "C", "text": "The DTC is automatically cleared" },
+        { "id": "D", "text": "The motor torque becomes 50%" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nếu checkpoint EXIT không được gọi trong 10 ms, WdgM phát hiện lỗi và ECU reset.",
+      "relatedFlashcardIds": ["safety-design-code-008", "safety-design-code-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 4: Watchdog Alive Supervision",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-011",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of DEM Event Reporting?",
+      "options": [
+        { "id": "A", "text": "Report diagnostic faults for diagnostic tools" },
+        { "id": "B", "text": "Control the CAN physical layer" },
+        { "id": "C", "text": "Generate sensor values" },
+        { "id": "D", "text": "Replace the watchdog" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "DEM dùng để báo cáo lỗi; DTC có thể được đọc bằng diagnostic tool theo nội dung nguồn.",
+      "relatedFlashcardIds": ["safety-design-code-010", "safety-design-code-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 5: DEM Event Reporting",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-012",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "What happens to fuel pressure data when DEM reports FAILED?",
+      "options": [
+        { "id": "A", "text": "A default pressure value is used and validity becomes FALSE" },
+        { "id": "B", "text": "The raw value is always accepted as valid" },
+        { "id": "C", "text": "The pressure is converted and validity becomes TRUE" },
+        { "id": "D", "text": "The watchdog is disabled" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Khi FAILED, code dùng FUEL_PRESSURE_DEFAULT_KPA và đặt gs_FuelPressureValid = FALSE.",
+      "relatedFlashcardIds": ["safety-design-code-012"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 5: DEM Event Reporting",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-013",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "Which additional mechanisms are mentioned for an ASIL D module?",
+      "options": [
+        { "id": "A", "text": "Redundant channels, cross-comparison, and periodic self-test" },
+        { "id": "B", "text": "Only a larger error counter" },
+        { "id": "C", "text": "Only DEM reporting" },
+        { "id": "D", "text": "Only a watchdog checkpoint" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo nguồn, ASIL D cần thêm redundant channel, cross-comparison giữa 2 channels và periodic self-test.",
+      "relatedFlashcardIds": ["safety-design-code-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Summary",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-quiz-014",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "questionType": "single_choice",
+      "questionEn": "Which set correctly lists the five Safety Design Patterns?",
+      "options": [
+        { "id": "A", "text": "Range Check, Safe State Machine, Error Counter, Watchdog, DEM" },
+        { "id": "B", "text": "CAN, LIN, FlexRay, Ethernet, DoIP" },
+        { "id": "C", "text": "ADC, PWM, SPI, UART, I2C" },
+        { "id": "D", "text": "ASIL, Safety Goal, DTC, UDS, OBD" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "5 pattern trong nguồn là Range Check, Safe State Machine, Error Counter, Watchdog Alive Supervision và DEM Reporting.",
+      "relatedFlashcardIds": ["safety-design-code-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Summary",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

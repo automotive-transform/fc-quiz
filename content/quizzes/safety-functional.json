@@ -1,0 +1,535 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "safety-functional-safety-quiz-001",
+      "topicId": "safety",
+      "sectionId": "fundamentals",
+      "questionType": "single_choice",
+      "questionEn": "What does Functional Safety focus on in ISO 26262?",
+      "options": [
+        { "id": "A", "text": "Unacceptable risk caused by E/E system faults" },
+        { "id": "B", "text": "Only mechanical design errors" },
+        { "id": "C", "text": "Only vehicle performance optimization" },
+        { "id": "D", "text": "Only manufacturing quality" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Functional Safety tập trung vào việc không có rủi ro không thể chấp nhận do lỗi của hệ thống E/E. Lỗi concept sai thuộc SOTIF.",
+      "relatedFlashcardIds": ["safety-functional-safety-001", "safety-functional-sotif-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Các định nghĩa nền tảng",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-hazard-quiz-002",
+      "topicId": "safety",
+      "sectionId": "fundamentals",
+      "questionType": "single_choice",
+      "questionEn": "What is a Hazard?",
+      "options": [
+        { "id": "A", "text": "A potential source of harm" },
+        { "id": "B", "text": "The highest safety requirement" },
+        { "id": "C", "text": "A safe operating state" },
+        { "id": "D", "text": "A software coding standard" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Hazard là nguồn gây hại tiềm năng. Ví dụ: ECU phanh gửi lệnh phanh sai.",
+      "relatedFlashcardIds": ["safety-hazard-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Các định nghĩa nền tảng",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-risk-quiz-003",
+      "topicId": "safety",
+      "sectionId": "fundamentals",
+      "questionType": "single_choice",
+      "questionEn": "Which factors are used in the Risk formula?",
+      "options": [
+        { "id": "A", "text": "Severity, Exposure, and Controllability" },
+        { "id": "B", "text": "Speed, Power, and Temperature" },
+        { "id": "C", "text": "Hardware, Software, and Driver" },
+        { "id": "D", "text": "Quality, Cost, and Schedule" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Risk = Severity × Exposure × Controllability. ISO 26262 dùng matrix ASIL thay vì tính số học trực tiếp.",
+      "relatedFlashcardIds": ["safety-risk-003", "safety-risk-formula-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Risk",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-goal-quiz-004",
+      "topicId": "safety",
+      "sectionId": "fundamentals",
+      "questionType": "single_choice",
+      "questionEn": "What is a Safety Goal?",
+      "options": [
+        { "id": "A", "text": "The highest-level safety requirement" },
+        { "id": "B", "text": "A detailed source-code rule" },
+        { "id": "C", "text": "A hardware manufacturing instruction" },
+        { "id": "D", "text": "A test result" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Safety Goal là yêu cầu an toàn cấp cao nhất, ví dụ yêu cầu hệ thống phanh không tự kích hoạt khi driver không yêu cầu.",
+      "relatedFlashcardIds": ["safety-safety-goal-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Các định nghĩa nền tảng",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-functional-asil-quiz-005",
+      "topicId": "safety",
+      "sectionId": "asil",
+      "questionType": "single_choice",
+      "questionEn": "Which is the highest ASIL level?",
+      "options": [
+        { "id": "A", "text": "ASIL A" },
+        { "id": "B", "text": "ASIL B" },
+        { "id": "C", "text": "ASIL C" },
+        { "id": "D", "text": "ASIL D" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Mức độ tăng từ QM → ASIL A → B → C → D, trong đó ASIL D là cao nhất.",
+      "relatedFlashcardIds": ["safety-functional-asil-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "ASIL",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safe-state-quiz-006",
+      "topicId": "safety",
+      "sectionId": "fundamentals",
+      "questionType": "single_choice",
+      "questionEn": "What best describes a Safe State?",
+      "options": [
+        { "id": "A", "text": "A fault state that does not cause a hazard" },
+        { "id": "B", "text": "A state where every ECU is powered off" },
+        { "id": "C", "text": "A state where all functions run normally" },
+        { "id": "D", "text": "A state with no software" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Safe State là trạng thái hệ thống khi bị lỗi nhưng không gây nguy hiểm. Không phải lúc nào cũng là tắt hết.",
+      "relatedFlashcardIds": ["safety-safe-state-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Safe State",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-functional-sotif-quiz-007",
+      "topicId": "safety",
+      "sectionId": "fundamentals",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly distinguishes Functional Safety from SOTIF?",
+      "options": [
+        { "id": "A", "text": "Functional Safety addresses E/E faults; SOTIF addresses unsafe concept or function behavior" },
+        { "id": "B", "text": "Functional Safety only addresses mechanical failures" },
+        { "id": "C", "text": "SOTIF replaces all ISO 26262 activities" },
+        { "id": "D", "text": "There is no difference between them" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Functional Safety xét lỗi HW/SW; SOTIF xét nguy hiểm do concept hoặc chức năng không đủ an toàn.",
+      "relatedFlashcardIds": ["safety-functional-sotif-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Các định nghĩa nền tảng",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-iso-origin-quiz-008",
+      "topicId": "safety",
+      "sectionId": "overview",
+      "questionType": "single_choice",
+      "questionEn": "Why was ISO 26262 introduced?",
+      "options": [
+        { "id": "A", "text": "To provide a unified automotive functional safety standard" },
+        { "id": "B", "text": "To replace all automotive software" },
+        { "id": "C", "text": "To eliminate all mechanical components" },
+        { "id": "D", "text": "To define only vehicle styling requirements" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ISO 26262 ra đời vì xe phụ thuộc nhiều vào SW/E/E, lỗi SW khó phát hiện, thiếu chuẩn chung và IEC 61508 quá chung cho automotive.",
+      "relatedFlashcardIds": ["safety-iso-origin-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Tại sao ISO 26262 ra đời?",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-part-3-quiz-009",
+      "topicId": "safety",
+      "sectionId": "iso-26262-structure",
+      "questionType": "single_choice",
+      "questionEn": "Which ISO 26262 part covers the Concept Phase?",
+      "options": [
+        { "id": "A", "text": "Part 2" },
+        { "id": "B", "text": "Part 3" },
+        { "id": "C", "text": "Part 5" },
+        { "id": "D", "text": "Part 6" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Part 3 là Concept Phase, gồm HARA, Safety Goals và FSC.",
+      "relatedFlashcardIds": ["safety-part-3-012", "safety-functional-hara-013", "safety-fsc-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Cấu trúc ISO 26262:2018",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-part-4-quiz-010",
+      "topicId": "safety",
+      "sectionId": "iso-26262-structure",
+      "questionType": "single_choice",
+      "questionEn": "Which ISO 26262 part covers system-level development?",
+      "options": [
+        { "id": "A", "text": "Part 3" },
+        { "id": "B", "text": "Part 4" },
+        { "id": "C", "text": "Part 5" },
+        { "id": "D", "text": "Part 9" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Part 4 là Product Development: System Level, gồm Technical Safety Requirements và system design.",
+      "relatedFlashcardIds": ["safety-part-4-015"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Cấu trúc ISO 26262:2018",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-part-5-quiz-011",
+      "topicId": "safety",
+      "sectionId": "iso-26262-structure",
+      "questionType": "single_choice",
+      "questionEn": "Which part focuses on hardware-level development?",
+      "options": [
+        { "id": "A", "text": "Part 4" },
+        { "id": "B", "text": "Part 5" },
+        { "id": "C", "text": "Part 6" },
+        { "id": "D", "text": "Part 8" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Part 5 dành cho HW Engineer và tập trung các chỉ số SPFM, LFM và PMHF.",
+      "relatedFlashcardIds": ["safety-part-5-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Cấu trúc ISO 26262:2018",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-part-6-quiz-012",
+      "topicId": "safety",
+      "sectionId": "iso-26262-structure",
+      "questionType": "single_choice",
+      "questionEn": "Which ISO 26262 part covers software development?",
+      "options": [
+        { "id": "A", "text": "Part 4" },
+        { "id": "B", "text": "Part 5" },
+        { "id": "C", "text": "Part 6" },
+        { "id": "D", "text": "Part 9" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Part 6 là Product Development: Software Level, gồm SW architecture, coding guidelines và unit testing.",
+      "relatedFlashcardIds": ["safety-part-6-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Cấu trúc ISO 26262:2018",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-part-8-quiz-013",
+      "topicId": "safety",
+      "sectionId": "iso-26262-structure",
+      "questionType": "single_choice",
+      "questionEn": "Which part covers supporting processes?",
+      "options": [
+        { "id": "A", "text": "Part 6" },
+        { "id": "B", "text": "Part 7" },
+        { "id": "C", "text": "Part 8" },
+        { "id": "D", "text": "Part 9" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Part 8 là Supporting Processes, gồm configuration management và tool qualification.",
+      "relatedFlashcardIds": ["safety-part-8-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Cấu trúc ISO 26262:2018",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-part-9-quiz-014",
+      "topicId": "safety",
+      "sectionId": "iso-26262-structure",
+      "questionType": "single_choice",
+      "questionEn": "Which analyses are associated with ISO 26262 Part 9?",
+      "options": [
+        { "id": "A", "text": "FMEA, FTA, and FMEDA" },
+        { "id": "B", "text": "MISRA, MC/DC, and unit testing" },
+        { "id": "C", "text": "HARA, FSC, and Safety Goals only" },
+        { "id": "D", "text": "Configuration management and tool qualification" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Part 9 là ASIL-oriented analyses, gồm FMEA, FTA và FMEDA.",
+      "relatedFlashcardIds": ["safety-part-9-019"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Cấu trúc ISO 26262:2018",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-misra-quiz-015",
+      "topicId": "safety",
+      "sectionId": "part-6-software",
+      "questionType": "single_choice",
+      "questionEn": "How is MISRA C specified for ASIL A?",
+      "options": [
+        { "id": "A", "text": "Recommended" },
+        { "id": "B", "text": "Mandatory" },
+        { "id": "C", "text": "Not applicable" },
+        { "id": "D", "text": "Mandatory with two independent reviewers" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo nguồn, ASIL A yêu cầu MISRA C Recommended; ASIL B/C là Mandatory và ASIL D là MISRA C + stricter.",
+      "relatedFlashcardIds": ["safety-misra-020"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Part 6 SW Development Requirements theo ASIL",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-coverage-quiz-016",
+      "topicId": "safety",
+      "sectionId": "part-6-software",
+      "questionType": "single_choice",
+      "questionEn": "Which code coverage is specified for ASIL C?",
+      "options": [
+        { "id": "A", "text": "Statement coverage" },
+        { "id": "B", "text": "Branch coverage" },
+        { "id": "C", "text": "MC/DC" },
+        { "id": "D", "text": "No coverage requirement" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Theo bảng nguồn, ASIL C yêu cầu MC/DC; ASIL D cũng yêu cầu MC/DC Mandatory.",
+      "relatedFlashcardIds": ["safety-code-coverage-021", "safety-mcdc-022"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Part 6 SW Development Requirements theo ASIL",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-unit-test-quiz-017",
+      "topicId": "safety",
+      "sectionId": "part-6-software",
+      "questionType": "single_choice",
+      "questionEn": "What is required for unit testing at ASIL D?",
+      "options": [
+        { "id": "A", "text": "Required only" },
+        { "id": "B", "text": "Required + review" },
+        { "id": "C", "text": "Required + independent" },
+        { "id": "D", "text": "Required + 2 independent" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "ASIL D yêu cầu Unit Test + 2 independent theo bảng yêu cầu trong nguồn.",
+      "relatedFlashcardIds": ["safety-unit-test-023"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Part 6 SW Development Requirements theo ASIL",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-review-quiz-018",
+      "topicId": "safety",
+      "sectionId": "part-6-software",
+      "questionType": "single_choice",
+      "questionEn": "What code review is specified for ASIL D?",
+      "options": [
+        { "id": "A", "text": "1 reviewer" },
+        { "id": "B", "text": "1 independent reviewer" },
+        { "id": "C", "text": "2 reviewers" },
+        { "id": "D", "text": "2 independent reviewers" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "ASIL D yêu cầu 2 independent reviewers theo bảng Part 6 trong nguồn.",
+      "relatedFlashcardIds": ["safety-code-review-024"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Part 6 SW Development Requirements theo ASIL",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-dynamic-analysis-quiz-019",
+      "topicId": "safety",
+      "sectionId": "part-6-software",
+      "questionType": "single_choice",
+      "questionEn": "At which ASIL levels is Dynamic Analysis mandatory according to the source?",
+      "options": [
+        { "id": "A", "text": "ASIL A only" },
+        { "id": "B", "text": "ASIL A and B" },
+        { "id": "C", "text": "ASIL C and D" },
+        { "id": "D", "text": "ASIL D only" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Theo nguồn, Dynamic Analysis là Recommended ở ASIL A/B và Mandatory ở ASIL C/D.",
+      "relatedFlashcardIds": ["safety-dynamic-analysis-025"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Part 6 SW Development Requirements theo ASIL",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-lifecycle-quiz-020",
+      "topicId": "safety",
+      "sectionId": "safety-lifecycle",
+      "questionType": "single_choice",
+      "questionEn": "When does the ISO 26262 Safety Lifecycle begin?",
+      "options": [
+        { "id": "A", "text": "At source-code implementation" },
+        { "id": "B", "text": "At the Concept phase" },
+        { "id": "C", "text": "At system testing" },
+        { "id": "D", "text": "After vehicle production" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Safety Lifecycle bắt đầu từ Concept và kết thúc khi sản phẩm ngưng hoạt động.",
+      "relatedFlashcardIds": ["safety-safety-lifecycle-026"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Vòng đời An toàn",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-v-model-quiz-021",
+      "topicId": "safety",
+      "sectionId": "safety-lifecycle",
+      "questionType": "single_choice",
+      "questionEn": "In the V-Model, what is mainly represented on the left side?",
+      "options": [
+        { "id": "A", "text": "Development activities" },
+        { "id": "B", "text": "Only final validation" },
+        { "id": "C", "text": "Only audits" },
+        { "id": "D", "text": "Only production activities" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Bên trái V là các bước phát triển từ Concept → System → HW/SW design; bên phải là test/validation tương ứng.",
+      "relatedFlashcardIds": ["safety-v-model-027"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Vòng đời An toàn",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-traceability-quiz-022",
+      "topicId": "safety",
+      "sectionId": "safety-lifecycle",
+      "questionType": "single_choice",
+      "questionEn": "What does safety traceability connect?",
+      "options": [
+        { "id": "A", "text": "Requirement → Design → Code → Test" },
+        { "id": "B", "text": "Vehicle → Driver → Road → Weather" },
+        { "id": "C", "text": "Hardware → Factory → Dealer → Customer" },
+        { "id": "D", "text": "Code → Marketing → Sales → Service" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Traceability cho phép trace từ requirement xuống design, code và test để chứng minh requirement được implement và verify.",
+      "relatedFlashcardIds": ["safety-traceability-028", "safety-requirement-flow-030"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Vòng đời An toàn",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-confirmation-measures-quiz-023",
+      "topicId": "safety",
+      "sectionId": "safety-lifecycle",
+      "questionType": "single_choice",
+      "questionEn": "Which activities are included in Confirmation Measures?",
+      "options": [
+        { "id": "A", "text": "Review, audit, and assessment" },
+        { "id": "B", "text": "Coding, compiling, and flashing only" },
+        { "id": "C", "text": "Marketing, sales, and service" },
+        { "id": "D", "text": "HARA, coding, and manufacturing only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Confirmation Measures gồm review, audit và assessment; đây là phần quan trọng của Functional Safety process.",
+      "relatedFlashcardIds": ["safety-confirmation-measures-029"],
+      "source": {
+        "type": "technical_document",
+        "document": "ISO 26262 Functional Safety — An toàn chức năng ô tô",
+        "section": "Vòng đời An toàn",
+        "reference": "content-source/safety/iso-26262-functional-safety.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

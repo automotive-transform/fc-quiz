@@ -1,0 +1,351 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "safety-sotif-quiz-001",
+      "topicId": "safety",
+      "sectionId": "sotif",
+      "questionType": "single_choice",
+      "questionEn": "What does SOTIF stand for?",
+      "options": [
+        { "id": "A", "text": "Safety Of The Intended Functionality" },
+        { "id": "B", "text": "System Of Technical Interface Failure" },
+        { "id": "C", "text": "Safety Of The Integrated Fault" },
+        { "id": "D", "text": "Software Operation Testing In Functionality" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SOTIF = Safety Of The Intended Functionality, tập trung vào chức năng đúng nhưng có thể chưa đủ an toàn.",
+      "relatedFlashcardIds": ["safety-sotif-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-002",
+      "topicId": "safety",
+      "sectionId": "sotif",
+      "questionType": "single_choice",
+      "questionEn": "What is the main focus of SOTIF?",
+      "options": [
+        { "id": "A", "text": "Hardware manufacturing defects only" },
+        { "id": "B", "text": "Correct functionality that is not sufficiently safe" },
+        { "id": "C", "text": "Only random hardware failures" },
+        { "id": "D", "text": "Increasing software execution speed" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "SOTIF xét trường hợp thiết kế/chức năng đúng nhưng hành vi vẫn không đủ an toàn trong các scenario phức tạp.",
+      "relatedFlashcardIds": ["safety-sotif-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-003",
+      "topicId": "safety",
+      "sectionId": "sotif-example",
+      "questionType": "single_choice",
+      "questionEn": "A camera works correctly according to its specification but misses a pedestrian in dense fog. What type of issue is this?",
+      "options": [
+        { "id": "A", "text": "SOTIF issue" },
+        { "id": "B", "text": "Hardware failure only" },
+        { "id": "C", "text": "CAN bus failure" },
+        { "id": "D", "text": "Normal operation with no safety concern" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Camera không bị hỏng; vấn đề là specification không bao gồm scenario sương mù dày, dẫn đến không nhận ra pedestrian.",
+      "relatedFlashcardIds": ["safety-sotif-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF example",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-004",
+      "topicId": "safety",
+      "sectionId": "sotif-example",
+      "questionType": "single_choice",
+      "questionEn": "Why is the dense-fog camera example considered SOTIF rather than ISO 26262?",
+      "options": [
+        { "id": "A", "text": "The camera has no failure; the functionality is insufficiently safe in that scenario" },
+        { "id": "B", "text": "The camera hardware is physically broken" },
+        { "id": "C", "text": "The CAN network has failed" },
+        { "id": "D", "text": "The camera was intentionally disabled" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SOTIF xử lý trường hợp không có gì hỏng nhưng chức năng vẫn không đủ an toàn trong một scenario.",
+      "relatedFlashcardIds": ["safety-sotif-003", "safety-sotif-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF example",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-005",
+      "topicId": "safety",
+      "sectionId": "sotif-4-field-model",
+      "questionType": "single_choice",
+      "questionEn": "Which SOTIF region represents a known scenario with safe behavior?",
+      "options": [
+        { "id": "A", "text": "Region 1: Known + Safe" },
+        { "id": "B", "text": "Region 2: Known + Unsafe" },
+        { "id": "C", "text": "Region 3: Unknown + Safe" },
+        { "id": "D", "text": "Region 4: Unknown + Unsafe" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Vùng 1 là Known + Safe: scenario đã biết và hành vi an toàn; mục tiêu đã đạt được.",
+      "relatedFlashcardIds": ["safety-sotif-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF 4-Field Model — Vùng 1",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-006",
+      "topicId": "safety",
+      "sectionId": "sotif-4-field-model",
+      "questionType": "single_choice",
+      "questionEn": "What should be done with a Known + Unsafe SOTIF scenario?",
+      "options": [
+        { "id": "A", "text": "Ignore it because the scenario is already known" },
+        { "id": "B", "text": "Fix it before release" },
+        { "id": "C", "text": "Wait for field data only" },
+        { "id": "D", "text": "Classify it as Known + Safe" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Vùng 2 là Known + Unsafe: scenario đã biết nhưng không an toàn, nên phải fix trước khi release.",
+      "relatedFlashcardIds": ["safety-sotif-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF 4-Field Model — Vùng 2",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-007",
+      "topicId": "safety",
+      "sectionId": "sotif-4-field-model",
+      "questionType": "single_choice",
+      "questionEn": "Which SOTIF region requires coverage testing because the scenario is unknown but behavior is safe?",
+      "options": [
+        { "id": "A", "text": "Region 1: Known + Safe" },
+        { "id": "B", "text": "Region 2: Known + Unsafe" },
+        { "id": "C", "text": "Region 3: Unknown + Safe" },
+        { "id": "D", "text": "Region 4: Unknown + Unsafe" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Vùng 3 là Unknown + Safe: chưa biết scenario nhưng hành vi an toàn, cần coverage testing.",
+      "relatedFlashcardIds": ["safety-sotif-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF 4-Field Model — Vùng 3",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-008",
+      "topicId": "safety",
+      "sectionId": "sotif-4-field-model",
+      "questionType": "single_choice",
+      "questionEn": "Which SOTIF region is considered the most dangerous?",
+      "options": [
+        { "id": "A", "text": "Region 1: Known + Safe" },
+        { "id": "B", "text": "Region 2: Known + Unsafe" },
+        { "id": "C", "text": "Region 3: Unknown + Safe" },
+        { "id": "D", "text": "Region 4: Unknown + Unsafe" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Vùng 4 là Unknown + Unsafe: scenario chưa biết và hành vi nguy hiểm, nên nguy hiểm nhất.",
+      "relatedFlashcardIds": ["safety-sotif-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF 4-Field Model — Vùng 4",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-009",
+      "topicId": "safety",
+      "sectionId": "iso-26262-vs-sotif",
+      "questionType": "single_choice",
+      "questionEn": "Which methods are associated with ISO 26262 in the provided comparison?",
+      "options": [
+        { "id": "A", "text": "Scenario analysis and field data" },
+        { "id": "B", "text": "FMEA, FTA, and HARA" },
+        { "id": "C", "text": "Only neural-network testing" },
+        { "id": "D", "text": "Only coverage testing" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Theo nguồn, ISO 26262 sử dụng FMEA, FTA và HARA; SOTIF dùng scenario analysis và field data.",
+      "relatedFlashcardIds": ["safety-sotif-003", "safety-sotif-012", "safety-sotif-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "ISO 26262 vs SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-010",
+      "topicId": "safety",
+      "sectionId": "iso-26262-vs-sotif",
+      "questionType": "single_choice",
+      "questionEn": "What is the main challenge of SOTIF compared with ISO 26262?",
+      "options": [
+        { "id": "A", "text": "Proving the failure rate is sufficiently low" },
+        { "id": "B", "text": "Proving that scenario coverage is sufficient" },
+        { "id": "C", "text": "Eliminating all hardware components" },
+        { "id": "D", "text": "Increasing network bandwidth" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Challenge chính của SOTIF là chứng minh scenario coverage đủ; ISO 26262 tập trung vào failure rate.",
+      "relatedFlashcardIds": ["safety-sotif-009", "safety-sotif-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "ISO 26262 vs SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-011",
+      "topicId": "safety",
+      "sectionId": "iso-26262-vs-sotif",
+      "questionType": "single_choice",
+      "questionEn": "Which systems are specifically associated with SOTIF in the provided comparison?",
+      "options": [
+        { "id": "A", "text": "All E/E systems only" },
+        { "id": "B", "text": "ADAS, AV, and sensor-dependent systems" },
+        { "id": "C", "text": "Only conventional mechanical systems" },
+        { "id": "D", "text": "Only battery charging systems" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Nguồn nêu SOTIF áp dụng cho ADAS, AV và sensor-dependent systems; ISO 26262 áp dụng cho tất cả E/E system.",
+      "relatedFlashcardIds": ["safety-sotif-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "ISO 26262 vs SOTIF",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-012",
+      "topicId": "safety",
+      "sectionId": "ai-ml",
+      "questionType": "single_choice",
+      "questionEn": "Why is SOTIF increasingly important for ADAS using Deep Learning?",
+      "options": [
+        { "id": "A", "text": "Because neural networks can still fail in some scenarios" },
+        { "id": "B", "text": "Because Deep Learning eliminates all safety concerns" },
+        { "id": "C", "text": "Because accuracy always equals safety" },
+        { "id": "D", "text": "Because SOTIF only applies to mechanical systems" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Deep Learning vẫn có thể fail; nếu failure xảy ra trong scenario nguy hiểm thì đó có thể là SOTIF issue.",
+      "relatedFlashcardIds": ["safety-sotif-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF và AI/ML",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-013",
+      "topicId": "safety",
+      "sectionId": "ai-ml",
+      "questionType": "single_choice",
+      "questionEn": "A neural network has 99.9% accuracy. What SOTIF question remains important?",
+      "options": [
+        { "id": "A", "text": "What scenarios contain the remaining 0.1% failures?" },
+        { "id": "B", "text": "Can the 0.1% failures always be ignored?" },
+        { "id": "C", "text": "Does 99.9% accuracy prove complete safety?" },
+        { "id": "D", "text": "Can scenario coverage be ignored?" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "SOTIF quan tâm 0.1% fail xảy ra ở scenario nào; nếu đó là scenario nguy hiểm như pedestrian trong ánh sáng yếu, vấn đề có thể nghiêm trọng.",
+      "relatedFlashcardIds": ["safety-sotif-015", "safety-sotif-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF và AI/ML",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-014",
+      "topicId": "safety",
+      "sectionId": "ai-ml",
+      "questionType": "single_choice",
+      "questionEn": "Which scenario is given as an example of a potentially serious SOTIF issue for AI/ML?",
+      "options": [
+        { "id": "A", "text": "Pedestrian in low light" },
+        { "id": "B", "text": "Pedestrian in clear daylight" },
+        { "id": "C", "text": "Normal vehicle parking" },
+        { "id": "D", "text": "A known safe scenario" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nguồn dùng ví dụ pedestrian trong ánh sáng yếu: nếu nằm trong phần failure của Neural Network, đây có thể là SOTIF issue nghiêm trọng.",
+      "relatedFlashcardIds": ["safety-sotif-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF và AI/ML",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-sotif-quiz-015",
+      "topicId": "safety",
+      "sectionId": "sotif-4-field-model",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence correctly summarizes the four SOTIF regions?",
+      "options": [
+        { "id": "A", "text": "Known + Safe → OK; Known + Unsafe → FIX; Unknown + Safe → TEST; Unknown + Unsafe → DANGER" },
+        { "id": "B", "text": "Known + Safe → DANGER; Known + Unsafe → OK; Unknown + Safe → FIX; Unknown + Unsafe → TEST" },
+        { "id": "C", "text": "All four regions require the same action" },
+        { "id": "D", "text": "Unknown + Safe is always the most dangerous region" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Mẹo nhớ: Vùng 1 OK, Vùng 2 FIX, Vùng 3 TEST, Vùng 4 DANGER.",
+      "relatedFlashcardIds": ["safety-sotif-005", "safety-sotif-006", "safety-sotif-007", "safety-sotif-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "SOTIF — ISO 21448",
+        "section": "SOTIF 4-Field Model",
+        "reference": "content-source/Safety/SOTIF.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

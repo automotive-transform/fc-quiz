@@ -1,0 +1,445 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "misra-c-overview-quiz-001",
+      "topicId": "misra-c",
+      "sectionId": "why-misra",
+      "questionType": "single_choice",
+      "questionEn": "Why is MISRA-C needed in automotive software?",
+      "options": [
+        { "id": "A", "text": "To restrict risky uses of the C language" },
+        { "id": "B", "text": "To replace the C language completely" },
+        { "id": "C", "text": "To eliminate the need for testing" },
+        { "id": "D", "text": "To replace the ECU operating system" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MISRA-C là bộ quy tắc giúp hạn chế các cách sử dụng C có rủi ro trong phần mềm yêu cầu độ tin cậy cao.",
+      "relatedFlashcardIds": ["misra-c-overview-001"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Tại sao cần MISRA-C?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-002",
+      "topicId": "misra-c",
+      "sectionId": "ariane-5",
+      "questionType": "single_choice",
+      "questionEn": "What was a key lesson from the Ariane 5 failure?",
+      "options": [
+        { "id": "A", "text": "Code that worked before is always safe" },
+        { "id": "B", "text": "Changed input conditions can expose software assumptions" },
+        { "id": "C", "text": "Hardware failures are always more dangerous than software failures" },
+        { "id": "D", "text": "Testing is unnecessary when code compiles" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Code từng chạy tốt trên Ariane 4 vẫn có thể thất bại trên Ariane 5 khi điều kiện đầu vào và phạm vi vận hành thay đổi.",
+      "relatedFlashcardIds": ["misra-c-overview-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Ariane 5"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-003",
+      "topicId": "misra-c",
+      "sectionId": "c-risks",
+      "questionType": "single_choice",
+      "questionEn": "Which C behavior is Undefined Behavior?",
+      "options": [
+        { "id": "A", "text": "Signed integer overflow" },
+        { "id": "B", "text": "Using int32_t" },
+        { "id": "C", "text": "Checking a value before addition" },
+        { "id": "D", "text": "Using an explicit valid cast" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Signed integer overflow là Undefined Behavior trong C; compiler không bị ràng buộc bởi một kết quả cụ thể.",
+      "relatedFlashcardIds": ["misra-c-overview-003", "misra-c-overview-004"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Undefined Behavior"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-004",
+      "topicId": "misra-c",
+      "sectionId": "c-risks",
+      "questionType": "single_choice",
+      "questionEn": "What does Implementation-Defined Behavior mean?",
+      "options": [
+        { "id": "A", "text": "The behavior is completely forbidden by C" },
+        { "id": "B", "text": "The implementation chooses among permitted alternatives" },
+        { "id": "C", "text": "The programmer always controls the result" },
+        { "id": "D", "text": "The behavior is identical on every platform" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Implementation-Defined Behavior là trường hợp implementation được phép chọn trong các lựa chọn mà C Standard cho phép và phải xác định lựa chọn đó.",
+      "relatedFlashcardIds": ["misra-c-overview-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Implementation-Defined Behavior"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-005",
+      "topicId": "misra-c",
+      "sectionId": "c-risks",
+      "questionType": "single_choice",
+      "questionEn": "What is the main concern with Unspecified Behavior?",
+      "options": [
+        { "id": "A", "text": "The programmer can always predict the result" },
+        { "id": "B", "text": "The standard permits multiple possible results" },
+        { "id": "C", "text": "The compiler must issue an error" },
+        { "id": "D", "text": "It always causes a hardware exception" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Unspecified Behavior cho phép nhiều kết quả hợp lệ; code không nên phụ thuộc vào một lựa chọn cụ thể mà Standard không bảo đảm.",
+      "relatedFlashcardIds": ["misra-c-overview-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Unspecified Behavior"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-006",
+      "topicId": "misra-c",
+      "sectionId": "c-risks",
+      "questionType": "single_choice",
+      "questionEn": "What is Implicit Type Conversion?",
+      "options": [
+        { "id": "A", "text": "Automatic conversion performed by C" },
+        { "id": "B", "text": "Conversion performed only by a hardware debugger" },
+        { "id": "C", "text": "A conversion that is always rejected by the compiler" },
+        { "id": "D", "text": "A conversion that requires a new ECU" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "C có thể tự động chuyển kiểu trong nhiều tình huống; điều này có thể tạo ra kết quả ngoài ý định nếu không kiểm soát.",
+      "relatedFlashcardIds": ["misra-c-overview-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Implicit Type Conversion"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-007",
+      "topicId": "misra-c",
+      "sectionId": "misra-definition",
+      "questionType": "single_choice",
+      "questionEn": "Which statement correctly describes MISRA-C?",
+      "options": [
+        { "id": "A", "text": "It is a new programming language" },
+        { "id": "B", "text": "It is a set of guidelines for disciplined C usage" },
+        { "id": "C", "text": "It is a compiler" },
+        { "id": "D", "text": "It guarantees that software has no bugs" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "MISRA-C là bộ guideline/quy tắc cho việc sử dụng C an toàn và có tính kỷ luật hơn.",
+      "relatedFlashcardIds": ["misra-c-overview-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "MISRA-C là gì và không phải là gì?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-008",
+      "topicId": "misra-c",
+      "sectionId": "misra-definition",
+      "questionType": "single_choice",
+      "questionEn": "Which tool can be used to check MISRA-C rules?",
+      "options": [
+        { "id": "A", "text": "PC-lint or Polyspace" },
+        { "id": "B", "text": "MISRA-C itself" },
+        { "id": "C", "text": "A fuel injector" },
+        { "id": "D", "text": "A CAN transceiver" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MISRA-C là guideline; PC-lint hoặc Polyspace là các tool có thể hỗ trợ kiểm tra các quy tắc.",
+      "relatedFlashcardIds": ["misra-c-overview-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "MISRA-C là gì và không phải là gì?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-009",
+      "topicId": "misra-c",
+      "sectionId": "misra-definition",
+      "questionType": "single_choice",
+      "questionEn": "Does MISRA-C guarantee that code contains no bugs?",
+      "options": [
+        { "id": "A", "text": "Yes, MISRA-C guarantees bug-free software" },
+        { "id": "B", "text": "No, logic and other defects can still exist" },
+        { "id": "C", "text": "Yes, if every rule is advisory" },
+        { "id": "D", "text": "Yes, when the compiler produces no warnings" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Code tuân thủ MISRA-C vẫn có thể có logic bug, lỗi yêu cầu, kiến trúc hoặc tích hợp.",
+      "relatedFlashcardIds": ["misra-c-overview-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "MISRA-C là gì và không phải là gì?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-010",
+      "topicId": "misra-c",
+      "sectionId": "history",
+      "questionType": "single_choice",
+      "questionEn": "How many rules are associated with MISRA-C:1998 in the source?",
+      "options": [
+        { "id": "A", "text": "127" },
+        { "id": "B", "text": "142" },
+        { "id": "C", "text": "143" },
+        { "id": "D", "text": "16" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo source, MISRA-C:1998 có 127 rules cho C90.",
+      "relatedFlashcardIds": ["misra-c-overview-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Lịch sử MISRA-C"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-011",
+      "topicId": "misra-c",
+      "sectionId": "history",
+      "questionType": "single_choice",
+      "questionEn": "Which classification set is associated with MISRA-C:2012?",
+      "options": [
+        { "id": "A", "text": "Mandatory, Required, Advisory" },
+        { "id": "B", "text": "Critical, Major, Minor" },
+        { "id": "C", "text": "Safe, Unsafe, Optional" },
+        { "id": "D", "text": "Hardware, Software, System" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MISRA-C:2012 trong source được mô tả với ba mức Mandatory, Required và Advisory.",
+      "relatedFlashcardIds": ["misra-c-overview-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Lịch sử MISRA-C"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-012",
+      "topicId": "misra-c",
+      "sectionId": "history",
+      "questionType": "single_choice",
+      "questionEn": "What update is associated with MISRA-C:2023 in the source?",
+      "options": [
+        { "id": "A", "text": "Support for C17 and clarification of some rules" },
+        { "id": "B", "text": "Removal of all coding rules" },
+        { "id": "C", "text": "Replacement of C with C++" },
+        { "id": "D", "text": "Removal of static analysis" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Source nêu MISRA-C:2023 cập nhật, làm rõ một số rules và bổ sung hỗ trợ C17.",
+      "relatedFlashcardIds": ["misra-c-overview-014"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Lịch sử MISRA-C"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-013",
+      "topicId": "misra-c",
+      "sectionId": "safe-coding",
+      "questionType": "single_choice",
+      "questionEn": "What is the safer approach to preventing signed integer overflow?",
+      "options": [
+        { "id": "A", "text": "Perform the addition and check afterward" },
+        { "id": "B", "text": "Check the numeric limits before performing the addition" },
+        { "id": "C", "text": "Ignore the input range" },
+        { "id": "D", "text": "Assume overflow cannot happen" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Cần kiểm tra giới hạn trước khi cộng để tránh phép toán đã gây overflow rồi mới kiểm tra.",
+      "relatedFlashcardIds": ["misra-c-overview-015"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Signed Integer Overflow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-014",
+      "topicId": "misra-c",
+      "sectionId": "safe-coding",
+      "questionType": "single_choice",
+      "questionEn": "Why can fixed-width types such as int32_t be useful?",
+      "options": [
+        { "id": "A", "text": "They explicitly express the required integer width" },
+        { "id": "B", "text": "They make every operation overflow-proof" },
+        { "id": "C", "text": "They eliminate all platform differences" },
+        { "id": "D", "text": "They replace all pointer arithmetic" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "int32_t thể hiện rõ yêu cầu số nguyên 32 bit trên implementation hỗ trợ kiểu này, tránh giả định int luôn có kích thước cố định.",
+      "relatedFlashcardIds": ["misra-c-overview-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "sizeof(int) phụ thuộc platform"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-015",
+      "topicId": "misra-c",
+      "sectionId": "safe-coding",
+      "questionType": "single_choice",
+      "questionEn": "What should be checked before converting a signed error value to unsigned?",
+      "options": [
+        { "id": "A", "text": "Whether the value is negative" },
+        { "id": "B", "text": "Whether the ECU is moving" },
+        { "id": "C", "text": "Whether the CAN bus is dominant" },
+        { "id": "D", "text": "Whether the compiler uses C++" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nên kiểm tra result < 0 trước; sau đó mới chuyển sang unsigned để tránh biến mã lỗi âm thành giá trị unsigned rất lớn.",
+      "relatedFlashcardIds": ["misra-c-overview-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Implicit unsigned conversion"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-016",
+      "topicId": "misra-c",
+      "sectionId": "automotive-safety",
+      "questionType": "single_choice",
+      "questionEn": "Which statement best describes MISRA-C in functional safety?",
+      "options": [
+        { "id": "A", "text": "It replaces the entire safety development process" },
+        { "id": "B", "text": "It supports disciplined coding but does not replace testing and verification" },
+        { "id": "C", "text": "It guarantees that all ECU failures are impossible" },
+        { "id": "D", "text": "It replaces system requirements" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "MISRA-C chỉ là một phần của cách tiếp cận phát triển; vẫn cần requirements, architecture, testing và verification phù hợp.",
+      "relatedFlashcardIds": ["misra-c-overview-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "MISRA-C và Functional Safety"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-017",
+      "topicId": "misra-c",
+      "sectionId": "key-principles",
+      "questionType": "single_choice",
+      "questionEn": "Which statement captures the key distinction between valid C and safe C?",
+      "options": [
+        { "id": "A", "text": "Valid C code is always safe" },
+        { "id": "B", "text": "Valid C code can still contain risky behavior or assumptions" },
+        { "id": "C", "text": "Only invalid C can cause runtime failures" },
+        { "id": "D", "text": "Compiler warnings define software safety" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Code hợp lệ theo C vẫn có thể chứa UB, chuyển kiểu nguy hiểm hoặc giả định sai về platform và input.",
+      "relatedFlashcardIds": ["misra-c-overview-019"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Các ví dụ về C valid nhưng nguy hiểm"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-018",
+      "topicId": "misra-c",
+      "sectionId": "key-principles",
+      "questionType": "single_choice",
+      "questionEn": "Which mnemonic summarizes the four major C risk areas?",
+      "options": [
+        { "id": "A", "text": "UB - Platform - Order - Type" },
+        { "id": "B", "text": "CAN - LIN - FlexRay - Ethernet" },
+        { "id": "C", "text": "ASIL - HARA - FMEA - FTA" },
+        { "id": "D", "text": "CPU - RAM - ROM - ECU" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "UB - Platform - Order - Type lần lượt nhắc đến Undefined Behavior, platform dependence, unspecified behavior và implicit conversion.",
+      "relatedFlashcardIds": ["misra-c-overview-020"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Cách học thuộc nhanh"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-019",
+      "topicId": "misra-c",
+      "sectionId": "automotive-safety",
+      "questionType": "single_choice",
+      "questionEn": "Which issue was described as a risk in the Toyota ETCS example?",
+      "options": [
+        { "id": "A", "text": "Multiple tasks could write to the throttle control variable" },
+        { "id": "B", "text": "The ECU had no processor" },
+        { "id": "C", "text": "The throttle used only mechanical control" },
+        { "id": "D", "text": "The system had no software at all" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Source mô tả 11 task có thể ghi vào biến điều khiển throttle, không có locking hoặc ownership rõ ràng.",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Toyota Unintended Acceleration"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-quiz-020",
+      "topicId": "misra-c",
+      "sectionId": "c-risks",
+      "questionType": "single_choice",
+      "questionEn": "What can happen when -1 is compared directly with an unsigned value?",
+      "options": [
+        { "id": "A", "text": "-1 may be converted to a very large unsigned value" },
+        { "id": "B", "text": "-1 always remains a signed negative value" },
+        { "id": "C", "text": "The compiler must stop compilation" },
+        { "id": "D", "text": "The unsigned value becomes zero automatically" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Do usual arithmetic conversions, -1 có thể được chuyển sang unsigned thành giá trị rất lớn, làm phép so sánh khác ý định.",
+      "relatedFlashcardIds": ["misra-c-overview-007", "misra-c-overview-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Implicit unsigned conversion"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

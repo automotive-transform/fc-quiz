@@ -1,0 +1,466 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "misra-c-tools-quiz-001",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What is PC-lint Plus primarily used for in automotive projects?",
+      "options": [
+        { "id": "A", "text": "Static analysis and MISRA-C compliance checking" },
+        { "id": "B", "text": "Vehicle calibration only" },
+        { "id": "C", "text": "CAN bus simulation only" },
+        { "id": "D", "text": "Hardware manufacturing" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PC-lint Plus là static analysis tool được dùng để kiểm tra MISRA-C compliance trong automotive.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-001", "misra-c-tools-setup-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "PC-lint Plus — Cài đặt và cấu hình",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-002",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "Which option enables the MISRA-C:2012 ruleset in the provided PC-lint configuration?",
+      "options": [
+        { "id": "A", "text": "-misra_2012" },
+        { "id": "B", "text": "-compiler(gcc)" },
+        { "id": "C", "text": "-lang C" },
+        { "id": "D", "text": "-misra2 required" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Trong file pc-lint.lnt, -misra_2012 được dùng để enable MISRA-C:2012 ruleset.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-003"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "pc-lint.lnt — Enable MISRA-C:2012 ruleset",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-003",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "Why is compiler configuration important for PC-lint Plus?",
+      "options": [
+        { "id": "A", "text": "It affects implementation-defined behavior and analysis results" },
+        { "id": "B", "text": "It automatically fixes every MISRA violation" },
+        { "id": "C", "text": "It replaces all header files" },
+        { "id": "D", "text": "It disables static analysis" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Compiler configuration ảnh hưởng implementation-defined behavior, kiểu dữ liệu và kết quả static analysis.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-004", "misra-c-tools-setup-005"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "PC-lint Plus — Compiler configuration",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-004",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What does -I specify in the PC-lint configuration?",
+      "options": [
+        { "id": "A", "text": "Header search paths" },
+        { "id": "B", "text": "Compiler optimization level" },
+        { "id": "C", "text": "MISRA severity level" },
+        { "id": "D", "text": "Output report format only" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tùy chọn -I dùng để khai báo các thư mục chứa header files như AUTOSAR/include, inc và cfg.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-006", "misra-c-tools-setup-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Header search paths",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-005",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What is the key difference between suppression and a MISRA deviation?",
+      "options": [
+        { "id": "A", "text": "Suppression controls a tool message; deviation documents and approves an exception" },
+        { "id": "B", "text": "They are exactly the same mechanism" },
+        { "id": "C", "text": "Deviation only changes compiler size settings" },
+        { "id": "D", "text": "Suppression always proves the code is safe" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Suppression là thao tác với tool; deviation là ngoại lệ kỹ thuật được ghi nhận với justification, risk, mitigation và approval.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-008", "misra-c-tools-setup-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Deviation suppression",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-006",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What method does Polyspace Code Prover use for formal verification?",
+      "options": [
+        { "id": "A", "text": "Abstract interpretation" },
+        { "id": "B", "text": "Manual code formatting" },
+        { "id": "C", "text": "Git commit analysis only" },
+        { "id": "D", "text": "Hardware inspection" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Polyspace Code Prover dùng abstract interpretation để phân tích và prove mathematically một số thuộc tính.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-010", "misra-c-tools-setup-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Polyspace Code Prover — Formal verification",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-007",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "Which sequence represents the four MISRA CI/CD stages in the source?",
+      "options": [
+        { "id": "A", "text": "Pre-commit → CI Pipeline → Nightly Build → Release Build" },
+        { "id": "B", "text": "Release → Nightly → Pre-commit → CI" },
+        { "id": "C", "text": "CI → Release → Pre-commit → Nightly" },
+        { "id": "D", "text": "Nightly → CI → Release → Pre-commit" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Pipeline gồm Pre-commit, CI Pipeline, Nightly Build và cuối cùng là Release Build.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-014", "misra-c-tools-setup-015", "misra-c-tools-setup-016", "misra-c-tools-setup-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "MISRA Compliance Check trong CI/CD Pipeline",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-008",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What does MCR stand for in the provided MISRA workflow?",
+      "options": [
+        { "id": "A", "text": "MISRA Compliance Report" },
+        { "id": "B", "text": "MISRA Compiler Register" },
+        { "id": "C", "text": "Module Configuration Record" },
+        { "id": "D", "text": "Mandatory Code Review" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "MCR là MISRA Compliance Report, được tạo trong Nightly Build và lưu làm artifact theo tài liệu.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Nightly Build and Release Build",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-009",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "Which information is included in the MISRA Deviation Record?",
+      "options": [
+        { "id": "A", "text": "Rule, file, line, justification, risk, mitigation, approval and date" },
+        { "id": "B", "text": "Only the source filename" },
+        { "id": "C", "text": "Only the compiler version" },
+        { "id": "D", "text": "Only the developer's username" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Deviation log gồm DR-ID, Rule, File, Line, Description, Justification, Risk, Mitigation, Approved_By và Date.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-019", "misra-c-tools-setup-020", "misra-c-tools-setup-021"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Deviation Log Format — MISRA Deviation Record",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-010",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of an in-code MISRA deviation annotation?",
+      "options": [
+        { "id": "A", "text": "To link the code exception to its documented deviation" },
+        { "id": "B", "text": "To disable all MISRA rules permanently" },
+        { "id": "C", "text": "To replace unit testing" },
+        { "id": "D", "text": "To change the compiler architecture" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Annotation giúp trace từ code đến DR-ID, justification, risk và approval của deviation.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-022"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "In-code annotation",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-011",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "According to the source, what is the suggested fix for the Rule 10.1 example?",
+      "options": [
+        { "id": "A", "text": "Add an explicit != 0 comparison before using && or ||" },
+        { "id": "B", "text": "Remove all logical operators" },
+        { "id": "C", "text": "Disable Rule 10.1 globally" },
+        { "id": "D", "text": "Replace C with assembly" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tài liệu gợi ý thêm explicit != 0 comparison để operand của && hoặc || rõ ràng về boolean intent.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-023", "misra-c-tools-setup-033"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output — Rule 10.1",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-012",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "Which lint code is associated with Rule 10.3 in the source?",
+      "options": [
+        { "id": "A", "text": "713" },
+        { "id": "B", "text": "9013" },
+        { "id": "C", "text": "923" },
+        { "id": "D", "text": "9029" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Lint code 713 được tài liệu gắn với Rule 10.3 về loss of precision trong assignment.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-024", "misra-c-tools-setup-034"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-013",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "Which lint code is used in the hardware register cast example?",
+      "options": [
+        { "id": "A", "text": "923" },
+        { "id": "B", "text": "438" },
+        { "id": "C", "text": "534" },
+        { "id": "D", "text": "9016" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Ví dụ hardware register dùng /*lint -e(923) */ để suppress cast từ integral sang pointer và restore bằng +e(923).",
+      "relatedFlashcardIds": ["misra-c-tools-setup-025", "misra-c-tools-setup-035"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Deviation suppression — Hardware register access",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-014",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What does MISRA-C Rule 14.4 address in the source?",
+      "options": [
+        { "id": "A", "text": "Controlling expression not essentially boolean" },
+        { "id": "B", "text": "Loss of precision in assignment" },
+        { "id": "C", "text": "Last assigned value not used" },
+        { "id": "D", "text": "Ignoring a function return value" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Rule 14.4 liên quan controlling expression phải essentially boolean; tài liệu gợi ý != NULL hoặc != 0u.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-027"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-015",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What does Directive 4.7 address?",
+      "options": [
+        { "id": "A", "text": "Ignoring the return value of a function" },
+        { "id": "B", "text": "Operator precedence" },
+        { "id": "C", "text": "Pointer-to-pointer conversion" },
+        { "id": "D", "text": "Logical operands" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Directive 4.7 trong tài liệu liên quan việc bỏ qua return value; cách fix là lưu và check return value.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-029"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-016",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What is the recommended first step when introducing MISRA to legacy code?",
+      "options": [
+        { "id": "A", "text": "Fix all Mandatory violations first" },
+        { "id": "B", "text": "Immediately rewrite the entire codebase" },
+        { "id": "C", "text": "Ignore all existing violations" },
+        { "id": "D", "text": "Run Polyspace only after release" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Incremental approach bắt đầu bằng việc fix tất cả Mandatory violations trước.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-030"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Legacy code — Incremental approach",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-017",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What is the purpose of a baseline for legacy Required violations?",
+      "options": [
+        { "id": "A", "text": "Record existing violations and manage improvement incrementally" },
+        { "id": "B", "text": "Automatically approve every deviation" },
+        { "id": "C", "text": "Disable MISRA checking permanently" },
+        { "id": "D", "text": "Replace all CI checks" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Baseline ghi nhận Required violations hiện có để team tập trung kiểm soát violation mới và xử lý technical debt dần.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-031"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Legacy code — Incremental approach",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-018",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "According to the CI policy in the source, what can cause the build to fail?",
+      "options": [
+        { "id": "A", "text": "A new Required violation without a deviation record" },
+        { "id": "B", "text": "Any Advisory warning automatically" },
+        { "id": "C", "text": "A documented and approved deviation" },
+        { "id": "D", "text": "A successful HTML report generation" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo policy trong tài liệu, Required violation mới không có deviation record có thể làm CI build fail.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-032"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "CI Pipeline",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-019",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "Which statement best describes the Release Build policy in the source?",
+      "options": [
+        { "id": "A", "text": "Full Polyspace and PC-lint with required deviations approved" },
+        { "id": "B", "text": "Only manual code review is performed" },
+        { "id": "C", "text": "Only Advisory violations are checked" },
+        { "id": "D", "text": "PC-lint is disabled before release" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Release Build chạy full Polyspace + PC-lint, zero Mandatory theo policy và Required phải có approved deviation record.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-017", "misra-c-tools-setup-032"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Release Build",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-quiz-020",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "questionType": "single_choice",
+      "questionEn": "What is the main goal of the incremental approach for legacy MISRA code?",
+      "options": [
+        { "id": "A", "text": "Avoid overwhelming the team while progressively reducing technical debt" },
+        { "id": "B", "text": "Stop all static analysis until the project ends" },
+        { "id": "C", "text": "Fix only Advisory violations first" },
+        { "id": "D", "text": "Ignore all new violations" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Tài liệu khuyến nghị không cố fix 100% ngay; kiểm soát violation mới và pay off technical debt dần qua các sprint.",
+      "relatedFlashcardIds": ["misra-c-tools-setup-030", "misra-c-tools-setup-031"],
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Legacy code — Incremental approach",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

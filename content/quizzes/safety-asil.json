@@ -1,0 +1,463 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "quizzes",
+  "items": [
+    {
+      "id": "safety-asil-quiz-001",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "questionType": "single_choice",
+      "questionEn": "Which three factors determine ASIL?",
+      "options": [
+        { "id": "A", "text": "Severity, Controllability, Exposure" },
+        { "id": "B", "text": "Safety, Integrity, Logic" },
+        { "id": "C", "text": "Software, Hardware, Testing" },
+        { "id": "D", "text": "Quality, Cost, Schedule" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ASIL được xác định từ Severity, Controllability và Exposure (S-C-E).",
+      "relatedFlashcardIds": ["safety-asil-002"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-002",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "questionType": "single_choice",
+      "questionEn": "Which ASIL level is the highest?",
+      "options": [
+        { "id": "A", "text": "ASIL A" },
+        { "id": "B", "text": "ASIL B" },
+        { "id": "C", "text": "ASIL C" },
+        { "id": "D", "text": "ASIL D" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Thứ tự là QM → A → B → C → D; ASIL D là mức cao nhất.",
+      "relatedFlashcardIds": ["safety-asil-006"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-003",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "questionType": "single_choice",
+      "questionEn": "What is the ASIL for S1, C1, E4?",
+      "options": [
+        { "id": "A", "text": "QM" },
+        { "id": "B", "text": "ASIL A" },
+        { "id": "C", "text": "ASIL B" },
+        { "id": "D", "text": "ASIL C" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Theo matrix, S1 + C1 + E4 cho kết quả QM.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-004",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "questionType": "single_choice",
+      "questionEn": "What is the ASIL for S2, C2, E3?",
+      "options": [
+        { "id": "A", "text": "QM" },
+        { "id": "B", "text": "ASIL A" },
+        { "id": "C", "text": "ASIL B" },
+        { "id": "D", "text": "ASIL C" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Tra matrix tại S2, C2, E3 cho kết quả ASIL B.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-005",
+      "topicId": "safety",
+      "sectionId": "asil-determination",
+      "questionType": "single_choice",
+      "questionEn": "What is the ASIL for S3, C3, E4?",
+      "options": [
+        { "id": "A", "text": "ASIL A" },
+        { "id": "B", "text": "ASIL B" },
+        { "id": "C", "text": "ASIL C" },
+        { "id": "D", "text": "ASIL D" }
+      ],
+      "correctOptionId": "D",
+      "explanationVi": "Theo matrix, S3 + C3 + E4 cho ASIL D.",
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Determination Matrix",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-006",
+      "topicId": "safety",
+      "sectionId": "asil-effort",
+      "questionType": "single_choice",
+      "questionEn": "What is the stated additional effort for ASIL B?",
+      "options": [
+        { "id": "A", "text": "+1–2 days" },
+        { "id": "B", "text": "+1 week" },
+        { "id": "C", "text": "+1 month" },
+        { "id": "D", "text": "+6 months" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Theo source, ASIL B có effort thêm khoảng +1 tuần.",
+      "relatedFlashcardIds": ["safety-asil-007"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL trong thực tế — Effort cần bỏ ra",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-007",
+      "topicId": "safety",
+      "sectionId": "asil-effort",
+      "questionType": "single_choice",
+      "questionEn": "Which measure is specifically listed for ASIL A?",
+      "options": [
+        { "id": "A", "text": "Range check" },
+        { "id": "B", "text": "Dual-channel HW" },
+        { "id": "C", "text": "Two independent teams" },
+        { "id": "D", "text": "Formal proof recommended" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ASIL A có range check, error counter và safe state; MISRA C được khuyến nghị.",
+      "relatedFlashcardIds": ["safety-asil-008"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL trong thực tế — Effort cần bỏ ra",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-008",
+      "topicId": "safety",
+      "sectionId": "asil-effort",
+      "questionType": "single_choice",
+      "questionEn": "Which measure is listed for ASIL B?",
+      "options": [
+        { "id": "A", "text": "Independent monitoring" },
+        { "id": "B", "text": "Dual-channel HW" },
+        { "id": "C", "text": "Formal proof recommended" },
+        { "id": "D", "text": "Two independent teams" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ASIL B yêu cầu independent monitoring, MISRA C mandatory, branch coverage và 1 independent reviewer.",
+      "relatedFlashcardIds": ["safety-asil-009"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL trong thực tế — Effort cần bỏ ra",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-009",
+      "topicId": "safety",
+      "sectionId": "asil-effort",
+      "questionType": "single_choice",
+      "questionEn": "Which testing method is listed for ASIL C?",
+      "options": [
+        { "id": "A", "text": "Statement coverage" },
+        { "id": "B", "text": "Branch coverage" },
+        { "id": "C", "text": "Fault injection testing" },
+        { "id": "D", "text": "Normal testing only" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "ASIL C yêu cầu fault injection testing, cùng với MC/DC và HW redundancy hoặc SW voting.",
+      "relatedFlashcardIds": ["safety-asil-010"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL trong thực tế — Effort cần bỏ ra",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-010",
+      "topicId": "safety",
+      "sectionId": "asil-effort",
+      "questionType": "single_choice",
+      "questionEn": "Which requirement is listed for ASIL D?",
+      "options": [
+        { "id": "A", "text": "Statement coverage" },
+        { "id": "B", "text": "Dual-channel HW" },
+        { "id": "C", "text": "One independent reviewer" },
+        { "id": "D", "text": "Range check" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "ASIL D yêu cầu dual-channel HW, 2 independent teams và MC/DC mandatory.",
+      "relatedFlashcardIds": ["safety-asil-011"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL trong thực tế — Effort cần bỏ ra",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-011",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "questionType": "single_choice",
+      "questionEn": "What is the key mandatory condition for ASIL Decomposition?",
+      "options": [
+        { "id": "A", "text": "Freedom From Interference (FFI)" },
+        { "id": "B", "text": "Normal testing only" },
+        { "id": "C", "text": "Infotainment integration" },
+        { "id": "D", "text": "Seat heater control" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "ASIL Decomposition bắt buộc phải bảo đảm Freedom From Interference (FFI).",
+      "relatedFlashcardIds": ["safety-asil-012", "safety-asil-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-012",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "questionType": "single_choice",
+      "questionEn": "What does FFI mean in ASIL Decomposition?",
+      "options": [
+        { "id": "A", "text": "Freedom From Interference" },
+        { "id": "B", "text": "Functional Failure Integration" },
+        { "id": "C", "text": "Fault Frequency Indicator" },
+        { "id": "D", "text": "Functional Firmware Isolation" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "FFI là Freedom From Interference, điều kiện để các module decomposition không can thiệp nguy hiểm lẫn nhau.",
+      "relatedFlashcardIds": ["safety-asil-013"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-013",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "questionType": "single_choice",
+      "questionEn": "Which sharing condition can invalidate the stated decomposition example?",
+      "options": [
+        { "id": "A", "text": "Sharing a RAM region between two ASIL A(d) modules" },
+        { "id": "B", "text": "Using two independent modules" },
+        { "id": "C", "text": "Using ASIL A(d)" },
+        { "id": "D", "text": "Using ASIL B(d)" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "Nếu 2 ASIL A(d) share RAM region, decomposition bị vô hiệu theo source.",
+      "relatedFlashcardIds": ["safety-asil-020"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-014",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "questionType": "single_choice",
+      "questionEn": "How can ASIL C be decomposed according to the source?",
+      "options": [
+        { "id": "A", "text": "ASIL A(d) + ASIL A(d)" },
+        { "id": "B", "text": "ASIL A(d) + ASIL B(d)" },
+        { "id": "C", "text": "ASIL B(d) + ASIL B(d)" },
+        { "id": "D", "text": "ASIL A(d) + ASIL C(d)" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Theo bảng decomposition, ASIL C → ASIL A(d) + ASIL B(d).",
+      "relatedFlashcardIds": ["safety-asil-016"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-015",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "questionType": "single_choice",
+      "questionEn": "Which decomposition is listed for ASIL D?",
+      "options": [
+        { "id": "A", "text": "ASIL A(d) + ASIL A(d)" },
+        { "id": "B", "text": "ASIL A(d) + ASIL B(d)" },
+        { "id": "C", "text": "ASIL A(d) + ASIL C(d)" },
+        { "id": "D", "text": "ASIL C(d) + ASIL C(d)" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Một cách decomposition được source nêu là ASIL D → ASIL A(d) + ASIL C(d).",
+      "relatedFlashcardIds": ["safety-asil-017"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-016",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "questionType": "single_choice",
+      "questionEn": "What is another ASIL D decomposition listed in the source?",
+      "options": [
+        { "id": "A", "text": "ASIL A(d) + ASIL A(d)" },
+        { "id": "B", "text": "ASIL A(d) + ASIL C(d)" },
+        { "id": "C", "text": "ASIL B(d) + ASIL B(d)" },
+        { "id": "D", "text": "ASIL B(d) + ASIL C(d)" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Source cũng nêu ASIL D → ASIL B(d) + ASIL B(d).",
+      "relatedFlashcardIds": ["safety-asil-018"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-017",
+      "topicId": "safety",
+      "sectionId": "asil-decomposition",
+      "questionType": "single_choice",
+      "questionEn": "What does (d) mean in ASIL A(d), B(d), or C(d)?",
+      "options": [
+        { "id": "A", "text": "Decomposed" },
+        { "id": "B", "text": "Diagnostic" },
+        { "id": "C", "text": "Default" },
+        { "id": "D", "text": "Distributed" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "(d) = decomposed; đây không phải ASIL A, B hoặc C thông thường và requirements có thể được giảm nhẹ.",
+      "relatedFlashcardIds": ["safety-asil-019"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL Decomposition",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-018",
+      "topicId": "safety",
+      "sectionId": "asil-vs-sil",
+      "questionType": "single_choice",
+      "questionEn": "According to the source, which SIL is listed for ASIL C?",
+      "options": [
+        { "id": "A", "text": "SIL 1" },
+        { "id": "B", "text": "SIL 2" },
+        { "id": "C", "text": "SIL 3" },
+        { "id": "D", "text": "SIL 4" }
+      ],
+      "correctOptionId": "B",
+      "explanationVi": "Theo bảng ASIL vs SIL trong source, ASIL C tương đương SIL 2.",
+      "relatedFlashcardIds": ["safety-asil-021"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL vs SIL (IEC 61508)",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-019",
+      "topicId": "safety",
+      "sectionId": "asil-vs-sil",
+      "questionType": "single_choice",
+      "questionEn": "What does PFH stand for?",
+      "options": [
+        { "id": "A", "text": "Probability of Failure per Hour" },
+        { "id": "B", "text": "Probability of Functional Hardware" },
+        { "id": "C", "text": "Performance Failure Handling" },
+        { "id": "D", "text": "Periodic Fault Handling" }
+      ],
+      "correctOptionId": "A",
+      "explanationVi": "PFH = Probability of Failure per Hour, tức xác suất failure trong mỗi giờ.",
+      "relatedFlashcardIds": ["safety-asil-022"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL vs SIL (IEC 61508)",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-asil-quiz-020",
+      "topicId": "safety",
+      "sectionId": "asil-vs-sil",
+      "questionType": "single_choice",
+      "questionEn": "According to the source, which SIL is listed for ASIL D?",
+      "options": [
+        { "id": "A", "text": "SIL 1" },
+        { "id": "B", "text": "SIL 2" },
+        { "id": "C", "text": "SIL 3" },
+        { "id": "D", "text": "SIL 4" }
+      ],
+      "correctOptionId": "C",
+      "explanationVi": "Theo bảng ASIL vs SIL trong source, ASIL D tương đương SIL 3.",
+      "relatedFlashcardIds": ["safety-asil-021"],
+      "source": {
+        "type": "technical_document",
+        "document": "ASIL Matrix",
+        "section": "ASIL vs SIL (IEC 61508)",
+        "reference": "content-source/safety/ASIL-Matrix.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

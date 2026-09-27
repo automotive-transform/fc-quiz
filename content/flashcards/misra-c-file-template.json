@@ -1,0 +1,482 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "misra-c-file-template-001",
+      "topicId": "misra-c",
+      "sectionId": "file-structure",
+      "cardType": "concept",
+      "term": "MISRA-Compliant C File Template",
+      "definitionEn": "A standardized C file structure for MISRA-C compliant automotive embedded software.",
+      "explanationVi": "Mẫu cấu trúc file C chuẩn hóa, giúp code Automotive dễ đọc, kiểm tra và bảo trì.",
+      "questionEn": "What is the purpose of a MISRA-Compliant C File Template?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "Overview",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-002",
+      "topicId": "misra-c",
+      "sectionId": "file-header",
+      "cardType": "concept",
+      "term": "FILE HEADER",
+      "definitionEn": "The header records file, module, description, author, creation date, version, deviations, and copyright.",
+      "explanationVi": "Phần đầu file ghi thông tin nhận diện, phiên bản, deviation và bản quyền của file.",
+      "questionEn": "What information belongs in the C file header?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "FILE HEADER",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-003",
+      "topicId": "misra-c",
+      "sectionId": "deviation-record",
+      "cardType": "technical_term",
+      "term": "MISRA Deviation Record",
+      "definitionEn": "A documented exception to a MISRA rule with its description, justification, and approval.",
+      "explanationVi": "Hồ sơ ghi nhận ngoại lệ MISRA: Rule nào, lý do gì và ai phê duyệt.",
+      "questionEn": "What does a MISRA Deviation Record document?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "MISRA DEVIATION RECORD",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-004",
+      "topicId": "misra-c",
+      "sectionId": "includes",
+      "cardType": "comparison",
+      "term": "Include Order",
+      "definitionEn": "The template orders headers as standard, system, project, and local dependencies.",
+      "explanationVi": "Thứ tự include trong template: standard → system → project → local, giúp dependency rõ ràng.",
+      "questionEn": "What is the prescribed include order in the template?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "INCLUDES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-005",
+      "topicId": "misra-c",
+      "sectionId": "local-macros",
+      "cardType": "concept",
+      "term": "Local Macros",
+      "definitionEn": "Module-level macros such as version, RPM, temperature, retry, and bit-mask definitions.",
+      "explanationVi": "Các macro dùng trong module, ví dụ giới hạn RPM, nhiệt độ, retry và bit flags.",
+      "questionEn": "What kinds of definitions belong in LOCAL MACROS?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-006",
+      "topicId": "misra-c",
+      "sectionId": "local-types",
+      "cardType": "technical_term",
+      "term": "Ecm_StateType",
+      "definitionEn": "An enum type representing ECM states: UNINIT, IDLE, RUNNING, FAULT, and SHUTDOWN.",
+      "explanationVi": "Enum mô tả 5 trạng thái ECM: chưa khởi tạo, idle, chạy, lỗi và shutdown.",
+      "questionEn": "What states does Ecm_StateType represent?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL TYPES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-007",
+      "topicId": "misra-c",
+      "sectionId": "local-types",
+      "cardType": "technical_term",
+      "term": "Ecm_DataType",
+      "definitionEn": "A struct containing RPM, engine temperature, status flags, state, and initialization status.",
+      "explanationVi": "Struct gom toàn bộ runtime data chính của ECM vào một cấu trúc dữ liệu.",
+      "questionEn": "What data is stored in Ecm_DataType?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL TYPES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-008",
+      "topicId": "misra-c",
+      "sectionId": "local-variables",
+      "cardType": "concept",
+      "term": "static Module Variables",
+      "definitionEn": "File-scope variables declared static to provide internal linkage within the module.",
+      "explanationVi": "Biến file-scope dùng static để giới hạn linkage trong module hiện tại; template dùng prefix s_.",
+      "questionEn": "Why are module variables declared static in the template?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL VARIABLES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-009",
+      "topicId": "misra-c",
+      "sectionId": "function-prototypes",
+      "cardType": "technical_term",
+      "term": "Function Prototype",
+      "definitionEn": "A prior declaration specifying a function's name, return type, and parameters before its definition.",
+      "explanationVi": "Khai báo hàm trước khi định nghĩa, giúp compiler kiểm tra đúng tên, return type và parameters.",
+      "questionEn": "Why are local function prototypes declared before definitions?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL FUNCTION PROTOTYPES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-010",
+      "topicId": "misra-c",
+      "sectionId": "local-functions",
+      "cardType": "technical_term",
+      "term": "Ecm_IsRpmValid",
+      "definitionEn": "A static Boolean function that checks whether RPM is within ECM_ENGINE_RPM_MIN and ECM_ENGINE_RPM_MAX.",
+      "explanationVi": "Hàm static kiểm tra RPM có nằm trong khoảng hợp lệ từ 0 đến 8000 RPM hay không.",
+      "questionEn": "What does Ecm_IsRpmValid check?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-011",
+      "topicId": "misra-c",
+      "sectionId": "local-functions",
+      "cardType": "technical_term",
+      "term": "Ecm_IsTempValid",
+      "definitionEn": "A static Boolean function that checks whether temperature is between -40 and 150 degrees Celsius.",
+      "explanationVi": "Hàm static kiểm tra nhiệt độ có nằm trong khoảng -40 đến 150°C hay không.",
+      "questionEn": "What temperature range does Ecm_IsTempValid accept?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-012",
+      "topicId": "misra-c",
+      "sectionId": "public-functions",
+      "cardType": "technical_term",
+      "term": "Ecm_Init",
+      "definitionEn": "The public initialization function that initializes ECM data and Sensor Driver, then enters IDLE on success.",
+      "explanationVi": "Hàm public khởi tạo ECM; nếu Sensor_Init thành công thì đặt ECM vào trạng thái IDLE.",
+      "questionEn": "What does Ecm_Init do on successful initialization?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-013",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "cardType": "abbreviation",
+      "term": "MISRA Rule 8.7",
+      "definitionEn": "Functions and objects that do not need external linkage should have internal linkage.",
+      "explanationVi": "Function hoặc object chỉ dùng trong module nên được giới hạn linkage; template dùng static.",
+      "questionEn": "What does MISRA Rule 8.7 address in this template?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL VARIABLES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-014",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "cardType": "abbreviation",
+      "term": "MISRA Rule 2.5",
+      "definitionEn": "Unused macros should be removed.",
+      "explanationVi": "Macro không được sử dụng nên được loại bỏ để tránh code không cần thiết.",
+      "questionEn": "What does MISRA Rule 2.5 require for unused macros?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-015",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "cardType": "abbreviation",
+      "term": "MISRA Rule 14.4",
+      "definitionEn": "Conditions of controlling expressions should have essentially Boolean type.",
+      "explanationVi": "Điều kiện điều khiển như if phải có kiểu về bản chất là Boolean.",
+      "questionEn": "What does MISRA Rule 14.4 concern?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-016",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "cardType": "abbreviation",
+      "term": "MISRA Rule 8.2",
+      "definitionEn": "Function declarations should be compatible with their definitions.",
+      "explanationVi": "Prototype và definition của function phải tương thích với nhau.",
+      "questionEn": "What does MISRA Rule 8.2 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL FUNCTION PROTOTYPES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-017",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "cardType": "abbreviation",
+      "term": "MISRA Rule 17.3",
+      "definitionEn": "A function should not be implicitly declared.",
+      "explanationVi": "Không được gọi function khi chưa có declaration phù hợp.",
+      "questionEn": "What does MISRA Rule 17.3 prevent?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL FUNCTION PROTOTYPES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-018",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "cardType": "abbreviation",
+      "term": "MISRA Rule 15.5",
+      "definitionEn": "The rule concerns limiting a function to a single point of exit at the end.",
+      "explanationVi": "Rule liên quan đến single exit point; template dùng ret_val để gom kết quả và return cuối hàm.",
+      "questionEn": "What does MISRA Rule 15.5 concern in the template?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "Ecm_Init and local functions",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-019",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "cardType": "abbreviation",
+      "term": "MISRA Directive 4.10",
+      "definitionEn": "Header files should be protected against repeated inclusion.",
+      "explanationVi": "Header cần có inclusion guard để tránh nội dung bị include lặp lại.",
+      "questionEn": "What does MISRA Directive 4.10 address?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "INCLUDES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-020",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "cardType": "abbreviation",
+      "term": "MISRA Rule 21.1",
+      "definitionEn": "The template states that unnecessary system headers should not be included.",
+      "explanationVi": "Không include system header không cần thiết; chỉ include dependency thực sự được sử dụng.",
+      "questionEn": "What does MISRA Rule 21.1 address in the template?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "INCLUDES",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-021",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "cardType": "abbreviation",
+      "term": "MISRA Rule 20.4",
+      "definitionEn": "Macro names should not conflict with C language keywords.",
+      "explanationVi": "Tên macro không được trùng với keyword của ngôn ngữ C.",
+      "questionEn": "What naming restriction is stated by MISRA Rule 20.4?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-022",
+      "topicId": "misra-c",
+      "sectionId": "misra-rules",
+      "cardType": "abbreviation",
+      "term": "MISRA Rule 20.10",
+      "definitionEn": "The # and ## preprocessing operators are restricted to specific permitted cases.",
+      "explanationVi": "Toán tử tiền xử lý # và ## chỉ dùng trong các trường hợp được phép theo coding rules.",
+      "questionEn": "What does MISRA Rule 20.10 restrict?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-023",
+      "topicId": "misra-c",
+      "sectionId": "return-value",
+      "cardType": "technical_term",
+      "term": "ret_val",
+      "definitionEn": "A return-value variable initialized to E_NOT_OK and changed to E_OK on successful initialization.",
+      "explanationVi": "Biến kết quả khởi tạo mặc định là E_NOT_OK, chỉ đổi thành E_OK khi khởi tạo thành công.",
+      "questionEn": "Why is ret_val initialized to E_NOT_OK in Ecm_Init?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-024",
+      "topicId": "misra-c",
+      "sectionId": "initialization",
+      "cardType": "concept",
+      "term": "Initialization Guard",
+      "definitionEn": "A Boolean state used to detect whether the ECM has already been initialized.",
+      "explanationVi": "Cờ Boolean s_init_done cho biết ECM đã được khởi tạo hay chưa.",
+      "questionEn": "What does s_init_done indicate?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL VARIABLES and Ecm_Init",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-025",
+      "topicId": "misra-c",
+      "sectionId": "bit-masks",
+      "cardType": "technical_term",
+      "term": "Bit Mask",
+      "definitionEn": "A value used to represent individual status flags within status_flags.",
+      "explanationVi": "Bit mask dùng từng bit để biểu diễn các cờ RUNNING, ERROR và OVERHEAT.",
+      "questionEn": "What do ECM_FLAG_RUNNING, ERROR, and OVERHEAT represent?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "LOCAL MACROS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-026",
+      "topicId": "misra-c",
+      "sectionId": "initialization",
+      "cardType": "comparison",
+      "term": "E_OK vs E_NOT_OK",
+      "definitionEn": "E_OK indicates successful initialization; E_NOT_OK indicates an initialization failure.",
+      "explanationVi": "E_OK = thành công; E_NOT_OK = thất bại trong quá trình khởi tạo.",
+      "questionEn": "What is the difference between E_OK and E_NOT_OK in Ecm_Init?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-027",
+      "topicId": "misra-c",
+      "sectionId": "initialization",
+      "cardType": "concept",
+      "term": "Sensor_Init",
+      "definitionEn": "The sensor driver initialization call whose return value must be checked.",
+      "explanationVi": "Ecm_Init gọi Sensor_Init và phải kiểm tra kết quả trước khi xác nhận ECM khởi tạo thành công.",
+      "questionEn": "What must Ecm_Init do after calling Sensor_Init?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-file-template-028",
+      "topicId": "misra-c",
+      "sectionId": "initialization",
+      "cardType": "concept",
+      "term": "Ecm_Init Success Path",
+      "definitionEn": "On successful Sensor_Init, ECM sets state to IDLE, initialized to true, s_init_done to true, and returns E_OK.",
+      "explanationVi": "Sensor_Init OK → state IDLE → initialized true → s_init_done true → ret_val E_OK.",
+      "questionEn": "What happens when Sensor_Init succeeds?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - C File Template",
+        "section": "PUBLIC FUNCTION IMPLEMENTATIONS",
+        "reference": "content-source/MISRA-C/C-File-Template.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

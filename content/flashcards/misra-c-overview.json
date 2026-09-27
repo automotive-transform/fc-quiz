@@ -1,0 +1,326 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "misra-c-overview-001",
+      "topicId": "misra-c",
+      "sectionId": "why-misra",
+      "cardType": "concept",
+      "term": "Why MISRA-C?",
+      "definitionEn": "MISRA-C helps restrict risky uses of the C language in safety-critical software.",
+      "explanationVi": "MISRA-C giúp hạn chế cách sử dụng C dễ gây lỗi, đặc biệt trong phần mềm yêu cầu độ tin cậy cao như ECU.",
+      "questionEn": "Why is MISRA-C needed in automotive software?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Tại sao cần MISRA-C?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-002",
+      "topicId": "misra-c",
+      "sectionId": "ariane-5",
+      "cardType": "technical_term",
+      "term": "Ariane 5",
+      "definitionEn": "A rocket whose 1996 failure illustrated the danger of software assumptions and numeric conversion.",
+      "explanationVi": "Ariane 5 là ví dụ điển hình cho việc code từng chạy tốt nhưng có thể thất bại khi điều kiện đầu vào thay đổi.",
+      "questionEn": "What real-world event illustrates the risk of unsafe C code?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Ariane 5"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-003",
+      "topicId": "misra-c",
+      "sectionId": "c-risks",
+      "cardType": "abbreviation",
+      "term": "UB",
+      "definitionEn": "Undefined Behavior: behavior for which the C Standard imposes no requirements.",
+      "explanationVi": "Undefined Behavior là hành vi mà C Standard không quy định kết quả; compiler có thể tối ưu theo các giả định của nó.",
+      "questionEn": "What does UB mean in C?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Undefined Behavior"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-004",
+      "topicId": "misra-c",
+      "sectionId": "c-risks",
+      "cardType": "concept",
+      "term": "Signed integer overflow",
+      "definitionEn": "Overflow of a signed integer is Undefined Behavior in C.",
+      "explanationVi": "Khi phép tính signed integer vượt giới hạn biểu diễn, C xem đó là Undefined Behavior.",
+      "questionEn": "What happens when signed integer arithmetic overflows in C?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Signed Integer Overflow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-005",
+      "topicId": "misra-c",
+      "sectionId": "c-risks",
+      "cardType": "concept",
+      "term": "Implementation-Defined Behavior",
+      "definitionEn": "Behavior where the implementation chooses among permitted alternatives and documents its choice.",
+      "explanationVi": "Hành vi phụ thuộc implementation; không nên giả định mọi platform có cùng đặc điểm.",
+      "questionEn": "What is Implementation-Defined Behavior?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Implementation-Defined Behavior"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-006",
+      "topicId": "misra-c",
+      "sectionId": "c-risks",
+      "cardType": "concept",
+      "term": "Unspecified Behavior",
+      "definitionEn": "Behavior where the C Standard permits multiple possible results without requiring one specific choice.",
+      "explanationVi": "Hành vi không bảo đảm một lựa chọn cụ thể; code không nên phụ thuộc vào thứ tự hoặc kết quả không được quy định.",
+      "questionEn": "What is Unspecified Behavior in C?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Unspecified Behavior"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-007",
+      "topicId": "misra-c",
+      "sectionId": "c-risks",
+      "cardType": "technical_term",
+      "term": "Implicit Type Conversion",
+      "definitionEn": "Automatic conversion between data types performed by C without an explicit cast.",
+      "explanationVi": "C tự động chuyển kiểu trong nhiều tình huống; nếu không kiểm soát, kết quả có thể khác ý định.",
+      "questionEn": "What is Implicit Type Conversion?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Implicit Type Conversion"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-008",
+      "topicId": "misra-c",
+      "sectionId": "misra-definition",
+      "cardType": "concept",
+      "term": "MISRA-C",
+      "definitionEn": "A set of guidelines for safer and more disciplined use of the C language.",
+      "explanationVi": "MISRA-C là bộ quy tắc giúp sử dụng C an toàn và có tính kỷ luật hơn trong phần mềm automotive.",
+      "questionEn": "What is MISRA-C?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "MISRA-C là gì và không phải là gì?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-009",
+      "topicId": "misra-c",
+      "sectionId": "misra-definition",
+      "cardType": "comparison",
+      "term": "MISRA-C vs Static Analysis Tool",
+      "definitionEn": "MISRA-C defines coding rules; tools such as PC-lint or Polyspace can check rules.",
+      "explanationVi": "MISRA-C là guideline; PC-lint hoặc Polyspace là tool có thể hỗ trợ kiểm tra MISRA.",
+      "questionEn": "Is MISRA-C itself a static analysis tool?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "MISRA-C là gì và không phải là gì?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-010",
+      "topicId": "misra-c",
+      "sectionId": "misra-definition",
+      "cardType": "comparison",
+      "term": "MISRA-C vs Testing",
+      "definitionEn": "MISRA-C does not replace testing, code review, or formal verification.",
+      "explanationVi": "Tuân thủ MISRA-C không có nghĩa code không còn bug và không thay thế testing, review hay verification.",
+      "questionEn": "Does MISRA-C replace software testing?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "MISRA-C là gì và không phải là gì?"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-011",
+      "topicId": "misra-c",
+      "sectionId": "history",
+      "cardType": "phrase",
+      "term": "MISRA-C:1998",
+      "definitionEn": "The first MISRA-C guideline version, with 127 rules for C90.",
+      "explanationVi": "Phiên bản MISRA-C đầu tiên, ra đời năm 1998, gồm 127 rules cho C90 theo tài liệu.",
+      "questionEn": "What is notable about MISRA-C:1998?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Lịch sử MISRA-C"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-012",
+      "topicId": "misra-c",
+      "sectionId": "history",
+      "cardType": "phrase",
+      "term": "MISRA-C:2004",
+      "definitionEn": "A 2004 revision with 142 rules and Required/Advisory classifications.",
+      "explanationVi": "Phiên bản 2004 có 142 rules và phân chia Required với Advisory.",
+      "questionEn": "What are key features of MISRA-C:2004?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Lịch sử MISRA-C"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-013",
+      "topicId": "misra-c",
+      "sectionId": "history",
+      "cardType": "phrase",
+      "term": "MISRA-C:2012",
+      "definitionEn": "A major revision with 143 rules, 16 directives, and Mandatory/Required/Advisory classifications.",
+      "explanationVi": "Phiên bản 2012 có 143 rules, 16 directives và ba mức Mandatory, Required, Advisory.",
+      "questionEn": "What are key features of MISRA-C:2012?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Lịch sử MISRA-C"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-014",
+      "topicId": "misra-c",
+      "sectionId": "history",
+      "cardType": "phrase",
+      "term": "MISRA-C:2023",
+      "definitionEn": "A newer revision that updates and clarifies MISRA-C guidance and adds C17 support.",
+      "explanationVi": "Phiên bản 2023 cập nhật, làm rõ một số rules và bổ sung hỗ trợ C17 theo tài liệu.",
+      "questionEn": "What is notable about MISRA-C:2023?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Lịch sử MISRA-C"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-015",
+      "topicId": "misra-c",
+      "sectionId": "safe-coding",
+      "cardType": "phrase",
+      "term": "Check Before Operation",
+      "definitionEn": "Validate numeric limits before performing an operation that could overflow.",
+      "explanationVi": "Kiểm tra giới hạn trước khi thực hiện phép toán có nguy cơ overflow.",
+      "questionEn": "How should integer overflow be prevented?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Signed Integer Overflow"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-016",
+      "topicId": "misra-c",
+      "sectionId": "safe-coding",
+      "cardType": "technical_term",
+      "term": "Fixed-width integer types",
+      "definitionEn": "Integer types such as int32_t that explicitly specify an integer width when supported.",
+      "explanationVi": "Các kiểu như int32_t giúp thể hiện rõ yêu cầu độ rộng số nguyên thay vì giả định int luôn có kích thước cố định.",
+      "questionEn": "Why use fixed-width integer types such as int32_t?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "sizeof(int) phụ thuộc platform"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-017",
+      "topicId": "misra-c",
+      "sectionId": "safe-coding",
+      "cardType": "phrase",
+      "term": "Signed error before unsigned conversion",
+      "definitionEn": "Check for a negative error value before converting a signed value to unsigned.",
+      "explanationVi": "Kiểm tra result < 0 trước, rồi mới convert sang unsigned để tránh chuyển mã lỗi âm thành giá trị rất lớn.",
+      "questionEn": "How should signed error values be handled before unsigned comparison?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Implicit unsigned conversion"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-018",
+      "topicId": "misra-c",
+      "sectionId": "automotive-safety",
+      "cardType": "concept",
+      "term": "MISRA-C and Functional Safety",
+      "definitionEn": "MISRA-C supports disciplined coding but does not replace the full functional safety process.",
+      "explanationVi": "MISRA-C hỗ trợ chất lượng code nhưng cần kết hợp với requirements, architecture, testing và verification.",
+      "questionEn": "What role does MISRA-C play in functional safety?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "MISRA-C và Functional Safety"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-019",
+      "topicId": "misra-c",
+      "sectionId": "key-principles",
+      "cardType": "comparison",
+      "term": "Valid C code vs Safe C code",
+      "definitionEn": "Code can be valid C and still contain risky behavior or incorrect assumptions.",
+      "explanationVi": "Code hợp lệ theo C chưa chắc an toàn; đây là tư tưởng cốt lõi khi học MISRA-C.",
+      "questionEn": "Does valid C code necessarily mean safe C code?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Các ví dụ về C valid nhưng nguy hiểm"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-overview-020",
+      "topicId": "misra-c",
+      "sectionId": "key-principles",
+      "cardType": "phrase",
+      "term": "UB - Platform - Order - Type",
+      "definitionEn": "A mnemonic for four C risk areas: Undefined Behavior, platform dependence, unspecified order, and implicit conversion.",
+      "explanationVi": "Mẹo nhớ 4 nhóm rủi ro C: UB, phụ thuộc platform, thứ tự không bảo đảm và chuyển kiểu âm thầm.",
+      "questionEn": "What mnemonic summarizes the four major C risk areas?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Overview",
+        "section": "Cách học thuộc nhanh"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

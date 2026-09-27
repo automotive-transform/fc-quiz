@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "safety-design-code-001",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "concept",
+      "term": "Safety Design Code",
+      "definitionEn": "Implementation of safety mechanisms in C code after defining the Safety Goal and ASIL.",
+      "explanationVi": "Sau khi có Safety Goal và ASIL, Safety Mechanisms được implement vào C code để phát hiện và xử lý lỗi.",
+      "questionEn": "What is the purpose of Safety Design Code?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Safety Design Patterns trong C Code",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-002",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "technical_term",
+      "term": "Range Check",
+      "definitionEn": "A safety pattern that checks sensor or CAN data against hard limits and plausibility limits.",
+      "explanationVi": "Kiểm tra dữ liệu sensor hoặc CAN theo giới hạn vật lý và giới hạn hợp lý.",
+      "questionEn": "What does the Range Check pattern verify?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 1: Range Check",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-003",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "comparison",
+      "term": "Hard Limit vs Plausibility",
+      "definitionEn": "Hard limit checks physical bounds; plausibility checks whether a value is reasonable.",
+      "explanationVi": "Hard limit kiểm tra giới hạn vật lý; plausibility kiểm tra giá trị có hợp lý hay không.",
+      "questionEn": "What is the difference between hard limit and plausibility checks?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 1: Range Check",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-004",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "technical_term",
+      "term": "Safe State Machine",
+      "definitionEn": "A state machine that moves the system to a degraded or safe state when faults occur.",
+      "explanationVi": "State machine chuyển hệ thống sang DEGRADED hoặc SAFE khi phát hiện lỗi.",
+      "questionEn": "What is the purpose of a Safe State Machine?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 2: Safe State Machine",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-005",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "comparison",
+      "term": "ACTIVE → DEGRADED → SAFE",
+      "definitionEn": "The EPS fault-handling progression when errors occur.",
+      "explanationVi": "EPS có thể từ ACTIVE sang DEGRADED khi lỗi chưa đủ ngưỡng, rồi sang SAFE khi lỗi tiếp tục.",
+      "questionEn": "How does the EPS state progress when faults accumulate?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 2: Safe State Machine",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-006",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "technical_term",
+      "term": "Error Counter / Debounce",
+      "definitionEn": "A pattern that counts failures and passes before changing the failure state.",
+      "explanationVi": "Đếm lỗi hoặc lần OK trước khi đổi trạng thái để tránh phản ứng với lỗi tạm thời.",
+      "questionEn": "Why is Error Counter used for debounce?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 3: Error Counter (Debounce)",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-007",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "comparison",
+      "term": "10 FAIL / 5 PASS",
+      "definitionEn": "Ten consecutive failures set isFailing TRUE; five passes set it FALSE.",
+      "explanationVi": "10 lần FAIL thì isFailing = TRUE; 5 lần PASS thì isFailing = FALSE.",
+      "questionEn": "What are the Error Counter thresholds in the example?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 3: Error Counter (Debounce)",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-008",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "technical_term",
+      "term": "Watchdog Alive Supervision",
+      "definitionEn": "Supervision that checks whether each runnable reaches its WdgM checkpoints each cycle.",
+      "explanationVi": "Giám sát để mỗi runnable check in với WdgM đúng mỗi chu kỳ.",
+      "questionEn": "What does Watchdog Alive Supervision monitor?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 4: Watchdog Alive Supervision",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-009",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "phrase",
+      "term": "ENTRY → RUN → EXIT",
+      "definitionEn": "The watchdog execution sequence: enter the runnable, execute logic, then report completion.",
+      "explanationVi": "Runnable báo bắt đầu bằng ENTRY, chạy logic, rồi báo hoàn thành bằng EXIT.",
+      "questionEn": "What is the basic Watchdog checkpoint sequence?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 4: Watchdog Alive Supervision",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-010",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "abbreviation",
+      "term": "DEM",
+      "definitionEn": "Diagnostic Event Manager used to report diagnostic events and their FAILED or PASSED status.",
+      "explanationVi": "DEM là Diagnostic Event Manager, dùng báo cáo lỗi và trạng thái FAILED/PASSED để diagnostic.",
+      "questionEn": "What does DEM stand for and what does it do?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 5: DEM Event Reporting",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-011",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "technical_term",
+      "term": "DEM Event Reporting",
+      "definitionEn": "Reporting safety monitor failures so diagnostic tools can access the fault information.",
+      "explanationVi": "Báo cáo lỗi để diagnostic tool có thể đọc thông tin lỗi; DTC được đọc bằng UDS $19 02.",
+      "questionEn": "What is the purpose of DEM Event Reporting?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 5: DEM Event Reporting",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-012",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "comparison",
+      "term": "FAILED vs PASSED",
+      "definitionEn": "FAILED reports a detected fault; PASSED reports that the monitored condition is acceptable.",
+      "explanationVi": "FAILED báo lỗi; PASSED báo điều kiện đã OK. Ví dụ FAILED dùng default value và Valid = FALSE.",
+      "questionEn": "What is the difference between DEM FAILED and PASSED?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Pattern 5: DEM Event Reporting",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-013",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "comparison",
+      "term": "ASIL D Additional Mechanisms",
+      "definitionEn": "ASIL D modules additionally need redundant channels, cross-comparison, and periodic self-test.",
+      "explanationVi": "Module ASIL D cần thêm redundant channel, cross-comparison giữa hai channel và periodic self-test.",
+      "questionEn": "What additional mechanisms are mentioned for ASIL D?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Summary",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-design-code-014",
+      "topicId": "safety",
+      "sectionId": "safety-design-code",
+      "cardType": "comparison",
+      "term": "Five Safety Design Patterns",
+      "definitionEn": "Range Check, Safe State Machine, Error Counter, Watchdog Alive Supervision, and DEM Reporting.",
+      "explanationVi": "5 pattern chính: Range Check, State Machine, Error Counter, Watchdog và DEM.",
+      "questionEn": "What are the five Safety Design Patterns in the source?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Design Code",
+        "section": "Summary",
+        "reference": "content-source/safety/safety-design-code.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

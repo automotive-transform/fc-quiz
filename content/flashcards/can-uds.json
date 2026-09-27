@@ -1,0 +1,567 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "can-uds-001",
+      "topicId": "can",
+      "sectionId": "uds-overview",
+      "cardType": "abbreviation",
+      "term": "UDS",
+      "definitionEn": "Unified Diagnostic Services, standardized by ISO 14229.",
+      "explanationVi": "UDS là giao thức chẩn đoán tiêu chuẩn ISO 14229 dùng để giao tiếp và chẩn đoán ECU.",
+      "questionEn": "What does UDS stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "UDS — Unified Diagnostic Services (ISO 14229)",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-002",
+      "topicId": "can",
+      "sectionId": "uds-overview",
+      "cardType": "concept",
+      "term": "UDS",
+      "definitionEn": "A diagnostic protocol for communicating with vehicle ECUs.",
+      "explanationVi": "UDS tạo cửa sổ giao tiếp với ECU để đọc lỗi, đọc data, flash, test actuator và security.",
+      "questionEn": "What is the main purpose of UDS?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Tại sao cần UDS?",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-003",
+      "topicId": "can",
+      "sectionId": "uds-overview",
+      "cardType": "concept",
+      "term": "UDS Transport",
+      "definitionEn": "UDS can run over CAN, Ethernet, or FlexRay.",
+      "explanationVi": "UDS chạy trên CAN qua ISO-TP, Ethernet qua DoIP, hoặc FlexRay.",
+      "questionEn": "Which networks can carry UDS?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "UDS — Unified Diagnostic Services (ISO 14229)",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-004",
+      "topicId": "can",
+      "sectionId": "uds-sessions",
+      "cardType": "comparison",
+      "term": "UDS Session Types",
+      "definitionEn": "Default, Programming, Extended Diagnostic, and Safety System sessions.",
+      "explanationVi": "4 session: 01 Default, 02 Programming, 03 Extended, 04 Safety System.",
+      "questionEn": "What are the four UDS session types?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "UDS Session Types",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-005",
+      "topicId": "can",
+      "sectionId": "uds-sessions",
+      "cardType": "concept",
+      "term": "Default Session",
+      "definitionEn": "The default ECU session, used for reading DTCs and data.",
+      "explanationVi": "Session mặc định khi ECU bật; đọc DTC và data nhưng không write hoặc flash.",
+      "questionEn": "What can the Default Session do?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "UDS Session Types",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-006",
+      "topicId": "can",
+      "sectionId": "uds-sessions",
+      "cardType": "concept",
+      "term": "Programming Session",
+      "definitionEn": "Session used to flash new ECU firmware.",
+      "explanationVi": "Session 0x02 dùng để flash firmware mới và cần security unlock trước.",
+      "questionEn": "What is the Programming Session used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "UDS Session Types",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-007",
+      "topicId": "can",
+      "sectionId": "uds-sessions",
+      "cardType": "concept",
+      "term": "Extended Diagnostic Session",
+      "definitionEn": "Session for writing data, activating actuators, and modifying calibration.",
+      "explanationVi": "Session 0x03 cho phép write data, activate actuator và modify calibration; cần security unlock.",
+      "questionEn": "What is the Extended Diagnostic Session used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "UDS Session Types",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-008",
+      "topicId": "can",
+      "sectionId": "uds-sessions",
+      "cardType": "concept",
+      "term": "Safety System Session",
+      "definitionEn": "Session intended for airbag and safety-critical systems.",
+      "explanationVi": "Session 0x04 dành cho airbag và safety-critical system; thường cần hardware key vật lý.",
+      "questionEn": "What is the Safety System Session intended for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "UDS Session Types",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-009",
+      "topicId": "can",
+      "sectionId": "security-access",
+      "cardType": "technical_term",
+      "term": "Security Access",
+      "definitionEn": "A seed-key mechanism used to unlock protected ECU access.",
+      "explanationVi": "Security Access dùng Seed-Key để bảo vệ quyền write access của ECU.",
+      "questionEn": "What is UDS Security Access used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Security Access — Seed-Key Mechanism (Service 0x27)",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-010",
+      "topicId": "can",
+      "sectionId": "security-access",
+      "cardType": "phrase",
+      "term": "Request Seed",
+      "definitionEn": "The tool requests a seed from the ECU using 27 01.",
+      "explanationVi": "Tool gửi 27 01 để yêu cầu ECU tạo và trả về seed.",
+      "questionEn": "How does the tool request a security seed?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Security Access — Seed-Key Mechanism (Service 0x27)",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-011",
+      "topicId": "can",
+      "sectionId": "security-access",
+      "cardType": "phrase",
+      "term": "Send Key",
+      "definitionEn": "The tool sends the calculated key using 27 02.",
+      "explanationVi": "Tool tính key từ seed rồi gửi key bằng 27 02 để ECU xác minh.",
+      "questionEn": "How does the tool send the calculated key?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Security Access — Seed-Key Mechanism (Service 0x27)",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-012",
+      "topicId": "can",
+      "sectionId": "security-access",
+      "cardType": "technical_term",
+      "term": "invalidKey",
+      "definitionEn": "A negative response indicating that the supplied key is invalid.",
+      "explanationVi": "invalidKey nghĩa là key không đúng; ví dụ ECU trả 7F 27 35.",
+      "questionEn": "What does NRC 35 mean in the given Security Access example?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Security Access — Seed-Key Mechanism (Service 0x27)",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-013",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "DiagnosticSessionControl",
+      "definitionEn": "UDS service 0x10 for switching diagnostic sessions.",
+      "explanationVi": "Service 0x10 dùng để chuyển đổi session, ví dụ 10 02 vào Programming Session.",
+      "questionEn": "Which UDS service switches diagnostic sessions?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-014",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "ECUReset",
+      "definitionEn": "UDS service 0x11 for resetting the ECU.",
+      "explanationVi": "Service 0x11 reset ECU; 11 01 là hardReset và 11 03 là softReset.",
+      "questionEn": "Which UDS service resets the ECU?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-015",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "ClearDiagnosticInformation",
+      "definitionEn": "UDS service 0x14 for clearing diagnostic trouble codes.",
+      "explanationVi": "Service 0x14 dùng để xóa DTC; 14 FF FF FF xóa tất cả DTC.",
+      "questionEn": "Which UDS service clears DTCs?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-016",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "ReadDTCInformation",
+      "definitionEn": "UDS service 0x19 for reading diagnostic trouble codes.",
+      "explanationVi": "Service 0x19 dùng để đọc DTC, ví dụ 19 02 AF.",
+      "questionEn": "Which UDS service reads DTC information?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-017",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "ReadDataByIdentifier",
+      "definitionEn": "UDS service 0x22 for reading data by DID.",
+      "explanationVi": "Service 0x22 đọc data theo DID; 22 F1 90 dùng để đọc VIN.",
+      "questionEn": "Which UDS service reads data by DID?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-018",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "WriteDataByIdentifier",
+      "definitionEn": "UDS service 0x2E for writing data by DID.",
+      "explanationVi": "Service 0x2E ghi data theo DID, ví dụ 2E F1 90 [VIN bytes].",
+      "questionEn": "Which UDS service writes data by DID?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-019",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "RoutineControl",
+      "definitionEn": "UDS service 0x31 for executing ECU routines.",
+      "explanationVi": "Service 0x31 dùng để chạy routine, ví dụ kiểm tra programming preconditions.",
+      "questionEn": "Which UDS service executes a routine?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-020",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "RequestDownload",
+      "definitionEn": "UDS service 0x34 for starting a firmware download.",
+      "explanationVi": "Service 0x34 bắt đầu quá trình flash bằng cách yêu cầu download.",
+      "questionEn": "Which UDS service starts a firmware download?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-021",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "TransferData",
+      "definitionEn": "UDS service 0x36 for transferring firmware blocks.",
+      "explanationVi": "Service 0x36 gửi từng block firmware; block size thường 256 bytes.",
+      "questionEn": "Which UDS service transfers firmware blocks?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-022",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "RequestTransferExit",
+      "definitionEn": "UDS service 0x37 for ending a data transfer.",
+      "explanationVi": "Service 0x37 báo kết thúc việc gửi firmware sau khi đã gửi hết data.",
+      "questionEn": "Which UDS service ends the firmware transfer?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-023",
+      "topicId": "can",
+      "sectionId": "uds-services",
+      "cardType": "technical_term",
+      "term": "TesterPresent",
+      "definitionEn": "UDS service 0x3E used to keep the diagnostic session alive.",
+      "explanationVi": "Service 0x3E giữ session sống; ví dụ 3E 00 được gửi mỗi <5 giây.",
+      "questionEn": "Which UDS service keeps the session alive?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Các UDS Services quan trọng nhất",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-024",
+      "topicId": "can",
+      "sectionId": "flash-programming",
+      "cardType": "concept",
+      "term": "Flash Programming Sequence",
+      "definitionEn": "A sequence of UDS steps used to update ECU firmware.",
+      "explanationVi": "Chuỗi chính: Session → Security → Preconditions → Erase → Download → Transfer → Exit → Verify → Reset.",
+      "questionEn": "What is the main UDS flash programming sequence?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Flash Programming Sequence — Quy trình update firmware ECU",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-025",
+      "topicId": "can",
+      "sectionId": "flash-programming",
+      "cardType": "phrase",
+      "term": "Programming Preconditions",
+      "definitionEn": "Checks required conditions before ECU programming.",
+      "explanationVi": "Kiểm tra ignition on, voltage >10V, engine off, speed = 0 và không có safety-critical fault.",
+      "questionEn": "What conditions are checked before programming?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Flash Programming Sequence — Check Programming Preconditions",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-026",
+      "topicId": "can",
+      "sectionId": "flash-programming",
+      "cardType": "technical_term",
+      "term": "Erase Memory",
+      "definitionEn": "The flash memory sector is erased before new firmware is written.",
+      "explanationVi": "ECU xóa flash sector tương ứng; thường mất 200 ms–2 s tùy size.",
+      "questionEn": "What happens during Erase Memory?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Flash Programming Sequence — Erase Memory",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-027",
+      "topicId": "can",
+      "sectionId": "flash-programming",
+      "cardType": "technical_term",
+      "term": "CheckProgrammingIntegrity",
+      "definitionEn": "A routine used to verify programming integrity after transfer.",
+      "explanationVi": "Sau Transfer Exit, ECU thực hiện CheckProgrammingIntegrity để kiểm tra firmware.",
+      "questionEn": "What routine checks programming integrity after transfer?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Flash Programming Sequence — Transfer Exit + Verify + Reset",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-028",
+      "topicId": "can",
+      "sectionId": "iso-tp",
+      "cardType": "abbreviation",
+      "term": "ISO-TP",
+      "definitionEn": "ISO 15765-2 transport layer for segmenting large UDS messages over CAN.",
+      "explanationVi": "ISO-TP chia và ghép UDS message lớn hơn 8 bytes khi truyền qua CAN.",
+      "questionEn": "What is ISO-TP used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "ISO-TP (ISO 15765-2)",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-029",
+      "topicId": "can",
+      "sectionId": "iso-tp",
+      "cardType": "comparison",
+      "term": "Single Frame",
+      "definitionEn": "ISO-TP frame used when the message is 7 bytes or less.",
+      "explanationVi": "SF dùng khi UDS message có kích thước ≤ 7 bytes.",
+      "questionEn": "When is an ISO-TP Single Frame used?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "ISO-TP (ISO 15765-2)",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-030",
+      "topicId": "can",
+      "sectionId": "iso-tp",
+      "cardType": "comparison",
+      "term": "First Frame + Consecutive Frames",
+      "definitionEn": "ISO-TP frames used when a UDS message is larger than 7 bytes.",
+      "explanationVi": "Message >7 bytes dùng First Frame rồi các Consecutive Frames để truyền phần còn lại.",
+      "questionEn": "Which ISO-TP frames carry messages larger than 7 bytes?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "ISO-TP (ISO 15765-2)",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-031",
+      "topicId": "can",
+      "sectionId": "iso-tp",
+      "cardType": "technical_term",
+      "term": "Flow Control",
+      "definitionEn": "A receiver frame that tells the sender how many frames to continue sending.",
+      "explanationVi": "FC do receiver gửi để báo sender tiếp tục gửi bao nhiêu frames.",
+      "questionEn": "What does an ISO-TP Flow Control frame do?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "ISO-TP (ISO 15765-2)",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-032",
+      "topicId": "can",
+      "sectionId": "uds-responses",
+      "cardType": "concept",
+      "term": "Positive Response",
+      "definitionEn": "A successful UDS response commonly uses the request SID plus 0x40.",
+      "explanationVi": "Positive response thường có SID = request SID + 0x40, ví dụ 27 → 67.",
+      "questionEn": "How is a typical UDS positive response SID formed?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Positive Response và Negative Response",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "can-uds-033",
+      "topicId": "can",
+      "sectionId": "uds-responses",
+      "cardType": "technical_term",
+      "term": "Negative Response",
+      "definitionEn": "A UDS response beginning with 7F and containing the request SID and NRC.",
+      "explanationVi": "Negative response có dạng 7F [Request SID] [NRC], ví dụ 7F 27 35.",
+      "questionEn": "What is the format of a UDS negative response?",
+      "source": {
+        "type": "technical_document",
+        "document": "CAN- UDS Diagnostics",
+        "section": "Positive Response và Negative Response",
+        "reference": "content-source/CAN/CAN-UDS-Diagnostics.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

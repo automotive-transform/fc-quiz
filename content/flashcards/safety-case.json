@@ -1,0 +1,406 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "safety-safety-case-001",
+      "topicId": "safety",
+      "sectionId": "safety-case",
+      "cardType": "technical_term",
+      "term": "Safety Case",
+      "definitionEn": "A structured body of evidence and arguments showing that a product has achieved the required level of safety.",
+      "explanationVi": "Safety Case là cấu trúc tài liệu tổng hợp chứng minh sản phẩm đã đạt mức độ an toàn cần thiết; không phải chỉ một file mà trỏ đến toàn bộ Safety Argument.",
+      "questionEn": "What is a Safety Case?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Safety Case"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-002",
+      "topicId": "safety",
+      "sectionId": "safety-case",
+      "cardType": "phrase",
+      "term": "CONCEPT → SYSTEM → SW → V&V → FSA",
+      "definitionEn": "The main sequence of the Safety Case checklist.",
+      "explanationVi": "Nhớ chuỗi: Concept → System → Software → Verification & Validation → FSA.",
+      "questionEn": "What is the main Safety Case phase sequence?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Safety Case Checklist"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-003",
+      "topicId": "safety",
+      "sectionId": "concept-phase",
+      "cardType": "abbreviation",
+      "term": "HARA",
+      "definitionEn": "Hazard Analysis and Risk Assessment.",
+      "explanationVi": "HARA là phân tích hazard và đánh giá rủi ro trong Concept Phase.",
+      "questionEn": "What does HARA stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 1: Concept Phase (Part 3)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-004",
+      "topicId": "safety",
+      "sectionId": "concept-phase",
+      "cardType": "concept",
+      "term": "Safety Goal",
+      "definitionEn": "A safety objective assigned to hazardous events with ASIL ≥ A.",
+      "explanationVi": "Tất cả hazardous events có ASIL ≥ A phải có Safety Goal và Safety Goal phải có ASIL assignment rõ ràng.",
+      "questionEn": "When must a hazardous event have a Safety Goal?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 1: Concept Phase (Part 3)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-005",
+      "topicId": "safety",
+      "sectionId": "concept-phase",
+      "cardType": "abbreviation",
+      "term": "FSC",
+      "definitionEn": "Functional Safety Concept.",
+      "explanationVi": "FSC là Functional Safety Concept, được xây dựng trong Concept Phase sau Safety Goals.",
+      "questionEn": "What does FSC stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 1: Concept Phase (Part 3)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-006",
+      "topicId": "safety",
+      "sectionId": "concept-phase",
+      "cardType": "concept",
+      "term": "Confirmation measure",
+      "definitionEn": "A required confirmation review performed according to the ASIL.",
+      "explanationVi": "Confirmation measure là hoạt động review cần được kiểm tra theo ASIL.",
+      "questionEn": "What should be checked about confirmation measures in Concept Phase?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 1: Concept Phase (Part 3)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-007",
+      "topicId": "safety",
+      "sectionId": "system-development",
+      "cardType": "abbreviation",
+      "term": "TSC",
+      "definitionEn": "Technical Safety Concept.",
+      "explanationVi": "TSC là Technical Safety Concept, được xây dựng trong System Development.",
+      "questionEn": "What does TSC stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 2: System Development (Part 4)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-008",
+      "topicId": "safety",
+      "sectionId": "system-development",
+      "cardType": "technical_term",
+      "term": "ASIL decomposition",
+      "definitionEn": "A decomposition that must be justified and documented.",
+      "explanationVi": "ASIL decomposition phải có lý do justify rõ ràng và phải được document.",
+      "questionEn": "What must be done for ASIL decomposition?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 2: System Development (Part 4)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-009",
+      "topicId": "safety",
+      "sectionId": "system-development",
+      "cardType": "abbreviation",
+      "term": "FFI",
+      "definitionEn": "Freedom from interference.",
+      "explanationVi": "FFI là Freedom from interference; trong checklist, FFI phải được phân tích.",
+      "questionEn": "What does FFI stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 2: System Development (Part 4)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-010",
+      "topicId": "safety",
+      "sectionId": "system-development",
+      "cardType": "concept",
+      "term": "Safety requirements allocation",
+      "definitionEn": "Allocation of safety requirements to hardware and software.",
+      "explanationVi": "Safety requirements được allocated xuống HW và SW.",
+      "questionEn": "Where are safety requirements allocated?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 2: System Development (Part 4)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-011",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "cardType": "abbreviation",
+      "term": "SWSR",
+      "definitionEn": "SW Safety Requirements.",
+      "explanationVi": "SWSR là các SW Safety Requirements, phải được viết và traceable.",
+      "questionEn": "What does SWSR stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-012",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "cardType": "phrase",
+      "term": "SWSR → Design → Code → Test",
+      "definitionEn": "The required SW safety traceability chain.",
+      "explanationVi": "Chuỗi traceability phải nối từ SWSR đến Design, Code và Test.",
+      "questionEn": "What is the SW safety traceability chain?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-013",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "cardType": "technical_term",
+      "term": "Safety mechanisms",
+      "definitionEn": "Safety mechanisms included in the SW architecture.",
+      "explanationVi": "SW Architecture phải có các safety mechanisms để hỗ trợ yêu cầu safety.",
+      "questionEn": "What must the SW Architecture include?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-014",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "cardType": "technical_term",
+      "term": "MISRA C",
+      "definitionEn": "Coding guidelines applied according to ASIL.",
+      "explanationVi": "MISRA C guidelines được áp dụng theo ASIL trong SW Development.",
+      "questionEn": "How are MISRA C guidelines applied in the checklist?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-015",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "cardType": "comparison",
+      "term": "Statement / Branch / MC/DC",
+      "definitionEn": "Three code coverage measures listed for ASIL-based coverage.",
+      "explanationVi": "Code coverage phải đạt theo ASIL, gồm statement, branch và MC/DC coverage.",
+      "questionEn": "Which coverage measures are listed for SW safety?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-016",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "cardType": "concept",
+      "term": "Dynamic analysis",
+      "definitionEn": "Analysis covering memory and timing.",
+      "explanationVi": "Dynamic analysis trong checklist cần kiểm tra các khía cạnh memory và timing.",
+      "questionEn": "What does dynamic analysis cover in the checklist?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-017",
+      "topicId": "safety",
+      "sectionId": "sw-development",
+      "cardType": "abbreviation",
+      "term": "TCL",
+      "definitionEn": "Tool Confidence Level used in the listed SW tool qualification requirement.",
+      "explanationVi": "Checklist yêu cầu SW tool qualification với TCL ≥ 2 phải được hoàn thành.",
+      "questionEn": "What TCL level is specified for the SW tool qualification item?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 3: SW Development (Part 6)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-018",
+      "topicId": "safety",
+      "sectionId": "verification-validation",
+      "cardType": "concept",
+      "term": "HW target testing",
+      "definitionEn": "Module testing performed on the hardware target, not only simulation.",
+      "explanationVi": "Module testing phải thực hiện trên HW target, không chỉ trên simulation.",
+      "questionEn": "Where must module testing be performed?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 4: Verification & Validation"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-019",
+      "topicId": "safety",
+      "sectionId": "verification-validation",
+      "cardType": "technical_term",
+      "term": "Fault injection",
+      "definitionEn": "A safety-focused activity included in integration testing.",
+      "explanationVi": "Integration test phải bao gồm fault injection để kiểm tra hành vi khi có fault.",
+      "questionEn": "What must integration testing include?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 4: Verification & Validation"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-020",
+      "topicId": "safety",
+      "sectionId": "verification-validation",
+      "cardType": "concept",
+      "term": "Safety Goal validation test",
+      "definitionEn": "A validation test for the Safety Goal.",
+      "explanationVi": "Đây là bài test dùng để validation Safety Goal.",
+      "questionEn": "What validation test is required in Phase 4?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 4: Verification & Validation"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-021",
+      "topicId": "safety",
+      "sectionId": "verification-validation",
+      "cardType": "technical_term",
+      "term": "Regression test suite",
+      "definitionEn": "A test suite to be considered for safety changes.",
+      "explanationVi": "Khi có safety changes, cần kiểm tra việc sử dụng regression test suite.",
+      "questionEn": "What should be checked after safety changes?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Phase 4: Verification & Validation"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-022",
+      "topicId": "safety",
+      "sectionId": "functional-safety-assessment",
+      "cardType": "abbreviation",
+      "term": "FSA",
+      "definitionEn": "Functional Safety Assessment.",
+      "explanationVi": "FSA là Functional Safety Assessment, review toàn bộ Safety Case ở gate cuối.",
+      "questionEn": "What does FSA stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Functional Safety Assessment (FSA)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-023",
+      "topicId": "safety",
+      "sectionId": "functional-safety-assessment",
+      "cardType": "concept",
+      "term": "Safety Assessor",
+      "definitionEn": "An independent team that reviews the entire Safety Case at FSA.",
+      "explanationVi": "Safety Assessor là đội ngũ độc lập review toàn bộ Safety Case khi kết thúc.",
+      "questionEn": "Who reviews the entire Safety Case during FSA?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Functional Safety Assessment (FSA)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-024",
+      "topicId": "safety",
+      "sectionId": "functional-safety-assessment",
+      "cardType": "phrase",
+      "term": "No FSA pass = no release",
+      "definitionEn": "A product cannot be released without passing FSA.",
+      "explanationVi": "Không pass FSA thì không được release sản phẩm.",
+      "questionEn": "What happens if the product does not pass FSA?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Functional Safety Assessment (FSA)"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "safety-safety-case-025",
+      "topicId": "safety",
+      "sectionId": "checklist-status",
+      "cardType": "comparison",
+      "term": "✓ / ? / ✗ / ⚠",
+      "definitionEn": "Checklist symbols indicating achieved, needs checking, incomplete, and critical warning.",
+      "explanationVi": "✓ đã đạt; ? cần kiểm tra; ✗ chưa đạt hoặc còn thiếu; ⚠ cảnh báo đặc biệt.",
+      "questionEn": "What do the four Safety Case checklist symbols indicate?",
+      "source": {
+        "type": "technical_document",
+        "document": "Safety Case",
+        "section": "Safety Case Checklist"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "schemaVersion": "1.0",
+  "contentType": "flashcards",
+  "items": [
+    {
+      "id": "misra-c-tools-setup-001",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "PC-lint Plus",
+      "definitionEn": "A static analysis tool used for MISRA-C compliance checking.",
+      "explanationVi": "Công cụ static analysis của Gimpel Software, dùng phổ biến để kiểm tra MISRA-C trong automotive.",
+      "questionEn": "What is PC-lint Plus used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "PC-lint Plus — Cài đặt và cấu hình",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-002",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Static Analysis",
+      "definitionEn": "Analysis of source code without executing the program.",
+      "explanationVi": "Phân tích source code để phát hiện violation và các vấn đề tiềm ẩn mà không cần chạy chương trình.",
+      "questionEn": "What does static analysis examine?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "PC-lint Plus — Cài đặt và cấu hình",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-003",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "-misra_2012",
+      "definitionEn": "PC-lint Plus configuration option that enables the MISRA-C:2012 ruleset.",
+      "explanationVi": "Tùy chọn trong pc-lint.lnt để bật bộ quy tắc MISRA-C:2012.",
+      "questionEn": "Which PC-lint option enables MISRA-C:2012?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "pc-lint.lnt configuration",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-004",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "concept",
+      "term": "Compiler Configuration",
+      "definitionEn": "Configuration that models the compiler and target implementation details for analysis.",
+      "explanationVi": "Cấu hình compiler rất quan trọng vì ảnh hưởng đến implementation-defined behavior và kết quả phân tích.",
+      "questionEn": "Why is compiler configuration important in PC-lint Plus?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "PC-lint Plus — Compiler configuration",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-005",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "-compiler(gcc)",
+      "definitionEn": "PC-lint Plus option specifying the GCC compiler model.",
+      "explanationVi": "Khai báo compiler model là GCC trong cấu hình PC-lint Plus.",
+      "questionEn": "What does -compiler(gcc) specify?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "PC-lint Plus — Compiler configuration",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-006",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Header Search Paths",
+      "definitionEn": "Directories specified so the analysis tool can locate header files.",
+      "explanationVi": "Các thư mục để PC-lint Plus tìm header, được khai báo bằng tùy chọn -I.",
+      "questionEn": "What are header search paths used for?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Header search paths",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-007",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "-I",
+      "definitionEn": "A compiler-style option used to specify header search directories.",
+      "explanationVi": "Tùy chọn chỉ định thư mục include như AUTOSAR/include, inc và cfg.",
+      "questionEn": "What does the -I option specify?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Header search paths",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-008",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "concept",
+      "term": "Suppression",
+      "definitionEn": "A mechanism used to suppress a selected analysis message.",
+      "explanationVi": "Cơ chế tắt một message cụ thể của tool; không tự động thay thế quy trình deviation.",
+      "questionEn": "What is suppression in PC-lint Plus?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Deviation suppression",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-009",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "comparison",
+      "term": "Suppression vs Deviation",
+      "definitionEn": "Suppression controls tool messages; deviation documents and approves a MISRA exception.",
+      "explanationVi": "Suppression là thao tác với tool; deviation là ngoại lệ kỹ thuật có justification, risk, mitigation và approval.",
+      "questionEn": "How does suppression differ from a deviation?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Deviation suppression",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-010",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Polyspace Code Prover",
+      "definitionEn": "A formal verification tool using abstract interpretation to analyze selected software properties.",
+      "explanationVi": "Công cụ của MathWorks dùng abstract interpretation để phân tích các thuộc tính như overflow và out-of-bounds.",
+      "questionEn": "What is Polyspace Code Prover?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Polyspace Code Prover — Formal verification",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-011",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Abstract Interpretation",
+      "definitionEn": "A mathematical analysis technique used by Polyspace to analyze selected program properties.",
+      "explanationVi": "Phương pháp toán học dùng để phân tích các thuộc tính của chương trình thay vì chỉ phát hiện pattern.",
+      "questionEn": "What method does Polyspace Code Prover use?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Polyspace Code Prover — Formal verification",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-012",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "comparison",
+      "term": "PC-lint Plus vs Polyspace Code Prover",
+      "definitionEn": "PC-lint Plus focuses on static analysis and MISRA checking; Polyspace uses abstract interpretation for formal verification.",
+      "explanationVi": "PC-lint tập trung static analysis và MISRA rules; Polyspace tập trung phân tích thuộc tính bằng abstract interpretation.",
+      "questionEn": "How do PC-lint Plus and Polyspace Code Prover differ?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "PC-lint Plus and Polyspace Code Prover",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-013",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "abbreviation",
+      "term": "CI/CD",
+      "definitionEn": "Continuous Integration and Continuous Delivery/Deployment workflows.",
+      "explanationVi": "Quy trình tự động hóa kiểm tra và build, trong tài liệu dùng để tích hợp MISRA compliance check.",
+      "questionEn": "What does CI/CD provide in the MISRA workflow?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "MISRA Compliance Check trong CI/CD Pipeline",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-014",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "Pre-commit Hook",
+      "definitionEn": "A Git hook that runs a quick PC-lint check on changed files before commit.",
+      "explanationVi": "Hook chạy PC-lint nhanh trên file thay đổi; violation mới có thể khiến commit bị từ chối.",
+      "questionEn": "What does the pre-commit hook check?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "MISRA Compliance Check trong CI/CD Pipeline",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-015",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "CI Pipeline",
+      "definitionEn": "A full MISRA check over the codebase with build and reporting policies.",
+      "explanationVi": "Chạy full MISRA check, tạo HTML report và theo policy có thể fail build khi có violation mới.",
+      "questionEn": "What happens in the CI pipeline?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "CI Pipeline (Jenkins/GitLab CI)",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-016",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "Nightly Build",
+      "definitionEn": "A scheduled build that runs deeper Polyspace analysis and creates an MCR.",
+      "explanationVi": "Build chạy định kỳ bằng Polyspace Code Prover, tạo MISRA Compliance Report và lưu artifact.",
+      "questionEn": "What is performed during the nightly build?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Nightly Build",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-017",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "Release Build",
+      "definitionEn": "A release-stage build using full Polyspace and PC-lint checks.",
+      "explanationVi": "Release chạy full Polyspace + PC-lint và kiểm tra deviation, MCR theo quy trình safety.",
+      "questionEn": "What tools are used in the release build?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Release Build",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-018",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "abbreviation",
+      "term": "MCR",
+      "definitionEn": "MISRA Compliance Report.",
+      "explanationVi": "Báo cáo MISRA Compliance được tạo trong nightly build và dùng làm evidence theo quy trình.",
+      "questionEn": "What does MCR stand for?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Nightly Build and Release Build",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-019",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "MISRA Deviation Record",
+      "definitionEn": "A documented record explaining and approving an exception to a MISRA rule.",
+      "explanationVi": "Hồ sơ ghi rule, file, line, lý do, risk, mitigation, người phê duyệt và ngày.",
+      "questionEn": "What is a MISRA Deviation Record?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Deviation Log Format — MISRA Deviation Record",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-020",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "Justification",
+      "definitionEn": "The technical reason explaining why a MISRA deviation is necessary.",
+      "explanationVi": "Lý do kỹ thuật giải thích tại sao violation không được sửa theo cách thông thường.",
+      "questionEn": "What does Justification explain in a deviation record?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Deviation Log Format — MISRA Deviation Record",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-021",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "Risk and Mitigation",
+      "definitionEn": "The assessed risk of a deviation and the measures used to reduce that risk.",
+      "explanationVi": "Ghi nhận mức risk của deviation và biện pháp mitigation để giảm hoặc kiểm soát risk.",
+      "questionEn": "What do Risk and Mitigation capture?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Deviation Log Format — MISRA Deviation Record",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-022",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "In-code Annotation",
+      "definitionEn": "A code comment linking a MISRA violation to its documented deviation.",
+      "explanationVi": "Comment trong code ghi Rule, DR-ID, justification, risk và approval để tạo traceability.",
+      "questionEn": "Why is an in-code deviation annotation used?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "In-code annotation",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-023",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Rule 10.1",
+      "definitionEn": "Operands of a logical operator must be essentially boolean.",
+      "explanationVi": "Operand của toán tử logic như && và || phải phù hợp essentially boolean; tài liệu gợi ý explicit != 0.",
+      "questionEn": "What does MISRA-C Rule 10.1 address here?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-024",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Rule 10.3",
+      "definitionEn": "Addresses loss of precision in assignment.",
+      "explanationVi": "Liên quan loss of precision khi assignment; tài liệu gợi ý dùng kiểu rộng hơn hoặc cast + range check.",
+      "questionEn": "What does MISRA-C Rule 10.3 address?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-025",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Rule 11.3",
+      "definitionEn": "Addresses conversions involving integral and pointer types.",
+      "explanationVi": "Liên quan cast từ integral sang pointer và pointer conversion; hardware register có thể cần deviation.",
+      "questionEn": "What does MISRA-C Rule 11.3 address in the source?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-026",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Rule 12.1",
+      "definitionEn": "Requires operator usage to be clearly disambiguated.",
+      "explanationVi": "Thêm parentheses để làm rõ thứ tự ưu tiên và cách hiểu biểu thức.",
+      "questionEn": "How can the Rule 12.1 issue be fixed?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-027",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Rule 14.4",
+      "definitionEn": "The controlling expression must be essentially boolean.",
+      "explanationVi": "Biểu thức điều khiển phải phù hợp essentially boolean; tài liệu gợi ý != NULL hoặc != 0u.",
+      "questionEn": "What does MISRA-C Rule 14.4 require?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-028",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Rule 2.2",
+      "definitionEn": "The last value assigned to a variable is not used.",
+      "explanationVi": "Giá trị cuối được gán nhưng không được dùng; có thể remove assignment hoặc thay logic.",
+      "questionEn": "What does MISRA-C Rule 2.2 address?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-029",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "technical_term",
+      "term": "Directive 4.7",
+      "definitionEn": "Addresses ignoring the return value of a function.",
+      "explanationVi": "Không được bỏ qua return value theo vấn đề nêu trong tài liệu; cần lưu và check return value.",
+      "questionEn": "What does Directive 4.7 address?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-030",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "comparison",
+      "term": "Legacy Code Incremental Approach",
+      "definitionEn": "A staged approach: fix Mandatory, baseline Required, check new files, then reduce technical debt.",
+      "explanationVi": "Với legacy code: Mandatory trước, baseline Required, chặn violation mới rồi pay off technical debt từng sprint.",
+      "questionEn": "What is the incremental approach for legacy MISRA code?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Legacy code — Incremental approach",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-031",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "phrase",
+      "term": "Baseline",
+      "definitionEn": "A recorded starting state of existing Required violations in legacy code.",
+      "explanationVi": "Ghi nhận các Required violations hiện có để tập trung ngăn violation mới và xử lý technical debt dần.",
+      "questionEn": "Why is a baseline used for legacy MISRA violations?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Legacy code — Incremental approach",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-032",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "comparison",
+      "term": "Mandatory vs Required vs Advisory",
+      "definitionEn": "MISRA findings handled with different project policies for blocking, deviation, or warning.",
+      "explanationVi": "Mandatory cần được xử lý; Required mới không có deviation có thể fail build; Advisory theo tài liệu chỉ warning.",
+      "questionEn": "How are Mandatory, Required, and Advisory handled in the CI policy?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "CI Pipeline",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-033",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "single_word",
+      "term": "9013",
+      "definitionEn": "PC-lint message associated in the source with MISRA-C:2012 Rule 10.1.",
+      "explanationVi": "Lint code 9013 được tài liệu gắn với Rule 10.1 về operands của logical operator.",
+      "questionEn": "Which MISRA rule is associated with lint code 9013?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-034",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "single_word",
+      "term": "713",
+      "definitionEn": "PC-lint message associated in the source with MISRA-C:2012 Rule 10.3.",
+      "explanationVi": "Lint code 713 được tài liệu gắn với Rule 10.3 về loss of precision trong assignment.",
+      "questionEn": "Which MISRA rule is associated with lint code 713?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Đọc và xử lý PC-lint output",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "misra-c-tools-setup-035",
+      "topicId": "misra-c",
+      "sectionId": "tools-setup",
+      "cardType": "single_word",
+      "term": "923",
+      "definitionEn": "PC-lint message associated in the source with MISRA-C:2012 Rule 11.3.",
+      "explanationVi": "Lint code 923 được dùng trong ví dụ cast từ integral sang pointer cho hardware register.",
+      "questionEn": "Which lint code is used for the Rule 11.3 hardware register cast example?",
+      "source": {
+        "type": "technical_document",
+        "document": "MISRA-C - Tools Setup",
+        "section": "Deviation suppression",
+        "reference": "content-source/MISRA-C/MISRA-C-tools-setup.md"
+      },
+      "reviewStatus": "draft"
+    }
+  ]
+}
