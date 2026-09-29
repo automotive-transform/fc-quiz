@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import {
   createStudyState,
   getOriginalItemNumber,
+  getStudyIndexForOriginalItemNumber,
   getStudyStateKey,
   getStudyStates,
   resolveQuestionOptionOrders,
@@ -117,6 +118,15 @@ describe('studyState', () => {
     expect(getOriginalItemNumber(originalIds, 'card-418')).toBe(418)
     expect(getOriginalItemNumber(originalIds, 'card-1')).toBe(1)
     expect(getOriginalItemNumber(originalIds, 'missing')).toBe(0)
+  })
+
+  it('maps an original question number into the active random order', () => {
+    expect(getStudyIndexForOriginalItemNumber(
+      ['q1', 'q2', 'q3'],
+      ['q3', 'q1', 'q2'],
+      2,
+    )).toBe(2)
+    expect(getStudyIndexForOriginalItemNumber(['q1', 'q2'], ['q2', 'q1'], 3)).toBe(-1)
   })
 
   it('restores a valid option order and repairs invalid orders', () => {

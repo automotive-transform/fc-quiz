@@ -200,6 +200,37 @@ button {
   line-height: 1;
 }
 
+.question-jump {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #cbd5e1;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.question-jump input {
+  width: 64px;
+  min-width: 0;
+  padding: 7px 6px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 8px;
+  background: #0f172a;
+  color: #f8fafc;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.question-jump button {
+  padding: 7px 10px;
+}
+
+.question-jump-feedback {
+  margin: -8px 0 14px;
+  color: #fca5a5;
+  font-size: 0.85rem;
+}
+
 .quiz-navigation {
   display: flex;
   justify-content: space-between;

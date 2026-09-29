@@ -40,6 +40,16 @@ export function getOriginalItemNumber(itemIds: string[], currentItemId?: string)
   return originalIndex < 0 ? 0 : originalIndex + 1
 }
 
+export function getStudyIndexForOriginalItemNumber(
+  originalItemIds: string[],
+  orderedItemIds: string[],
+  originalNumber: number,
+): number {
+  if (!Number.isInteger(originalNumber) || originalNumber < 1) return -1
+  const itemId = originalItemIds[originalNumber - 1]
+  return itemId ? orderedItemIds.indexOf(itemId) : -1
+}
+
 export function getStudyStates(): StudyStateMap {
   try {
     if (typeof localStorage === 'undefined') return {}

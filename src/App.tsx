@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react'
 import './App.css'
 import { loadFlashcards, loadQuizzes, loadTopics, filterByTopic } from './services/contentService'
 import { calculateQuizScore, isSingleChoiceCorrect } from './services/quizService'
@@ -15,6 +15,7 @@ import {
   createStudyState,
   getStudySelection,
   getOriginalItemNumber,
+  getStudyIndexForOriginalItemNumber,
   getStudyStateKey,
   getStudyStates,
   resolveQuestionOptionOrders,
@@ -47,6 +48,8 @@ function App() {
   const [contentLoaded, setContentLoaded] = useState(false)
   const [selectedTopicId, setSelectedTopicId] = useState(savedSelection?.topicId ?? '')
   const [contentMode, setContentMode] = useState<ContentMode>(savedSelection?.feature ?? 'flashcards')
+  const [questionJumpInput, setQuestionJumpInput] = useState('')
+  const [questionJumpFeedback, setQuestionJumpFeedback] = useState('')
   const [progress, setProgress] = useState<Record<string, FlashcardProgress>>({})
   const [quizQuestionProgress, setQuizQuestionProgress] = useState<QuizQuestionProgressByTopic>(getQuizQuestionProgress)
   const [cardFlipped, setCardFlipped] = useState(false)
@@ -272,6 +275,29 @@ function App() {
 
     setProgress(nextProgress)
     saveFlashcardProgress(nextProgress)
+  }
+
+  const jumpToQuestion = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const originalNumber = Number(questionJumpInput)
+    if (!Number.isInteger(originalNumber) || originalNumber < 1 || originalNumber > topicQuizzes.length) {
+      setQuestionJumpFeedback(`Enter a number from 1 to ${topicQuizzes.length}.`)
+      return
+    }
+
+    const targetIndex = getStudyIndexForOriginalItemNumber(
+      topicQuizzes.map((question) => question.id),
+      orderedQuizzes.map((question) => question.id),
+      originalNumber,
+    )
+    if (targetIndex < 0) {
+      setQuestionJumpFeedback('That question is not in the current Wrong list.')
+      return
+    }
+
+    storeStudyState({ ...activeStudyState, currentIndex: targetIndex, selectedOptionId: undefined })
+    checkedQuestionRef.current = null
+    setQuestionJumpFeedback('')
   }
 
   const submitAnswer = () => {
@@ -615,13 +641,29 @@ function App() {
                       </div>
                     ) : null}
                     <strong className="progress-counter">
-                      {currentQuestion ? `${currentQuestionNumber} / ${orderedQuizzes.length}` : `0 / ${orderedQuizzes.length}`}
+                      {currentQuestion ? `${currentQuestionNumber} / ${topicQuizzes.length}` : `0 / ${topicQuizzes.length}`}
                     </strong>
+                    <form className="question-jump" onSubmit={jumpToQuestion}>
+                      <label htmlFor="question-jump-input">Go to</label>
+                      <input
+                        id="question-jump-input"
+                        type="number"
+                        inputMode="numeric"
+                        min="1"
+                        max={topicQuizzes.length}
+                        value={questionJumpInput}
+                        onChange={(event) => setQuestionJumpInput(event.target.value)}
+                        aria-label="Original question number"
+                      />
+                      <button type="submit">Go</button>
+                    </form>
                     <button type="button" className="icon-button" onClick={restartStudy} aria-label="Restart quiz" title="Restart">
                       &#x21bb;
                     </button>
                   </div>
                 ) : null}
+
+                {questionJumpFeedback ? <p className="question-jump-feedback" role="status">{questionJumpFeedback}</p> : null}
 
                 {!activeStudyState.completed && currentQuestion ? (
                   <div className="quiz-box">
