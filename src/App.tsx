@@ -2,19 +2,30 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import './App.css'
 import { loadFlashcards, loadQuizzes, loadTopics, filterByTopic } from './services/contentService'
 import { calculateQuizScore, isSingleChoiceCorrect } from './services/quizService'
-import { getFlashcardProgress, saveFlashcardProgress, saveQuizAttempt } from './utils/storage'
+import {
+  getFlashcardProgress,
+  getQuizQuestionProgress,
+  getWrongQuestionIds,
+  recordQuizQuestionResult,
+  saveFlashcardProgress,
+  saveQuizAttempt,
+  type QuizQuestionProgressByTopic,
+} from './utils/storage'
 import {
   createStudyState,
   getStudySelection,
   getOriginalItemNumber,
   getStudyStateKey,
   getStudyStates,
+  resolveQuestionOptionOrders,
   resolveStudyState,
   saveStudySelection,
   saveStudyStates,
+  shuffleIds,
   type StudyMode,
   type StudyState,
   type StudyStateMap,
+  type WrongOrderMode,
 } from './utils/studyState'
 import type {
   Flashcard,
@@ -37,11 +48,13 @@ function App() {
   const [selectedTopicId, setSelectedTopicId] = useState(savedSelection?.topicId ?? '')
   const [contentMode, setContentMode] = useState<ContentMode>(savedSelection?.feature ?? 'flashcards')
   const [progress, setProgress] = useState<Record<string, FlashcardProgress>>({})
+  const [quizQuestionProgress, setQuizQuestionProgress] = useState<QuizQuestionProgressByTopic>(getQuizQuestionProgress)
   const [cardFlipped, setCardFlipped] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const flashcardRef = useRef<HTMLDivElement>(null)
   const swipeStartRef = useRef<{ x: number; y: number } | null>(null)
   const ignoreTapUntilRef = useRef(0)
+  const checkedQuestionRef = useRef<string | null>(null)
 
   useEffect(() => {
     const flashcardElement = flashcardRef.current
@@ -85,6 +98,41 @@ function App() {
         setTopics(topicsData)
         setFlashcards(flashcardsData)
         setQuizzes(quizzesData)
+        const questionProgress = getQuizQuestionProgress()
+        setQuizQuestionProgress(questionProgress)
+        setStudyStates((previous) => {
+          const questionsByTopic = new Map<string, QuizQuestion[]>()
+          for (const question of quizzesData) {
+            const topicQuestions = questionsByTopic.get(question.topicId) ?? []
+            topicQuestions.push(question)
+            questionsByTopic.set(question.topicId, topicQuestions)
+          }
+
+          const next = { ...previous }
+          for (const [topicId, questions] of questionsByTopic) {
+            const key = getStudyStateKey('quizzes', topicId)
+            const storedState = previous[key]
+            const itemIds = storedState?.mode === 'wrong'
+              ? questions
+                .filter((question) => questionProgress[topicId]?.[question.id]?.lastResult === 'wrong')
+                .map((question) => question.id)
+              : questions.map((question) => question.id)
+            const state = resolveStudyState(storedState, topicId, itemIds)
+            next[key] = {
+              ...state,
+              optionOrders: resolveQuestionOptionOrders(
+                state.optionOrders,
+                questions.map((question) => ({
+                  id: question.id,
+                  optionIds: question.options.map((option) => option.id),
+                })),
+              ),
+            }
+          }
+
+          saveStudyStates(next)
+          return next
+        })
         setSelectedTopicId((current) => {
           if (current && topicsData.some((topic) => topic.id === current)) {
             return current
@@ -115,9 +163,23 @@ function App() {
     [quizzes, selectedTopicId],
   )
 
-  const activeItems = contentMode === 'flashcards' ? topicFlashcards : topicQuizzes
-  const activeItemIds = useMemo(() => activeItems.map((item) => item.id), [activeItems])
   const activeStudyKey = getStudyStateKey(contentMode, selectedTopicId)
+  const persistedQuizMode = studyStates[activeStudyKey]?.mode ?? 'one-pass'
+  const wrongQuestions = useMemo(
+    () => {
+      const wrongIds = new Set(getWrongQuestionIds(
+        selectedTopicId,
+        topicQuizzes.map((question) => question.id),
+        quizQuestionProgress,
+      ))
+      return topicQuizzes.filter((question) => wrongIds.has(question.id))
+    },
+    [topicQuizzes, quizQuestionProgress, selectedTopicId],
+  )
+  const activeItems = contentMode === 'flashcards'
+    ? topicFlashcards
+    : persistedQuizMode === 'wrong' ? wrongQuestions : topicQuizzes
+  const activeItemIds = useMemo(() => activeItems.map((item) => item.id), [activeItems])
   const activeStudyState = useMemo(
     () => resolveStudyState(studyStates[activeStudyKey], selectedTopicId, activeItemIds),
     [studyStates, activeStudyKey, selectedTopicId, activeItemIds],
@@ -131,17 +193,31 @@ function App() {
     })
   }, [contentMode, activeStudyState, topicFlashcards])
   const orderedQuizzes = useMemo(() => {
-    if (contentMode !== 'quizzes' || activeStudyState.mode !== 'random') return topicQuizzes
-    const quizzesById = new Map(topicQuizzes.map((question) => [question.id, question]))
+    if (contentMode !== 'quizzes') return topicQuizzes
+    const availableQuestions = activeStudyState.mode === 'wrong' ? wrongQuestions : topicQuizzes
+    const randomOrder = activeStudyState.mode === 'random'
+      || (activeStudyState.mode === 'wrong' && activeStudyState.wrongOrderMode === 'random')
+    if (!randomOrder) return availableQuestions
+    const quizzesById = new Map(availableQuestions.map((question) => [question.id, question]))
     return (activeStudyState.order ?? []).flatMap((id) => {
       const question = quizzesById.get(id)
       return question ? [question] : []
     })
-  }, [contentMode, activeStudyState, topicQuizzes])
+  }, [contentMode, activeStudyState, topicQuizzes, wrongQuestions])
   const currentFlashcard = orderedFlashcards[activeStudyState.currentIndex] ?? null
   const currentQuestion = orderedQuizzes[activeStudyState.currentIndex] ?? null
+  const currentQuestionOptions = currentQuestion
+    ? (() => {
+        const optionsById = new Map(currentQuestion.options.map((option) => [option.id, option]))
+        const orderedOptions = (activeStudyState.optionOrders?.[currentQuestion.id] ?? []).flatMap((id) => {
+          const option = optionsById.get(id)
+          return option ? [option] : []
+        })
+        return orderedOptions.length === currentQuestion.options.length ? orderedOptions : currentQuestion.options
+      })()
+    : []
   const currentFlashcardNumber = getOriginalItemNumber(activeItemIds, currentFlashcard?.id)
-  const currentQuestionNumber = getOriginalItemNumber(activeItemIds, currentQuestion?.id)
+  const currentQuestionNumber = getOriginalItemNumber(topicQuizzes.map((question) => question.id), currentQuestion?.id)
   const selectedOptionId = currentQuestion
     ? activeStudyState.answers?.[currentQuestion.id] ?? activeStudyState.selectedOptionId ?? null
     : null
@@ -151,9 +227,8 @@ function App() {
     : null
   const quizAnswers: QuizAnswerRecord[] = orderedQuizzes.flatMap((question) => {
     const selectedId = activeStudyState.answers?.[question.id]
-    return selectedId
-      ? [{ id: question.id, selectedOptionId: selectedId, correctOptionIds: question.correctOptionIds }]
-      : []
+    if (!selectedId && !activeStudyState.completed) return []
+    return [{ id: question.id, selectedOptionId: selectedId ?? '', correctOptionIds: question.correctOptionIds }]
   })
   const latestResult = activeStudyState.completed
     ? calculateQuizScore(quizAnswers, orderedQuizzes)
@@ -200,7 +275,15 @@ function App() {
   }
 
   const submitAnswer = () => {
-    if (!currentQuestion || !selectedOptionId) return
+    if (!currentQuestion || !selectedOptionId || answered) return
+    const checkKey = `${selectedTopicId}:${currentQuestion.id}`
+    if (checkedQuestionRef.current === checkKey) return
+    checkedQuestionRef.current = checkKey
+
+    const result = isSingleChoiceCorrect(selectedOptionId, currentQuestion.correctOptionIds)
+      ? 'correct'
+      : 'wrong'
+    setQuizQuestionProgress(recordQuizQuestionResult(selectedTopicId, currentQuestion.id, result))
 
     storeStudyState({
       ...activeStudyState,
@@ -210,14 +293,20 @@ function App() {
   }
 
   const nextQuestion = () => {
-    if (!answered || activeStudyState.currentIndex >= orderedQuizzes.length - 1) return
+    if (!currentQuestion) return
+    if (activeStudyState.currentIndex >= orderedQuizzes.length - 1) return
     storeStudyState({ ...activeStudyState, currentIndex: activeStudyState.currentIndex + 1, selectedOptionId: undefined })
   }
 
   const finishQuiz = () => {
-    if (!currentQuestion || !answered || activeStudyState.completed) return
+    if (!currentQuestion || activeStudyState.completed) return
 
-    const result = calculateQuizScore(quizAnswers, orderedQuizzes)
+    const finalAnswers = orderedQuizzes.map((question) => ({
+      id: question.id,
+      selectedOptionId: activeStudyState.answers?.[question.id] ?? '',
+      correctOptionIds: question.correctOptionIds,
+    }))
+    const result = calculateQuizScore(finalAnswers, orderedQuizzes)
     storeStudyState({ ...activeStudyState, completed: true, selectedOptionId: undefined })
     saveQuizAttempt({
       attemptId: `attempt-${Date.now()}`,
@@ -231,12 +320,49 @@ function App() {
 
   const updateMode = (mode: StudyMode) => {
     if (mode === activeStudyState.mode) return
-    storeStudyState(createStudyState(selectedTopicId, activeItemIds, mode))
+    const itemIds = mode === 'wrong'
+      ? wrongQuestions.map((question) => question.id)
+      : contentMode === 'quizzes' ? topicQuizzes.map((question) => question.id) : activeItemIds
+    const nextState = createStudyState(selectedTopicId, itemIds, mode)
+    if (contentMode === 'quizzes') {
+      nextState.optionOrders = resolveQuestionOptionOrders(
+        activeStudyState.optionOrders,
+        topicQuizzes.map((question) => ({ id: question.id, optionIds: question.options.map((option) => option.id) })),
+      )
+      if (mode === 'wrong') nextState.wrongOrderMode = 'one-pass'
+    }
+    checkedQuestionRef.current = null
+    storeStudyState(nextState)
     setCardFlipped(false)
   }
 
+  const updateWrongOrderMode = (mode: WrongOrderMode) => {
+    if (activeStudyState.mode !== 'wrong' || activeStudyState.wrongOrderMode === mode) return
+    const wrongIds = wrongQuestions.map((question) => question.id)
+    storeStudyState({
+      ...createStudyState(selectedTopicId, wrongIds, 'wrong'),
+      wrongOrderMode: mode,
+      ...(mode === 'random' ? { order: shuffleIds(wrongIds) } : {}),
+      optionOrders: activeStudyState.optionOrders,
+    })
+    checkedQuestionRef.current = null
+  }
+
   const restartStudy = () => {
-    storeStudyState(createStudyState(selectedTopicId, activeItemIds, activeStudyState.mode))
+    const nextState = createStudyState(selectedTopicId, activeItemIds, activeStudyState.mode)
+    if (contentMode === 'quizzes') {
+      const questionsForOptions = activeStudyState.mode === 'wrong' ? wrongQuestions : topicQuizzes
+      nextState.optionOrders = resolveQuestionOptionOrders(
+        undefined,
+        questionsForOptions.map((question) => ({ id: question.id, optionIds: question.options.map((option) => option.id) })),
+      )
+      if (activeStudyState.mode === 'wrong') {
+        nextState.wrongOrderMode = activeStudyState.wrongOrderMode ?? 'one-pass'
+        if (nextState.wrongOrderMode === 'random') nextState.order = shuffleIds(activeItemIds)
+      }
+    }
+    checkedQuestionRef.current = null
+    storeStudyState(nextState)
     setCardFlipped(false)
   }
 
@@ -279,7 +405,7 @@ function App() {
       <header className="topbar">
         <div>
           <p className="eyebrow">Automotive Transform</p>
-          <h1>Flashcards & Quiz</h1>
+                      {currentQuestion ? `${currentQuestionNumber} / ${topicQuizzes.length}` : `0 / ${topicQuizzes.length}`}
         </div>
 
         <div className="topbar-actions">
@@ -360,7 +486,9 @@ function App() {
                       </div>
                     </div>
                     <strong className="progress-counter">{currentFlashcardNumber} / {topicFlashcards.length}</strong>
-                    <button type="button" onClick={restartStudy}>Restart</button>
+                    <button type="button" className="icon-button" onClick={restartStudy} aria-label="Restart flashcards" title="Restart">
+                      &#x21bb;
+                    </button>
                   </div>
                 ) : null}
 
@@ -474,10 +602,24 @@ function App() {
                       <div className="mode-switch" aria-label="Quiz study mode">
                         <button type="button" className={activeStudyState.mode === 'one-pass' ? 'active' : ''} onClick={() => updateMode('one-pass')}>One Pass</button>
                         <button type="button" className={activeStudyState.mode === 'random' ? 'active' : ''} onClick={() => updateMode('random')}>Random</button>
+                        <button type="button" className={activeStudyState.mode === 'wrong' ? 'active' : ''} onClick={() => updateMode('wrong')}>Wrong</button>
                       </div>
                     </div>
-                    <strong className="progress-counter">{currentQuestionNumber} / {topicQuizzes.length}</strong>
-                    <button type="button" onClick={restartStudy}>Restart</button>
+                    {activeStudyState.mode === 'wrong' ? (
+                      <div className="study-mode-control">
+                        <span>Wrong order</span>
+                        <div className="mode-switch" aria-label="Wrong question order">
+                          <button type="button" className={activeStudyState.wrongOrderMode !== 'random' ? 'active' : ''} onClick={() => updateWrongOrderMode('one-pass')}>One Pass</button>
+                          <button type="button" className={activeStudyState.wrongOrderMode === 'random' ? 'active' : ''} onClick={() => updateWrongOrderMode('random')}>Random</button>
+                        </div>
+                      </div>
+                    ) : null}
+                    <strong className="progress-counter">
+                      {currentQuestion ? `${currentQuestionNumber} / ${orderedQuizzes.length}` : `0 / ${orderedQuizzes.length}`}
+                    </strong>
+                    <button type="button" className="icon-button" onClick={restartStudy} aria-label="Restart quiz" title="Restart">
+                      &#x21bb;
+                    </button>
                   </div>
                 ) : null}
 
@@ -487,7 +629,7 @@ function App() {
                     {currentQuestion.questionVi ? <p className="question-vi">{currentQuestion.questionVi}</p> : null}
 
                     <div className="options-list">
-                      {currentQuestion.options.map((option) => (
+                      {currentQuestionOptions.map((option, optionIndex) => (
                         <button
                           key={option.id}
                           type="button"
@@ -495,7 +637,7 @@ function App() {
                           onClick={() => !answered && storeStudyState({ ...activeStudyState, selectedOptionId: option.id })}
                           disabled={answered}
                         >
-                          <span>{option.id.toUpperCase()}</span>
+                          <span>{String.fromCharCode(65 + optionIndex)}</span>
                           {option.text}
                         </button>
                       ))}
@@ -509,9 +651,9 @@ function App() {
                         <div className="quiz-navigation">
                           <button type="button" onClick={previousItem} disabled={activeStudyState.currentIndex === 0}>Previous</button>
                           {activeStudyState.currentIndex < orderedQuizzes.length - 1 ? (
-                            <button type="button" className="primary" onClick={nextQuestion} disabled>Next</button>
+                            <button type="button" className="primary" onClick={nextQuestion}>Next</button>
                           ) : (
-                            <button type="button" className="primary" onClick={finishQuiz} disabled>View result</button>
+                            <button type="button" className="primary" onClick={finishQuiz}>View result</button>
                           )}
                         </div>
                       </>
@@ -530,8 +672,9 @@ function App() {
                           <>
                             <p className="correct-answer">
                               Correct answer: {currentQuestion.options
-                                .filter((option) => currentQuestion.correctOptionIds.includes(option.id))
-                                .map((option) => option.text)
+                                .map((option) => ({ option, position: currentQuestionOptions.findIndex((orderedOption) => orderedOption.id === option.id) }))
+                                .filter(({ option }) => currentQuestion.correctOptionIds.includes(option.id))
+                                .map(({ option, position }) => `${String.fromCharCode(65 + position)}. ${option.text}`)
                                 .join(', ')}
                             </p>
                             <p className="explanation">{currentQuestion.explanationVi}</p>
@@ -541,9 +684,9 @@ function App() {
                         <div className="quiz-navigation">
                           <button type="button" onClick={previousItem} disabled={activeStudyState.currentIndex === 0}>Previous</button>
                           {activeStudyState.currentIndex < orderedQuizzes.length - 1 ? (
-                            <button type="button" className="primary" onClick={nextQuestion} disabled={!answered}>Next</button>
+                            <button type="button" className="primary" onClick={nextQuestion}>Next</button>
                           ) : (
-                            <button type="button" className="primary" onClick={finishQuiz} disabled={!answered}>View result</button>
+                            <button type="button" className="primary" onClick={finishQuiz}>View result</button>
                           )}
                         </div>
                       </>
@@ -587,6 +730,8 @@ function App() {
 
                 {!topicQuizzes.length ? (
                   <div className="notice">No quiz questions are available for this topic yet.</div>
+                ) : activeStudyState.mode === 'wrong' && !orderedQuizzes.length ? (
+                  <div className="notice">No wrong questions to review.</div>
                 ) : null}
               </div>
             )}

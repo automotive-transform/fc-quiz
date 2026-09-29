@@ -1,5 +1,6 @@
 export type StudyFeature = 'flashcards' | 'quizzes'
-export type StudyMode = 'one-pass' | 'random'
+export type StudyMode = 'one-pass' | 'random' | 'wrong'
+export type WrongOrderMode = 'one-pass' | 'random'
 
 export interface StudyState {
   topicId: string
@@ -8,6 +9,8 @@ export interface StudyState {
   itemIds?: string[]
   order?: string[]
   answers?: Record<string, string>
+  optionOrders?: Record<string, string[]>
+  wrongOrderMode?: WrongOrderMode
   selectedOptionId?: string
   completed?: boolean
 }
@@ -94,6 +97,21 @@ export function shuffleIds(ids: string[]): string[] {
   return shuffled
 }
 
+export function resolveQuestionOptionOrders(
+  storedOrders: Record<string, string[]> | undefined,
+  questions: Array<{ id: string; optionIds: string[] }>,
+): Record<string, string[]> {
+  return Object.fromEntries(questions.map(({ id, optionIds }) => {
+    const storedOrder = storedOrders?.[id]
+    const valid = Array.isArray(storedOrder)
+      && storedOrder.length === optionIds.length
+      && new Set(storedOrder).size === optionIds.length
+      && storedOrder.every((optionId) => optionIds.includes(optionId))
+
+    return [id, valid ? [...storedOrder] : shuffleIds(optionIds)]
+  }))
+}
+
 export function createStudyState(
   topicId: string,
   itemIds: string[],
@@ -114,7 +132,10 @@ export function resolveStudyState(
   topicId: string,
   itemIds: string[],
 ): StudyState {
-  const validMode: StudyMode = storedState?.mode === 'random' ? 'random' : 'one-pass'
+  const validMode: StudyMode = storedState?.mode === 'random' || storedState?.mode === 'wrong'
+    ? storedState.mode
+    : 'one-pass'
+  const wrongOrderMode: WrongOrderMode = storedState?.wrongOrderMode === 'random' ? 'random' : 'one-pass'
   const maxIndex = Math.max(itemIds.length - 1, 0)
   const currentIndex = typeof storedState?.currentIndex === 'number' && Number.isInteger(storedState.currentIndex)
     ? Math.min(Math.max(storedState.currentIndex, 0), maxIndex)
@@ -136,24 +157,31 @@ export function resolveStudyState(
       currentIndex,
       itemIds: [...itemIds],
       answers,
+      optionOrders: storedState?.optionOrders,
+      wrongOrderMode,
       selectedOptionId: typeof storedState?.selectedOptionId === 'string' ? storedState.selectedOptionId : undefined,
       completed: sameContent && storedState?.completed === true,
     }
   }
 
-  const order = storedState?.order
-  const validOrder = Array.isArray(order)
-    && order.length === itemIds.length
-    && new Set(order).size === itemIds.length
-    && order.every((itemId) => validItemIds.has(itemId))
+  const useRandomOrder = validMode === 'random' || (validMode === 'wrong' && wrongOrderMode === 'random')
+  const storedOrder = validMode === 'wrong' && wrongOrderMode === 'random'
+    ? storedState?.order?.filter((itemId) => validItemIds.has(itemId))
+    : storedState?.order
+  const validOrder = Array.isArray(storedOrder)
+    && storedOrder.length === itemIds.length
+    && new Set(storedOrder).size === itemIds.length
+    && storedOrder.every((itemId) => validItemIds.has(itemId))
 
   return {
     topicId,
     mode: validMode,
     currentIndex,
     itemIds: [...itemIds],
-    order: validOrder ? [...order] : shuffleIds(itemIds),
+    ...(useRandomOrder ? { order: validOrder ? [...storedOrder] : shuffleIds(itemIds) } : {}),
     answers,
+    optionOrders: storedState?.optionOrders,
+    wrongOrderMode,
     selectedOptionId: typeof storedState?.selectedOptionId === 'string' ? storedState.selectedOptionId : undefined,
     completed: sameContent && storedState?.completed === true,
   }

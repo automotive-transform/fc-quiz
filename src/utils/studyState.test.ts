@@ -4,6 +4,7 @@ import {
   getOriginalItemNumber,
   getStudyStateKey,
   getStudyStates,
+  resolveQuestionOptionOrders,
   resolveStudyState,
   saveStudyStates,
 } from './studyState'
@@ -116,5 +117,39 @@ describe('studyState', () => {
     expect(getOriginalItemNumber(originalIds, 'card-418')).toBe(418)
     expect(getOriginalItemNumber(originalIds, 'card-1')).toBe(1)
     expect(getOriginalItemNumber(originalIds, 'missing')).toBe(0)
+  })
+
+  it('restores a valid option order and repairs invalid orders', () => {
+    const orders = resolveQuestionOptionOrders(
+      { savedQuestion: ['C', 'A', 'B', 'D'], staleQuestion: ['X', 'Y'] },
+      [
+        { id: 'savedQuestion', optionIds: ['A', 'B', 'C', 'D'] },
+        { id: 'newQuestion', optionIds: ['A', 'B', 'C', 'D'] },
+      ],
+    )
+
+    expect(orders.savedQuestion).toEqual(['C', 'A', 'B', 'D'])
+    expect(orders.newQuestion).toHaveLength(4)
+    expect(new Set(orders.newQuestion)).toEqual(new Set(['A', 'B', 'C', 'D']))
+    expect(orders).not.toHaveProperty('staleQuestion')
+  })
+
+  it('preserves random order when Wrong questions are removed', () => {
+    const resolved = resolveStudyState(
+      {
+        topicId: 'aspice',
+        mode: 'wrong',
+        wrongOrderMode: 'random',
+        currentIndex: 1,
+        itemIds: ['q1', 'q2', 'q3'],
+        order: ['q3', 'q1', 'q2'],
+      },
+      'aspice',
+      ['q3', 'q2'],
+    )
+
+    expect(resolved.order).toEqual(['q3', 'q2'])
+    expect(resolved.currentIndex).toBe(1)
+    expect(resolved.wrongOrderMode).toBe('random')
   })
 })

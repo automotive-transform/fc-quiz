@@ -190,6 +190,16 @@ button {
   white-space: nowrap;
 }
 
+.study-toolbar .icon-button {
+  display: inline-grid;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  place-items: center;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
 .quiz-navigation {
   display: flex;
   justify-content: space-between;
